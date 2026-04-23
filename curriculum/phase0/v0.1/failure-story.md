@@ -1,19 +1,21 @@
 # v0.1 Failure Story
 
-Authoring status: scaffolded
-
 ## Symptom
 
-TODO
+The file existed, but it could not be read.
 
 ## Root Cause
 
-TODO
+The permissions removed access.
 
 ## Fix
 
-TODO
+Run:
+
+```bash
+chmod 644 /tmp/linux-demo.txt
+```
 
 ## Prevention
 
-TODO
+Always inspect permissions with `ls -l` before assuming the file content is the problem.

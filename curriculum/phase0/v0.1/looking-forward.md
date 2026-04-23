@@ -1,11 +1,10 @@
 # v0.1 Looking Forward
 
-Authoring status: scaffolded
-
 ## What You Should Carry Forward
 
-TODO
+The terminal is now the first AOIS operating surface.
+Linux comes before Bash, and Bash comes before later service automation.
 
 ## What The Next Version Will Build On
 
-TODO
+`v0.2` will keep these Linux commands, but teach how to compose them into scripts.
