@@ -89,7 +89,7 @@ Every version in this phase must contribute to the same system story.
 
 The Phase 0 AOIS progression is:
 
-`machine visibility -> log interpretation -> version discipline -> network understanding -> typed backend -> API contract -> LLM call -> persistence`
+`linux operation -> bash interpretation -> version discipline -> network understanding -> typed backend -> API contract -> LLM call -> persistence`
 
 That progression is deliberate.
 
@@ -97,9 +97,9 @@ Later agentic AOIS depends on all of it.
 
 ## Versions In This Phase
 
-### v0.1 - Linux and machine visibility
+### v0.1 - Linux essentials
 
-You inspect CPU, memory, and disk and build `scripts/sysinfo.sh`.
+You learn navigation, permissions, processes, and basic machine inspection, then apply them by building `scripts/sysinfo.sh`.
 
 ### v0.2 - Bash and rule-based parsing
 
@@ -133,7 +133,7 @@ You add persistence so AOIS can remember incidents and analysis history.
 
 | Version | Topic | What You Build |
 |---|---|---|
-| `v0.1` | Linux and machine visibility | `scripts/sysinfo.sh` |
+| `v0.1` | Linux essentials and machine inspection | `scripts/sysinfo.sh` |
 | `v0.2` | Bash and rule-based interpretation | `scripts/log_analyzer.sh` |
 | `v0.3` | Git and engineering history | clean repo history and milestone thinking |
 | `v0.4` | Networking and HTTP | direct API inspection drills |
@@ -148,7 +148,7 @@ Phase 0 is designed to make `v1` land correctly.
 
 The arc is:
 
-- `v0.1`: observe the machine
+- `v0.1`: learn Linux basics and observe the machine
 - `v0.2`: interpret logs with brittle rules
 - `v0.3`: preserve work as clean engineering history
 - `v0.4`: understand requests and responses across the wire
@@ -256,8 +256,8 @@ Phase 0 is where your later confidence is manufactured.
 
 Start here:
 
-1. `v0.1` machine visibility
-2. `v0.2` rule-based limits
+1. `v0.1` Linux essentials and machine inspection
+2. `v0.2` Bash and rule-based interpretation
 3. `v0.3` Git and engineering memory
 4. continue in order through `v0.8`
 

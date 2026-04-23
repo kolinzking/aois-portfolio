@@ -65,8 +65,8 @@ Before reading the version list, note the backbone domains that carry the instit
 
 ### Phase 0
 
-- `v0.1` Machine Visibility
-- `v0.2` Rule-Based Log Interpretation
+- `v0.1` Linux Essentials And Machine Inspection
+- `v0.2` Bash Rule-Based Log Interpretation
 - `v0.3` Git As Engineering Memory
 - `v0.4` Networking And HTTP
 - `v0.5` Python Core For Systems Work

@@ -26,7 +26,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 | Version | Topic | Primary Build |
 |---|---|---|
-| `v0.1` | Linux and machine visibility | `scripts/sysinfo.sh` |
+| `v0.1` | Linux essentials | `scripts/sysinfo.sh` |
 | `v0.2` | Bash and rule-based interpretation | `scripts/log_analyzer.sh` |
 | `v0.3` | Git as engineering memory | repo history as proof |
 | `v0.4` | Networking and HTTP | manual API inspection drills |
@@ -39,6 +39,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.1`
 
+- [CONTENTS.md](v0.1/CONTENTS.md)
 - [introduction.md](v0.1/introduction.md)
 - [notes.md](v0.1/notes.md)
 - [lab.md](v0.1/lab.md)
@@ -51,6 +52,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.2`
 
+- [CONTENTS.md](v0.2/CONTENTS.md)
 - [introduction.md](v0.2/introduction.md)
 - [notes.md](v0.2/notes.md)
 - [lab.md](v0.2/lab.md)
@@ -63,6 +65,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.3`
 
+- [CONTENTS.md](v0.3/CONTENTS.md)
 - [introduction.md](v0.3/introduction.md)
 - [notes.md](v0.3/notes.md)
 - [lab.md](v0.3/lab.md)
@@ -75,6 +78,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.4`
 
+- [CONTENTS.md](v0.4/CONTENTS.md)
 - [introduction.md](v0.4/introduction.md)
 - [notes.md](v0.4/notes.md)
 - [lab.md](v0.4/lab.md)
@@ -87,6 +91,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.5`
 
+- [CONTENTS.md](v0.5/CONTENTS.md)
 - [introduction.md](v0.5/introduction.md)
 - [notes.md](v0.5/notes.md)
 - [lab.md](v0.5/lab.md)
@@ -99,6 +104,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.6`
 
+- [CONTENTS.md](v0.6/CONTENTS.md)
 - [introduction.md](v0.6/introduction.md)
 - [notes.md](v0.6/notes.md)
 - [lab.md](v0.6/lab.md)
@@ -111,6 +117,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.7`
 
+- [CONTENTS.md](v0.7/CONTENTS.md)
 - [introduction.md](v0.7/introduction.md)
 - [notes.md](v0.7/notes.md)
 - [lab.md](v0.7/lab.md)
@@ -123,6 +130,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.8`
 
+- [CONTENTS.md](v0.8/CONTENTS.md)
 - [introduction.md](v0.8/introduction.md)
 - [notes.md](v0.8/notes.md)
 - [lab.md](v0.8/lab.md)

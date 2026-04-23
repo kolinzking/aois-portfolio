@@ -44,13 +44,16 @@ These threads must appear repeatedly across the full program:
 Purpose:
 Build the engineering substrate for everything that follows.
 
-### v0.1 - Machine Visibility
+### v0.1 - Linux Essentials And Machine Inspection
 
 Build:
 `scripts/sysinfo.sh`
 
 Core concepts:
 
+- filesystem navigation
+- permissions
+- process awareness
 - CPU
 - memory
 - disk
@@ -66,15 +69,17 @@ Labs:
 - build a system health script
 - inspect raw commands behind the script
 - break permissions or paths
-- explain machine visibility at four levels
+- explain Linux inspection and first-system signals at four levels
 
-### v0.2 - Rule-Based Log Interpretation
+### v0.2 - Bash Rule-Based Log Interpretation
 
 Build:
 `scripts/log_analyzer.sh`
 
 Core concepts:
 
+- shell arguments
+- shell branching
 - arguments
 - `if`/`elif`/`else`
 - string matching

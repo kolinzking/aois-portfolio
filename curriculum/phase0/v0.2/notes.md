@@ -1,4 +1,4 @@
-# v0.2 - Rule-Based Interpretation And Why It Stops Scaling
+# v0.2 - Bash Rule-Based Interpretation And Why It Stops Scaling
 
 Estimated time: 2-3 focused hours
 
@@ -46,6 +46,10 @@ it has moved from visibility into interpretation.
 
 The first instinct many engineers have is to use explicit rules.
 That instinct is correct at first.
+
+The Bash part matters too.
+
+This version is where shell scripting becomes a real control-flow tool instead of only a command launcher.
 
 Rules are:
 

@@ -32,8 +32,8 @@ By the end of Phase 0 you should be able to:
 
 At the end of Phase 0, AOIS has several important pieces, but they are not yet fully fused:
 
-1. machine visibility
-2. rule-based log interpretation
+1. Linux essentials and machine inspection
+2. Bash rule-based log interpretation
 3. disciplined engineering history
 4. HTTP and API understanding
 5. typed backend structure

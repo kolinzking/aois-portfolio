@@ -24,6 +24,7 @@ Each version should eventually include:
 
 ```text
 curriculum/phaseX/vY/
+├── CONTENTS.md
 ├── introduction.md
 ├── notes.md
 ├── lab.md
@@ -223,6 +224,7 @@ That means the lesson pack must include:
 - authored benchmark interpretation
 - authored failure-story interpretation
 - concise summary notes
+- a version-level contents/navigation file
 - a version-level introduction file
 - a bridge file connecting the current version to the next one
 - a version-level looking-forward file

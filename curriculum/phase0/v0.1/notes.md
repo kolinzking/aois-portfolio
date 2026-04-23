@@ -1,8 +1,13 @@
-# v0.1 - Machine Visibility And The First AOIS Signal
+# v0.1 - Linux Essentials And The First AOIS Signal
 
 Estimated time: 2-3 focused hours
 
 ## What This Builds
+
+This version builds two things in the correct order:
+
+1. Linux command fluency for filesystem, permissions, processes, and machine inspection
+2. `scripts/sysinfo.sh` as the first AOIS artifact that uses those skills
 
 You will build and understand `scripts/sysinfo.sh`, a small bash script that creates a local machine health snapshot.
 
@@ -21,7 +26,8 @@ It does not use a database.
 
 That is the point.
 
-Before a system can analyze anything intelligently, it must first be able to observe something real.
+Before a system can analyze anything intelligently, you need to be able to operate the machine it runs on.
+Then you need to observe something real.
 
 ## Why This Exists
 
@@ -45,6 +51,10 @@ Most serious failures eventually touch one or more of these resource domains:
 
 If you cannot inspect these confidently, later AI infrastructure work becomes guesswork.
 
+It also teaches the first Linux habit:
+
+do not let the terminal remain a black box.
+
 ## AOIS Connection
 
 Right now the system path is:
@@ -61,6 +71,8 @@ Later it becomes:
 
 By the end of this version you should be able to:
 
+- move around the repo confidently in the terminal
+- read basic file permissions and process output
 - explain what CPU, memory, and disk signals actually tell you
 - read basic Linux system information commands without panic
 - understand what `scripts/sysinfo.sh` is doing line by line
@@ -87,6 +99,89 @@ You should confirm:
 - `scripts/sysinfo.sh` exists
 
 If `scripts/sysinfo.sh` is missing, stop and inspect the repository before continuing.
+
+## Linux Orientation And Why It Matters
+
+Linux is not a side skill in AOIS.
+It is the ground the rest of the system stands on.
+
+Later you will touch:
+
+- containers
+- VMs
+- Kubernetes nodes
+- CI runners
+- shell-based automation
+
+All of those are easier if the terminal stops feeling like a foreign environment.
+
+For `v0.1`, Linux means four things first:
+
+- know where you are
+- know what files are around you
+- know what process is running
+- know what the machine is doing
+
+This version teaches those habits before the script becomes the center of attention.
+
+That ordering matters:
+
+- Linux first
+- script second
+- AOIS framing throughout
+
+## Filesystem And Navigation
+
+Run these commands deliberately:
+
+```bash
+pwd
+ls
+ls -la
+cd scripts
+pwd
+ls -la
+cd ..
+```
+
+Expected behavior:
+
+- `pwd` shows your current directory
+- `ls` shows visible files
+- `ls -la` shows hidden files and permissions
+- `cd scripts` moves you into the scripts directory
+- `cd ..` moves you back up one level
+
+What matters:
+
+- you should know where `scripts/sysinfo.sh` lives
+- you should not feel lost moving between repo directories
+
+## Permissions And Process Mindset
+
+Before AOIS becomes distributed, it still lives on one machine with real process and file rules.
+
+Run:
+
+```bash
+ls -l scripts/sysinfo.sh
+ps aux | head -5
+```
+
+Expected observations:
+
+- the `ls -l` line shows whether the script is executable
+- `ps aux` shows running processes and reminds you that services are just processes the machine is managing
+
+The point is not mastery of all Linux commands in one sitting.
+The point is to stop treating Linux as invisible background.
+
+## Linux To AOIS Boundary
+
+At this point, the lesson intentionally shifts from Linux basics into the first AOIS artifact.
+
+That does not mean the Linux topic ended.
+It means the script is now the way Linux gets applied.
 
 ## The System Model
 
