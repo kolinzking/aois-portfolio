@@ -56,6 +56,33 @@ They are:
 
 Phase 0 gives you the language and operational reflexes to understand those later layers.
 
+## What You Will Know By The End
+
+By the end of Phase 0 you should be able to:
+
+- navigate Linux and the terminal without hesitation
+- write bash that automates useful operational work
+- use Git as engineering memory, not just backup
+- inspect and debug HTTP requests by hand
+- build typed Python utilities and service code
+- build and inspect a FastAPI endpoint
+- understand tokens, prompts, context windows, and raw model calls before frameworks hide them
+- understand why brittle rules fail and why structured AI systems matter
+
+## Estimated Time
+
+Phase 0 should take approximately:
+
+- `20-35 focused hours`
+
+At different daily paces, see:
+
+- [Study Pacing](/home/collins/aois-portfolio/curriculum/STUDY-PACING.md:1)
+
+Rule:
+Do not optimize for calendar speed.
+Optimize for versions genuinely mastered.
+
 ## The AOIS Thread In Phase 0
 
 Every version in this phase must contribute to the same system story.
@@ -101,6 +128,37 @@ You make raw model calls and learn prompts, tokens, and structured behavior.
 ### v0.8 - Postgres
 
 You add persistence so AOIS can remember incidents and analysis history.
+
+## Phase 0 Version Table
+
+| Version | Topic | What You Build |
+|---|---|---|
+| `v0.1` | Linux and machine visibility | `scripts/sysinfo.sh` |
+| `v0.2` | Bash and rule-based interpretation | `scripts/log_analyzer.sh` |
+| `v0.3` | Git and engineering history | clean repo history and milestone thinking |
+| `v0.4` | Networking and HTTP | direct API inspection drills |
+| `v0.5` | Python core | typed Python utilities and models |
+| `v0.6` | FastAPI without AI | mock AOIS endpoint |
+| `v0.7` | LLM fundamentals | raw model call and prompt anatomy |
+| `v0.8` | Postgres | incident and analysis schema |
+
+## The Narrative Arc
+
+Phase 0 is designed to make `v1` land correctly.
+
+The arc is:
+
+- `v0.1`: observe the machine
+- `v0.2`: interpret logs with brittle rules
+- `v0.3`: preserve work as clean engineering history
+- `v0.4`: understand requests and responses across the wire
+- `v0.5`: move into typed Python patterns
+- `v0.6`: build a structured API layer, still without AI
+- `v0.7`: make a raw model call and understand both its power and fragility
+- `v0.8`: add persistence so AOIS can remember incidents and analysis
+
+That means Phase 0 does not teach random prerequisites.
+It builds a system container that later AI capability can actually sit inside.
 
 ## The Teaching Contract
 
@@ -200,6 +258,8 @@ Start here:
 
 1. `v0.1` machine visibility
 2. `v0.2` rule-based limits
+3. `v0.3` Git and engineering memory
+4. continue in order through `v0.8`
 
 Do not skip them because they look small.
 Their real job is not size.
