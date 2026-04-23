@@ -1,15 +1,20 @@
 # v0.5 Summary Notes
 
-Authoring status: scaffolded
-
 ## What Was Built
 
-TODO
+You built the first typed Python foundation for AOIS:
+
+- config loading
+- dependency declaration
+- request and response models
 
 ## What Was Learned
 
-TODO
+- shell scripts are not enough once contracts and shared models matter
+- Pydantic gives runtime enforcement, not just better-looking code
+- environment shape should be documented before secrets are introduced
 
 ## Core Limitation Or Tradeoff
 
-TODO
+`v0.5` gives structure, not a running API.
+That comes next.

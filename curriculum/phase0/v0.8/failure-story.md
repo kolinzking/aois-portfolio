@@ -1,19 +1,17 @@
 # v0.8 Failure Story
 
-Authoring status: scaffolded
-
 ## Symptom
 
-TODO
+The first instinct was to put incident fields and analysis fields into one record because it looked simpler.
 
 ## Root Cause
 
-TODO
+The design treated an operational event and its interpretation as the same thing.
 
 ## Fix
 
-TODO
+Split them into related tables.
 
 ## Prevention
 
-TODO
+Model the event and the analysis as different system objects even when the initial example is small.

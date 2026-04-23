@@ -1,11 +1,9 @@
 # v0.6 Next Version Bridge
 
-Authoring status: scaffolded
-
 ## What This Version Unlocks
 
-TODO
+You now have a structured service boundary.
 
 ## Why The Next Version Exists
 
-TODO
+`v0.7` shows what happens when real model intelligence replaces brittle rules but raw output is still unstructured.

@@ -41,6 +41,9 @@ This phase should stay simple. Avoid premature platform complexity until the cur
 The repo starts minimal and expands only when the work justifies it:
 
 - `scripts/`: shell utilities and early system scripts
+- `app/`: early Python modules and the first FastAPI service
+- `examples/`: focused one-off artifacts such as the first raw model call
+- `sql/`: the first AOIS persistence schema
 - `curriculum/`: phase-by-phase notes, version records, and continuity docs
 
 Additional top-level directories such as `app/`, `tests/`, `tools/`, `workflows/`, `graph/`, `policy/`, and deployment layers will be added when the curriculum genuinely reaches them.

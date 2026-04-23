@@ -20,10 +20,10 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v0.2 | authored |
 | v0.3 | authored |
 | v0.4 | authored |
-| v0.5 | scaffolded |
-| v0.6 | scaffolded |
-| v0.7 | scaffolded |
-| v0.8 | scaffolded |
+| v0.5 | authored |
+| v0.6 | authored |
+| v0.7 | authored |
+| v0.8 | authored |
 
 ## Phase 1
 
@@ -123,6 +123,5 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 
 ## Next Corpus Authoring Order
 
-1. Finish the rest of `Phase 0`
-2. Finish `Phase 1`
-3. Continue phase by phase in order
+1. Finish `Phase 1`
+2. Continue phase by phase in order

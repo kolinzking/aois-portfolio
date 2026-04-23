@@ -1,11 +1,15 @@
 # v0.8 Next Version Bridge
 
-Authoring status: scaffolded
-
 ## What This Version Unlocks
 
-TODO
+Phase 0 now contains:
+
+- observation
+- interpretation
+- service structure
+- model access
+- persistence
 
 ## Why The Next Version Exists
 
-TODO
+Phase 1 will fuse those pieces into a real AI analysis service instead of isolated foundations.

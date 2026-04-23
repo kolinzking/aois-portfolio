@@ -1,11 +1,11 @@
 # v0.5 Looking Forward
 
-Authoring status: scaffolded
-
 ## What You Should Carry Forward
 
-TODO
+- typed contracts reduce ambiguity
+- config belongs in one place
+- repo structure should emerge when the system needs it
 
 ## What The Next Version Will Build On
 
-TODO
+`v0.6` uses this structure to expose the first AOIS API service.

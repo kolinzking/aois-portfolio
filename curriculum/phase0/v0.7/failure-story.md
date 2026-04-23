@@ -1,19 +1,17 @@
 # v0.7 Failure Story
 
-Authoring status: scaffolded
-
 ## Symptom
 
-TODO
+The model returned a useful explanation, but the result could not be cleanly slotted into `summary`, `severity`, and `suggestion` fields without extra work.
 
 ## Root Cause
 
-TODO
+Raw model output is optimized for language quality, not application schema.
 
 ## Fix
 
-TODO
+Treat raw inference and structured application output as separate problems.
 
 ## Prevention
 
-TODO
+Do not confuse "smart text" with "production-ready contract."

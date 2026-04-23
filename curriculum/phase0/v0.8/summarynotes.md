@@ -1,15 +1,16 @@
 # v0.8 Summary Notes
 
-Authoring status: scaffolded
-
 ## What Was Built
 
-TODO
+You built the first AOIS persistence schema.
 
 ## What Was Learned
 
-TODO
+- stateless systems forget too much
+- incidents and analyses are related but different
+- keys, timestamps, and indexes matter from the beginning
 
 ## Core Limitation Or Tradeoff
 
-TODO
+The schema defines memory, but the application is not yet writing to it automatically.
+That comes later.

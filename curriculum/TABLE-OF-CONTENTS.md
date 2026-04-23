@@ -22,6 +22,11 @@ Use this file when you want to move across phases and versions quickly.
 - [v0.1](phase0/v0.1/notes.md)
 - [v0.2](phase0/v0.2/notes.md)
 - [v0.3](phase0/v0.3/notes.md)
+- [v0.4](phase0/v0.4/notes.md)
+- [v0.5](phase0/v0.5/notes.md)
+- [v0.6](phase0/v0.6/notes.md)
+- [v0.7](phase0/v0.7/notes.md)
+- [v0.8](phase0/v0.8/notes.md)
 - [Phase 0 Looking Forward](phase0/looking-forward.md)
 
 ## Phase 1

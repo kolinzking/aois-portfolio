@@ -1,11 +1,9 @@
 # v0.5 Next Version Bridge
 
-Authoring status: scaffolded
-
 ## What This Version Unlocks
 
-TODO
+You now have models and config that a service can import directly.
 
 ## Why The Next Version Exists
 
-TODO
+`v0.6` turns those Python foundations into a real FastAPI application with a working `/health` and `/analyze` interface.
