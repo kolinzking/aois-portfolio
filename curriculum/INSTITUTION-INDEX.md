@@ -32,23 +32,23 @@ How long the curriculum takes at different daily study paces.
 
 ## Current Teaching Assets
 
-9. [phase0/00-introduction.md](phase0/00-introduction.md)
+9. [TABLE-OF-CONTENTS.md](TABLE-OF-CONTENTS.md)
+Global navigation for the full curriculum.
+
+10. [phase0/CONTENTS.md](phase0/CONTENTS.md)
+Phase 0 navigation across all authored foundation versions.
+
+11. [phase0/00-introduction.md](phase0/00-introduction.md)
 Phase 0 framing and why it matters for later AI infrastructure and agentic AOIS.
 
-10. [phase0/v0.1/notes.md](phase0/v0.1/notes.md)
-First rewritten mastery-grade lesson.
+12. [phase0/v0.1/CONTENTS.md](phase0/v0.1/CONTENTS.md)
+Version-level navigation for the Linux essentials lesson pack.
 
-11. [phase0/v0.1/lab.md](phase0/v0.1/lab.md)
-Hands-on lab instructions for `v0.1`.
+13. [phase0/v0.1/notes.md](phase0/v0.1/notes.md)
+Linux-first foundation lesson and first AOIS signal artifact.
 
-12. [phase0/v0.1/runbook.md](phase0/v0.1/runbook.md)
-Troubleshooting and operational recovery steps.
-
-13. [phase0/v0.1/benchmark.md](phase0/v0.1/benchmark.md)
-Benchmark recording template.
-
-14. [phase0/v0.1/failure-story.md](phase0/v0.1/failure-story.md)
-Failure recording template.
+14. [CORPUS-STATUS.md](CORPUS-STATUS.md)
+Current authoring state across the full curriculum.
 
 ## Full Program At A Glance
 
@@ -156,15 +156,16 @@ Institution status:
 - full roadmap defined
 - teaching standard defined
 - repo blueprint defined
-- `v0.1` lesson pack rewritten
+- Phase 0 fully authored
+- later phases scaffolded and awaiting authoring
 
 Next authoring target:
 
-- `v0.2`
+- `Phase 1`
 
 Next teaching target:
 
-- `v0.1`
+- `v0.1`, after full-corpus authoring and review gate is satisfied
 
 ## Self-Review Rule
 

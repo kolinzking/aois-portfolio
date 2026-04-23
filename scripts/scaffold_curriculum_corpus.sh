@@ -26,6 +26,19 @@ Authoring status: scaffolded
 This file will introduce Phase ${phase}, define the phase objective, explain why it exists in AOIS, and describe how the versions in this phase build on one another.
 "
 
+  ensure_file "$phase_dir/CONTENTS.md" "# Phase ${phase} Contents
+
+Authoring status: scaffolded
+
+## Phase Files
+
+TODO
+
+## Phase Focus
+
+TODO
+"
+
   ensure_file "$phase_dir/looking-forward.md" "# Phase ${phase} Looking Forward
 
 Authoring status: scaffolded
@@ -117,6 +130,23 @@ TODO
 TODO
 
 ## Connection Forward
+
+TODO
+"
+
+  ensure_file "$version_dir/CONTENTS.md" "# ${version_id} Contents
+
+Authoring status: scaffolded
+
+## Start Here
+
+TODO
+
+## Topic Jumps
+
+TODO
+
+## Self-Paced Path
 
 TODO
 "
