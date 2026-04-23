@@ -18,6 +18,58 @@ That means:
 
 If a section reads like a vendor README or a Wikipedia summary, it is not done.
 
+## Competitive Standard
+
+Every AOIS version must be good enough to stand beside the best self-taught technical material available anywhere.
+
+That means each version should compete with:
+
+- the best operator handbooks
+- the best practical engineering courses
+- the best “learn by building” curricula
+- the clearest official documentation
+
+If AOIS is weaker than those on clarity, practice quality, expected outputs, conceptual precision, or self-learner usability, it is not done.
+
+## Self-Contained Mastery Rule
+
+Every version must be complete enough that a serious learner can make real progress without live Codex presence.
+
+That means the lesson pack must be:
+
+- self-contained
+- self-paced
+- self-descriptive
+- self-directional
+- self-correcting where possible
+
+The learner should not need outside explanation to understand:
+
+- what is being built
+- why it matters
+- what commands to run
+- what outputs to expect
+- what errors are likely
+- how to know whether progress is real
+
+## Basic-To-Frontier Progression Rule
+
+AOIS is designed to take a learner from weak starting point to frontier AI infrastructure mastery.
+
+So every version must satisfy both:
+
+- beginner legibility
+- forward-facing engineering relevance
+
+This means:
+
+- plain English comes before dense jargon
+- fundamentals are taught before abstractions built on them
+- theory exists to clarify practice, not replace it
+- every concept should prepare the learner for later frontier systems work
+
+The curriculum is not allowed to assume competence that has not yet been built.
+
 ## Required Files Per Version
 
 Each version should eventually include:
@@ -80,6 +132,7 @@ Every ops lab should include:
 - runnable commands
 - expected output or expected behavior
 - answer key for the main questions
+- explanation of why the observed output matters
 
 ### Break Lab
 
@@ -91,6 +144,7 @@ Every break lab should include:
 - the expected symptom
 - the fix
 - the lesson the failure is meant to teach
+- the exact false conclusion the learner might have made without this break
 
 ### Explanation Lab
 
@@ -168,6 +222,13 @@ Each version should record:
 The benchmark file should be authored by default.
 The learner may add notes, but should not be forced to generate the first useful benchmark interpretation from scratch.
 
+Benchmarks must not exist as ritual.
+They must answer:
+
+- what is getting better or worse
+- what tradeoff changed
+- what future decision this measurement will influence
+
 ## Failure Story Standard
 
 Every version must record:
@@ -210,6 +271,8 @@ That means:
 - key questions have answers available somewhere in the lesson pack
 - the learner is not blocked by Codex absence or network issues
 
+If a lesson silently relies on live chat explanation to become understandable, it fails this rule.
+
 ## Self-Paced Support Rule
 
 Every strong version should support both:
@@ -228,6 +291,21 @@ That means the lesson pack must include:
 - a version-level introduction file
 - a bridge file connecting the current version to the next one
 - a version-level looking-forward file
+- enough explanation for the learner to recover after interruption
+
+## Explanation Depth Rule
+
+Every strong version must include all three forms of depth:
+
+- conceptual depth
+- operational depth
+- judgment depth
+
+Conceptual depth means the learner understands the model behind the commands.
+Operational depth means the learner knows what to run, inspect, and change.
+Judgment depth means the learner knows when the tool is right, when it is wrong, and what tradeoffs it introduces.
+
+If one of these is missing, the lesson is incomplete.
 
 ## Mastery Checkpoint Standard
 
@@ -238,6 +316,14 @@ A version is complete only if the learner can:
 3. debug it
 4. defend it
 5. extend it
+
+The mastery checkpoint must test:
+
+- reproduction
+- explanation
+- diagnosis
+- tradeoff reasoning
+- forward connection to later AOIS phases
 
 ## Cross-Version Continuity Questions
 
@@ -256,3 +342,14 @@ The proper sequence is:
 `why -> build -> inspect -> break -> measure -> explain -> defend -> record`
 
 If a version skips most of that sequence, it may inform but it will not produce mastery.
+
+## Rebuild Standard
+
+During the rebuild, every authored version must be written as if it may become the learner's only reliable source for that topic.
+
+That means:
+
+- no shallow placeholders masquerading as instruction
+- no “see docs” escapes unless the exact external reference is narrowly scoped
+- no theory dumping without operational proof
+- no basic concept skipped just because it feels obvious to the writer

@@ -21,3 +21,4 @@ Use this runbook when the basic Linux inspection commands are confusing or produ
 2. rerun the commands one by one instead of chaining assumptions together
 3. restore permissions with `chmod` if access is blocked
 4. interpret the raw command output before trying to automate anything
+5. if you are confused by output, name what each visible column or token means before rerunning the command

@@ -2,14 +2,25 @@
 
 ## What This Version Is About
 
-`v0.1` teaches Linux essentials through the first AOIS build artifact: a small system report script.
+`v0.1` is Linux fundamentals for AOIS.
 
-This version is not “learn every Linux command.”
-It is:
+This version is about:
 
-- learn how not to feel lost in the terminal
-- learn how to inspect the machine
-- learn how those machine signals become the first AOIS inputs
+- learning how not to feel lost in the terminal
+- learning how files, paths, permissions, and processes really behave
+- learning how to inspect the machine directly with Linux commands
+
+It is not Bash scripting yet.
+That starts in `v0.2`.
+
+This means:
+
+- no functions
+- no shell-script structure
+- no `set -euo pipefail`
+- no authored automation artifact as the center of the lesson
+
+If you are writing Bash logic here, you have crossed the boundary too early.
 
 ## Why It Matters In AOIS
 
@@ -29,4 +40,10 @@ If Linux remains vague, all of that later work becomes memorization instead of u
 2. run every command, even if it looks simple
 3. compare your behavior to the expected behavior
 4. do the break lab on purpose
-5. do not move on until the terminal feels less mysterious than it did at the start
+5. answer the interpretation questions without guessing
+6. do not move on until the terminal feels less mysterious than it did at the start
+
+Boundary rule:
+
+- `v0.1` = Linux
+- `v0.2` = Bash

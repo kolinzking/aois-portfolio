@@ -9,6 +9,9 @@ Building is the method.
 Operating is the proof.
 Explaining is the mastery signal.
 
+The learner may start from near-zero.
+So the curriculum must teach as if clarity is a hard engineering requirement, not a stylistic preference.
+
 ## Session Flow
 
 Every guided session follows this order:
@@ -65,6 +68,7 @@ This trains you to speak to:
 - one failure story
 - one architecture defense
 - one mastery checkpoint
+- one self-paced path that works without live guidance
 
 ## Every Version Must Include
 
@@ -109,6 +113,24 @@ You know what to run, inspect, and change.
 You understand tradeoffs, failure modes, and limits.
 
 If any one is missing, the lesson is too shallow.
+
+## The Three Forms Of Independence
+
+Every strong lesson should also reduce dependence on the live teacher.
+
+It should create:
+
+### Directional independence
+
+The learner knows what to do next.
+
+### Interpretive independence
+
+The learner can understand what happened without waiting for explanation.
+
+### Recovery independence
+
+The learner can recover from confusion, interruption, or common failure without being stranded.
 
 ## Mastery Checkpoint Standard
 
@@ -170,6 +192,19 @@ This prevents two common failures:
 
 - shallow command-following without understanding
 - abstract explanation without operational proof
+
+## Frontier-With-Foundation Rule
+
+The program exists to take the learner to the forefront of AI infrastructure.
+
+That does not permit skipping fundamentals.
+It requires stronger fundamentals.
+
+So every frontier topic must be taught in a way that remains:
+
+- beginner-legible at entry
+- operationally grounded during practice
+- frontier-relevant in the final explanation
 
 ## Future Direction Requirement
 

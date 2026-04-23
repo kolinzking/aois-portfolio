@@ -19,6 +19,8 @@ This curriculum is designed to satisfy six non-negotiable goals:
 4. Agentic AI as a core strand, not an afterthought
 5. AI infrastructure depth, not just model API usage
 6. Explanation ability at multiple levels, so your mastery is visible
+7. Self-paced completeness, so progress does not depend on live access to the teacher
+8. Basic-to-frontier progression, so advanced infrastructure rests on real understanding
 
 ## Mastery Preservation Rule
 
@@ -35,6 +37,21 @@ That means:
 
 The goal is not breadth by accumulation.
 The goal is depth through repeated system use.
+
+## Institutional Promise
+
+AOIS is not just a roadmap.
+It is intended to become a complete self-study institution for AI infrastructure mastery.
+
+That means the written material itself must eventually be strong enough to:
+
+- teach a near-beginner from the ground up
+- progress step by step without hidden jumps
+- produce practical competence through repeated build-and-operate loops
+- remain useful even when live Codex guidance is unavailable
+- carry the learner all the way to frontier-relevant systems thinking
+
+This promise is non-negotiable during the rebuild.
 
 ## The AOIS System Spine
 
