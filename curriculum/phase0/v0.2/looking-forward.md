@@ -1,23 +1,11 @@
 # v0.2 Looking Forward
 
-`v0.2` proved that a simple rule engine can be useful and also fragile.
+Authoring status: scaffolded
 
-That is exactly the lesson it needed to teach.
+## What You Should Carry Forward
 
-## What Carries Forward
+TODO
 
-- deterministic systems are valuable when the world is narrow and predictable
-- exact string matching is not the same thing as understanding
-- once a system assigns meaning, you must care about false confidence
+## What The Next Version Will Build On
 
-## Where This Reappears Later
-
-- `v0.6`: regex-based API logic is cleaner than shell, but still brittle
-- `v1`: model-based reasoning replaces rigid rules for log interpretation
-- `v20+`: agent safety depends on knowing where deterministic control still belongs
-
-## Immediate Next Move
-
-Go to [next-version-bridge.md](next-version-bridge.md).
-
-`v0.3` turns the repository itself into AOIS memory and portfolio proof.
+TODO

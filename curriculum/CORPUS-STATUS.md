@@ -12,20 +12,20 @@ Status labels:
 
 Live teaching begins only after the corpus is fully authored and reviewed end to end.
 
-## Phase 0
+## Phase0
 
 | Version | Status |
 |---|---|
-| v0.1 | authored |
-| v0.2 | authored |
-| v0.3 | authored |
-| v0.4 | authored |
-| v0.5 | authored |
-| v0.6 | authored |
-| v0.7 | authored |
-| v0.8 | authored |
+| v0.1 | scaffolded |
+| v0.2 | scaffolded |
+| v0.3 | scaffolded |
+| v0.4 | scaffolded |
+| v0.5 | scaffolded |
+| v0.6 | scaffolded |
+| v0.7 | scaffolded |
+| v0.8 | scaffolded |
 
-## Phase 1
+## Phase1
 
 | Version | Status |
 |---|---|
@@ -33,14 +33,23 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v2 | scaffolded |
 | v3 | scaffolded |
 
-## Phase 2
+## Phase10
+
+| Version | Status |
+|---|---|
+| v31 | scaffolded |
+| v32 | scaffolded |
+| v33 | scaffolded |
+| v34 | scaffolded |
+
+## Phase2
 
 | Version | Status |
 |---|---|
 | v4 | scaffolded |
 | v5 | scaffolded |
 
-## Phase 3
+## Phase3
 
 | Version | Status |
 |---|---|
@@ -50,7 +59,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v8 | scaffolded |
 | v9 | scaffolded |
 
-## Phase 4
+## Phase4
 
 | Version | Status |
 |---|---|
@@ -59,7 +68,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v11 | scaffolded |
 | v12 | scaffolded |
 
-## Phase 5
+## Phase5
 
 | Version | Status |
 |---|---|
@@ -70,7 +79,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v15 | scaffolded |
 | v15.5 | scaffolded |
 
-## Phase 6
+## Phase6
 
 | Version | Status |
 |---|---|
@@ -82,7 +91,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v19 | scaffolded |
 | v19.5 | scaffolded |
 
-## Phase 7
+## Phase7
 
 | Version | Status |
 |---|---|
@@ -97,14 +106,14 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v24 | scaffolded |
 | v25 | scaffolded |
 
-## Phase 8
+## Phase8
 
 | Version | Status |
 |---|---|
 | v26 | scaffolded |
 | v27 | scaffolded |
 
-## Phase 9
+## Phase9
 
 | Version | Status |
 |---|---|
@@ -112,16 +121,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v29 | scaffolded |
 | v30 | scaffolded |
 
-## Phase 10
-
-| Version | Status |
-|---|---|
-| v31 | scaffolded |
-| v32 | scaffolded |
-| v33 | scaffolded |
-| v34 | scaffolded |
-
 ## Next Corpus Authoring Order
 
-1. Finish `Phase 1`
+1. Finish `Phase 0`
 2. Continue phase by phase in order

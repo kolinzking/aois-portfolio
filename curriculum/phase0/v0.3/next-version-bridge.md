@@ -1,21 +1,11 @@
-# v0.3 -> v0.4 Bridge
+# v0.3 Next Version Bridge
 
-By the end of `v0.3`, AOIS has:
+Authoring status: scaffolded
 
-- system observation
-- brittle rule-based interpretation
-- durable development history
+## What This Version Unlocks
 
-What it still lacks is network literacy.
+TODO
 
-That gap becomes critical as soon as AOIS starts exposing APIs and calling external services.
+## Why The Next Version Exists
 
-`v0.4` teaches the language of requests and responses:
-
-- URLs
-- methods
-- headers
-- status codes
-- payloads
-
-Without that, later API and model calls become copy-paste work instead of understood engineering.
+TODO

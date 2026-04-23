@@ -1,18 +1,15 @@
 # v0.8 Introduction
 
-`v0.8` closes Phase 0 by giving AOIS a memory layer.
+Authoring status: scaffolded
 
-## What You Will Build
+## What This Version Is About
 
-You will inspect and reason through:
-
-- [sql/aois_schema.sql](../../../sql/aois_schema.sql)
+TODO
 
 ## Why It Matters In AOIS
 
-Without persistence, AOIS is only a stateless exercise.
-This version adds the first durable incident and analysis schema.
+TODO
 
 ## How To Use This Version
 
-Start with [notes.md](notes.md), run [lab.md](lab.md), keep [runbook.md](runbook.md) as the quick reference, then close with [summarynotes.md](summarynotes.md) and [looking-forward.md](looking-forward.md).
+TODO

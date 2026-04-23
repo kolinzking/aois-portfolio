@@ -1,17 +1,19 @@
 # v0.5 Failure Story
 
+Authoring status: scaffolded
+
 ## Symptom
 
-Input looked fine in code review but failed at runtime when passed into the model.
+TODO
 
 ## Root Cause
 
-The request violated a real field constraint, and that constraint had not been mentally accounted for.
+TODO
 
 ## Fix
 
-Read the actual model definition and validate sample input explicitly.
+TODO
 
 ## Prevention
 
-Treat model constraints as part of the contract, not as optional decoration.
+TODO

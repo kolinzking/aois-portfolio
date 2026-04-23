@@ -1,20 +1,19 @@
 # v0.6 Failure Story
 
+Authoring status: scaffolded
+
 ## Symptom
 
-The API returned clean JSON, so it was tempting to assume the analysis was reliable.
+TODO
 
 ## Root Cause
 
-The service shape improved, but the analysis engine underneath was still simplistic.
+TODO
 
 ## Fix
 
-Separate transport quality from inference quality in your mind.
+TODO
 
 ## Prevention
 
-Ask two questions:
-
-1. did the API behave correctly?
-2. did the analysis logic behave intelligently?
+TODO

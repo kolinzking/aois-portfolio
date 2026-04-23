@@ -1,11 +1,11 @@
 # v0.6 Looking Forward
 
+Authoring status: scaffolded
+
 ## What You Should Carry Forward
 
-- service boundaries matter
-- structure alone is not intelligence
-- request validation and analysis quality must be reasoned about separately
+TODO
 
 ## What The Next Version Will Build On
 
-`v0.7` replaces the brittle analyzer with a raw model call so you can feel both the leap in intelligence and the remaining fragility.
+TODO

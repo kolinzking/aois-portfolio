@@ -1,1 +1,1 @@
-"""AOIS application package."""
+"""Scaffolded app package."""
