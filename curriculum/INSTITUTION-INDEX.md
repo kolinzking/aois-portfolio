@@ -1,0 +1,150 @@
+# AOIS Institution Index
+
+This is the front door to the AOIS institution.
+
+If you want to see the full curriculum before continuing execution, read the files in this order.
+
+## Core Institution Documents
+
+1. [MASTER-CURRICULUM.md](/home/collins/aois-portfolio/curriculum/MASTER-CURRICULUM.md:1)
+Overall philosophy, system spine, phase structure, and frontier direction.
+
+2. [SYLLABUS.md](/home/collins/aois-portfolio/curriculum/SYLLABUS.md:1)
+High-level phase-by-phase syllabus and expected mastery outcomes.
+
+3. [FULL-PROGRAM-MAP.md](/home/collins/aois-portfolio/curriculum/FULL-PROGRAM-MAP.md:1)
+Full version-by-version map from `v0.1` to `v34`.
+
+4. [LEARNING-OPERATING-MODEL.md](/home/collins/aois-portfolio/curriculum/LEARNING-OPERATING-MODEL.md:1)
+How the course is taught and how mastery is measured.
+
+5. [VERSION-STANDARD.md](/home/collins/aois-portfolio/curriculum/VERSION-STANDARD.md:1)
+The required standard for every version lesson pack.
+
+6. [REPO-BLUEPRINT.md](/home/collins/aois-portfolio/curriculum/REPO-BLUEPRINT.md:1)
+How the repo grows into a full AOIS institution and product codebase.
+
+## Current Teaching Assets
+
+7. [phase0/00-introduction.md](/home/collins/aois-portfolio/curriculum/phase0/00-introduction.md:1)
+Phase 0 framing and why it matters for later AI infrastructure and agentic AOIS.
+
+8. [phase0/v0.1/notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
+First rewritten mastery-grade lesson.
+
+9. [phase0/v0.1/lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/lab.md:1)
+Hands-on lab instructions for `v0.1`.
+
+10. [phase0/v0.1/runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/runbook.md:1)
+Troubleshooting and operational recovery steps.
+
+11. [phase0/v0.1/benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/benchmark.md:1)
+Benchmark recording template.
+
+12. [phase0/v0.1/failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/failure-story.md:1)
+Failure recording template.
+
+## Full Program At A Glance
+
+### Phase 0
+
+- `v0.1` Machine Visibility
+- `v0.2` Rule-Based Log Interpretation
+- `v0.3` Git As Engineering Memory
+- `v0.4` Networking And HTTP
+- `v0.5` Python Core For Systems Work
+- `v0.6` FastAPI Without AI
+- `v0.7` LLM Fundamentals
+- `v0.8` Postgres And AOIS Memory
+
+### Phase 1
+
+- `v1` AI Analysis Endpoint
+- `v2` Routing And Cost Tiers
+- `v3` Reliability, Tracing, Evaluation Baseline
+
+### Phase 2
+
+- `v4` Docker And Local Multi-Service Runtime
+- `v5` Security Foundations For API And LLM Systems
+
+### Phase 3
+
+- `v6` AOIS On A Real Cluster
+- `v6.5` Identity, mTLS, And Service Trust
+- `v7` Helm Packaging
+- `v8` GitOps With ArgoCD
+- `v9` Event-Driven Scaling
+
+### Phase 4
+
+- `v10` Enterprise Model Layer
+- `v11` Event-Driven Cloud Execution
+- `v12` Managed Kubernetes In Cloud
+
+### Phase 5
+
+- `v13` GPU-Backed Inference Services
+- `v13.5` GPU Infrastructure Operations
+- `v14` High-Throughput Inference Serving
+- `v14.5` Performance Engineering And Caching
+- `v15` Fine-Tuning And Adaptation
+- `v15.5` Quantization And Memory Economics
+
+### Phase 6
+
+- `v16` Unified Telemetry
+- `v16.5` Agent And Incident Tracing
+- `v17` Event Streaming
+- `v17.5` SLOs For Services And Agents
+- `v18` Deep Runtime Visibility
+- `v19` Chaos Engineering
+- `v19.5` AI Failure Engineering And Governance
+
+### Phase 7
+
+- `v20` Tool-Using Incident Responder
+- `v20.1` Per-Incident And Per-Step Cost Accounting
+- `v20.2` Budget-Aware Routing
+- `v21` MCP, Tool Registry, And Tool Governance
+- `v22` Durable Agent Workflows
+- `v23` Stateful Orchestration Loops
+- `v23.5` Agent Evaluation Pipeline
+- `v23.8` Runtime Operations And Autonomy Control
+- `v24` Multi-Agent Collaboration
+- `v25` Safe Execution Boundaries
+
+### Phase 8
+
+- `v26` Dashboard And Real-Time Visibility
+- `v27` Auth, Tenancy, Policy-Aware Access
+
+### Phase 9
+
+- `v28` Delivery Pipeline And Release Controls
+- `v29` Experiment And Model Delivery Tracking
+- `v30` Internal Platform Patterns
+
+### Phase 10
+
+- `v31` Multimodal AOIS
+- `v32` Edge And Offline Inference
+- `v33` Adversarial Testing And Red Teaming
+- `v34` Governance Verification And Computer Use
+
+## Current Status
+
+Institution status:
+
+- full roadmap defined
+- teaching standard defined
+- repo blueprint defined
+- `v0.1` lesson pack rewritten
+
+Next authoring target:
+
+- `v0.2`
+
+Next teaching target:
+
+- `v0.1`

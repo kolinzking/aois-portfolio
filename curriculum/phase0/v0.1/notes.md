@@ -1,678 +1,503 @@
-# v0.1 Notes
+# v0.1 - Machine Visibility And The First AOIS Signal
 
-## Goal
+Estimated time: 2-3 focused hours
 
-Build the first useful system script in AOIS and establish the repo habit of documenting versions as they happen.
+## What This Builds
 
-This version is not just about writing a script. It is the first SRE lens for AOIS:
+You will build and understand `scripts/sysinfo.sh`, a small bash script that creates a local machine health snapshot.
 
-What is happening inside this machine?
-
-That perspective becomes the foundation of observability, debugging, and later automation.
-
-## System Model
-
-A basic system here means:
-
-- CPU for processing
-- memory for temporary working space
-- disk for persistent storage
-
-Production failures often reduce to one of these areas. Later AOIS will map signals like `OOMKilled`, high latency, or full storage back to them.
-
-## Scope
-
-Current implementation target:
-
-- `scripts/sysinfo.sh`
-
-The script must show:
+It reports:
 
 - CPU usage
 - memory usage
-- disk usage
+- disk usage for `/`
+- a timestamp
 
-## Why This Version Exists
+This is the first real AOIS component.
 
-This version establishes the first execution loop:
+It does not use AI.
+It does not use a web framework.
+It does not use a database.
 
-1. create a useful script
-2. run it locally
-3. inspect the result
-4. refine based on real behavior
+That is the point.
 
-Current visibility path:
+Before a system can analyze anything intelligently, it must first be able to observe something real.
 
-`machine -> sysinfo.sh -> visibility`
+## Why This Exists
 
-Future AOIS path:
+This version teaches your first operational question:
 
-`logs -> AOIS -> diagnosis -> action`
+What is happening on this machine right now?
 
-## Commands
+That question sits underneath later questions like:
 
-Record the commands you actually run for this version here as work is validated.
+- Why is my API slow?
+- Why did the container restart?
+- Why did the agent fail?
+- Why did latency spike?
+- Why is inference unstable?
 
-Manual exploration commands:
+Most serious failures eventually touch one or more of these resource domains:
+
+- CPU
+- memory
+- disk
+
+If you cannot inspect these confidently, later AI infrastructure work becomes guesswork.
+
+## AOIS Connection
+
+Right now the system path is:
+
+`machine -> shell command -> script -> visibility`
+
+Later it becomes:
+
+`signal -> ingest -> analyze -> decide -> act`
+
+`v0.1` is the start of that chain.
+
+## Learning Goals
+
+By the end of this version you should be able to:
+
+- explain what CPU, memory, and disk signals actually tell you
+- read basic Linux system information commands without panic
+- understand what `scripts/sysinfo.sh` is doing line by line
+- run the script and interpret its output
+- identify at least one misleading metric and explain why it misleads
+- explain this script at four system-explanation levels
+- explain each major tool at the four-layer tool level
+
+## Prerequisites
+
+Run these commands first.
+
+```bash
+uname -a
+pwd
+ls
+ls scripts
+```
+
+You should confirm:
+
+- you are on Linux
+- you are inside the AOIS repo
+- `scripts/sysinfo.sh` exists
+
+If `scripts/sysinfo.sh` is missing, stop and inspect the repository before continuing.
+
+## The System Model
+
+At this stage, think of a machine using three core resource buckets.
+
+### CPU
+
+CPU is the work rate of the machine.
+It tells you how busy the processor is doing tasks.
+
+High CPU can mean:
+
+- heavy computation
+- too many active processes
+- runaway loops
+- hot services under load
+
+### Memory
+
+Memory is the machine's short-term working space.
+It holds active data and running process state.
+
+Memory pressure can mean:
+
+- applications slow down
+- the kernel reclaims aggressively
+- processes get killed
+- containers hit OOM conditions
+
+### Disk
+
+Disk is persistent storage.
+It holds files, logs, packages, databases, and everything that survives process exit.
+
+Disk pressure can mean:
+
+- writes fail
+- logs stop growing
+- databases misbehave
+- systems become unstable
+
+These are the first operational signals AOIS learns to observe.
+
+## The Commands Before The Script
+
+Before trusting a script, inspect the underlying commands yourself.
+
+Run:
 
 ```bash
 top -bn1 | grep "Cpu(s)"
 free -h
-df -h
+df -h /
 ```
 
-Build and run commands:
+You are doing two things here:
+
+1. learning the underlying tools
+2. creating a ground truth for what the script should summarize
+
+## Tool Drill 1 - `top`
+
+### Plain English
+
+`top` shows what the machine is doing right now.
+
+### System Role
+
+It gives AOIS a direct view of live process and CPU activity before we have observability tooling.
+
+### Minimal Technical Definition
+
+`top` is a Linux process-monitoring utility that reports CPU, memory, load, and active processes.
+
+### Hands-on Proof
+
+Without a CPU inspection tool, you lose visibility into whether the machine is busy, idle, or overloaded.
+
+## Tool Drill 2 - `free`
+
+### Plain English
+
+`free` shows how memory is being used.
+
+### System Role
+
+It lets AOIS inspect memory pressure, which is critical for diagnosing slowdowns and OOM-style failures.
+
+### Minimal Technical Definition
+
+`free` is a Linux command that reports memory and swap statistics.
+
+### Hands-on Proof
+
+Without memory visibility, you can misread a healthy system as broken or miss genuine memory pressure entirely.
+
+## Tool Drill 3 - `df`
+
+### Plain English
+
+`df` shows how full a filesystem is.
+
+### System Role
+
+It gives AOIS visibility into storage pressure, which later matters for logs, databases, and container runtime stability.
+
+### Minimal Technical Definition
+
+`df` is a Linux command that reports filesystem disk space usage.
+
+### Hands-on Proof
+
+Without disk visibility, a system can fail writes or crash due to full storage while you are still looking in the wrong place.
+
+## Build
+
+Now inspect the script itself.
+
+Run:
+
+```bash
+sed -n '1,220p' scripts/sysinfo.sh
+```
+
+Read it in sections.
+
+### Section 1 - Safety mode
+
+```bash
+set -euo pipefail
+```
+
+This means:
+
+- `-e`: exit on command failure
+- `-u`: fail on unset variables
+- `-o pipefail`: fail a pipeline if any step fails
+
+This is the first sign of disciplined shell scripting.
+
+### Section 2 - Formatting helpers
+
+The script uses small functions to print headers and timestamps.
+
+This matters because:
+
+- output becomes predictable
+- later parsing becomes easier
+- humans can inspect it faster
+
+### Section 3 - CPU logic
+
+The CPU function does not rely on one static number.
+It samples `/proc/stat` twice.
+
+Why?
+
+Because CPU usage is about change over time, not a single absolute counter.
+
+The script:
+
+1. reads cumulative CPU counters
+2. waits briefly
+3. reads them again
+4. computes the delta
+5. calculates the non-idle fraction
+
+That is more rigorous than simply dumping one display line.
+
+### Section 4 - Memory logic
+
+The script parses `free -h` and prints used versus total memory.
+
+Important:
+This is useful, but incomplete.
+
+Why incomplete?
+
+Because Linux memory reporting can be misleading if you only look at `used`.
+
+Later you must care about `available`.
+
+That is your first example of a metric that can be read incorrectly.
+
+### Section 5 - Disk logic
+
+The script runs:
+
+```bash
+df -h /
+```
+
+This restricts the output to the root filesystem.
+
+That is a good first step because it keeps the report focused and readable.
+
+Later you will expand your idea of disk health to multiple mounts and service-specific storage.
+
+## Run The Script
+
+Make sure it is executable and then run it.
 
 ```bash
 chmod +x scripts/sysinfo.sh
 ./scripts/sysinfo.sh
 ```
 
-## Full Script, Commented
+Expected behavior:
 
-Below is the full `scripts/sysinfo.sh` content rewritten with comments so the purpose of each part is explicit.
+- a timestamp prints first
+- CPU section appears
+- memory section appears
+- disk section appears
+
+The exact numbers will differ.
+The structure should not.
+
+## Ops Lab
+
+Now inspect the system and the script output side by side.
+
+Run:
 
 ```bash
-#!/usr/bin/env bash
-
-# Exit immediately on errors, treat unset variables as errors,
-# and fail a pipeline if any command in it fails.
-set -euo pipefail
-
-# Print a section heading like: ==== CPU ====
-print_header() {
-  printf '==== %s ====\n' "$1"
-}
-
-# Print the current timestamp so the report is tied to a real moment.
-print_timestamp() {
-  printf 'Timestamp: %s\n\n' "$(date '+%Y-%m-%d %H:%M:%S %Z')"
-}
-
-# Measure CPU usage by reading /proc/stat twice and comparing the samples.
-get_cpu_usage() {
-  # Declare local variables used for parsing and calculation.
-  local line user nice system idle iowait irq softirq steal total idle_total usage
-
-  # Read the first CPU sample from /proc/stat.
-  # The first line starts with "cpu" followed by cumulative time counters.
-  read -r _ user nice system idle iowait irq softirq steal _ < /proc/stat
-
-  # Total CPU time is the sum of all tracked CPU states.
-  total=$((user + nice + system + idle + iowait + irq + softirq + steal))
-
-  # Idle time includes both idle and iowait time.
-  idle_total=$((idle + iowait))
-
-  # Wait briefly so a second sample can show change over time.
-  sleep 0.5
-
-  # Read the second CPU sample.
-  read -r _ user nice system idle iowait irq softirq steal _ < /proc/stat
-
-  # Calculate the next totals from the second sample.
-  local total_next=$((user + nice + system + idle + iowait + irq + softirq + steal))
-  local idle_next=$((idle + iowait))
-
-  # Work with the difference between samples, not the raw totals.
-  local total_diff=$((total_next - total))
-  local idle_diff=$((idle_next - idle_total))
-
-  # Avoid division by zero in the unlikely case that no CPU time changed.
-  if (( total_diff == 0 )); then
-    usage="0.0"
-  else
-    # CPU usage is the non-idle fraction of the total elapsed CPU time.
-    usage=$(awk -v total="$total_diff" -v idle="$idle_diff" 'BEGIN { printf "%.1f", ((total - idle) / total) * 100 }')
-  fi
-
-  # Print the final CPU usage value.
-  printf 'Usage: %s%%\n' "$usage"
-}
-
-# Read memory usage from free -h and print the used and total values.
-get_memory_usage() {
-  awk '
-    /^Mem:/ {
-      printf "Used: %s / %s\n", $3, $2
-    }
-  ' < <(free -h)
-}
-
-# Read disk usage for the root filesystem only.
-get_disk_usage() {
-  df -h / | awk 'NR==2 { printf "Used: %s / %s\n", $3, $2 }'
-}
-
-# Start the report with a timestamp.
-print_timestamp
-
-# Print CPU section.
-print_header "CPU"
-get_cpu_usage
-printf '\n'
-
-# Print memory section.
-print_header "MEMORY"
-get_memory_usage
-printf '\n'
-
-# Print disk section.
-print_header "DISK"
-get_disk_usage
+./scripts/sysinfo.sh
+free -h
+df -h /
+cat /proc/stat | head -n 1
 ```
 
-## Expected Behavior
+Answer these questions:
 
-The script should report:
+1. Does the memory line in the script match the `Mem:` line from `free -h`?
+2. What field is the script ignoring that matters operationally?
+3. Why is CPU sampled twice instead of once?
+4. What exact filesystem is being reported by `df -h /` on your machine?
 
-- CPU usage
-- memory usage
-- disk usage
+This is where observation becomes understanding.
 
-It should also print a timestamp at the top so each report is tied to a moment in time.
+## Break Lab
 
-Example:
+Do not skip this.
 
-```text
-Report generated at: 2026-04-22 12:30
+The point is to learn what failure looks like before the system gets more complex.
+
+Perform one of these safe break exercises:
+
+### Option A - Permission break
+
+```bash
+chmod -x scripts/sysinfo.sh
+./scripts/sysinfo.sh
 ```
 
-## Interpretation
+Observe the failure.
+Then fix it:
 
-When reading the output, be able to identify:
+```bash
+chmod +x scripts/sysinfo.sh
+```
 
-- which value is used
-- which value is available
-- what would count as danger
+### Option B - Wrong path break
 
-Examples:
+Run:
 
-- memory almost full means elevated risk
-- disk at 100% means failure is close or already happening
+```bash
+./scripts/sys-info.sh
+```
+
+Observe the failure and explain what the shell is telling you.
+
+### Option C - Misread the metric
+
+Read the output of `free -h` and deliberately explain `used` as if it meant "danger".
+Then correct yourself using the `available` field.
+
+This is a conceptual failure, and it matters just as much as a command failure.
+
+## Testing
+
+Your current version passes if all of the following are true:
+
+1. `./scripts/sysinfo.sh` runs successfully
+2. the output includes timestamp, CPU, MEMORY, and DISK sections
+3. the memory and disk values are plausible when compared to `free -h` and `df -h /`
+4. you can explain why CPU is sampled twice
 
 ## Troubleshooting
 
-Use this section to capture real issues only.
+Common mistakes:
 
-- Issue:
-- Cause:
-- Fix:
-
-Common mistakes to watch for:
-
-- messy or unclear output formatting
-- incorrect memory parsing
 - forgetting `chmod +x`
-- trusting output without checking the underlying command behavior
+- assuming `used` memory means danger
+- trusting the script without validating the raw commands
+- expecting CPU output to be identical across repeated runs
 
-## Mastery Check
-
-Be able to explain, in plain language:
-
-- what the script does
-- how it gathers system information
-- why running it yourself matters
-- what `free -h` shows
-- the difference between used and available memory
-- why disk is shown per mount
-- how to detect a critical system state
-
-Answered mastery questions:
-
-What does `free -h` show?
-
-- total memory
-- used memory
-- free memory
-- available memory, which is the most important signal
-
-What is the difference between used and available memory?
-
-- `used` includes cache and can look high even when the system is healthy
-- `available` is the memory that is still safely usable and is the better metric to monitor
-
-Why is disk shown per mount?
-
-Because each mount is independent.
-
-Examples:
-
-- `/` full can crash the system
-- `/data` full can break the application
-- `/var` full can stop logs from being written
-
-Each mount must be monitored separately.
-
-How would you detect a critical system state?
-
-Combine signals:
-
-- CPU consistently above `80-90%`
-- memory with very low available capacity, not just high used memory
-- any disk mount above `90-95%`
-
-## Question Answers
-
-### 1. What command is used for CPU?
-
-Command:
-
-```bash
-top -bn1 | grep "Cpu(s)"
-```
-
-What it does:
-
-- `top` shows live system activity
-- `-b` runs in batch mode
-- `-n1` captures one snapshot
-- `grep "Cpu(s)"` extracts the CPU line
-
-Current script note:
-
-The `scripts/sysinfo.sh` implementation does not use `top` for CPU usage. It reads from `/proc/stat` twice and calculates usage from the difference between the two samples.
-
-What you see:
-
-```text
-Cpu(s): 5.3% us, 1.2% sy, 0.0% ni, 92.0% id
-```
-
-Meaning:
-
-- `us` is user process time
-- `sy` is system or kernel process time
-- `id` is idle time
-
-So:
-
-`CPU usage = 100% - idle`
-
-### 2. How is memory calculated?
-
-Command:
+When something looks wrong, compare against:
 
 ```bash
 free -h
-```
-
-Example output:
-
-```text
-              total   used   free   shared   buff/cache   available
-Mem:          8.0G   2.1G   1.0G     200M        4.9G        5.3G
-```
-
-Important distinction:
-
-- `used` is memory currently used, including cache
-- `available` is memory that can still be used safely
-
-Linux uses memory for caching to be efficient.
-
-So:
-
-- `used` does not automatically mean there is a problem
-- `available` is the more important signal
-
-### 3. Why is disk shown per mount?
-
-Command:
-
-```bash
-df -h
-```
-
-Example:
-
-```text
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/sda1        50G   20G   30G  40% /
-/dev/sdb1       100G   90G   10G  90% /data
-```
-
-Why per mount?
-
-Because Linux does not have one single disk view. It has multiple mounted filesystems such as:
-
-- root at `/`
-- data volumes at `/data`
-- logs at `/var`
-
-Each mount can fail independently, so disk usage is reported per mount.
-
-## Commit Target
-
-When this version is complete, the intended commit is:
-
-```bash
-git add .
-git commit -m "v0.1: sysinfo script built and understood"
-git push
-```
-
-## Addendum: Simpler v0.1 Path
-
-This addendum does not replace the curriculum above.
-
-It exists to make the assignment easier to understand and easier to practice writing on your own.
-
-If the main script feels too advanced, use this section as a beginner support note.
-
-## Addendum: What You Actually Need To Learn First
-
-For a `v0.1`, the most important skills are:
-
-- how to run a shell script
-- how to print text with `echo`
-- how to run `date`
-- how to run `top`, `free -h`, and `df -h /`
-- how to group those commands into one script file
-
-You do not need to memorize `/proc/stat` or write CPU math from scratch before you understand the basic idea.
-
-## Addendum: Simple Practice Script
-
-This is a simpler version of the system script that is easier to read and rewrite yourself.
-
-```bash
-#!/usr/bin/env bash
-
-echo "System Report"
-date
-echo
-
-echo "CPU"
-top -bn1 | grep "Cpu(s)"
-echo
-
-echo "Memory"
-free -h
-echo
-
-echo "Disk"
 df -h /
+cat /proc/stat | head -n 1
 ```
 
-## Addendum: Simple Script, Commented
+## Benchmark
 
-```bash
-#!/usr/bin/env bash
+This is an early version, so keep the benchmark simple.
 
-# Print a title so the output is easy to recognize.
-echo "System Report"
+Record:
 
-# Print the current date and time.
-date
+- script runtime feel: instant or noticeable
+- CPU sampling wait time: `0.5` seconds
+- whether the output is readable at a glance
 
-# Print a blank line to separate sections.
-echo
+This is not about precision yet.
+It is about starting the habit of measuring and judging behavior.
 
-# Show the CPU section heading.
-echo "CPU"
+## Architecture Defense
 
-# Run top once in batch mode and keep only the CPU line.
-top -bn1 | grep "Cpu(s)"
+Why use a shell script here instead of Python?
 
-# Print a blank line before the next section.
-echo
+Because at this stage:
 
-# Show the memory section heading.
-echo "Memory"
+- the system signals already exist on the machine
+- shell commands expose them directly
+- setup cost is minimal
+- it teaches Linux and scripting at the same time
 
-# Show memory usage in human-readable format.
-free -h
+Why not start with a web API?
 
-# Print a blank line before the next section.
-echo
+Because a service that cannot inspect the machine meaningfully is an abstraction built too early.
 
-# Show the disk section heading.
-echo "Disk"
+## The 4-Layer Tool Rule For This Version
 
-# Show disk usage for the root filesystem.
-df -h /
-```
+You must be able to answer this for:
 
-## Addendum: Beginner Bash Notes
+- `top`
+- `free`
+- `df`
+- `/proc/stat`
+- bash script
 
-### What `#!/usr/bin/env bash` means
+### `/proc/stat` example
 
-This is the shebang.
+1. Plain English
+It exposes raw CPU accounting data from the Linux system.
 
-It tells the system to run the script with `bash`.
+2. System Role
+It provides the low-level input that the script uses to estimate CPU usage.
 
-### What `echo` does
+3. Minimal Technical Definition
+It is a kernel-provided virtual file in `/proc` containing CPU and system statistics.
 
-`echo` prints text to the terminal.
+4. Hands-on Proof
+If the script cannot read this data or an equivalent source, its CPU usage calculation stops working.
 
-Example:
+## The 4-Level AOIS Explanation Drill
 
-```bash
-echo "CPU"
-```
+You must be able to explain `v0.1` like this.
 
-### What `date` does
+### Level 1 - Simple English
 
-`date` prints the current date and time.
+I built a script that shows how busy and full the machine is.
 
-### What `top -bn1 | grep "Cpu(s)"` does
+### Level 2 - Practical Explanation
 
-- `top -bn1` runs `top` once
-- `grep "Cpu(s)"` keeps only the CPU line
+It prints CPU, memory, and disk usage so I can inspect the machine quickly before building more system layers.
 
-You do not need to understand every CPU field yet.
-At this stage, it is enough to know that this command shows CPU activity.
+### Level 3 - Technical Explanation
 
-### What `free -h` does
+It is a bash script that gathers CPU, memory, and disk signals from Linux commands and files, then formats them into a small report.
 
-It shows memory usage in a human-readable format like `MiB` or `GiB`.
+### Level 4 - Engineer-Level Explanation
 
-### What `df -h /` does
+It is an operational inspection script that samples CPU via `/proc/stat`, parses memory from `free -h`, reads root filesystem usage from `df -h /`, and creates a repeatable local health snapshot that later AOIS components can build on conceptually.
 
-It shows disk usage for the root filesystem `/` in a human-readable format.
+## Failure Story
 
-## Addendum: Plain-Language Version
+Record one real failure from your run or use this seed template:
 
-If you need to explain the simple script in your own words, you can say:
+- Symptom:
+- Root cause:
+- Fix:
+- Prevention:
 
-1. The script prints a title.
-2. It prints the current date and time.
-3. It shows CPU information.
-4. It shows memory information.
-5. It shows disk information.
+Good examples:
 
-That is enough for a real beginner explanation.
+- forgot execute permission
+- misread memory output
+- assumed CPU should be identical across two runs
+- trusted the script without validating the underlying commands
 
-## Addendum: Honest v0.1 Standard
+## Mastery Checkpoint
 
-For a beginner `v0.1`, being able to do the following is already a solid result:
+Do not move forward until you can answer all of these without guessing.
 
-- make the script executable
-- run it successfully
-- explain what each command is doing
-- explain what CPU, memory, and disk mean at a basic level
-- edit the text output to make it cleaner
+1. What problem does `v0.1` solve in plain English?
+2. Where does this script sit in the AOIS system story?
+3. What is `free -h` technically?
+4. What breaks if you stop checking disk usage?
+5. Why is `available` memory often more important than `used` memory?
+6. Why is CPU sampled twice?
+7. Why is `df -h /` narrower than `df -h`?
+8. What is the difference between observing a system and understanding a system?
+9. Explain `scripts/sysinfo.sh` at all four system-explanation levels.
+10. Explain one tool from this version using the four-layer rule.
 
-That is a better learning target than pretending to fully understand advanced Bash internals on day one.
+## Connection Forward
 
-Completion marker:
+This version creates the first AOIS habit:
 
-`v0.1 done`
+observe before you interpret
 
-## Rebuild It Yourself
-
-You should be able to rebuild `scripts/sysinfo.sh` without AI if you understand three things:
-
-- which command gives each system signal
-- which part of the output actually matters
-- how to format shell output clearly
-
-Use this process:
-
-1. Start with a shell script skeleton.
-
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-```
-
-The first line tells the system to run the file with `bash`.
-`set -euo pipefail` makes the script stricter so mistakes fail early instead of silently.
-
-2. Add a small helper for section headers.
-
-```bash
-print_header() {
-  printf '==== %s ====\n' "$1"
-}
-```
-
-This gives structure to the output and makes each section easy to scan.
-
-3. Add a timestamp function.
-
-```bash
-print_timestamp() {
-  printf 'Report generated at: %s\n\n' "$(date '+%Y-%m-%d %H:%M')"
-}
-```
-
-You do not need to memorize the date format. You only need to know that `date` can print the current time in a custom format.
-
-4. Build CPU output first.
-
-For the learning version, use:
-
-```bash
-top -bn1 | grep "Cpu(s)"
-```
-
-Why this works:
-
-- `top` shows live system activity
-- `-b` makes it printable in scripts
-- `-n1` captures one snapshot
-- `grep` extracts only the CPU line
-
-Put that into a function:
-
-```bash
-get_cpu_usage() {
-  top -bn1 | grep "Cpu(s)"
-}
-```
-
-What matters in the output:
-
-- `us` means user work
-- `sy` means system or kernel work
-- `id` means idle
-
-The main idea is simple: high idle means low CPU pressure.
-
-5. Build memory output next.
-
-Run:
-
-```bash
-free -h
-```
-
-Find the `Mem:` row. That row contains the memory summary.
-For a simple script, extract `used` and `total`:
-
-```bash
-get_memory_usage() {
-  awk '/^Mem:/ { printf "Used: %s / %s\n", $3, $2 }' < <(free -h)
-}
-```
-
-You do not need to be an `awk` expert.
-Just understand:
-
-- `/^Mem:/` means "use the line that starts with `Mem:`"
-- `$3` is the third column, which is `used`
-- `$2` is the second column, which is `total`
-
-Important interpretation:
-
-- high `used` is not automatically bad
-- low `available` is the real danger signal
-
-6. Build disk output last.
-
-Run:
-
-```bash
-df -h
-```
-
-That shows disk usage per mount.
-If you only want the root filesystem, use:
-
-```bash
-df -h /
-```
-
-Then extract the second row:
-
-```bash
-get_disk_usage() {
-  df -h / | awk 'NR==2 { printf "Used: %s / %s\n", $3, $2 }'
-}
-```
-
-You are reading:
-
-- `$3` as used space
-- `$2` as total space
-
-The key concept is that Linux reports disk per mount because `/`, `/data`, and `/var` can each fill independently.
-
-7. Call everything in order.
-
-```bash
-print_timestamp
-
-print_header "CPU"
-get_cpu_usage
-printf '\n'
-
-print_header "MEMORY"
-get_memory_usage
-printf '\n'
-
-print_header "DISK"
-get_disk_usage
-```
-
-This is the final assembly step. By this point, you are no longer guessing. You already know what each command returns, and you are just arranging the output.
-
-8. Make it executable and run it.
-
-```bash
-chmod +x scripts/sysinfo.sh
-./scripts/sysinfo.sh
-```
-
-If it fails, debug one piece at a time:
-
-- run `top -bn1 | grep "Cpu(s)"` alone
-- run `free -h` alone
-- run `df -h /` alone
-- then test each function separately inside the script
-
-How to work without AI:
-
-- read the command output before writing the script
-- decide which single line or columns you need
-- write one function at a time
-- run the script after each small change
-- fix formatting only after the data is correct
-
-The goal is not memorization. The goal is knowing how to inspect command output, choose the useful fields, and turn them into readable shell output.
-
-## Next Step
-
-After `v0.1` is stable, move to `v0.2`, where simple system visibility starts to break down and AI-assisted diagnosis becomes necessary.
+That matters immediately in `v0.2`, where you will move from raw signals to rule-based interpretation and then discover why rules alone stop being enough.
