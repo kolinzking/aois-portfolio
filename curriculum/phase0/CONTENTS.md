@@ -6,8 +6,8 @@ If you want to find a topic quickly, start here.
 
 ## Start Here
 
-1. [Phase 0 Introduction](/home/collins/aois-portfolio/curriculum/phase0/00-introduction.md:1)
-2. [Study Pacing](/home/collins/aois-portfolio/curriculum/STUDY-PACING.md:1)
+1. [Phase 0 Introduction](00-introduction.md)
+2. [Study Pacing](../STUDY-PACING.md)
 
 ## Phase 0 Goal
 
@@ -39,62 +39,62 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.1`
 
-- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/introduction.md:1)
-- [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
-- [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/lab.md:1)
-- [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/runbook.md:1)
-- [benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/benchmark.md:1)
-- [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/failure-story.md:1)
-- [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/summarynotes.md:1)
-- [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/next-version-bridge.md:1)
-- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/looking-forward.md:1)
+- [introduction.md](v0.1/introduction.md)
+- [notes.md](v0.1/notes.md)
+- [lab.md](v0.1/lab.md)
+- [runbook.md](v0.1/runbook.md)
+- [benchmark.md](v0.1/benchmark.md)
+- [failure-story.md](v0.1/failure-story.md)
+- [summarynotes.md](v0.1/summarynotes.md)
+- [next-version-bridge.md](v0.1/next-version-bridge.md)
+- [looking-forward.md](v0.1/looking-forward.md)
 
 ### `v0.2`
 
-- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/introduction.md:1)
-- [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/notes.md:1)
-- [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/lab.md:1)
-- [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/runbook.md:1)
-- [benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/benchmark.md:1)
-- [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/failure-story.md:1)
-- [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/summarynotes.md:1)
-- [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/next-version-bridge.md:1)
-- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/looking-forward.md:1)
+- [introduction.md](v0.2/introduction.md)
+- [notes.md](v0.2/notes.md)
+- [lab.md](v0.2/lab.md)
+- [runbook.md](v0.2/runbook.md)
+- [benchmark.md](v0.2/benchmark.md)
+- [failure-story.md](v0.2/failure-story.md)
+- [summarynotes.md](v0.2/summarynotes.md)
+- [next-version-bridge.md](v0.2/next-version-bridge.md)
+- [looking-forward.md](v0.2/looking-forward.md)
 
 ### `v0.3`
 
-- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/introduction.md:1)
-- [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/notes.md:1)
-- [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/lab.md:1)
-- [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/runbook.md:1)
-- [benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/benchmark.md:1)
-- [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/failure-story.md:1)
-- [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/summarynotes.md:1)
-- [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/next-version-bridge.md:1)
-- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/looking-forward.md:1)
+- [introduction.md](v0.3/introduction.md)
+- [notes.md](v0.3/notes.md)
+- [lab.md](v0.3/lab.md)
+- [runbook.md](v0.3/runbook.md)
+- [benchmark.md](v0.3/benchmark.md)
+- [failure-story.md](v0.3/failure-story.md)
+- [summarynotes.md](v0.3/summarynotes.md)
+- [next-version-bridge.md](v0.3/next-version-bridge.md)
+- [looking-forward.md](v0.3/looking-forward.md)
 
 ### `v0.4`
 
-- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/introduction.md:1)
-- [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/notes.md:1)
-- [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/lab.md:1)
-- [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/runbook.md:1)
-- [benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/benchmark.md:1)
-- [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/failure-story.md:1)
-- [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/summarynotes.md:1)
-- [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/next-version-bridge.md:1)
-- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/looking-forward.md:1)
+- [introduction.md](v0.4/introduction.md)
+- [notes.md](v0.4/notes.md)
+- [lab.md](v0.4/lab.md)
+- [runbook.md](v0.4/runbook.md)
+- [benchmark.md](v0.4/benchmark.md)
+- [failure-story.md](v0.4/failure-story.md)
+- [summarynotes.md](v0.4/summarynotes.md)
+- [next-version-bridge.md](v0.4/next-version-bridge.md)
+- [looking-forward.md](v0.4/looking-forward.md)
 
 ## When You Feel Lost
 
 If you are trying to find where a topic lives:
 
-- Linux and the terminal: start with [`v0.1`](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
-- bash scripting and brittle rules: start with [`v0.2`](/home/collins/aois-portfolio/curriculum/phase0/v0.2/notes.md:1)
-- Git and history discipline: start with [`v0.3`](/home/collins/aois-portfolio/curriculum/phase0/v0.3/notes.md:1)
-- networking and HTTP inspection: start with [`v0.4`](/home/collins/aois-portfolio/curriculum/phase0/v0.4/notes.md:1)
+- Linux and the terminal: start with [`v0.1`](v0.1/notes.md)
+- bash scripting and brittle rules: start with [`v0.2`](v0.2/notes.md)
+- Git and history discipline: start with [`v0.3`](v0.3/notes.md)
+- networking and HTTP inspection: start with [`v0.4`](v0.4/notes.md)
 
 ## Phase Boundary Files
 
-- [Introduction](/home/collins/aois-portfolio/curriculum/phase0/00-introduction.md:1)
-- [Looking Forward](/home/collins/aois-portfolio/curriculum/phase0/looking-forward.md:1)
+- [Introduction](00-introduction.md)
+- [Looking Forward](looking-forward.md)

@@ -43,9 +43,9 @@ Every later phase assumes you can answer questions like:
 
 If you are in self-paced mode:
 
-1. start with [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
-2. then run [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/lab.md:1)
-3. use [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/runbook.md:1) as the fast operational reference
-4. finish with [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/summarynotes.md:1) and [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/looking-forward.md:1)
+1. start with [notes.md](notes.md)
+2. then run [lab.md](lab.md)
+3. use [runbook.md](runbook.md) as the fast operational reference
+4. finish with [summarynotes.md](summarynotes.md) and [looking-forward.md](looking-forward.md)
 
 If I am teaching live, this file stays useful as the orientation layer.

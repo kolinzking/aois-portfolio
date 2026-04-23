@@ -23,6 +23,6 @@ That matters because every later phase depends on clean history:
 
 ## Immediate Next Move
 
-Go to [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/next-version-bridge.md:1).
+Go to [next-version-bridge.md](next-version-bridge.md).
 
 `v0.4` moves from local engineering memory into network and HTTP literacy.

@@ -108,8 +108,8 @@ to structured AI intelligence
 
 Continuity for AOIS currently lives in:
 
-- [Institution Index](/home/collins/aois-portfolio/curriculum/INSTITUTION-INDEX.md:1)
-- [Phase 0 Contents](/home/collins/aois-portfolio/curriculum/phase0/CONTENTS.md:1)
+- [Institution Index](../INSTITUTION-INDEX.md)
+- [Phase 0 Contents](CONTENTS.md)
 - Phase 0 version files
 - Git history
 - checkpoint snapshots

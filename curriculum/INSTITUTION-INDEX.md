@@ -6,48 +6,48 @@ If you want to see the full curriculum before continuing execution, read the fil
 
 ## Core Institution Documents
 
-1. [MASTER-CURRICULUM.md](/home/collins/aois-portfolio/curriculum/MASTER-CURRICULUM.md:1)
+1. [MASTER-CURRICULUM.md](MASTER-CURRICULUM.md)
 Overall philosophy, system spine, phase structure, and frontier direction.
 
-2. [SYLLABUS.md](/home/collins/aois-portfolio/curriculum/SYLLABUS.md:1)
+2. [SYLLABUS.md](SYLLABUS.md)
 High-level phase-by-phase syllabus and expected mastery outcomes.
 
-3. [FULL-PROGRAM-MAP.md](/home/collins/aois-portfolio/curriculum/FULL-PROGRAM-MAP.md:1)
+3. [FULL-PROGRAM-MAP.md](FULL-PROGRAM-MAP.md)
 Full version-by-version map from `v0.1` to `v34`.
 
-4. [LEARNING-OPERATING-MODEL.md](/home/collins/aois-portfolio/curriculum/LEARNING-OPERATING-MODEL.md:1)
+4. [LEARNING-OPERATING-MODEL.md](LEARNING-OPERATING-MODEL.md)
 How the course is taught and how mastery is measured.
 
-5. [VERSION-STANDARD.md](/home/collins/aois-portfolio/curriculum/VERSION-STANDARD.md:1)
+5. [VERSION-STANDARD.md](VERSION-STANDARD.md)
 The required standard for every version lesson pack.
 
-6. [REPO-BLUEPRINT.md](/home/collins/aois-portfolio/curriculum/REPO-BLUEPRINT.md:1)
+6. [REPO-BLUEPRINT.md](REPO-BLUEPRINT.md)
 How the repo grows into a full AOIS institution and product codebase.
 
-7. [CONTINUITY.md](/home/collins/aois-portfolio/curriculum/CONTINUITY.md:1)
+7. [CONTINUITY.md](CONTINUITY.md)
 How the institution survives interruption and how to resume cleanly.
 
-8. [STUDY-PACING.md](/home/collins/aois-portfolio/curriculum/STUDY-PACING.md:1)
+8. [STUDY-PACING.md](STUDY-PACING.md)
 How long the curriculum takes at different daily study paces.
 
 ## Current Teaching Assets
 
-9. [phase0/00-introduction.md](/home/collins/aois-portfolio/curriculum/phase0/00-introduction.md:1)
+9. [phase0/00-introduction.md](phase0/00-introduction.md)
 Phase 0 framing and why it matters for later AI infrastructure and agentic AOIS.
 
-10. [phase0/v0.1/notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
+10. [phase0/v0.1/notes.md](phase0/v0.1/notes.md)
 First rewritten mastery-grade lesson.
 
-11. [phase0/v0.1/lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/lab.md:1)
+11. [phase0/v0.1/lab.md](phase0/v0.1/lab.md)
 Hands-on lab instructions for `v0.1`.
 
-12. [phase0/v0.1/runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/runbook.md:1)
+12. [phase0/v0.1/runbook.md](phase0/v0.1/runbook.md)
 Troubleshooting and operational recovery steps.
 
-13. [phase0/v0.1/benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/benchmark.md:1)
+13. [phase0/v0.1/benchmark.md](phase0/v0.1/benchmark.md)
 Benchmark recording template.
 
-14. [phase0/v0.1/failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/failure-story.md:1)
+14. [phase0/v0.1/failure-story.md](phase0/v0.1/failure-story.md)
 Failure recording template.
 
 ## Full Program At A Glance

@@ -18,6 +18,6 @@ That is exactly the lesson it needed to teach.
 
 ## Immediate Next Move
 
-Go to [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/next-version-bridge.md:1).
+Go to [next-version-bridge.md](next-version-bridge.md).
 
 `v0.3` turns the repository itself into AOIS memory and portfolio proof.

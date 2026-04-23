@@ -39,7 +39,7 @@ That is what `v0.2` is doing.
 
 If you are in self-paced mode:
 
-1. start with [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/notes.md:1)
-2. run [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/lab.md:1)
-3. keep [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/runbook.md:1) nearby for the shell patterns
-4. close with [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/summarynotes.md:1) and [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/looking-forward.md:1)
+1. start with [notes.md](notes.md)
+2. run [lab.md](lab.md)
+3. keep [runbook.md](runbook.md) nearby for the shell patterns
+4. close with [summarynotes.md](summarynotes.md) and [looking-forward.md](looking-forward.md)

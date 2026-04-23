@@ -48,7 +48,7 @@ To avoid losing progress, we use these rules:
 
 If the terminal closes or the session is interrupted, resume using this order:
 
-1. Open [INSTITUTION-INDEX.md](/home/collins/aois-portfolio/curriculum/INSTITUTION-INDEX.md:1)
+1. Open [INSTITUTION-INDEX.md](INSTITUTION-INDEX.md)
 2. Open this file
 3. Check `git status`
 4. Run `scripts/aois_resume.sh`

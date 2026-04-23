@@ -77,7 +77,7 @@ Phase 0 should take approximately:
 
 At different daily paces, see:
 
-- [Study Pacing](/home/collins/aois-portfolio/curriculum/STUDY-PACING.md:1)
+- [Study Pacing](../STUDY-PACING.md)
 
 Rule:
 Do not optimize for calendar speed.

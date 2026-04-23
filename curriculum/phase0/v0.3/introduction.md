@@ -39,7 +39,7 @@ Without Git discipline, the curriculum becomes harder to trust and AOIS becomes 
 
 If you are in self-paced mode:
 
-1. start with [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/notes.md:1)
-2. run [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/lab.md:1)
-3. use [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/runbook.md:1) as the quick Git reference
-4. close with [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/summarynotes.md:1) and [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/looking-forward.md:1)
+1. start with [notes.md](notes.md)
+2. run [lab.md](lab.md)
+3. use [runbook.md](runbook.md) as the quick Git reference
+4. close with [summarynotes.md](summarynotes.md) and [looking-forward.md](looking-forward.md)
