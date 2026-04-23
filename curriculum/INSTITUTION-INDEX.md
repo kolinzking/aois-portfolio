@@ -24,24 +24,27 @@ The required standard for every version lesson pack.
 6. [REPO-BLUEPRINT.md](/home/collins/aois-portfolio/curriculum/REPO-BLUEPRINT.md:1)
 How the repo grows into a full AOIS institution and product codebase.
 
+7. [CONTINUITY.md](/home/collins/aois-portfolio/curriculum/CONTINUITY.md:1)
+How the institution survives interruption and how to resume cleanly.
+
 ## Current Teaching Assets
 
-7. [phase0/00-introduction.md](/home/collins/aois-portfolio/curriculum/phase0/00-introduction.md:1)
+8. [phase0/00-introduction.md](/home/collins/aois-portfolio/curriculum/phase0/00-introduction.md:1)
 Phase 0 framing and why it matters for later AI infrastructure and agentic AOIS.
 
-8. [phase0/v0.1/notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
+9. [phase0/v0.1/notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
 First rewritten mastery-grade lesson.
 
-9. [phase0/v0.1/lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/lab.md:1)
+10. [phase0/v0.1/lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/lab.md:1)
 Hands-on lab instructions for `v0.1`.
 
-10. [phase0/v0.1/runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/runbook.md:1)
+11. [phase0/v0.1/runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/runbook.md:1)
 Troubleshooting and operational recovery steps.
 
-11. [phase0/v0.1/benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/benchmark.md:1)
+12. [phase0/v0.1/benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/benchmark.md:1)
 Benchmark recording template.
 
-12. [phase0/v0.1/failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/failure-story.md:1)
+13. [phase0/v0.1/failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/failure-story.md:1)
 Failure recording template.
 
 ## Full Program At A Glance

@@ -13,6 +13,9 @@ Current persistence mechanisms:
 - curriculum documents saved in the repo
 - lesson packs saved in the repo
 - git history available as the long-term record once commits are made
+- VS Code autosave in `.vscode/settings.json`
+- repo-owned checkpoint snapshots in `.aois-state/`
+- versioned git hook in `.githooks/post-commit`
 
 ## What Is Not Yet Guaranteed
 
@@ -22,6 +25,7 @@ The reliable persistence layer is:
 
 - files on disk
 - git commits
+- repo checkpoint snapshots
 
 So the strongest protection is disciplined checkpoint commits.
 
@@ -38,6 +42,7 @@ To avoid losing progress, we use these rules:
    - benchmark
    - failure story
 4. Every session should end with a visible current-status note.
+5. The repo should maintain a resumable checkpoint on disk even between commits.
 
 ## Resume Protocol
 
@@ -46,9 +51,10 @@ If the terminal closes or the session is interrupted, resume using this order:
 1. Open [INSTITUTION-INDEX.md](/home/collins/aois-portfolio/curriculum/INSTITUTION-INDEX.md:1)
 2. Open this file
 3. Check `git status`
-4. Open the latest version directory you were working in
-5. Read the `failure-story.md` and `benchmark.md` for that version
-6. Continue from the last unfinished lab or mastery checkpoint
+4. Run `scripts/aois_resume.sh`
+5. Open the latest version directory you were working in
+6. Read the `failure-story.md` and `benchmark.md` for that version
+7. Continue from the last unfinished lab or mastery checkpoint
 
 ## Session-End Checklist
 
@@ -80,6 +86,28 @@ Current next step:
 - teach `v0.1`
 - author `v0.2` lesson pack next
 
+## Installed Continuity Toolchain
+
+The institution now uses a three-layer continuity setup:
+
+1. Editor autosave
+Local VS Code settings save file edits automatically after a short delay.
+
+2. Repo checkpoint script
+`scripts/aois_checkpoint.sh` writes the latest working state into `.aois-state/latest-checkpoint.md`.
+
+Example:
+
+```bash
+scripts/aois_checkpoint.sh \
+  --lesson "phase0/v0.1" \
+  --next "Complete the v0.1 mastery checkpoint" \
+  --note "Finished the ops lab, break lab next."
+```
+
+3. Automatic post-commit checkpoint
+The repo hook `.githooks/post-commit` refreshes the checkpoint automatically after each commit.
+
 ## Best Protection Against Loss
 
 The best practical protection is:
@@ -87,5 +115,6 @@ The best practical protection is:
 1. keep everything in repo files
 2. commit at each milestone
 3. keep one clear resume file like this
+4. keep an on-disk checkpoint snapshot through the installed toolchain
 
 If you want the strongest possible continuity, the next correct action is to commit the institution documents and the `v0.1` lesson pack to git.
