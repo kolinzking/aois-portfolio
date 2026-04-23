@@ -1,19 +1,21 @@
 # v0.2 Failure Story
 
-Authoring status: scaffolded
-
 ## Symptom
 
-TODO
+The script existed, but it would not execute.
 
 ## Root Cause
 
-TODO
+The file lacked execute permission.
 
 ## Fix
 
-TODO
+Run:
+
+```bash
+chmod +x scripts/sysinfo.sh
+```
 
 ## Prevention
 
-TODO
+Always inspect permissions with `ls -l` before assuming script logic is broken.

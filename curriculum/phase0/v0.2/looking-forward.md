@@ -1,11 +1,10 @@
 # v0.2 Looking Forward
 
-Authoring status: scaffolded
-
 ## What You Should Carry Forward
 
-TODO
+Linux commands are now scriptable.
+Bash is the first automation layer in AOIS.
 
 ## What The Next Version Will Build On
 
-TODO
+`v0.3` shifts from automation to Git discipline, where the repo becomes durable engineering memory instead of just a folder of files.
