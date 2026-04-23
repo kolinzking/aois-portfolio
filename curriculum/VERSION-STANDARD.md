@@ -24,13 +24,15 @@ Each version should eventually include:
 
 ```text
 curriculum/phaseX/vY/
+├── introduction.md
 ├── notes.md
 ├── lab.md
 ├── runbook.md
 ├── benchmark.md
 ├── failure-story.md
 ├── summarynotes.md
-└── next-version-bridge.md
+├── next-version-bridge.md
+└── looking-forward.md
 ```
 
 ## Required Sections In `notes.md`
@@ -221,7 +223,9 @@ That means the lesson pack must include:
 - authored benchmark interpretation
 - authored failure-story interpretation
 - concise summary notes
+- a version-level introduction file
 - a bridge file connecting the current version to the next one
+- a version-level looking-forward file
 
 ## Mastery Checkpoint Standard
 

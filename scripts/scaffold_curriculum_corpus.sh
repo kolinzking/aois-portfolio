@@ -121,6 +121,23 @@ TODO
 TODO
 "
 
+  ensure_file "$version_dir/introduction.md" "# ${version_id} Introduction
+
+Authoring status: scaffolded
+
+## What This Version Is About
+
+TODO
+
+## Why It Matters In AOIS
+
+TODO
+
+## How To Use This Version
+
+TODO
+"
+
   ensure_file "$version_dir/lab.md" "# ${version_id} Lab
 
 Authoring status: scaffolded
@@ -223,6 +240,19 @@ Authoring status: scaffolded
 TODO
 
 ## Why The Next Version Exists
+
+TODO
+"
+
+  ensure_file "$version_dir/looking-forward.md" "# ${version_id} Looking Forward
+
+Authoring status: scaffolded
+
+## What You Should Carry Forward
+
+TODO
+
+## What The Next Version Will Build On
 
 TODO
 "
