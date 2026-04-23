@@ -39,6 +39,7 @@ Build the engineering substrate that every later AOIS phase depends on:
 
 ### `v0.1`
 
+- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/introduction.md:1)
 - [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
 - [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/lab.md:1)
 - [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/runbook.md:1)
@@ -46,22 +47,43 @@ Build the engineering substrate that every later AOIS phase depends on:
 - [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/failure-story.md:1)
 - [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/summarynotes.md:1)
 - [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/next-version-bridge.md:1)
+- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.1/looking-forward.md:1)
 
 ### `v0.2`
 
+- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/introduction.md:1)
 - [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/notes.md:1)
 - [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/lab.md:1)
 - [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/runbook.md:1)
 - [benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/benchmark.md:1)
 - [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/failure-story.md:1)
+- [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/summarynotes.md:1)
+- [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/next-version-bridge.md:1)
+- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.2/looking-forward.md:1)
 
 ### `v0.3`
 
+- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/introduction.md:1)
 - [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/notes.md:1)
 - [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/lab.md:1)
 - [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/runbook.md:1)
 - [benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/benchmark.md:1)
 - [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/failure-story.md:1)
+- [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/summarynotes.md:1)
+- [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/next-version-bridge.md:1)
+- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.3/looking-forward.md:1)
+
+### `v0.4`
+
+- [introduction.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/introduction.md:1)
+- [notes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/notes.md:1)
+- [lab.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/lab.md:1)
+- [runbook.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/runbook.md:1)
+- [benchmark.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/benchmark.md:1)
+- [failure-story.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/failure-story.md:1)
+- [summarynotes.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/summarynotes.md:1)
+- [next-version-bridge.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/next-version-bridge.md:1)
+- [looking-forward.md](/home/collins/aois-portfolio/curriculum/phase0/v0.4/looking-forward.md:1)
 
 ## When You Feel Lost
 
@@ -70,6 +92,7 @@ If you are trying to find where a topic lives:
 - Linux and the terminal: start with [`v0.1`](/home/collins/aois-portfolio/curriculum/phase0/v0.1/notes.md:1)
 - bash scripting and brittle rules: start with [`v0.2`](/home/collins/aois-portfolio/curriculum/phase0/v0.2/notes.md:1)
 - Git and history discipline: start with [`v0.3`](/home/collins/aois-portfolio/curriculum/phase0/v0.3/notes.md:1)
+- networking and HTTP inspection: start with [`v0.4`](/home/collins/aois-portfolio/curriculum/phase0/v0.4/notes.md:1)
 
 ## Phase Boundary Files
 
