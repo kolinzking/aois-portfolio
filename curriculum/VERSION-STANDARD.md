@@ -28,7 +28,9 @@ curriculum/phaseX/vY/
 ├── lab.md
 ├── runbook.md
 ├── benchmark.md
-└── failure-story.md
+├── failure-story.md
+├── summarynotes.md
+└── next-version-bridge.md
 ```
 
 ## Required Sections In `notes.md`
@@ -70,9 +72,22 @@ Add the new capability.
 
 Inspect the system using real commands, logs, metrics, traces, or cluster tools.
 
+Every ops lab should include:
+
+- runnable commands
+- expected output or expected behavior
+- answer key for the main questions
+
 ### Break Lab
 
 Cause or inspect at least one failure mode.
+
+Every break lab should include:
+
+- the intended failure
+- the expected symptom
+- the fix
+- the lesson the failure is meant to teach
 
 ### Explanation Lab
 
@@ -147,6 +162,9 @@ Each version should record:
 - what the result means
 - what tradeoff was observed
 
+The benchmark file should be authored by default.
+The learner may add notes, but should not be forced to generate the first useful benchmark interpretation from scratch.
+
 ## Failure Story Standard
 
 Every version must record:
@@ -158,6 +176,9 @@ Every version must record:
 - what this taught me
 
 Conceptual misreadings count as failures if they could lead to bad engineering decisions.
+
+The failure-story file should also be authored by default.
+It should contain at least one representative failure analysis even before the learner adds a personal one.
 
 ## Delivery Rules
 
@@ -183,6 +204,24 @@ That means:
 - likely errors are named
 - the success state is visible
 - the mastery checkpoint is concrete
+- key questions have answers available somewhere in the lesson pack
+- the learner is not blocked by Codex absence or network issues
+
+## Self-Paced Support Rule
+
+Every strong version should support both:
+
+- live guided mode
+- self-paced mode
+
+That means the lesson pack must include:
+
+- expected outputs
+- answer keys for the main questions
+- authored benchmark interpretation
+- authored failure-story interpretation
+- concise summary notes
+- a bridge file connecting the current version to the next one
 
 ## Mastery Checkpoint Standard
 

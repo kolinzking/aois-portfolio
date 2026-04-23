@@ -196,6 +196,36 @@ TODO
 
 TODO
 "
+
+  ensure_file "$version_dir/summarynotes.md" "# ${version_id} Summary Notes
+
+Authoring status: scaffolded
+
+## What Was Built
+
+TODO
+
+## What Was Learned
+
+TODO
+
+## Core Limitation Or Tradeoff
+
+TODO
+"
+
+  ensure_file "$version_dir/next-version-bridge.md" "# ${version_id} Next Version Bridge
+
+Authoring status: scaffolded
+
+## What This Version Unlocks
+
+TODO
+
+## Why The Next Version Exists
+
+TODO
+"
 done < <(find "$curriculum_dir" -maxdepth 2 -type d -name 'v*' -print0 | sort -z)
 
 printf 'Curriculum corpus scaffolding complete.\n'
