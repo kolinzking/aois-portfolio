@@ -25,9 +25,11 @@ Different versions strengthen different parts of this spine.
 These threads must appear repeatedly across the full program:
 
 - shell and Linux fluency
+- service/process management fluency
 - git and engineering history
 - HTTP and service boundaries
 - typed Python backend work
+- persistence and data lifecycle reasoning
 - AI model behavior and structured outputs
 - testing and evaluation
 - logs, metrics, traces, and debugging
@@ -54,6 +56,7 @@ Core concepts:
 - disk
 - Linux inspection
 - shell safety
+- process and service awareness
 
 AOIS role:
 First local health signal.
@@ -150,6 +153,7 @@ Core concepts:
 - type hints
 - Pydantic
 - async basics
+- configuration and env discipline
 
 AOIS role:
 Moves logic from shell-only to maintainable application code.
@@ -174,6 +178,7 @@ Core concepts:
 - status codes
 - validation
 - middleware
+- service lifecycle
 
 AOIS role:
 Creates the first real service boundary.
@@ -224,6 +229,7 @@ Core concepts:
 - joins
 - transactions
 - `EXPLAIN ANALYZE`
+- pgvector foundation
 
 AOIS role:
 Persistent memory for incidents and analysis history.
@@ -281,6 +287,7 @@ Core concepts:
 - Groq fast path
 - prompt caching economics
 - per-request cost attribution
+- Redis caching role
 
 AOIS role:
 Decision layer for model choice.
@@ -307,6 +314,7 @@ Core concepts:
 - feedback loops
 - Langfuse or equivalent traceability
 - Instructor-style output guarantees
+- retrieval readiness
 
 AOIS role:
 Makes AI behavior inspectable and testable.
@@ -391,6 +399,11 @@ Core concepts:
 - ingress
 - deployments
 - rollout mechanics
+- configmaps and secrets
+- liveness and readiness probes
+- requests and limits
+- kubectl debugging
+- scheduling basics
 
 AOIS role:
 Moves from local service to real distributed runtime.
@@ -400,6 +413,8 @@ Labs:
 - deploy AOIS
 - inspect pods and logs
 - break and recover a deployment
+- inspect service discovery and ingress flow
+- debug a bad rollout with kubectl
 - explain what Kubernetes is solving
 
 ### v6.5 - Identity, mTLS, And Service Trust
@@ -506,6 +521,8 @@ Core concepts:
 - security posture
 - service tradeoffs
 - Bedrock agent tradeoffs
+- S3 and RDS role in enterprise AOIS
+- CloudWatch observability path
 
 AOIS role:
 Alternative model execution path.
@@ -707,6 +724,7 @@ Core concepts:
 - metrics
 - logs correlation
 - GenAI semantic conventions
+- Prometheus, Loki, and Tempo roles
 
 AOIS role:
 First-class observability layer.
@@ -859,6 +877,7 @@ Core concepts:
 - intermediate state
 - incident workflows
 - memory systems
+- capability boundary awareness
 
 AOIS role:
 First true agentic behavior.
@@ -1128,6 +1147,8 @@ Core concepts:
 - image signing
 - release gates
 - rollout controls
+- model rollout control
+- feature-flagged AI releases
 
 AOIS role:
 Turns changes into managed releases.
@@ -1275,3 +1296,20 @@ You are done when you can do all of these:
 - discuss agentic systems with runtime, safety, and governance realism
 
 That is the completion bar for AOIS.
+
+## Backbone Domains
+
+These are backbone domains.
+They must never be brushed past in delivery.
+
+- Linux and process/service literacy
+- HTTP and API contracts
+- Python backend fundamentals
+- persistence and data modeling
+- model routing and output reliability
+- caching and retrieval
+- Kubernetes operations
+- observability
+- security and identity
+- cost engineering
+- agent runtime control

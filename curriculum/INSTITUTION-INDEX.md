@@ -46,6 +46,17 @@ Failure recording template.
 
 ## Full Program At A Glance
 
+Before reading the version list, note the backbone domains that carry the institution:
+
+- Linux and systems
+- backend and APIs
+- persistence and retrieval
+- Kubernetes and deployment operations
+- observability and reliability
+- security and identity
+- cost and routing economics
+- agent runtime and governance
+
 ### Phase 0
 
 - `v0.1` Machine Visibility
@@ -148,3 +159,7 @@ Next authoring target:
 Next teaching target:
 
 - `v0.1`
+
+## Self-Review Rule
+
+If a backbone domain appears only as a label and not as a repeated practical operating skill, the institution must be corrected before more lesson packs are written.

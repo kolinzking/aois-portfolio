@@ -13,7 +13,9 @@ aois-portfolio/
 │   ├── api/
 │   ├── ai/
 │   ├── agents/
+│   ├── cache/
 │   ├── domain/
+│   ├── retrieval/
 │   ├── services/
 │   ├── storage/
 │   └── main.py
@@ -88,10 +90,11 @@ Recommended order:
 4. `tests/`
 5. `runbooks/`
 6. `infra/docker/`
-7. `infra/helm/`
-8. `infra/terraform/`
-9. `observability/`
-10. `dashboards/`
+7. `infra/kubernetes/`
+8. `infra/helm/`
+9. `infra/terraform/`
+10. `observability/`
+11. `dashboards/`
 
 ## Reuse Principle
 
@@ -101,8 +104,10 @@ Examples:
 
 - `scripts/` starts with local inspection and later supports deployments and incident checks
 - `app/` starts with API basics and later contains routing, policies, retrieval, and agents
+- `app/cache/` and `app/retrieval/` prevent caching and RAG from being afterthoughts
 - `tests/` starts simple and later holds eval suites and regression gates
 - `runbooks/` turns failures into operational memory
+- `infra/kubernetes/` keeps k8s operational work visible as a backbone domain
 - `infra/` turns delivery into a normal engineering activity instead of a final topic
 
 That reuse is part of the learning design.

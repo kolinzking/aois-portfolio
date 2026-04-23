@@ -17,6 +17,8 @@ Build the engineering substrate for the entire system.
 Core tools and concepts:
 
 - Linux
+- systemd
+- Linux performance inspection
 - bash
 - git
 - HTTP
@@ -24,6 +26,7 @@ Core tools and concepts:
 - FastAPI
 - LLM fundamentals
 - Postgres
+- data modeling
 
 AOIS deliverables:
 
@@ -48,15 +51,20 @@ Core tools and concepts:
 - model APIs
 - structured output
 - routing
+- prompt caching
+- cost-aware routing
 - validation
 - tracing
 - evaluation baseline
+- Redis as runtime cache
+- retrieval foundations
 
 AOIS deliverables:
 
 - AI analysis endpoint
 - model routing layer
 - reliability and tracing layer
+- first cost-aware caching and retrieval behavior
 
 Mastery target:
 You can explain why structured AI systems beat ad hoc prompting and you can defend routing, validation, and traceability decisions.
@@ -74,6 +82,8 @@ Core tools and concepts:
 - API security
 - LLM security
 - prompt injection defense
+- runtime hardening
+- red-team basics
 
 AOIS deliverables:
 
@@ -92,6 +102,16 @@ Operate AOIS on real infrastructure.
 Core tools and concepts:
 
 - Kubernetes
+- pods
+- deployments
+- services
+- ingress
+- configmaps
+- secrets
+- probes
+- requests and limits
+- scheduling basics
+- kubectl debugging
 - Helm
 - ArgoCD
 - KEDA
@@ -104,6 +124,7 @@ AOIS deliverables:
 - packaged service
 - GitOps deployment flow
 - autoscaling behavior
+- first true distributed AOIS runtime
 
 Mastery target:
 You can describe how AOIS gets from code to cluster and what controls service identity, rollout, and scaling.
@@ -116,7 +137,11 @@ Learn managed-cloud AI infrastructure patterns.
 Core tools and concepts:
 
 - Bedrock
+- Bedrock Agents
 - Lambda
+- S3
+- RDS
+- CloudWatch
 - EKS
 - IAM
 - IRSA
@@ -139,7 +164,11 @@ Core tools and concepts:
 
 - NVIDIA stack
 - GPU scheduling
+- GPU operator
+- device plugin
+- MIG awareness
 - vLLM
+- NIM
 - batching
 - caching
 - fine-tuning
@@ -164,10 +193,14 @@ Core tools and concepts:
 - OpenTelemetry
 - Prometheus
 - Grafana
+- Loki
+- Tempo
 - Kafka
 - eBPF
 - chaos engineering
 - policy enforcement
+- SLOs
+- cost telemetry
 
 AOIS deliverables:
 
@@ -189,6 +222,7 @@ Core tools and concepts:
 
 - tool use
 - MCP
+- A2A-aware design
 - Temporal
 - LangGraph
 - multi-agent patterns
@@ -196,6 +230,8 @@ Core tools and concepts:
 - eval pipelines
 - autonomy control
 - sandboxed execution
+- agent memory
+- runtime cost control
 
 AOIS deliverables:
 
@@ -204,6 +240,7 @@ AOIS deliverables:
 - durable workflows
 - agent evaluation system
 - runtime controls
+- incident-cost-aware agent runtime
 
 Mastery target:
 You can explain agent systems beyond demos: tool trust, failure modes, workflow durability, evaluation, runtime safety, and cost.
@@ -238,6 +275,8 @@ Make AOIS easy to ship and repeat.
 Core tools and concepts:
 
 - CI/CD
+- release policy
+- model rollout control
 - rollout controls
 - signatures
 - experiment tracking
