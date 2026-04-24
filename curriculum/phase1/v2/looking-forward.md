@@ -1,11 +1,22 @@
 # v2 Looking Forward
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What You Should Carry Forward
 
-TODO
+- model routing is policy
+- provider approval is not provider execution
+- cost and latency budgets must be visible
+- fallback route matters
+- local baseline remains valuable
+- route decisions need later evaluation
 
 ## What The Next Version Will Build On
 
-TODO
+`v3` will build reliability around the intelligence core:
+
+- validation
+- tracing
+- prompt iteration records
+- evaluation baseline
+- regression awareness

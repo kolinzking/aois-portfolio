@@ -20,6 +20,7 @@ from app.analysis import analyze_incident
 from app.ai_contract import analyze_with_structured_contract
 from app.config import load_settings
 from app.models import IncidentInput
+from app.model_router import RouteConstraints, choose_model_route
 
 
 class AnalyzeRequest(BaseModel):
@@ -59,6 +60,27 @@ class AIAnalyzeResponse(BaseModel):
     provider_mode: str
     provider_call_made: bool
     prompt_contract: dict[str, object]
+
+
+class AIRouteRequest(BaseModel):
+    """HTTP request body for model route planning."""
+
+    message: str = Field(min_length=1)
+    source: str = Field(default="api", min_length=1)
+    severity_hint: str | None = Field(default=None, pattern="^(low|medium|high|unknown)$")
+    latency_budget_ms: int = Field(default=1000, ge=1)
+    max_cost_usd: float = Field(default=0.001, ge=0)
+    provider_budget_approved: bool = False
+
+
+class AIRouteResponse(BaseModel):
+    """Provider-neutral route decision response."""
+
+    severity_used: str
+    selected_route: dict[str, object]
+    fallback_route: dict[str, object]
+    reason: str
+    provider_call_made: bool
 
 
 settings = load_settings()
@@ -114,4 +136,29 @@ def ai_analyze(request: AIAnalyzeRequest) -> AIAnalyzeResponse:
         provider_mode=result.provider_mode,
         provider_call_made=result.provider_call_made,
         prompt_contract=result.prompt_contract,
+    )
+
+
+@app.post("/ai/route", response_model=AIRouteResponse)
+def ai_route(request: AIRouteRequest) -> AIRouteResponse:
+    """Plan model routing without provider execution."""
+
+    baseline = analyze_incident(
+        IncidentInput(message=request.message, source=request.source)
+    )
+    severity = request.severity_hint or baseline.severity.value
+    decision = choose_model_route(
+        RouteConstraints(
+            severity=severity,
+            latency_budget_ms=request.latency_budget_ms,
+            max_cost_usd=request.max_cost_usd,
+            provider_budget_approved=request.provider_budget_approved,
+        )
+    )
+    return AIRouteResponse(
+        severity_used=severity,
+        selected_route=decision.selected_route,
+        fallback_route=decision.fallback_route,
+        reason=decision.reason,
+        provider_call_made=decision.provider_call_made,
     )
