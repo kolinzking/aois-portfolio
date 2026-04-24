@@ -1,11 +1,25 @@
 # Phase 1 Contents
 
-Authoring status: scaffolded
+Authoring status: partial
 
 ## Phase Files
 
-TODO
+- [00-introduction.md](00-introduction.md)
+- [v1](v1/notes.md)
+- [v2](v2/notes.md)
+- [v3](v3/notes.md)
+- [looking-forward.md](looking-forward.md)
 
 ## Phase Focus
 
-TODO
+- structured AI response contracts
+- provider-gated external calls
+- model routing and fallback reasoning
+- cost and latency awareness
+- tracing, validation, and evaluation foundations
+
+## Recommended Order
+
+1. complete [v1](v1/notes.md)
+2. continue to `v2` only after the provider gate can be explained
+3. continue to `v3` only after route/fallback tradeoffs are clear

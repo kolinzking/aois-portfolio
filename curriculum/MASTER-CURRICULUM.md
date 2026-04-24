@@ -167,16 +167,16 @@ Versions:
 - v0.4 Networking, TCP/IP, DNS, ports, HTTP, `curl`, request tracing
 - v0.5 Python core, venvs, packages, typing, async, errors, Pydantic
 - v0.6 FastAPI without AI, contracts, routing, middleware, validation
-- v0.7 LLM fundamentals, prompts, tokens, cost, latency, raw model calls
-- v0.8 Postgres, schema design, incident storage, query plans, transactions, pgvector foundation
+- v0.7 LLM fundamentals, prompts, tokens, cost, latency, provider-neutral request planning
+- v0.8 Postgres foundations, schema design, incident storage, relationships, constraints, server-visible namespace discipline
 
 AOIS after Phase 0:
 
 - local scripts
 - mock API
 - first real backend service
-- first raw AI calls
-- first persistent data model
+- first provider-gated AI request plans
+- first persistence design
 
 ### Phase 1 - Intelligence Core
 

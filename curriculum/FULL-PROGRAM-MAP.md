@@ -200,7 +200,7 @@ Labs:
 ### v0.7 - LLM Fundamentals
 
 Build:
-A raw model call from AOIS.
+A provider-neutral model request plan from AOIS.
 
 Core concepts:
 
@@ -213,19 +213,19 @@ Core concepts:
 - structured vs unstructured outputs
 
 AOIS role:
-First model-powered reasoning step.
+First model-call planning step.
 
 Labs:
 
-- send raw prompts
+- build dry-run prompts
 - compare prompt variants
-- inspect latency and token usage
+- estimate latency and token usage
 - explain why free-form output is dangerous
 
 ### v0.8 - Postgres And AOIS Memory
 
 Build:
-An incident and analysis schema in Postgres.
+An `aois_p` incident, analysis, and request-plan schema for Postgres.
 
 Core concepts:
 
@@ -235,17 +235,18 @@ Core concepts:
 - queries
 - joins
 - transactions
-- `EXPLAIN ANALYZE`
-- pgvector foundation
+- check constraints
+- indexes
+- server-visible namespace discipline
 
 AOIS role:
 Persistent memory for incidents and analysis history.
 
 Labs:
 
-- create schema
-- insert and query incidents
-- inspect active queries
+- inspect schema
+- validate required tables and constraints
+- break a scratch copy
 - explain why persistence changes the system
 
 ## Phase 1 - Intelligence Core
