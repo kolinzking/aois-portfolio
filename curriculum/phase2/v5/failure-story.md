@@ -1,19 +1,31 @@
 # v5 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+A fake provider key appears in output or logs without redaction.
 
 ## Root Cause
 
-TODO
+Input was used before local security inspection.
 
 ## Fix
 
-TODO
+Run inspection before logging or provider boundaries:
+
+```bash
+python3 examples/security_inspect.py api_key=sk-example1234567890 gateway failed
+```
 
 ## Prevention
 
-TODO
+Keep real secrets out of repo files.
+
+Use redaction before logs and provider calls.
+
+Keep provider calls gated.
+
+## What This Taught Me
+
+Security must happen before data crosses important boundaries.

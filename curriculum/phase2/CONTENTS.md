@@ -1,6 +1,6 @@
 # Phase 2 Contents
 
-Authoring status: partial
+Authoring status: authored
 
 ## Phase Files
 

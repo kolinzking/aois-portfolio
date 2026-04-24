@@ -22,6 +22,7 @@ from app.config import load_settings
 from app.models import IncidentInput
 from app.model_router import RouteConstraints, choose_model_route
 from app.reliability import new_trace_id, run_eval_baseline
+from app.security import inspect_security
 
 
 class AnalyzeRequest(BaseModel):
@@ -96,6 +97,23 @@ class EvalBaselineResponse(BaseModel):
     passed_cases: int
     score: float
     results: list[dict[str, object]]
+
+
+class SecurityInspectRequest(BaseModel):
+    """HTTP request body for local security inspection."""
+
+    message: str = Field(min_length=1)
+
+
+class SecurityInspectResponse(BaseModel):
+    """Local security inspection response."""
+
+    trace_id: str
+    sanitized_message: str
+    risk_level: str
+    allow_provider_call: bool
+    findings: list[dict[str, str]]
+    provider_call_made: bool
 
 
 settings = load_settings()
@@ -187,3 +205,18 @@ def ai_eval_baseline() -> EvalBaselineResponse:
 
     result = run_eval_baseline()
     return EvalBaselineResponse(**result)
+
+
+@app.post("/security/inspect", response_model=SecurityInspectResponse)
+def security_inspect(request: SecurityInspectRequest) -> SecurityInspectResponse:
+    """Inspect input for local API/LLM security risks."""
+
+    result = inspect_security(request.message)
+    return SecurityInspectResponse(
+        trace_id=new_trace_id(),
+        sanitized_message=result.sanitized_message,
+        risk_level=result.risk_level,
+        allow_provider_call=result.allow_provider_call,
+        findings=result.findings,
+        provider_call_made=result.provider_call_made,
+    )
