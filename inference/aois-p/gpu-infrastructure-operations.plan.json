@@ -1,0 +1,64 @@
+{
+  "mode": "gpu_infrastructure_operations_plan_no_apply",
+  "namespace": "aois-p",
+  "kubectl_apply_ran": false,
+  "gpu_operator_installed": false,
+  "device_plugin_installed": false,
+  "gpu_runtime_started": false,
+  "gpu_required_for_this_lesson": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_gpu_infra": false,
+  "components": {
+    "gpu_operator": "aois-p-gpu-operator-placeholder",
+    "device_plugin": "aois-p-device-plugin-placeholder",
+    "gpu_node_pool": "aois-p-gpu-node-pool-placeholder",
+    "scheduler_policy": "aois-p-gpu-scheduler-policy-placeholder",
+    "metrics_exporter": "aois-p-gpu-metrics-exporter-placeholder",
+    "dashboard": "aois-p-gpu-dashboard-placeholder"
+  },
+  "scheduling": {
+    "gpu_resource_name": "nvidia.com/gpu",
+    "requested_gpus_for_lesson": 0,
+    "node_selector_required": true,
+    "taint_toleration_required": true,
+    "resource_limits_required": true,
+    "priority_class_review_required": true
+  },
+  "mig_awareness": {
+    "mig_configured": false,
+    "mig_required_for_this_lesson": false,
+    "mig_strategy_review_required": true,
+    "profile_selection_required_before_live": true
+  },
+  "observability": {
+    "gpu_utilization_required": true,
+    "gpu_memory_required": true,
+    "temperature_required": true,
+    "power_required": true,
+    "pod_to_gpu_mapping_required": true,
+    "scheduling_events_required": true,
+    "dashboard_required": true,
+    "alerts_required": true
+  },
+  "controls": {
+    "driver_plan_required": true,
+    "cuda_plan_required": true,
+    "node_capacity_plan_required": true,
+    "cost_gate_required": true,
+    "rollback_plan_required": true,
+    "resource_usage_record_required": true,
+    "primary_aois_separation_required": true
+  },
+  "required_before_live_gpu_infra": [
+    "gpu_hardware_or_cloud_approval",
+    "driver_and_cuda_plan",
+    "gpu_operator_docs_review",
+    "device_plugin_plan",
+    "node_pool_budget",
+    "scheduling_policy_review",
+    "mig_strategy_review",
+    "gpu_observability_plan",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}
