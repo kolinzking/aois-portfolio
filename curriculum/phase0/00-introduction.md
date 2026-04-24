@@ -11,7 +11,7 @@ Everything here becomes load-bearing later:
 - HTTP inspection
 - Python service foundations
 - FastAPI contracts
-- raw LLM understanding
+- LLM request planning
 - persistence fundamentals
 
 ## What This Phase Is For
@@ -24,8 +24,8 @@ By the end of Phase 0, the learner should be able to:
 - inspect APIs manually with `curl`
 - write typed Python for AOIS
 - expose a clean FastAPI API
-- understand what a raw model call is really doing
-- store and inspect incident data in Postgres
+- understand how a model request is shaped before provider integration
+- design a Postgres persistence schema for incidents, analyses, and planned model calls
 
 That is the minimum floor for serious AI infrastructure work later.
 
@@ -52,14 +52,14 @@ Phase 0 exists so later complexity never feels magical.
 | `v0.4` | Networking and HTTP | direct request inspection drills |
 | `v0.5` | Python for AOIS | typed utility and model layer |
 | `v0.6` | FastAPI without AI | mock AOIS endpoint |
-| `v0.7` | LLM fundamentals | raw model call |
-| `v0.8` | Postgres foundations | AOIS schema and queries |
+| `v0.7` | LLM fundamentals | provider-neutral dry-run request planning |
+| `v0.8` | Postgres foundations | `aois_p` schema and local validator |
 
 ## The Phase Arc
 
 The movement of Phase 0 is deliberate:
 
-`operate machine -> automate -> record work -> inspect network -> build typed logic -> expose API -> call model -> persist state`
+`operate machine -> automate -> record work -> inspect network -> build typed logic -> expose API -> plan model request -> design persistence`
 
 That sequence becomes the first complete AOIS spine.
 
