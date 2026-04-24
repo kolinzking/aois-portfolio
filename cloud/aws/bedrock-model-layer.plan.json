@@ -1,0 +1,39 @@
+{
+  "mode": "managed_model_layer_plan_no_cloud_call",
+  "provider": "amazon-bedrock-placeholder",
+  "region": "us-east-1-placeholder",
+  "model_id": "provider.model-placeholder",
+  "provider_call_made": false,
+  "credentials_required_for_this_lesson": false,
+  "external_network_required_for_this_lesson": false,
+  "budget": {
+    "approved": false,
+    "max_requests": 0,
+    "max_spend_usd": 0
+  },
+  "request_contract": {
+    "input_fields": [
+      "message",
+      "source",
+      "trace_id",
+      "route_decision"
+    ],
+    "output_fields": [
+      "category",
+      "severity",
+      "confidence",
+      "summary",
+      "recommended_action",
+      "reasoning",
+      "provider_metadata"
+    ],
+    "response_format": "json_object"
+  },
+  "controls": {
+    "security_inspection_required": true,
+    "provider_gate_required": true,
+    "trace_id_required": true,
+    "eval_baseline_required": true,
+    "resource_usage_record_required": true
+  }
+}

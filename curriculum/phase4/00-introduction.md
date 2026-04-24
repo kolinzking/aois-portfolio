@@ -1,5 +1,29 @@
 # Phase 4 Introduction
 
-Authoring status: scaffolded
+Authoring status: partial
 
-This file will introduce Phase 4, define the phase objective, explain why it exists in AOIS, and describe how the versions in this phase build on one another.
+Phase 4 is Enterprise Cloud.
+
+Phase 3 built infrastructure and GitOps planning.
+Phase 4 maps those concepts onto managed cloud services while keeping cloud spend, credentials, and deployment gated.
+
+## Phase Objective
+
+Understand managed-cloud equivalents without blindly creating cloud resources:
+
+- `v10` managed model layer planning
+- `v10.5` managed agent tradeoff planning
+- `v11` event-driven cloud workflow planning
+- `v12` managed Kubernetes/IAM planning
+
+## Resource Rule
+
+Cloud actions are gated.
+
+This phase may author plans and validators, but it must not call AWS, create Bedrock resources, invoke models, deploy Lambda, create EKS clusters, use credentials, or spend money without explicit approval.
+
+## AOIS Direction
+
+The Phase 4 spine is:
+
+`managed model plan -> managed agent tradeoff -> event workflow -> managed Kubernetes/IAM plan`

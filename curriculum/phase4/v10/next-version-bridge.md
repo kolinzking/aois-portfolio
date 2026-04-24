@@ -1,11 +1,13 @@
 # v10 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+`v10` defines how AOIS would approach enterprise managed model inference safely.
 
 ## Why The Next Version Exists
 
-TODO
+`v10.5` examines managed cloud agent services.
+
+The next question is whether agent orchestration belongs inside AOIS or inside a cloud-managed agent platform.
