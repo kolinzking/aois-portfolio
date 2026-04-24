@@ -1,15 +1,25 @@
 # v3 Summary Notes
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What Was Built
 
-TODO
+A local reliability layer:
+
+- trace ID helper
+- evaluation cases
+- baseline scoring
+- local eval script
+- API eval endpoint
 
 ## What Was Learned
 
-TODO
+AOIS needs repeatable checks before real provider integration.
+
+Trace IDs and eval baselines make behavior easier to correlate, measure, and defend.
 
 ## Core Limitation Or Tradeoff
 
-TODO
+The eval baseline is local and deterministic.
+
+It does not measure real model quality yet, but it creates the standard that real model behavior must be compared against later.

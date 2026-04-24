@@ -1,11 +1,21 @@
 # v3 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+`v3` completes the Phase 1 intelligence-core foundation.
+
+AOIS now has:
+
+- structured AI endpoint contract
+- route planning
+- local reliability baseline
+- trace IDs
+- provider-call visibility
 
 ## Why The Next Version Exists
 
-TODO
+Phase 2 exists because the service now needs safer packaging and security discipline.
+
+The next work should make AOIS portable, container-aware, and harder to misuse before any larger deployment path.

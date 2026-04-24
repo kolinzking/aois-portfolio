@@ -21,6 +21,7 @@ from app.ai_contract import analyze_with_structured_contract
 from app.config import load_settings
 from app.models import IncidentInput
 from app.model_router import RouteConstraints, choose_model_route
+from app.reliability import new_trace_id, run_eval_baseline
 
 
 class AnalyzeRequest(BaseModel):
@@ -51,6 +52,7 @@ class AIAnalyzeRequest(BaseModel):
 class AIAnalyzeResponse(BaseModel):
     """Structured response shape expected from future AI analysis."""
 
+    trace_id: str
     category: str
     severity: str
     confidence: float
@@ -76,11 +78,24 @@ class AIRouteRequest(BaseModel):
 class AIRouteResponse(BaseModel):
     """Provider-neutral route decision response."""
 
+    trace_id: str
     severity_used: str
     selected_route: dict[str, object]
     fallback_route: dict[str, object]
     reason: str
     provider_call_made: bool
+
+
+class EvalBaselineResponse(BaseModel):
+    """Local reliability baseline response."""
+
+    trace_id: str
+    mode: str
+    provider_call_made: bool
+    total_cases: int
+    passed_cases: int
+    score: float
+    results: list[dict[str, object]]
 
 
 settings = load_settings()
@@ -127,6 +142,7 @@ def ai_analyze(request: AIAnalyzeRequest) -> AIAnalyzeResponse:
         IncidentInput(message=request.message, source=request.source)
     )
     return AIAnalyzeResponse(
+        trace_id=new_trace_id(),
         category=result.category,
         severity=result.severity,
         confidence=result.confidence,
@@ -156,9 +172,18 @@ def ai_route(request: AIRouteRequest) -> AIRouteResponse:
         )
     )
     return AIRouteResponse(
+        trace_id=new_trace_id(),
         severity_used=severity,
         selected_route=decision.selected_route,
         fallback_route=decision.fallback_route,
         reason=decision.reason,
         provider_call_made=decision.provider_call_made,
     )
+
+
+@app.get("/ai/eval/baseline", response_model=EvalBaselineResponse)
+def ai_eval_baseline() -> EvalBaselineResponse:
+    """Run the local Phase 1 reliability baseline."""
+
+    result = run_eval_baseline()
+    return EvalBaselineResponse(**result)
