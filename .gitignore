@@ -1,5 +1,6 @@
 *.code-workspace
 *.code-workspace
 .aois-state/
+.venv/
 __pycache__/
 *.pyc
