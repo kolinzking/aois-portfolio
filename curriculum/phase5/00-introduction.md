@@ -1,6 +1,6 @@
 # Phase 5 Introduction
 
-Authoring status: partial
+Authoring status: authored
 
 Phase 5 is Inference and GPU Engineering.
 

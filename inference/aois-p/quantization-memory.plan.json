@@ -1,0 +1,65 @@
+{
+  "mode": "quantization_memory_plan_no_runtime",
+  "namespace": "aois-p",
+  "quantization_job_started": false,
+  "model_downloaded": false,
+  "gpu_runtime_started": false,
+  "inference_runtime_started": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_quantization": false,
+  "precision_options": [
+    {
+      "name": "fp16-baseline",
+      "weight_bits": 16,
+      "simulated_memory_gb": 14.0,
+      "simulated_speed_index": 1.0,
+      "simulated_quality_score": 0.92,
+      "live_use_approved": false
+    },
+    {
+      "name": "int8-placeholder",
+      "weight_bits": 8,
+      "simulated_memory_gb": 7.5,
+      "simulated_speed_index": 1.35,
+      "simulated_quality_score": 0.9,
+      "live_use_approved": false
+    },
+    {
+      "name": "int4-placeholder",
+      "weight_bits": 4,
+      "simulated_memory_gb": 4.2,
+      "simulated_speed_index": 1.65,
+      "simulated_quality_score": 0.84,
+      "live_use_approved": false
+    }
+  ],
+  "controls": {
+    "quality_eval_required": true,
+    "memory_measurement_required": true,
+    "latency_measurement_required": true,
+    "throughput_measurement_required": true,
+    "calibration_data_review_required": true,
+    "task_regression_eval_required": true,
+    "fallback_precision_required": true,
+    "rollback_plan_required": true,
+    "resource_usage_record_required": true,
+    "primary_aois_separation_required": true
+  },
+  "limits": {
+    "max_quantization_jobs_for_lesson": 0,
+    "max_model_artifact_mb": 0,
+    "max_spend_usd": 0
+  },
+  "required_before_live_quantization": [
+    "model_artifact_approval",
+    "quantization_method_review",
+    "calibration_data_review",
+    "quality_eval_baseline",
+    "task_regression_eval",
+    "memory_benchmark",
+    "latency_benchmark",
+    "fallback_precision_plan",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}

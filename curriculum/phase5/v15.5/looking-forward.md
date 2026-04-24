@@ -1,11 +1,17 @@
 # v15.5 Looking Forward
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What You Should Carry Forward
 
-TODO
+Carry forward these rules:
+
+1. Smaller model footprint can reduce quality.
+2. Memory benchmarks and quality evals must be paired.
+3. Task regression eval is mandatory.
+4. Fallback precision is mandatory.
+5. Live quantization needs approval.
 
 ## What The Next Version Will Build On
 
-TODO
+Phase 6 builds on this by adding observability, streaming, and reliability.

@@ -1,19 +1,19 @@
 # v15.5 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+An INT4 artifact fits memory but produces worse incident recommendations.
 
 ## Root Cause
 
-TODO
+The team optimized footprint and skipped task regression evaluation.
 
 ## Fix
 
-TODO
+Roll back to FP16 or INT8 and rerun quality evals.
 
 ## Prevention
 
-TODO
+Require quality eval, task regression eval, and fallback precision before using lower precision.
