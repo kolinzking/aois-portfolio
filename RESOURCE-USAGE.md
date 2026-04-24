@@ -37,3 +37,4 @@ Small Markdown/code edits do not need a new row unless they are part of a checkp
 | Date | Change | Disk footprint | Runtime impact |
 |---|---|---:|---|
 | 2026-04-24 | Baseline after authoring through `v0.5` | `9.1M` | No persistent runtime |
+| 2026-04-24 | Added server assessment and `aois-p` resource-management plan | `9.1M` before commit | No persistent runtime |

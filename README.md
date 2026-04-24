@@ -15,3 +15,5 @@ See [RESOURCE-POLICY.md](RESOURCE-POLICY.md) before running services, installing
 This portfolio project uses the operational name `aois-p` so it is not confused with the primary AOIS workload on the same server.
 
 Current footprint is tracked in [RESOURCE-USAGE.md](RESOURCE-USAGE.md).
+
+Current shared-server assessment is tracked in [SERVER-ASSESSMENT.md](SERVER-ASSESSMENT.md).
