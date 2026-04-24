@@ -33,16 +33,19 @@ Official source families and source-currency rules for fast-moving infrastructur
 9. [REPO-BLUEPRINT.md](REPO-BLUEPRINT.md)
 How the repo grows into a full AOIS institution and product codebase.
 
-10. [CONTINUITY.md](CONTINUITY.md)
+10. [../RESOURCE-POLICY.md](../RESOURCE-POLICY.md)
+Resource boundaries for running AOIS safely on a shared 16 GB RAM server.
+
+11. [CONTINUITY.md](CONTINUITY.md)
 How the institution survives interruption and how to resume cleanly.
 
-11. [STUDY-PACING.md](STUDY-PACING.md)
+12. [STUDY-PACING.md](STUDY-PACING.md)
 How long the curriculum takes at different daily study paces.
 
-12. [TABLE-OF-CONTENTS.md](TABLE-OF-CONTENTS.md)
+13. [TABLE-OF-CONTENTS.md](TABLE-OF-CONTENTS.md)
 Global navigation for the full curriculum.
 
-13. [CORPUS-STATUS.md](CORPUS-STATUS.md)
+14. [CORPUS-STATUS.md](CORPUS-STATUS.md)
 Current authoring state across the full curriculum.
 
 ## Current Status

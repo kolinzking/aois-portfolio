@@ -1,5 +1,13 @@
 # AOIS Portfolio
 
-Content reset in progress.
+AOIS is a self-paced curriculum and live Codex-taught portfolio for AI infrastructure mastery.
 
-This repository currently preserves the institution framework and file structure while lesson and implementation content are being rebuilt.
+The repository is being rebuilt phase by phase.
+
+Important operating constraint:
+
+- this is secondary work on a shared 16 GB RAM server
+- the primary server project takes priority
+- AOIS work must stay lightweight unless heavier commands are explicitly approved
+
+See [RESOURCE-POLICY.md](RESOURCE-POLICY.md) before running services, installing dependencies, pulling images, or starting heavy workloads.
