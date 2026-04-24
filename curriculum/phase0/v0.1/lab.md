@@ -65,6 +65,12 @@ chmod 644 /tmp/linux-demo.txt
 cat /tmp/linux-demo.txt
 ```
 
+Cleanup:
+
+```bash
+rm -f /tmp/linux-demo.txt
+```
+
 Then do a path break:
 
 ```bash
@@ -92,6 +98,12 @@ Explain:
 - why the message was not written to `out.txt`
 - why the failure still produced visible information
 
+Cleanup:
+
+```bash
+rm -f /tmp/out.txt /tmp/err.txt
+```
+
 ## Explanation Lab
 
 Answer:
@@ -108,3 +120,15 @@ Answer:
 Defend:
 
 `teaching Linux before Bash is the right decision`
+
+## Benchmark Lab
+
+Score yourself from `1` to `5`:
+
+- `5`: I can inspect, recover, explain, and classify failures without hints.
+- `4`: I can complete the work but one explanation still needs refinement.
+- `3`: I can run commands but still need help diagnosing.
+- `2`: I can copy commands but cannot explain outputs.
+- `1`: I am still blind in the terminal.
+
+Minimum pass: `4`.

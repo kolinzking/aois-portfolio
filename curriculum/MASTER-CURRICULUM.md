@@ -161,8 +161,8 @@ Build the engineering substrate that everything else depends on.
 
 Versions:
 
-- v0.1 Linux, processes, files, permissions, system inspection
-- v0.2 Bash, parsing, automation, reusable scripts
+- v0.1 Linux, processes, files, permissions, direct system inspection
+- v0.2 Bash, parsing, automation, reusable scripts, rule-based log interpretation
 - v0.3 Git, repo hygiene, branch logic, commit thinking, PR mindset
 - v0.4 Networking, TCP/IP, DNS, ports, HTTP, `curl`, request tracing
 - v0.5 Python core, venvs, packages, typing, async, errors, Pydantic

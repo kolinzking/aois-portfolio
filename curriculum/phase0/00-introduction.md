@@ -46,8 +46,8 @@ Phase 0 exists so later complexity never feels magical.
 
 | Version | Focus | Build |
 |---|---|---|
-| `v0.1` | Linux essentials | `scripts/sysinfo.sh` |
-| `v0.2` | Bash scripting | `scripts/log_analyzer.sh` |
+| `v0.1` | Linux essentials | direct inspection and failure classification drills |
+| `v0.2` | Bash scripting | `scripts/sysinfo.sh` and `scripts/log_analyzer.sh` |
 | `v0.3` | Git and GitHub discipline | clean repo history |
 | `v0.4` | Networking and HTTP | direct request inspection drills |
 | `v0.5` | Python for AOIS | typed utility and model layer |

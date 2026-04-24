@@ -2,13 +2,17 @@
 
 ## What Was Built
 
-The first AOIS automation artifact: a reusable Bash system report script.
+The first AOIS automation artifacts:
+
+- a reusable Bash system report script
+- a rule-based log analyzer
 
 ## What Was Learned
 
 Bash is what turns isolated Linux commands into repeatable operational behavior.
+It can also classify simple text patterns, but that classification is brittle.
 
 ## Core Limitation Or Tradeoff
 
-The script improves reuse, but it is still deterministic and shallow.
-It reports signals, not meaning.
+The scripts improve reuse and first-pass interpretation, but they are still deterministic and shallow.
+They report and match signals; they do not truly understand incidents.

@@ -11,6 +11,9 @@ Use this file when you want to move across phases and versions quickly.
 - [Syllabus](SYLLABUS.md)
 - [Full Program Map](FULL-PROGRAM-MAP.md)
 - [Version Standard](VERSION-STANDARD.md)
+- [Quality Gates](QUALITY-GATES.md)
+- [Codex Live Teacher Mode](CODEX-GUIDE-MODE.md)
+- [Source Currency](SOURCE-CURRENCY.md)
 - [Study Pacing](STUDY-PACING.md)
 - [Continuity](CONTINUITY.md)
 - [Corpus Status](CORPUS-STATUS.md)
@@ -27,6 +30,7 @@ Use this file when you want to move across phases and versions quickly.
 - [v0.6](phase0/v0.6/notes.md)
 - [v0.7](phase0/v0.7/notes.md)
 - [v0.8](phase0/v0.8/notes.md)
+- [Phase 0 Capstone](phase0/phase-capstone.md)
 - [Phase 0 Looking Forward](phase0/looking-forward.md)
 
 ## Phase 1

@@ -47,7 +47,7 @@ Build the engineering substrate for everything that follows.
 ### v0.1 - Linux Essentials And Machine Inspection
 
 Build:
-`scripts/sysinfo.sh`
+Direct Linux inspection drills and a written first-system signal interpretation.
 
 Core concepts:
 
@@ -74,11 +74,13 @@ Labs:
 ### v0.2 - Bash Rule-Based Log Interpretation
 
 Build:
-`scripts/log_analyzer.sh`
+`scripts/sysinfo.sh` and `scripts/log_analyzer.sh`
 
 Core concepts:
 
 - shell arguments
+- command sequencing
+- reusable script files
 - shell branching
 - arguments
 - `if`/`elif`/`else`

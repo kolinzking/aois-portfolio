@@ -13,6 +13,7 @@
 - [Build](notes.md#build)
 - [Ops Lab](notes.md#ops-lab)
 - [Break Lab](notes.md#break-lab)
+- [Benchmark](notes.md#benchmark)
 - [Mastery Checkpoint](notes.md#mastery-checkpoint)
 
 ## Practice Files

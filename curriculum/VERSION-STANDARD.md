@@ -4,6 +4,35 @@ This document defines the teaching and artifact standard for every AOIS version.
 
 If a version does not satisfy this document, it is not complete.
 
+## Version Status Labels
+
+Use these labels consistently in lesson files and `CORPUS-STATUS.md`.
+
+- `scaffolded`: file structure exists, but the lesson cannot teach the topic yet
+- `partial`: real content exists, but one or more required labs, answer keys, artifacts, or gates are missing
+- `authored`: the version can be completed self-paced from repo materials alone
+- `reviewed`: the version has passed a full quality review and command validation pass
+- `taught`: the version has been used in a real learning session and improved from observed failure points
+
+Do not mark a version `authored` unless the build, ops, break, benchmark, explanation, defense, and recovery path are all present.
+
+## Quality Gate
+
+Every authored version must pass this gate before it is treated as complete.
+
+| Gate | Requirement |
+|---|---|
+| Build | The learner creates or modifies a real artifact, or performs a deliberate direct-operations exercise when the version is pre-automation. |
+| Operate | The learner inspects behavior through real commands, logs, metrics, traces, requests, database queries, or cluster tooling. |
+| Break | The learner triggers or studies a real failure mode and records symptom, cause, fix, and false conclusion prevented. |
+| Measure | The learner records at least one concrete benchmark or timed/scored capability check. |
+| Explain | The learner answers the 4-layer tool drill and 4-level system explanation drill. |
+| Defend | The learner explains why this design/tool is used here and what simpler or stronger alternatives exist. |
+| Extend | The learner completes one small extension or can describe exactly what extension comes next. |
+
+The minimum pass threshold is all seven gates.
+If a gate is intentionally deferred, the lesson must say why and where that gate is satisfied later.
+
 ## Content Quality Rule
 
 This standard is designed to produce mastery, not note-taking.
@@ -70,6 +99,23 @@ This means:
 
 The curriculum is not allowed to assume competence that has not yet been built.
 
+## Source Currency Rule
+
+Frontier and fast-moving topics must be checked against official or primary sources during authoring.
+
+This applies especially to:
+
+- OpenAI API behavior and model guidance
+- Kubernetes behavior and production primitives
+- OpenTelemetry concepts and signal semantics
+- vLLM, NVIDIA GPU Operator, NVIDIA NIM, and Triton behavior
+- MCP specification and tool/resource/prompt semantics
+- Temporal, LangGraph, and durable agent workflow behavior
+- cloud provider services, IAM, managed AI services, and security controls
+
+Each frontier-facing version must include a short source note naming the official docs or primary references used during the most recent authoring pass.
+Do not freeze fast-moving claims in the curriculum without either a dated source note or a clear statement that the material is conceptual and version-independent.
+
 ## Required Files Per Version
 
 Each version should eventually include:
@@ -113,6 +159,7 @@ Estimated time: X-Y hours
 ## Failure Story
 ## Mastery Checkpoint
 ## Connection Forward
+## Source Notes
 ```
 
 ## Mandatory Labs
@@ -324,6 +371,38 @@ The mastery checkpoint must test:
 - diagnosis
 - tradeoff reasoning
 - forward connection to later AOIS phases
+
+## Codex Live Teacher Standard
+
+Every authored version should support two operating modes:
+
+- self-paced mode, where the learner can complete the lesson from files alone
+- Codex live teacher mode, where Codex actively teaches, demonstrates, reviews, debugs, quizzes, and extends the lesson
+
+Codex live teacher mode must not weaken the written curriculum.
+The files must still be complete enough for independent study.
+
+When Codex is present, however, it should not be relegated to a passive guide.
+It should teach like a live instructor:
+
+- introduce the concept
+- explain why it matters
+- walk through examples
+- ask the learner to run commands
+- interpret outputs with the learner
+- diagnose mistakes
+- quiz for mastery
+- push for stronger explanations
+
+Each phase should eventually include suggested Codex prompts for:
+
+- prerequisite check
+- live lesson walkthrough
+- stuck-state diagnosis
+- architecture defense review
+- benchmark interpretation
+- mastery checkpoint quiz
+- extension challenge
 
 ## Cross-Version Continuity Questions
 

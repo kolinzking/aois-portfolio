@@ -3,6 +3,7 @@
 ## What This Version Unlocks
 
 You can now automate a useful operational workflow instead of repeating commands manually.
+You can also see the first limit of deterministic interpretation: string rules help, but they miss real issues when the wording changes.
 
 ## Why The Next Version Exists
 

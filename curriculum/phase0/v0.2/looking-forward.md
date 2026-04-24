@@ -4,6 +4,7 @@
 
 Linux commands are now scriptable.
 Bash is the first automation layer in AOIS.
+Rule-based classification is the first interpretation layer, but it is intentionally brittle.
 
 ## What The Next Version Will Build On
 

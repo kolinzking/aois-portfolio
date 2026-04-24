@@ -1,12 +1,18 @@
 # v0.2 - Bash Scripting And First Automation
 
-Estimated time: 4-6 focused hours
+Estimated time: 6-8 focused hours
+
+Authoring status: authored
 
 ## What This Builds
 
-You will build `scripts/sysinfo.sh`, a Bash script that turns direct Linux inspection commands into a reusable system report.
+You will build two Bash scripts:
 
-The report should include:
+- `scripts/sysinfo.sh`, a reusable local system report
+- `scripts/log_analyzer.sh`, a small rule-based log classifier
+
+`scripts/sysinfo.sh` turns direct Linux inspection commands into reusable output.
+The report includes:
 
 - timestamp
 - host identity
@@ -14,7 +20,8 @@ The report should include:
 - memory signal
 - disk signal for `/`
 
-This is the first AOIS automation artifact.
+`scripts/log_analyzer.sh` turns a raw incident message into a basic classification.
+It is intentionally limited so you can feel where deterministic rules help and where they break.
 
 ## Why This Exists
 
@@ -25,14 +32,20 @@ Real systems work requires you to stop typing the same command sequence manually
 
 That is Bash.
 
+This version also introduces the first interpretation boundary:
+
+- visibility says what is present
+- rules classify what the text appears to mean
+- richer AI analysis later handles ambiguity, context, and tradeoffs better than fixed string rules
+
 ## AOIS Connection
 
 The AOIS path is now:
 
-`machine -> shell commands -> Bash script -> reusable visibility`
+`machine -> shell commands -> Bash scripts -> reusable visibility -> first brittle interpretation`
 
-This is still not “intelligence.”
-It is repeatable observation through automation.
+This is still not real AI intelligence.
+It is the first useful automation layer and the first proof that rules alone are limited.
 
 ## Learning Goals
 
@@ -43,6 +56,9 @@ By the end of this version you should be able to:
 - use `set -euo pipefail` and explain why it matters
 - build and run a small Bash script safely
 - explain the difference between Linux commands and Bash automation
+- classify a few operational messages with simple string rules
+- explain why rule-based interpretation fails under wording changes
+- decide when a failure is in the script, in the input, or in the assumption behind the rule
 
 ## Prerequisites
 
@@ -109,6 +125,43 @@ echo "Host: $(hostname)"
 
 This runs a command and inserts its output into another command.
 
+### Positional Arguments
+
+Shell scripts receive arguments.
+
+If you run:
+
+```bash
+./scripts/log_analyzer.sh "gateway returned 5xx"
+```
+
+then the script receives the message as input.
+
+In Bash:
+
+- `$0` is the script name
+- `$1` is the first argument
+- `$#` is the number of arguments
+- `$*` expands all arguments into one message-like string
+
+This matters because scripts are not only command bundles.
+They can also receive operational signals.
+
+### Branching
+
+Bash can choose behavior with `if`, `elif`, `else`, and `fi`.
+
+That is enough to build a primitive log classifier:
+
+- if the message mentions `OOMKilled`, classify memory pressure
+- if it mentions `CrashLoopBackOff`, classify a restart loop
+- if it mentions `5xx`, classify service error
+- otherwise preserve the raw message as unknown
+
+This is useful, but brittle.
+Rules match text.
+They do not understand the system.
+
 ## Build
 
 Create or replace `scripts/sysinfo.sh` with this:
@@ -141,11 +194,42 @@ echo "MEMORY: $(memory_line)"
 echo "DISK: $(disk_line)"
 ```
 
+Create or replace `scripts/log_analyzer.sh` with this:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ $# -lt 1 ]]; then
+  echo "usage: $0 <log message>" >&2
+  exit 2
+fi
+
+message="$*"
+normalized="$(printf '%s' "$message" | tr '[:upper:]' '[:lower:]')"
+
+if [[ "$normalized" == *"oomkilled"* || "$normalized" == *"exit code 137"* ]]; then
+  echo "classification=memory-pressure severity=high action='inspect memory, limits, and recent restarts'"
+elif [[ "$normalized" == *"crashloopbackoff"* || "$normalized" == *"restarting"* ]]; then
+  echo "classification=restart-loop severity=high action='inspect process logs and last exit reason'"
+elif [[ "$normalized" == *"5xx"* || "$normalized" == *"gateway"* ]]; then
+  echo "classification=service-error severity=medium action='inspect HTTP path, upstream service, and recent deploy'"
+elif [[ "$normalized" == *"permission denied"* ]]; then
+  echo "classification=permission-error severity=medium action='inspect path, owner, mode, and execution context'"
+else
+  echo "classification=unknown severity=unknown action='preserve raw message and escalate to richer analysis'"
+fi
+```
+
 Then run:
 
 ```bash
 chmod +x scripts/sysinfo.sh
+chmod +x scripts/log_analyzer.sh
 ./scripts/sysinfo.sh
+./scripts/log_analyzer.sh "gateway returned 5xx after deploy"
+./scripts/log_analyzer.sh "pod OOMKilled exit code 137"
+./scripts/log_analyzer.sh "strange message with no match"
 ```
 
 Expected behavior:
@@ -153,6 +237,8 @@ Expected behavior:
 - the script runs without permission error
 - it prints timestamp, host, CPU, MEMORY, and DISK lines
 - values differ by machine, structure stays similar
+- the analyzer classifies known phrases
+- unmatched messages are preserved as `unknown`
 
 Expected example:
 
@@ -165,6 +251,14 @@ MEMORY: Mem total=7.7Gi used=2.1Gi available=5.3Gi
 DISK: Disk total=32G used=8.5G avail=22G use=29%
 ```
 
+Expected analyzer examples:
+
+```text
+classification=service-error severity=medium action='inspect HTTP path, upstream service, and recent deploy'
+classification=memory-pressure severity=high action='inspect memory, limits, and recent restarts'
+classification=unknown severity=unknown action='preserve raw message and escalate to richer analysis'
+```
+
 ## Ops Lab
 
 Compare the script with the raw commands behind it:
@@ -174,6 +268,9 @@ Compare the script with the raw commands behind it:
 top -bn1 | grep "Cpu(s)"
 free -h
 df -h /
+./scripts/log_analyzer.sh "pod CrashLoopBackOff restarting"
+./scripts/log_analyzer.sh "Permission denied reading /var/log/app.log"
+./scripts/log_analyzer.sh "latency went up but no error string matched"
 ```
 
 Questions:
@@ -182,6 +279,8 @@ Questions:
 2. Why is `available` memory more useful than just `used` memory?
 3. What filesystem is `df -h /` actually reporting?
 4. What did Bash add that Linux commands alone did not?
+5. Which analyzer result is strongest, and which one is weakest?
+6. Why is `unknown` safer than pretending every message has a confident classification?
 
 Answer key:
 
@@ -189,6 +288,8 @@ Answer key:
 2. Because Linux uses memory for cache, so high `used` alone can mislead you
 3. The filesystem mounted at `/`, not every filesystem on the machine
 4. Reuse, formatting, packaging, and repeatable execution
+5. Strong matches like `OOMKilled` or `CrashLoopBackOff` are stronger because the wording is specific; vague latency text is weaker because the script has no context
+6. `unknown` preserves honesty and prevents a false operational conclusion
 
 ## Break Lab
 
@@ -241,14 +342,36 @@ Expected symptom:
 
 - `No such file or directory`
 
+### Option D - Rule brittleness break
+
+Run:
+
+```bash
+./scripts/log_analyzer.sh "the service is unhealthy after the rollout"
+```
+
+Expected symptom:
+
+- the result is `classification=unknown`
+
+Lesson:
+
+- the script may miss a real incident if the wording does not match its rules
+
+False conclusion this prevents:
+
+- "the system is healthy because the rule did not match"
+
 ## Testing
 
 The version passes when:
 
 1. `scripts/sysinfo.sh` runs successfully
-2. you can explain shebang, `set -euo pipefail`, functions, and command substitution
-3. you can recover from the permission break
-4. you can explain how Bash changed the Linux-only workflow from `v0.1`
+2. `scripts/log_analyzer.sh` classifies known examples and preserves unknown examples
+3. you can explain shebang, `set -euo pipefail`, functions, arguments, branching, and command substitution
+4. you can recover from the permission break
+5. you can explain how Bash changed the Linux-only workflow from `v0.1`
+6. you can explain why string matching is useful but brittle
 
 ## Common Mistakes
 
@@ -256,6 +379,8 @@ The version passes when:
 - writing Bash before understanding the Linux commands it wraps
 - copying `set -euo pipefail` without understanding it
 - confusing command output with string literals inside scripts
+- treating string matches as real understanding
+- making every unmatched message look safe instead of unknown
 
 ## Troubleshooting
 
@@ -278,6 +403,18 @@ Measure:
 - script startup feel: instant or noticeable
 - whether the output can be interpreted in under 10 seconds
 - whether the script removes manual repetition cleanly
+- whether known analyzer examples classify correctly
+- whether unknown messages remain clearly unknown
+
+Score yourself:
+
+| Score | Meaning |
+|---|---|
+| 5/5 | Both scripts run, you can explain every Bash mechanism used, and you can identify rule brittleness without help. |
+| 4/5 | Both scripts run and explanations are mostly strong, but one Bash concept needs review. |
+| 3/5 | Scripts run, but you still copy patterns without confidently diagnosing failures. |
+| 2/5 | One script works, but debugging depends on guesswork. |
+| 1/5 | The scripts are opaque and failures feel random. |
 
 Interpretation:
 
@@ -287,12 +424,14 @@ At `v0.2`, good means:
 - the output is readable
 - the script saves manual retyping
 - the Bash layer remains understandable
+- the analyzer is useful only within the limits of its rules
 
 ## Architecture Defense
 
 Why use Bash here instead of Python?
 
 Because the signals already exist on the machine and Bash is the shortest path to reusable shell automation.
+It also exposes the limits of text rules before introducing Python services and AI analysis.
 
 Why not stay with raw Linux commands only?
 
@@ -314,19 +453,33 @@ It is a combination of Bash safety options that stop execution on command failur
 4. Hands-on Proof
 If it is removed, bad assumptions can survive longer and produce misleading output.
 
+Tool: string-matching rules
+
+1. Plain English
+They classify messages by looking for known words or phrases.
+
+2. System Role
+They create AOIS's first interpretation layer after raw machine visibility.
+
+3. Minimal Technical Definition
+They are deterministic Bash conditional checks over normalized input text.
+
+4. Hands-on Proof
+If the incident wording changes, the script can return `unknown` even when the underlying problem is real.
+
 ## 4-Level System Explanation Drill
 
 1. Simple English
-I turned Linux inspection commands into a reusable Bash script.
+I turned Linux inspection commands and a few log patterns into reusable Bash scripts.
 
 2. Practical Explanation
-The system now produces the same local health report on demand instead of relying on manual command repetition.
+The system now produces a local health report and can classify a few common incident messages on demand.
 
 3. Technical Explanation
-I wrote a Bash script with functions, command substitution, and safety flags to wrap Linux inspection commands into one repeatable report.
+I wrote Bash scripts with functions, arguments, command substitution, branching, text normalization, and safety flags.
 
 4. Engineer-Level Explanation
-AOIS now automates direct Linux visibility through a Bash entrypoint that packages `hostname`, `top`, `free`, and `df` into a consistent report while using `set -euo pipefail` to reduce silent shell failure modes.
+AOIS now has a reusable shell automation layer that packages local machine inspection and deterministic incident classification, proving both the value of automation and the limit of brittle text rules before the system moves into Git discipline, typed Python, API contracts, and AI-backed analysis.
 
 ## Failure Story
 
@@ -346,9 +499,15 @@ Do not move on until you can answer:
 2. What is the purpose of the shebang?
 3. Why use `set -euo pipefail`?
 4. What is command substitution?
-5. Why is this version Bash and not Linux fundamentals?
-6. Explain `set -euo pipefail` using the 4-layer tool rule.
-7. Explain `v0.2` using the 4-level system explanation rule.
+5. What is the difference between a function and a raw command?
+6. How does `scripts/log_analyzer.sh` receive input?
+7. Why is string matching useful?
+8. Why is string matching brittle?
+9. Why is `unknown` a better answer than a fake confident classification?
+10. Why is this version Bash and not Linux fundamentals?
+11. Explain `set -euo pipefail` using the 4-layer tool rule.
+12. Explain rule-based log classification using the 4-layer tool rule.
+13. Explain `v0.2` using the 4-level system explanation rule.
 
 ## Connection Forward
 
@@ -357,3 +516,10 @@ Do not move on until you can answer:
 `automate what you can already inspect`
 
 `v0.3` moves from shell automation into Git discipline, where the repo itself becomes engineering memory.
+
+## Source Notes
+
+This version uses stable Bash behavior and local command-line operation.
+No fast-moving external source is required for the core lesson.
+
+If this script is later adapted for production shell entrypoints, CI runners, or container init behavior, add source notes for that runtime because shell behavior, working directories, and available commands may differ.

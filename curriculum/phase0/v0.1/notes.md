@@ -4,7 +4,7 @@ Estimated time: 5-7 focused hours
 
 Quality Target: Elite
 
-Quality Stamp: Not Yet Elite / Frontier
+Quality Stamp: Authored / Foundation-Grade
 
 ## What This Builds
 
@@ -681,12 +681,30 @@ Measure:
 - whether the terminal feels less opaque at the end of the lesson than at the start
 - whether you can classify a failure as path, permission, or interpretation without guessing
 
+Score yourself:
+
+| Score | Meaning |
+|---|---|
+| 5/5 | You can run the checks, interpret them, recover from the breaks, and explain the false conclusions without help. |
+| 4/5 | You can run and recover, but one explanation is still vague. |
+| 3/5 | You can follow the commands, but diagnosis still depends on hints. |
+| 2/5 | You can produce output, but cannot reliably explain what it means. |
+| 1/5 | You are still copying commands blindly. |
+
 Interpretation:
 
 At `v0.1`, the goal is not automation.
 The goal is direct machine legibility.
 
 If you still treat the machine as a black box, this lesson is unfinished.
+
+Minimum pass:
+
+- score at least `4/5`
+- classify one path failure correctly
+- classify one permission failure correctly
+- explain why `used` memory alone can mislead you
+- explain why `stderr` and `stdout` separation matters later for scripts and logs
 
 ## Architecture Defense
 
@@ -764,3 +782,10 @@ Do not move on until you can answer:
 `observe before you interpret`
 
 `v0.2` will keep these Linux commands, but start teaching Bash so you can automate and compose them into real scripts.
+
+## Source Notes
+
+This version uses stable Linux command behavior and local terminal observation.
+No fast-moving external source is required for the core lesson.
+
+If this version is later adapted to containers, remote VMs, or Kubernetes nodes, add source notes for that runtime because process, filesystem, and permission visibility can change under isolation.

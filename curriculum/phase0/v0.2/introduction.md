@@ -6,6 +6,11 @@
 
 This is where Linux commands stop being isolated and start becoming reusable automation.
 
+This version builds two artifacts:
+
+- `scripts/sysinfo.sh`
+- `scripts/log_analyzer.sh`
+
 ## Why It Matters In AOIS
 
 Later in AOIS you will constantly meet:
@@ -18,9 +23,13 @@ Later in AOIS you will constantly meet:
 
 If Bash remains vague, later infrastructure work becomes cargo-cult execution.
 
+If rule-based interpretation remains vague, later AI work becomes hype.
+This version shows both why rules are useful and why they are not enough.
+
 ## How To Use This Version
 
 1. read the notes in order
 2. build the script exactly once before modifying it
 3. run the break lab on purpose
-4. do not move on until Bash stops feeling magical and starts feeling mechanical
+4. compare known matches against unknown messages
+5. do not move on until Bash stops feeling magical and starts feeling mechanical

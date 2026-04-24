@@ -21,19 +21,28 @@ How the course is taught and how mastery is measured.
 5. [VERSION-STANDARD.md](VERSION-STANDARD.md)
 The required standard for every version lesson pack.
 
-6. [REPO-BLUEPRINT.md](REPO-BLUEPRINT.md)
+6. [QUALITY-GATES.md](QUALITY-GATES.md)
+Concrete pass/fail gates for versions, phases, and frontier-facing topics.
+
+7. [CODEX-GUIDE-MODE.md](CODEX-GUIDE-MODE.md)
+How to use Codex as a live teacher while preserving self-paced mastery.
+
+8. [SOURCE-CURRENCY.md](SOURCE-CURRENCY.md)
+Official source families and source-currency rules for fast-moving infrastructure topics.
+
+9. [REPO-BLUEPRINT.md](REPO-BLUEPRINT.md)
 How the repo grows into a full AOIS institution and product codebase.
 
-7. [CONTINUITY.md](CONTINUITY.md)
+10. [CONTINUITY.md](CONTINUITY.md)
 How the institution survives interruption and how to resume cleanly.
 
-8. [STUDY-PACING.md](STUDY-PACING.md)
+11. [STUDY-PACING.md](STUDY-PACING.md)
 How long the curriculum takes at different daily study paces.
 
-9. [TABLE-OF-CONTENTS.md](TABLE-OF-CONTENTS.md)
+12. [TABLE-OF-CONTENTS.md](TABLE-OF-CONTENTS.md)
 Global navigation for the full curriculum.
 
-10. [CORPUS-STATUS.md](CORPUS-STATUS.md)
+13. [CORPUS-STATUS.md](CORPUS-STATUS.md)
 Current authoring state across the full curriculum.
 
 ## Current Status
