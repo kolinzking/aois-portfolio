@@ -1,19 +1,32 @@
 # v6 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+A portfolio pod consumes more memory than expected on the shared server.
 
 ## Root Cause
 
-TODO
+The workload was applied without quota, default limits, or container memory limits.
 
 ## Fix
 
-TODO
+Add and validate:
+
+- `ResourceQuota`
+- `LimitRange`
+- deployment `resources`
+- one replica
 
 ## Prevention
 
-TODO
+Validate manifests before applying.
+
+Keep portfolio workloads in `aois-p`.
+
+Record resource usage after any approved apply.
+
+## What This Taught Me
+
+Kubernetes safety starts before live cluster mutation.

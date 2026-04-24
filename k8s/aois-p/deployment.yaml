@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aois-p-api
+  namespace: aois-p
+  labels:
+    app.kubernetes.io/name: aois-p-api
+    app.kubernetes.io/part-of: aois-portfolio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: aois-p-api
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: aois-p-api
+        app.kubernetes.io/part-of: aois-portfolio
+    spec:
+      containers:
+        - name: api
+          image: aois-p/api:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8006
+          env:
+            - name: AOIS_APP_NAME
+              value: aois-p
+            - name: AOIS_ENV
+              value: kubernetes
+            - name: AOIS_PROVIDER_CALLS_ENABLED
+              value: "false"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "250m"
+              memory: "256Mi"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8006
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8006
+            initialDelaySeconds: 15
+            periodSeconds: 20
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            runAsNonRoot: true

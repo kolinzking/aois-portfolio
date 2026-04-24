@@ -1,15 +1,46 @@
 # v6 Runbook
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Purpose
 
-TODO
+Use this runbook when the Kubernetes plan validator fails or someone wants to apply manifests.
 
 ## Primary Checks
 
-TODO
+Validate without applying:
+
+```bash
+python3 examples/validate_k8s_plan.py
+```
+
+Inspect:
+
+```bash
+sed -n '1,220p' k8s/aois-p/deployment.yaml
+sed -n '1,160p' k8s/aois-p/resource-quota.yaml
+```
 
 ## Recovery Steps
 
-TODO
+If validation fails:
+
+- read the `missing` list
+- restore the referenced manifest field
+- rerun the validator
+
+If applying is requested:
+
+- stop
+- confirm target cluster
+- confirm namespace is `aois-p`
+- confirm resource budget
+- confirm image availability
+- get explicit approval
+- record resource usage after apply
+
+If resources appear unexpectedly:
+
+- identify whether they are portfolio-owned
+- do not delete primary AOIS resources
+- ask before changing live cluster state
