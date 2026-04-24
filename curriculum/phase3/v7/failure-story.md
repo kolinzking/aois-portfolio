@@ -1,19 +1,25 @@
 # v7 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+A Helm chart installs workloads without resource limits.
 
 ## Root Cause
 
-TODO
+The raw manifest limits were lost during chart templating.
 
 ## Fix
 
-TODO
+Put limits in `values.yaml` and wire them into deployment templates.
 
 ## Prevention
 
-TODO
+Validate the chart before install.
+
+Compare chart controls to the original manifests.
+
+## What This Taught Me
+
+Packaging must preserve safety controls.

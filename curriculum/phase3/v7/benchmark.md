@@ -1,11 +1,38 @@
 # v7 Benchmark
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Measurements
 
-TODO
+Record:
+
+- validator compile result
+- validator status
+- chart name
+- namespace value
+- provider gate value
+- whether Helm install ran
+- repo disk footprint
+- memory snapshot
+
+## Score
+
+| Score | Meaning |
+|---|---|
+| 5 | You can inspect, validate, break, explain, and defend a Helm chart without installing. |
+| 4 | Chart validates, but one Helm concept needs review. |
+| 3 | Files exist, but values or templates are unclear. |
+| 2 | Chart exists, but install risk is unclear. |
+| 1 | Helm still means blindly installing charts. |
+
+Minimum pass: `4`.
 
 ## Interpretation
 
-TODO
+At `v7`, good means:
+
+- chart structure is clear
+- values preserve `aois-p`
+- provider calls remain disabled
+- limits remain configurable
+- no Helm release is installed

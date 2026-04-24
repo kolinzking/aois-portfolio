@@ -1,15 +1,23 @@
 # v7 Introduction
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Is About
 
-TODO
+`v7` packages the AOIS Kubernetes plan into a Helm chart.
+
+It creates chart metadata, values, templates, and validation without installing a release.
 
 ## Why It Matters In AOIS
 
-TODO
+AOIS needs reusable deployment configuration.
+
+Helm gives structure, but installing a chart still changes the live cluster, so this version stays validation-only.
 
 ## How To Use This Version
 
-TODO
+1. inspect chart files
+2. inspect values
+3. inspect templates
+4. run the validator
+5. explain why `helm install` is gated
