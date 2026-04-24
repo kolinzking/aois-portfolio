@@ -1,19 +1,29 @@
 # v9 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+Autoscaling creates more pods and memory pressure returns.
 
 ## Root Cause
 
-TODO
+Max replicas were raised without resource budget or dependency-capacity review.
 
 ## Fix
 
-TODO
+Cap replicas and require approval before live autoscaling:
+
+```yaml
+maxReplicas: 1
+```
 
 ## Prevention
 
-TODO
+Validate autoscaling plans before applying.
+
+Record resource impact for every scaling change.
+
+## What This Taught Me
+
+Autoscaling is controlled resource multiplication.

@@ -1,15 +1,39 @@
 # v9 Runbook
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Purpose
 
-TODO
+Use this runbook when autoscaling validation fails or someone wants to enable live scaling.
 
 ## Primary Checks
 
-TODO
+Validate:
+
+```bash
+python3 examples/validate_autoscaling_plan.py
+```
+
+Inspect:
+
+```bash
+sed -n '1,200p' k8s/aois-p/hpa.yaml
+sed -n '1,220p' k8s/aois-p/keda-scaledobject.plan.yaml
+```
 
 ## Recovery Steps
 
-TODO
+If validation fails:
+
+- read `missing`
+- restore max replicas cap
+- rerun the validator
+
+If live scaling is requested:
+
+- stop
+- estimate CPU/RAM per replica
+- confirm max replica count
+- confirm dependency capacity
+- get explicit approval
+- record resource usage after apply

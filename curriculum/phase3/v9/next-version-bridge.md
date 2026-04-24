@@ -1,11 +1,13 @@
 # v9 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+`v9` completes Phase 3 infrastructure and GitOps planning.
 
 ## Why The Next Version Exists
 
-TODO
+Phase 4 moves into enterprise cloud equivalents.
+
+The next phase should compare managed cloud services to the Kubernetes/GitOps concepts already built.

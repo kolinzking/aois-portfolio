@@ -1,11 +1,17 @@
 # v9 Looking Forward
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What You Should Carry Forward
 
-TODO
+- autoscaling creates resource pressure
+- max replicas are safety controls
+- event-driven scaling needs controller/runtime approval
+- GitOps should review scaling policy
+- primary AOIS priority remains non-negotiable
 
 ## What The Next Version Will Build On
 
-TODO
+Phase 4 will map these infrastructure ideas to enterprise cloud services.
+
+The resource discipline from Phase 3 must remain active when cloud-managed services are introduced.

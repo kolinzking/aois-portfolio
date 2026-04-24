@@ -1,15 +1,23 @@
 # v9 Summary Notes
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What Was Built
 
-TODO
+Autoscaling plans:
+
+- HPA manifest
+- KEDA ScaledObject plan
+- local validator
 
 ## What Was Learned
 
-TODO
+Autoscaling is powerful but risky on shared infrastructure.
+
+Replica caps, approval gates, and resource accounting are part of scaling design.
 
 ## Core Limitation Or Tradeoff
 
-TODO
+No autoscaling is enabled.
+
+That protects the shared server, but live scaling behavior is not proven yet.
