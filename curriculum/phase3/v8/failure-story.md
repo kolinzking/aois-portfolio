@@ -1,19 +1,31 @@
 # v8 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+A Git commit unexpectedly changes live cluster resources.
 
 ## Root Cause
 
-TODO
+Automated sync was enabled before review and approval discipline was ready.
 
 ## Fix
 
-TODO
+Disable automated sync for the portfolio plan:
+
+```yaml
+automated: null
+```
 
 ## Prevention
 
-TODO
+Validate GitOps manifests before applying them.
+
+Keep sync gated until resource and deployment impact is approved.
+
+## What This Taught Me
+
+GitOps is deployment power through Git.
+
+That power needs review and approval boundaries.
