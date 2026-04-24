@@ -1,15 +1,16 @@
 # v0.6 Summary Notes
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What Was Built
 
-TODO
+A FastAPI service shape with `/health` and `/analyze` routes.
 
 ## What Was Learned
 
-TODO
+FastAPI turns Python logic into an HTTP service boundary with request validation and structured responses.
 
 ## Core Limitation Or Tradeoff
 
-TODO
+Runtime practice requires installing FastAPI and uvicorn.
+Because this is a shared server, the install and local server run are resource-gated.

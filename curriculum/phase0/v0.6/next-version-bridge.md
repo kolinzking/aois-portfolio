@@ -1,11 +1,12 @@
 # v0.6 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+AOIS now has a service contract for incident analysis.
 
 ## Why The Next Version Exists
 
-TODO
+Because the current analysis is still deterministic.
+`v0.7` introduces LLM fundamentals so model behavior can be studied before adding AI to the API.

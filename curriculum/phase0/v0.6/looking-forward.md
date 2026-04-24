@@ -1,11 +1,20 @@
 # v0.6 Looking Forward
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What You Should Carry Forward
 
-TODO
+A clear API contract comes before AI.
+
+Before trusting a model behind an endpoint, AOIS needs:
+
+- valid request shape
+- stable response shape
+- visible validation failure
+- HTTP inspection habits
+- resource-safe local runtime practice
 
 ## What The Next Version Will Build On
 
-TODO
+`v0.7` studies LLM fundamentals directly: prompts, tokens, latency, cost, structured output, and provider boundaries.
+Only after that should model calls be placed behind the API.

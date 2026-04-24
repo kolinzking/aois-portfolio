@@ -1,2 +1,4 @@
-# Phase 0 v0.5 uses the Python standard library only.
-# External dependencies are introduced when the FastAPI service layer arrives.
+# Phase 0 v0.6 runtime dependencies.
+# Install only after approving the resource impact in RESOURCE-POLICY.md.
+fastapi
+uvicorn
