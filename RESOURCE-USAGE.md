@@ -42,3 +42,4 @@ Small Markdown/code edits do not need a new row unless they are part of a checkp
 | 2026-04-24 | Created isolated `.venv` and installed FastAPI/Uvicorn with `--no-cache-dir` | `41M` repo, `32M` `.venv` | No persistent runtime |
 | 2026-04-24 | Validated `v0.6` FastAPI runtime on `127.0.0.1:8006` and stopped it | `41M` repo, `32M` `.venv` | Temporary uvicorn used about `45MB RSS`; stopped after validation |
 | 2026-04-24 | Implemented checkpoint/resume persistence scripts | `41M` repo, `32M` `.venv` | No persistent runtime |
+| 2026-04-24 | Authored `v0.7` provider-neutral LLM dry-run lesson and support pack | `41M` repo, `32M` `.venv` | No provider call, no network, no persistent runtime; memory snapshot `15Gi` total, `8.8Gi` used, `6.4Gi` available, swap unused |
