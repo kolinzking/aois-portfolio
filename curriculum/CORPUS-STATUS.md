@@ -75,7 +75,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v13 | authored |
 | v13.5 | authored |
 | v14 | authored |
-| v14.5 | scaffolded |
+| v14.5 | authored |
 | v15 | scaffolded |
 | v15.5 | scaffolded |
 

@@ -1,15 +1,21 @@
 # v14.5 Introduction
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Is About
 
-TODO
+`v14.5` is about performance engineering and caching.
+
+It compares no-cache, prompt-cache, prefix-reuse, and response-cache placeholder paths without starting Redis or writing cache entries.
 
 ## Why It Matters In AOIS
 
-TODO
+Caching can reduce latency and cost, but it can also return stale or unsafe outputs.
+
+AOIS needs caching discipline before cache infrastructure exists.
 
 ## How To Use This Version
 
-TODO
+Run the validator and simulator.
+
+Focus on what each cache layer saves and what correctness boundary it introduces.

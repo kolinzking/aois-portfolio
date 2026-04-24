@@ -1,19 +1,21 @@
 # v14.5 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+A user receives an old incident recommendation after the source incident changed.
 
 ## Root Cause
 
-TODO
+The response cache had no TTL or invalidation policy.
 
 ## Fix
 
-TODO
+Disable the response cache, purge stale entries, define TTL and invalidation rules, then retest.
 
 ## Prevention
 
-TODO
+Validate cache policy before live writes.
+
+Lesson learned: cache speed is useful only when cached data is still correct.

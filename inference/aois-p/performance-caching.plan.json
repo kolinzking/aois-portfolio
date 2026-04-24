@@ -1,0 +1,82 @@
+{
+  "mode": "performance_caching_plan_no_runtime",
+  "namespace": "aois-p",
+  "cache_service_started": false,
+  "redis_installed": false,
+  "cache_entries_created": false,
+  "inference_runtime_started": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_caching": false,
+  "cache_layers": [
+    {
+      "name": "no-cache-baseline",
+      "cache_type": "none",
+      "simulated_hit_rate": 0.0,
+      "simulated_latency_ms": 2200,
+      "simulated_tokens_billed": 1200,
+      "live_use_approved": false
+    },
+    {
+      "name": "prompt-cache-placeholder",
+      "cache_type": "prompt",
+      "simulated_hit_rate": 0.35,
+      "simulated_latency_ms": 1700,
+      "simulated_tokens_billed": 900,
+      "live_use_approved": false
+    },
+    {
+      "name": "prefix-reuse-placeholder",
+      "cache_type": "prefix",
+      "simulated_hit_rate": 0.55,
+      "simulated_latency_ms": 1400,
+      "simulated_tokens_billed": 720,
+      "live_use_approved": false
+    },
+    {
+      "name": "response-cache-placeholder",
+      "cache_type": "response",
+      "simulated_hit_rate": 0.2,
+      "simulated_latency_ms": 500,
+      "simulated_tokens_billed": 0,
+      "live_use_approved": false
+    }
+  ],
+  "cache_policy": {
+    "cache_key_design_required": true,
+    "ttl_required": true,
+    "invalidation_required": true,
+    "privacy_boundary_required": true,
+    "freshness_policy_required": true,
+    "tenant_isolation_required": true,
+    "hit_rate_measurement_required": true,
+    "cost_savings_measurement_required": true
+  },
+  "batching_tradeoffs": {
+    "batch_size_review_required": true,
+    "tail_latency_review_required": true,
+    "throughput_review_required": true,
+    "quality_regression_review_required": true
+  },
+  "controls": {
+    "redis_live_install_disallowed": true,
+    "cache_state_live_write_disallowed": true,
+    "fallback_route_required": true,
+    "observability_required": true,
+    "rollback_plan_required": true,
+    "resource_usage_record_required": true,
+    "primary_aois_separation_required": true
+  },
+  "required_before_live_caching": [
+    "cache_backend_approval",
+    "redis_or_cache_service_plan",
+    "cache_key_review",
+    "ttl_and_invalidation_review",
+    "privacy_boundary_review",
+    "tenant_isolation_review",
+    "hit_rate_baseline",
+    "cost_savings_baseline",
+    "fallback_route_plan",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}
