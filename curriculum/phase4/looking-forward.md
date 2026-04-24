@@ -32,7 +32,7 @@ Before live cloud work, AOIS still needs:
 
 ## Bridge To Phase 5
 
-Phase 5 moves from runtime/cloud planning into data and retrieval infrastructure.
+Phase 5 moves from runtime/cloud planning into inference and GPU engineering.
 
 The same rule continues:
 

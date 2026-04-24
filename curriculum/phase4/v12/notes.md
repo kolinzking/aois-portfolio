@@ -447,4 +447,4 @@ Official docs review, credential plan, budget approval, IAM review, workload ide
 
 `v12` closes Phase 4 by defining enterprise cloud governance without using cloud resources.
 
-`v13` begins Phase 5, where the curriculum moves from cloud planning into data and retrieval infrastructure foundations.
+`v13` begins Phase 5, where the curriculum moves from cloud planning into inference and GPU engineering foundations.

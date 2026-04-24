@@ -15,8 +15,8 @@ Carry forward these rules:
 
 ## What The Next Version Will Build On
 
-Phase 5 builds on this by moving into data and retrieval infrastructure.
+Phase 5 builds on this by moving into inference and GPU engineering.
 
 The next question is:
 
-How does AOIS manage knowledge, retrieval, and data boundaries with the same rigor it now applies to runtime infrastructure?
+How does AOIS own high-performance model execution with the same rigor it now applies to runtime infrastructure?

@@ -1,0 +1,85 @@
+{
+  "mode": "gpu_inference_service_plan_no_runtime",
+  "namespace": "aois-p",
+  "gpu_runtime_started": false,
+  "gpu_required_for_this_lesson": false,
+  "model_downloaded": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_gpu": false,
+  "service": {
+    "name": "aois-p-gpu-inference-placeholder",
+    "route": "/v1/inference",
+    "request_contract": [
+      "trace_id",
+      "model_route",
+      "prompt",
+      "max_tokens",
+      "temperature"
+    ],
+    "response_contract": [
+      "trace_id",
+      "model_route",
+      "output",
+      "latency_ms",
+      "tokens_in",
+      "tokens_out",
+      "backend_metadata"
+    ]
+  },
+  "serving_options": [
+    {
+      "name": "nvidia-nim-placeholder",
+      "role": "packaged_gpu_inference_microservice",
+      "live_use_approved": false
+    },
+    {
+      "name": "triton-style-placeholder",
+      "role": "multi_model_inference_server",
+      "live_use_approved": false
+    },
+    {
+      "name": "vllm-placeholder",
+      "role": "high_throughput_llm_serving",
+      "live_use_approved": false
+    }
+  ],
+  "performance_budget": {
+    "target_p50_latency_ms": 800,
+    "target_p95_latency_ms": 2500,
+    "target_tokens_per_second": 20,
+    "max_concurrent_requests_for_lesson": 0
+  },
+  "gpu_capacity_plan": {
+    "gpu_vendor": "nvidia-placeholder",
+    "gpu_count": 0,
+    "gpu_memory_gb": 0,
+    "cuda_required_for_this_lesson": false,
+    "driver_install_required_for_this_lesson": false,
+    "container_image_built": false
+  },
+  "controls": {
+    "model_license_review_required": true,
+    "model_size_review_required": true,
+    "cost_gate_required": true,
+    "memory_budget_required": true,
+    "latency_measurement_required": true,
+    "throughput_measurement_required": true,
+    "fallback_route_required": true,
+    "observability_required": true,
+    "resource_usage_record_required": true,
+    "primary_aois_separation_required": true
+  },
+  "required_before_live_gpu": [
+    "gpu_hardware_or_cloud_approval",
+    "driver_and_cuda_plan",
+    "container_image_plan",
+    "model_license_review",
+    "model_download_approval",
+    "memory_budget",
+    "cost_budget",
+    "observability_plan",
+    "fallback_route_plan",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}

@@ -16,6 +16,6 @@ AOIS can now explain:
 
 ## Why The Next Version Exists
 
-The next phase moves toward data and retrieval infrastructure.
+The next phase moves toward inference and GPU engineering.
 
-Cloud runtime planning is not enough for frontier AI infrastructure. AOIS also needs to reason about document ingestion, embeddings, vector search, retrieval quality, data boundaries, and evaluation.
+Cloud runtime planning is not enough for frontier AI infrastructure. AOIS also needs to reason about owned model execution, GPU-backed serving, latency, throughput, memory, model artifacts, and fallback routing.
