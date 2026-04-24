@@ -1,11 +1,12 @@
 # v0.4 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+You can now inspect an HTTP service boundary directly from the terminal.
 
 ## Why The Next Version Exists
 
-TODO
+Shell scripts are useful, but AOIS needs maintainable application logic.
+`v0.5` introduces Python for typed utilities, input validation, and structured error handling.
