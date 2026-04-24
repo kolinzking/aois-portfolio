@@ -1,0 +1,65 @@
+{
+  "mode": "event_workflow_plan_no_cloud_call",
+  "namespace": "aois-p",
+  "cloud_resources_created": false,
+  "credentials_used": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_cloud": false,
+  "workflow": {
+    "name": "aois-p-ai-incident-event-flow",
+    "ingress": "aois-p-event-ingress-placeholder",
+    "event_bus": "aois-p-event-bus-placeholder",
+    "queue": "aois-p-analysis-queue-placeholder",
+    "worker": "aois-p-analysis-worker-placeholder",
+    "dead_letter_queue": "aois-p-dlq-placeholder",
+    "result_sink": "aois-p-result-sink-placeholder"
+  },
+  "message_contract": {
+    "required_fields": [
+      "event_id",
+      "trace_id",
+      "idempotency_key",
+      "source",
+      "event_type",
+      "created_at",
+      "payload"
+    ],
+    "payload_limits": {
+      "max_payload_bytes": 262144,
+      "large_payload_policy": "store_pointer_not_blob"
+    }
+  },
+  "controls": {
+    "payload_schema_required": true,
+    "trace_id_required": true,
+    "idempotency_key_required": true,
+    "retry_policy_required": true,
+    "dead_letter_queue_required": true,
+    "timeout_budget_required": true,
+    "least_privilege_required": true,
+    "observability_required": true,
+    "cost_gate_required": true,
+    "rollback_plan_required": true
+  },
+  "limits": {
+    "max_cloud_invocations": 0,
+    "max_concurrency": 0,
+    "max_spend_usd": 0
+  },
+  "retry_policy": {
+    "max_attempts": 3,
+    "backoff": "exponential",
+    "dlq_after_exhaustion": true
+  },
+  "operational_checks_before_live": [
+    "official_provider_docs_review",
+    "credential_storage_plan",
+    "budget_approval",
+    "iam_least_privilege_review",
+    "event_schema_review",
+    "idempotency_test",
+    "dlq_replay_runbook",
+    "observability_dashboard",
+    "rollback_plan"
+  ]
+}

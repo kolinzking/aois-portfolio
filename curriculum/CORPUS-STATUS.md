@@ -65,7 +65,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 |---|---|
 | v10 | authored |
 | v10.5 | authored |
-| v11 | scaffolded |
+| v11 | authored |
 | v12 | scaffolded |
 
 ## Phase5
