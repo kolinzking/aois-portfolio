@@ -1,15 +1,28 @@
 # v15 Contents
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Start Here
 
-TODO
+Start with [introduction.md](introduction.md), then work through [notes.md](notes.md).
+
+This version teaches fine-tuning and adaptation decision-making without training.
 
 ## Topic Jumps
 
-TODO
+- Main lesson: [notes.md](notes.md)
+- Build commands: [notes.md](notes.md#build)
+- Labs: [lab.md](lab.md)
+- Runbook: [runbook.md](runbook.md)
+- Benchmark: [benchmark.md](benchmark.md)
+- Failure story: [failure-story.md](failure-story.md)
+- Next bridge: [next-version-bridge.md](next-version-bridge.md)
 
 ## Self-Paced Path
 
-TODO
+1. Inspect `inference/aois-p/fine-tuning-adaptation.plan.json`.
+2. Run the validator.
+3. Run the adaptation eval simulator.
+4. Compare base and adapted-candidate scores.
+5. Explain the regression.
+6. Complete the mastery checkpoint.

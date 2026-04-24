@@ -1,19 +1,19 @@
 # v15 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+An adapted model improves GPU incident wording but misclassifies ordinary operator requests.
 
 ## Root Cause
 
-TODO
+The team optimized for one domain case and skipped regression evaluation.
 
 ## Fix
 
-TODO
+Reject the adapted candidate, expand eval coverage, and resolve regressions before training.
 
 ## Prevention
 
-TODO
+Require baseline, adapted, holdout, and regression evals before live training.

@@ -1,15 +1,21 @@
 # v15 Introduction
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Is About
 
-TODO
+`v15` is about deciding whether model adaptation is justified.
+
+It does not train a model. It compares base and adapted-candidate behavior through a local simulation.
 
 ## Why It Matters In AOIS
 
-TODO
+Fine-tuning can improve domain fit, but it can also introduce regressions.
+
+AOIS needs eval discipline before it changes model behavior.
 
 ## How To Use This Version
 
-TODO
+Run the validator and simulator.
+
+Focus on why the simulator blocks training even when the adapted candidate improves one case.

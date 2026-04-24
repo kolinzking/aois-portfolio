@@ -1,11 +1,11 @@
 # v15 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+`v15` unlocks adaptation decision discipline.
 
 ## Why The Next Version Exists
 
-TODO
+`v15.5` moves into quantization and memory economics, where AOIS evaluates deployment footprint tradeoffs.

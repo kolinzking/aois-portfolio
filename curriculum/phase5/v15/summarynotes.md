@@ -1,15 +1,23 @@
 # v15 Summary Notes
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What Was Built
 
-TODO
+`v15` built:
+
+- a fine-tuning/adaptation plan
+- a local no-training validator
+- a deterministic base-versus-adapted eval simulator
 
 ## What Was Learned
 
-TODO
+Adaptation is not automatically improvement.
+
+Eval and regression control decide whether adaptation is safe.
 
 ## Core Limitation Or Tradeoff
 
-TODO
+This version does not train.
+
+That is intentional. It teaches adaptation decision discipline before training cost and risk.

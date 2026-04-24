@@ -1,0 +1,71 @@
+{
+  "mode": "fine_tuning_adaptation_plan_no_training",
+  "namespace": "aois-p",
+  "training_job_started": false,
+  "dataset_uploaded": false,
+  "model_downloaded": false,
+  "gpu_runtime_started": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_training": false,
+  "adaptation_options": [
+    {
+      "name": "no_tuning_baseline",
+      "role": "evaluate_existing_behavior",
+      "training_required": false,
+      "recommended_first": true
+    },
+    {
+      "name": "prompt_or_routing_adjustment",
+      "role": "improve_behavior_without_weight_changes",
+      "training_required": false,
+      "recommended_first": true
+    },
+    {
+      "name": "lora_style_placeholder",
+      "role": "parameter_efficient_domain_adaptation",
+      "training_required": true,
+      "recommended_first": false
+    },
+    {
+      "name": "full_fine_tune_placeholder",
+      "role": "large_weight_update_path",
+      "training_required": true,
+      "recommended_first": false
+    }
+  ],
+  "dataset_controls": {
+    "dataset_card_required": true,
+    "pii_review_required": true,
+    "license_review_required": true,
+    "train_validation_split_required": true,
+    "holdout_eval_required": true,
+    "data_version_required": true,
+    "leakage_check_required": true
+  },
+  "eval_controls": {
+    "baseline_eval_required": true,
+    "adapted_eval_required": true,
+    "regression_eval_required": true,
+    "overfit_check_required": true,
+    "quality_gate_required": true,
+    "rollback_plan_required": true
+  },
+  "limits": {
+    "max_training_jobs_for_lesson": 0,
+    "max_uploaded_dataset_mb": 0,
+    "max_spend_usd": 0
+  },
+  "required_before_live_training": [
+    "dataset_card",
+    "pii_review",
+    "license_review",
+    "data_versioning_plan",
+    "train_validation_holdout_split",
+    "baseline_eval",
+    "quality_gate",
+    "cost_budget",
+    "gpu_or_provider_training_approval",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}
