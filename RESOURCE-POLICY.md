@@ -5,6 +5,22 @@ This repository is secondary work on a shared 16 GB RAM server.
 The primary project on the server takes priority.
 AOIS work must not consume excessive memory, disk, CPU, network, or long-running process capacity.
 
+## Project Identity
+
+Use `aois-p` for this portfolio/curriculum project when naming server-side resources.
+
+Reserved naming:
+
+- repo: `aois-portfolio`
+- short name: `aois-p`
+- Kubernetes namespace: `aois-p`
+- labels: `project=aois-p`, `purpose=portfolio-lab`
+- local services: `aois-p-*`
+- future Hetzner resources, if ever needed: `aois-p-*`
+
+Do not name secondary resources simply `aois`.
+That name is reserved for the primary AOIS project.
+
 ## Hard Rules
 
 - Do not run long-lived services unless they are required for a short validation lab.
@@ -16,6 +32,23 @@ AOIS work must not consume excessive memory, disk, CPU, network, or long-running
 - Do not use cloud resources, paid APIs, secrets, or deployment credentials without explicit approval.
 - Keep validation commands lightweight and local.
 - Prefer Python standard library and shell validation during Phase 0.
+- Do not create a second local Kubernetes cluster such as minikube while K3s already exists on this server.
+- Do not run portfolio workloads in the default namespace or primary AOIS namespace.
+- Do not run portfolio workloads without explicit CPU and memory limits.
+
+## Resource Tracking Rule
+
+Every checkpoint must report:
+
+- current `aois-portfolio` disk footprint
+- whether any new persistent files, services, images, volumes, or caches were created
+- whether any runtime process was left running
+
+Before any action expected to add more than `50 MB` disk or use more than `250 MB` RAM, stop and ask.
+
+Before any action expected to add more than `500 MB` disk or use more than `1 GB` RAM, treat it as a high-risk action and require explicit approval.
+
+Because the primary AOIS project recently hit OOM pressure, memory safety takes priority over curriculum speed.
 
 ## Local Service Rule
 
@@ -56,6 +89,9 @@ Examples requiring approval:
 - load tests
 - browser automation
 - large test suites
+
+For routine AOIS portfolio work, prefer commands expected to stay below `250 MB` RAM.
+FastAPI or Kubernetes practice must use explicit resource limits when run on the shared server.
 
 ## Safe Default Commands
 
