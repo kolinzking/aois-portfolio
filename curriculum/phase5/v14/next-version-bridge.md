@@ -1,11 +1,11 @@
 # v14 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+`v14` unlocks throughput and tail-latency reasoning.
 
 ## Why The Next Version Exists
 
-TODO
+`v14.5` goes deeper into caching, batching tradeoffs, prefix reuse, and performance measurement.

@@ -1,15 +1,27 @@
 # v14 Introduction
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Is About
 
-TODO
+`v14` is about high-throughput inference serving.
+
+It compares serving modes locally:
+
+- serial baseline
+- continuous batching placeholder
+- cache-aware placeholder
 
 ## Why It Matters In AOIS
 
-TODO
+Inference systems are judged by more than output quality.
+
+They must also meet latency, throughput, cost, and overload expectations.
+
+This version teaches those tradeoffs without starting any runtime.
 
 ## How To Use This Version
 
-TODO
+Run the validator and simulator, then compare throughput gain versus p95 latency.
+
+Focus on why more throughput can be worse if it creates tail-latency or overload problems.

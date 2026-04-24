@@ -1,19 +1,23 @@
 # v14 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+A throughput benchmark looks better, but users see frequent timeouts.
 
 ## Root Cause
 
-TODO
+Batching and concurrency were increased without queue timeout, p95 latency guardrail, or backpressure.
 
 ## Fix
 
-TODO
+Restore concurrency limits.
+
+Add queue timeout, backpressure, load shedding, and p95 latency measurement.
 
 ## Prevention
 
-TODO
+Validate the serving plan before live tuning.
+
+Lesson learned: throughput without tail-latency control is not a reliable service.

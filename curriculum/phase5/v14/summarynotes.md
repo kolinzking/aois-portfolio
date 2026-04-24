@@ -1,15 +1,21 @@
 # v14 Summary Notes
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What Was Built
 
-TODO
+`v14` built:
+
+- a high-throughput serving plan
+- a local no-runtime validator
+- a deterministic throughput-mode simulator
 
 ## What Was Learned
 
-TODO
+High-throughput serving is a tradeoff between throughput, latency, queueing, concurrency, cache behavior, and fallback.
 
 ## Core Limitation Or Tradeoff
 
-TODO
+This version does not run a real serving runtime.
+
+That is intentional. It teaches performance reasoning before runtime cost.

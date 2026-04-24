@@ -1,0 +1,72 @@
+{
+  "mode": "high_throughput_serving_plan_no_runtime",
+  "namespace": "aois-p",
+  "inference_runtime_started": false,
+  "gpu_runtime_started": false,
+  "model_downloaded": false,
+  "container_image_built": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_serving": false,
+  "service": {
+    "name": "aois-p-high-throughput-serving-placeholder",
+    "route": "/v1/inference",
+    "scheduler": "aois-p-inference-scheduler-placeholder"
+  },
+  "serving_modes": [
+    {
+      "name": "serial-baseline",
+      "batch_size": 1,
+      "max_concurrency": 1,
+      "simulated_tokens_per_second": 18,
+      "simulated_p95_latency_ms": 1800,
+      "live_use_approved": false
+    },
+    {
+      "name": "continuous-batching-placeholder",
+      "batch_size": 8,
+      "max_concurrency": 16,
+      "simulated_tokens_per_second": 56,
+      "simulated_p95_latency_ms": 2600,
+      "live_use_approved": false
+    },
+    {
+      "name": "cache-aware-placeholder",
+      "batch_size": 8,
+      "max_concurrency": 16,
+      "simulated_tokens_per_second": 68,
+      "simulated_p95_latency_ms": 2100,
+      "live_use_approved": false
+    }
+  ],
+  "queue_policy": {
+    "max_queue_depth_for_lesson": 0,
+    "timeout_ms": 5000,
+    "backpressure_required": true,
+    "shed_load_policy_required": true
+  },
+  "performance_controls": {
+    "latency_budget_required": true,
+    "throughput_budget_required": true,
+    "token_budget_required": true,
+    "batching_policy_required": true,
+    "concurrency_limit_required": true,
+    "cache_policy_required": true,
+    "speculative_decoding_review_required": true,
+    "fallback_route_required": true,
+    "observability_required": true,
+    "resource_usage_record_required": true
+  },
+  "required_before_live_serving": [
+    "gpu_or_cpu_capacity_approval",
+    "model_download_approval",
+    "serving_runtime_selection",
+    "batching_policy_review",
+    "concurrency_limit_review",
+    "latency_slo_review",
+    "throughput_slo_review",
+    "cache_policy_review",
+    "fallback_route_plan",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}
