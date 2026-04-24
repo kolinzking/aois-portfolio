@@ -1,0 +1,63 @@
+{
+  "mode": "managed_runtime_governance_plan_no_cloud_call",
+  "namespace": "aois-p",
+  "cloud_resources_created": false,
+  "credentials_used": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_cloud": false,
+  "managed_runtime": {
+    "cluster": "aois-p-managed-k8s-placeholder",
+    "node_pool": "aois-p-node-pool-placeholder",
+    "workload_identity": "aois-p-workload-identity-placeholder",
+    "service_account": "aois-p-api-service-account-placeholder",
+    "log_group": "aois-p-log-group-placeholder",
+    "metrics_dashboard": "aois-p-dashboard-placeholder",
+    "budget_alarm": "aois-p-budget-alarm-placeholder"
+  },
+  "iam_boundaries": {
+    "least_privilege_required": true,
+    "wildcard_admin_policy_allowed": false,
+    "long_lived_static_keys_allowed": false,
+    "workload_identity_required": true,
+    "secret_in_repo_allowed": false
+  },
+  "observability": {
+    "logs_required": true,
+    "metrics_required": true,
+    "traces_required": true,
+    "events_required": true,
+    "dashboards_required": true,
+    "alerts_required": true,
+    "slo_required": true
+  },
+  "cost_controls": {
+    "budget_approved": false,
+    "max_spend_usd": 0,
+    "max_clusters": 0,
+    "max_nodes": 0,
+    "cost_tags_required": true,
+    "quota_review_required": true,
+    "scale_down_plan_required": true
+  },
+  "operational_controls": {
+    "runbook_required": true,
+    "rollback_plan_required": true,
+    "capacity_plan_required": true,
+    "backup_restore_plan_required": true,
+    "incident_response_required": true,
+    "resource_usage_record_required": true
+  },
+  "required_before_live": [
+    "official_provider_docs_review",
+    "credential_storage_plan",
+    "budget_approval",
+    "iam_least_privilege_review",
+    "workload_identity_review",
+    "network_boundary_review",
+    "observability_dashboard",
+    "cost_alarm_review",
+    "capacity_plan",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}

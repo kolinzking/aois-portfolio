@@ -1,6 +1,6 @@
 # Phase 4 Contents
 
-Authoring status: partial
+Authoring status: authored
 
 ## Phase Files
 
@@ -17,5 +17,5 @@ Authoring status: partial
 - cloud provider gatekeeping
 - managed agent tradeoffs
 - serverless event workflows
-- managed Kubernetes and IAM mapping
+- managed runtime governance
 - cost and credential discipline
