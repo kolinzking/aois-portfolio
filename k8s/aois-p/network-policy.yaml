@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: aois-p-api-local-only
+  namespace: aois-p
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: aois-p-api
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8006
+  egress: []

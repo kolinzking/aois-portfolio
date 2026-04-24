@@ -1,19 +1,30 @@
 # v6.5 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+A compromised pod can call the Kubernetes API.
 
 ## Root Cause
 
-TODO
+The pod received an unnecessary service account token and broad RBAC permissions.
 
 ## Fix
 
-TODO
+Use:
+
+- minimal ServiceAccount
+- `automountServiceAccountToken: false`
+- empty Role until permissions are required
+- NetworkPolicy
 
 ## Prevention
 
-TODO
+Validate identity manifests before applying them.
+
+Do not grant permissions before a workload proves it needs them.
+
+## What This Taught Me
+
+Identity and permissions are part of the workload, not an afterthought.

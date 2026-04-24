@@ -17,6 +17,8 @@ spec:
         app.kubernetes.io/name: aois-p-api
         app.kubernetes.io/part-of: aois-portfolio
     spec:
+      serviceAccountName: aois-p-api
+      automountServiceAccountToken: false
       containers:
         - name: api
           image: aois-p/api:local

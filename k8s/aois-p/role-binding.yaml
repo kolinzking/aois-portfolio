@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: aois-p-api-read-minimal
+  namespace: aois-p
+subjects:
+  - kind: ServiceAccount
+    name: aois-p-api
+    namespace: aois-p
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: aois-p-api-read-minimal

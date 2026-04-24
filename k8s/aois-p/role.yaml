@@ -1,0 +1,6 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: aois-p-api-read-minimal
+  namespace: aois-p
+rules: []
