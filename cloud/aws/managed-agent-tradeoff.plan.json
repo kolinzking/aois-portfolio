@@ -1,0 +1,37 @@
+{
+  "mode": "managed_agent_tradeoff_plan_no_cloud_call",
+  "cloud_agent_created": false,
+  "credentials_used": false,
+  "external_network_required_for_this_lesson": false,
+  "options": [
+    {
+      "name": "aois-owned-agent-runtime",
+      "control": "high",
+      "operational_burden": "high",
+      "auditability": "high",
+      "vendor_coupling": "low",
+      "recommended_for_current_portfolio": true
+    },
+    {
+      "name": "managed-cloud-agent-placeholder",
+      "control": "medium",
+      "operational_burden": "medium",
+      "auditability": "provider-dependent",
+      "vendor_coupling": "higher",
+      "recommended_for_current_portfolio": false
+    }
+  ],
+  "decision": {
+    "current_choice": "aois-owned-agent-runtime",
+    "reason": "Keep orchestration inspectable until cloud agent behavior, cost, permissions, and data boundaries are explicitly approved."
+  },
+  "required_before_managed_agent": [
+    "official_provider_docs_review",
+    "credential_storage_plan",
+    "budget_approval",
+    "data_boundary_review",
+    "tool_permission_review",
+    "eval_baseline",
+    "rollback_plan"
+  ]
+}

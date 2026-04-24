@@ -64,7 +64,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | Version | Status |
 |---|---|
 | v10 | authored |
-| v10.5 | scaffolded |
+| v10.5 | authored |
 | v11 | scaffolded |
 | v12 | scaffolded |
 
