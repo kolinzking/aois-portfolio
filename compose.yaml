@@ -1,0 +1,18 @@
+services:
+  aois-p-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aois-p/api:local
+    container_name: aois-p-api
+    restart: "no"
+    ports:
+      - "127.0.0.1:8006:8006"
+    environment:
+      AOIS_APP_NAME: aois-p
+      AOIS_ENV: container
+    mem_limit: 256m
+    cpus: "0.50"
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m

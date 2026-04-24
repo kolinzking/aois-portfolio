@@ -1,5 +1,30 @@
 # Phase 2 Introduction
 
-Authoring status: scaffolded
+Authoring status: authored
 
-This file will introduce Phase 2, define the phase objective, explain why it exists in AOIS, and describe how the versions in this phase build on one another.
+Phase 2 is Containerization and Security.
+
+Phase 1 built the intelligence core:
+
+`structured endpoint -> provider gate -> model routing -> reliability baseline`
+
+Phase 2 prepares that service to become portable and harder to misuse.
+
+## Phase Objective
+
+Build a safe local packaging and security foundation:
+
+- `v4` creates a container plan without building or running images by default
+- `v5` adds API and LLM security controls before broader deployment
+
+## Resource Rule
+
+Docker builds and container runs are gated.
+
+This server already hosts the primary AOIS project, so the portfolio project must not create images, containers, volumes, or networks unless the expected footprint is approved first.
+
+## AOIS Direction
+
+The Phase 2 spine is:
+
+`service -> container plan -> resource limits -> security checks -> safer deployment path`

@@ -1,15 +1,24 @@
 # v4 Introduction
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Is About
 
-TODO
+`v4` is containerization planning without building images.
+
+It creates Docker and Compose artifacts for AOIS portfolio while keeping resource-consuming build/run steps gated.
 
 ## Why It Matters In AOIS
 
-TODO
+Containerization is how services become portable, but Docker images and containers consume server resources.
+
+This version teaches the packaging design while protecting the shared server.
 
 ## How To Use This Version
 
-TODO
+1. inspect the Dockerfile
+2. inspect `.dockerignore`
+3. inspect Compose resource limits
+4. run the local validator
+5. explain why build/run is gated
+6. do not start containers without approval
