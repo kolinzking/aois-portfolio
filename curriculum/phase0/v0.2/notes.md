@@ -509,6 +509,82 @@ Do not move on until you can answer:
 12. Explain rule-based log classification using the 4-layer tool rule.
 13. Explain `v0.2` using the 4-level system explanation rule.
 
+## Mastery Checkpoint Answer Key
+
+Use this after attempting the answers yourself.
+Do not read it first if you are testing recall.
+
+1. What does Bash add beyond raw Linux commands?
+
+Bash adds sequencing, reuse, formatting, branching, variables, functions, arguments, and repeatable execution.
+It turns commands you understand into automation.
+
+2. What is the purpose of the shebang?
+
+The shebang tells the operating system which interpreter should run the file.
+For this lesson, `#!/usr/bin/env bash` tells the system to run the script with Bash.
+
+3. Why use `set -euo pipefail`?
+
+It makes scripts fail earlier and more honestly.
+`-e` exits on command failure, `-u` fails on unset variables, and `pipefail` prevents hidden pipeline failures from looking successful.
+
+4. What is command substitution?
+
+Command substitution runs a command and inserts its output into another command.
+Example: `echo "Host: $(hostname)"` runs `hostname` and places the result in the printed line.
+
+5. What is the difference between a function and a raw command?
+
+A raw command runs one operation directly.
+A function gives a name to a reusable block of shell logic, so the script can call that logic consistently.
+
+6. How does `scripts/log_analyzer.sh` receive input?
+
+It receives command-line arguments.
+The script checks `$#` for argument count and uses `$*` to combine the message text for rule matching.
+
+7. Why is string matching useful?
+
+It is fast, simple, deterministic, and good for known patterns like `OOMKilled`, `CrashLoopBackOff`, `5xx`, or `permission denied`.
+It gives AOIS a first interpretation layer before AI is introduced.
+
+8. Why is string matching brittle?
+
+It matches wording, not meaning.
+If the incident is real but phrased differently, the rule may miss it.
+
+9. Why is `unknown` a better answer than a fake confident classification?
+
+`unknown` preserves honesty.
+A fake classification can send the operator down the wrong path and hide the fact that the rule set did not understand the message.
+
+10. Why is this version Bash and not Linux fundamentals?
+
+`v0.1` taught raw Linux inspection.
+`v0.2` assumes those commands are understood and teaches how to package them into repeatable scripts.
+
+11. Explain `set -euo pipefail` using the 4-layer tool rule.
+
+- Plain English: it makes bad script state fail early.
+- System Role: it hardens AOIS shell automation against silent failure.
+- Minimal Technical Definition: it is a set of Bash options controlling failure behavior.
+- Hands-on Proof: without it, unset variables or failed commands may continue and produce misleading output.
+
+12. Explain rule-based log classification using the 4-layer tool rule.
+
+- Plain English: it labels messages by looking for known words.
+- System Role: it is AOIS's first interpretation layer after visibility.
+- Minimal Technical Definition: it is deterministic branching over normalized input text.
+- Hands-on Proof: if the wording changes, a real issue can return `unknown`.
+
+13. Explain `v0.2` using the 4-level system explanation rule.
+
+- Simple English: I turned commands and simple incident patterns into reusable scripts.
+- Practical explanation: I can run a system report and classify a few known log messages.
+- Technical explanation: I used Bash functions, arguments, branching, command substitution, text normalization, and safety flags.
+- Engineer-level explanation: AOIS now has a reusable shell automation layer that proves both the value of deterministic automation and the limits of brittle string rules before moving into Git, HTTP, Python, and AI-backed analysis.
+
 ## Connection Forward
 
 `v0.2` teaches the second AOIS habit:

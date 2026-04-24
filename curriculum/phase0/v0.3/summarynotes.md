@@ -1,15 +1,17 @@
 # v0.3 Summary Notes
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What Was Built
 
-TODO
+A disciplined Git workflow for AOIS milestones.
 
 ## What Was Learned
 
-TODO
+Git is not only a backup tool.
+It is the engineering memory that makes AOIS evolution inspectable.
 
 ## Core Limitation Or Tradeoff
 
-TODO
+Git records changes, but it does not guarantee good judgment.
+Bad commits can still hide bad decisions.

@@ -775,6 +775,79 @@ Do not move on until you can answer:
 11. What does `x` mean on a file, and what does `x` mean on a directory?
 12. Why is `ps aux` better read as a table than as a paragraph?
 
+## Mastery Checkpoint Answer Key
+
+Use this after attempting the answers yourself.
+Do not read it first if you are testing recall.
+
+1. What problem does `v0.1` solve in plain English?
+
+It makes the Linux machine less opaque.
+You learn how to see where you are, what files exist, what permissions allow, what processes are running, and what basic CPU, memory, and disk signals say.
+
+2. Why is Linux foundational to later AOIS phases?
+
+Containers, CI runners, cloud VMs, Kubernetes nodes, scripts, and agent tool execution all sit on operating-system behavior.
+If Linux inspection is weak, later infrastructure debugging becomes guessing.
+
+3. What is the difference between a file existing and a file being executable?
+
+A file can exist but lack execute permission.
+Existence answers "is there an object at this path?"
+Executable permission answers "am I allowed to run it as a program?"
+
+4. Why is `available` memory often more useful than `used` memory?
+
+Linux uses memory for cache.
+High `used` memory can be healthy if enough memory remains `available`.
+Reading only `used` can create a false alarm.
+
+5. Why is this version about Linux first and not Bash yet?
+
+You need to understand the raw commands and system state before automating them.
+Bash composes Linux commands; it should not hide confusion about what those commands mean.
+
+6. Explain `ps` using the 4-layer tool rule.
+
+- Plain English: `ps` shows running processes.
+- System Role: it gives AOIS direct visibility into what is alive on the machine.
+- Minimal Technical Definition: it is a Linux process-reporting command.
+- Hands-on Proof: without process inspection, you cannot tell which services or commands are running.
+
+7. Explain `v0.1` using the 4-level system explanation rule.
+
+- Simple English: I learned how to inspect a Linux machine.
+- Practical explanation: I can check files, permissions, processes, environment, CPU, memory, and disk.
+- Technical explanation: this is a Linux fundamentals lesson using native commands before automation.
+- Engineer-level explanation: it creates AOIS's first operating layer by teaching direct machine inspection so future automation, services, and infrastructure work rest on real visibility.
+
+8. What is the difference between a relative path and an absolute path?
+
+An absolute path starts at `/` and works from any current directory.
+A relative path depends on where you are now.
+That is why `cd curriculum` can work from the repo root and fail from `/tmp`.
+
+9. What is the difference between `stdout` and `stderr`?
+
+`stdout` is normal output.
+`stderr` is error output.
+They can both appear on screen, but scripts, redirection, and logs can separate them.
+
+10. Why can a command be correct but still fail because of operating context?
+
+The command syntax can be valid while the path, permissions, current directory, environment, or runtime state is wrong.
+Operational debugging checks context, not only syntax.
+
+11. What does `x` mean on a file, and what does `x` mean on a directory?
+
+On a file, `x` means execute permission.
+On a directory, `x` means traverse permission: you can enter or pass through the directory if other permissions allow.
+
+12. Why is `ps aux` better read as a table than as a paragraph?
+
+It has columns like `USER`, `PID`, `%CPU`, `%MEM`, and `COMMAND`.
+Reading it as a table lets you identify ownership, process identity, resource use, and command behavior instead of seeing random text.
+
 ## Connection Forward
 
 `v0.1` teaches the first AOIS habit:

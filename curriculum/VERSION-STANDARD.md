@@ -158,6 +158,7 @@ Estimated time: X-Y hours
 ## 4-Level System Explanation Drill
 ## Failure Story
 ## Mastery Checkpoint
+## Mastery Checkpoint Answer Key
 ## Connection Forward
 ## Source Notes
 ```
@@ -371,6 +372,16 @@ The mastery checkpoint must test:
 - diagnosis
 - tradeoff reasoning
 - forward connection to later AOIS phases
+
+Every mastery checkpoint must include an answer key or answer path in the same lesson pack.
+
+The answer key should:
+
+- appear after the learner-facing questions
+- be clear enough for self-paced verification
+- avoid vague "answers may vary" unless the expected reasoning is still described
+- distinguish correct reasoning from weak or incomplete reasoning
+- support Codex live teaching without making Codex required for basic verification
 
 ## Codex Live Teacher Standard
 
