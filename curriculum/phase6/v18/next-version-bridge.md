@@ -10,9 +10,10 @@ communicate status, and turn incidents into action items.
 
 ## Why The Next Version Exists
 
-v19 exists because the best incident is the one prevented by disciplined change
-management.
+v19 exists because incident response should be tested before a real incident
+forces the test.
 
-After AOIS knows how to respond to incidents, it needs release safety:
-deployment checks, approvals, rollback rules, change windows, automation gates,
-and policies that prevent risky changes from causing avoidable incidents.
+After AOIS knows how to respond to incidents, it needs chaos engineering:
+steady-state checks, hypotheses, blast-radius limits, abort conditions, and
+tabletop game days that expose weak response paths without harming the primary
+system.

@@ -17,6 +17,7 @@ Carry forward these rules:
 
 ## What The Next Version Will Build On
 
-v19 will build on incident response by adding change management and release
-safety. The next focus is preventing incidents through safer deployment,
-rollback, approvals, automation gates, and change-risk review.
+v19 will build on incident response by adding chaos engineering. The next focus
+is testing reliability assumptions safely through tabletop experiments,
+guardrails, blast-radius control, abort conditions, and primary-project
+protection.

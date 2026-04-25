@@ -1,0 +1,112 @@
+{
+  "mode": "chaos_engineering_plan_no_fault_injection",
+  "namespace": "aois-p",
+  "chaos_runtime_started": false,
+  "fault_injection_executed": false,
+  "load_test_started": false,
+  "network_fault_started": false,
+  "cpu_stress_started": false,
+  "memory_stress_started": false,
+  "pod_delete_executed": false,
+  "agent_runtime_started": false,
+  "provider_call_made": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_chaos": false,
+  "principles": {
+    "steady_state_required": true,
+    "hypothesis_required": true,
+    "blast_radius_required": true,
+    "abort_condition_required": true,
+    "rollback_required": true,
+    "observer_required": true,
+    "communication_required": true,
+    "primary_aois_protection_required": true
+  },
+  "experiments": [
+    {
+      "name": "aois-p-api-latency-game-day",
+      "target": "aois-p-api",
+      "failure_mode": "increased API latency",
+      "hypothesis": "operators detect latency SLO burn and follow the incident response runbook",
+      "steady_state": "p95 latency below agreed threshold and error budget not exhausted",
+      "blast_radius": "documentation-only simulation",
+      "abort_condition": "any live traffic, primary AOIS dependency, or runtime mutation is required",
+      "rollback": "discard simulation notes; no runtime state changed",
+      "slo_guardrail": "do not run if API SLO budget is exhausted",
+      "agent_guardrail": "no agent action is executed",
+      "approved_for_live_execution": false
+    },
+    {
+      "name": "aois-p-stream-lag-game-day",
+      "target": "aois-p-incident-stream-consumer",
+      "failure_mode": "consumer lag increases",
+      "hypothesis": "operators identify lag, protect event freshness SLO, and preserve replay safety",
+      "steady_state": "incident events are processed within freshness objective",
+      "blast_radius": "local plan simulation only",
+      "abort_condition": "any broker, consumer, or queue mutation is required",
+      "rollback": "restore the local plan file; no broker state changed",
+      "slo_guardrail": "do not run if freshness budget is exhausted",
+      "agent_guardrail": "agent recommendations stay in human review",
+      "approved_for_live_execution": false
+    },
+    {
+      "name": "aois-p-agent-bad-recommendation-game-day",
+      "target": "aois-p-incident-agent",
+      "failure_mode": "unsafe or low-quality recommendation",
+      "hypothesis": "agent quality gates route risky recommendations to human review",
+      "steady_state": "valid recommendation ratio remains inside SLO budget",
+      "blast_radius": "synthetic local scenario only",
+      "abort_condition": "any provider call, tool call, or destructive action is required",
+      "rollback": "restore previous prompt and tool permission plan",
+      "slo_guardrail": "do not run if agent quality budget is exhausted",
+      "agent_guardrail": "human approval required for destructive or low-confidence action",
+      "approved_for_live_execution": false
+    }
+  ],
+  "game_day_policy": {
+    "owner_required": true,
+    "observer_required": true,
+    "scribe_required": true,
+    "pre_brief_required": true,
+    "post_review_required": true,
+    "abort_word_required": true,
+    "timebox_required": true,
+    "primary_project_exclusion_required": true
+  },
+  "safety_controls": {
+    "no_live_faults_in_this_lesson": true,
+    "no_primary_aois_targeting": true,
+    "no_destructive_actions": true,
+    "no_unbounded_load": true,
+    "no_cloud_resource_mutation": true,
+    "no_secret_access": true,
+    "human_approval_required_before_live_chaos": true,
+    "resource_usage_record_required": true
+  },
+  "limits": {
+    "max_fault_injections_for_lesson": 0,
+    "max_load_tests_for_lesson": 0,
+    "max_network_faults_for_lesson": 0,
+    "max_cpu_stressors_for_lesson": 0,
+    "max_memory_stressors_for_lesson": 0,
+    "max_pod_deletes_for_lesson": 0,
+    "max_agent_runs_for_lesson": 0,
+    "max_provider_calls_for_lesson": 0,
+    "max_persistent_storage_mb": 0,
+    "max_spend_usd": 0
+  },
+  "required_before_live_chaos": [
+    "production_service_inventory",
+    "primary_aois_exclusion_review",
+    "steady_state_metric_review",
+    "slo_error_budget_review",
+    "blast_radius_approval",
+    "abort_condition_approval",
+    "rollback_runbook",
+    "incident_commander_assigned",
+    "communications_plan",
+    "resource_limit_review",
+    "agent_safety_policy",
+    "post_game_day_review_template"
+  ]
+}

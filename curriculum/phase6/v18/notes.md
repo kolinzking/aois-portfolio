@@ -558,4 +558,4 @@ Answer key:
 
 v18 gives AOIS a response model for reliability failures.
 
-v19 moves into change management and release safety: how to prevent incidents by controlling deployments, rollbacks, approvals, and automation gates before failures reach users.
+v19 moves into chaos engineering: how to test AOIS reliability assumptions safely through tabletop experiments, guardrails, blast-radius control, and no live fault injection.
