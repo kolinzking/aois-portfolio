@@ -1,0 +1,84 @@
+{
+  "mode": "event_streaming_plan_no_broker",
+  "namespace": "aois-p",
+  "stream_runtime_started": false,
+  "broker_started": false,
+  "kafka_started": false,
+  "redis_stream_started": false,
+  "nats_started": false,
+  "producer_started": false,
+  "consumer_started": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_streaming": false,
+  "stream": {
+    "name": "aois-p-incident-events-placeholder",
+    "topic": "aois-p.incident.events",
+    "partition_key": "incident_id",
+    "event_id_required": true,
+    "schema_version_required": true,
+    "ordering_key_required": true
+  },
+  "event_contract": {
+    "required_fields": [
+      "event_id",
+      "event_type",
+      "schema_version",
+      "trace_id",
+      "incident_id",
+      "producer",
+      "created_at",
+      "payload"
+    ],
+    "event_types": [
+      "incident.received",
+      "incident.classified",
+      "incident.routed",
+      "incident.recommended"
+    ],
+    "payload_policy": "small_event_with_pointer_for_large_payload"
+  },
+  "producer_plan": {
+    "name": "aois-p-incident-producer-placeholder",
+    "idempotency_key_required": true,
+    "delivery_ack_required": true,
+    "retry_policy_required": true,
+    "schema_validation_required": true
+  },
+  "consumer_plan": {
+    "name": "aois-p-incident-consumer-placeholder",
+    "consumer_group": "aois-p-incident-consumers-placeholder",
+    "offset_tracking_required": true,
+    "lag_measurement_required": true,
+    "idempotent_processing_required": true,
+    "dead_letter_stream_required": true,
+    "replay_runbook_required": true
+  },
+  "durability_controls": {
+    "retention_policy_required": true,
+    "dead_letter_stream_required": true,
+    "replay_policy_required": true,
+    "schema_compatibility_required": true,
+    "backpressure_policy_required": true,
+    "poison_event_policy_required": true
+  },
+  "limits": {
+    "max_brokers_for_lesson": 0,
+    "max_producers_for_lesson": 0,
+    "max_consumers_for_lesson": 0,
+    "max_persistent_storage_mb": 0,
+    "max_network_calls": 0
+  },
+  "required_before_live_streaming": [
+    "broker_selection_review",
+    "schema_registry_plan",
+    "retention_policy",
+    "producer_retry_policy",
+    "consumer_offset_policy",
+    "dead_letter_stream_plan",
+    "replay_runbook",
+    "lag_dashboard",
+    "storage_budget",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}
