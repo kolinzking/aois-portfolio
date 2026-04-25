@@ -1,19 +1,23 @@
 # v16.5 Failure Story
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Symptom
 
-TODO
+AOIS emits a recommendation, but nobody can tell whether classification, routing, or a future agent step produced the decision.
 
 ## Root Cause
 
-TODO
+Only the final response was logged.
+
+Intermediate step decisions were not traced.
 
 ## Fix
 
-TODO
+Add incident step traces with parent-child relationships, durations, summaries, and decision reasons.
 
 ## Prevention
 
-TODO
+Validate the `v16.5` tracing plan before adding live agent behavior.
+
+Lesson learned: final answers are not enough for operations.

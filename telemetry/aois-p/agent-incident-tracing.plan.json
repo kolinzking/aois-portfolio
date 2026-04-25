@@ -1,0 +1,82 @@
+{
+  "mode": "agent_incident_tracing_plan_no_runtime",
+  "namespace": "aois-p",
+  "telemetry_runtime_started": false,
+  "agent_runtime_started": false,
+  "tool_calls_executed": false,
+  "provider_call_made": false,
+  "collector_started": false,
+  "trace_backend_started": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_agent_tracing": false,
+  "trace_model": {
+    "root_trace": "aois.incident_trace",
+    "agent_run": "aois.agent_run_placeholder",
+    "required_step_names": [
+      "incident.ingest",
+      "incident.security_inspect",
+      "incident.classify",
+      "incident.route_decision",
+      "incident.recommendation",
+      "incident.response"
+    ],
+    "required_fields": [
+      "trace_id",
+      "incident_id",
+      "request_id",
+      "step_id",
+      "parent_step_id",
+      "agent_run_id",
+      "route_id",
+      "status",
+      "duration_ms"
+    ]
+  },
+  "correlation_policy": {
+    "trace_id_required": true,
+    "incident_id_required": true,
+    "request_id_required": true,
+    "step_id_required": true,
+    "parent_step_id_required": true,
+    "agent_run_id_required": true,
+    "route_id_required": true,
+    "tool_call_id_required_when_tool_used": true
+  },
+  "step_controls": {
+    "step_order_required": true,
+    "parent_child_relationship_required": true,
+    "error_status_required": true,
+    "duration_required": true,
+    "input_summary_required": true,
+    "output_summary_required": true,
+    "secret_redaction_required": true,
+    "decision_reason_required": true
+  },
+  "observability_controls": {
+    "span_links_required": true,
+    "structured_logs_required": true,
+    "step_metrics_required": true,
+    "incident_timeline_required": true,
+    "cardinality_budget_required": true,
+    "sampling_policy_required": true,
+    "retention_policy_required": true
+  },
+  "limits": {
+    "max_agent_runs_for_lesson": 0,
+    "max_tool_calls_for_lesson": 0,
+    "max_provider_calls_for_lesson": 0,
+    "max_persistent_storage_mb": 0
+  },
+  "required_before_live_agent_tracing": [
+    "official_telemetry_docs_review",
+    "agent_step_taxonomy",
+    "tool_call_trace_policy",
+    "secret_redaction_test",
+    "cardinality_budget",
+    "sampling_policy",
+    "incident_timeline_dashboard",
+    "trace_backend_storage_budget",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}
