@@ -1,0 +1,128 @@
+{
+  "mode": "incident_response_plan_no_runtime",
+  "namespace": "aois-p",
+  "incident_runtime_started": false,
+  "pager_runtime_started": false,
+  "ticketing_runtime_started": false,
+  "chatops_runtime_started": false,
+  "status_page_runtime_started": false,
+  "agent_runtime_started": false,
+  "provider_call_made": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_incident_response": false,
+  "severity_levels": [
+    {
+      "name": "SEV1",
+      "description": "critical user or primary-system impact",
+      "declare_within_minutes": 5,
+      "update_every_minutes": 15,
+      "post_incident_review_required": true
+    },
+    {
+      "name": "SEV2",
+      "description": "major degradation, SLO burn, or unsafe agent behavior",
+      "declare_within_minutes": 15,
+      "update_every_minutes": 30,
+      "post_incident_review_required": true
+    },
+    {
+      "name": "SEV3",
+      "description": "limited degradation or recoverable operational risk",
+      "declare_within_minutes": 60,
+      "update_every_minutes": 120,
+      "post_incident_review_required": true
+    }
+  ],
+  "roles": {
+    "incident_commander": "aois-p-incident-commander-placeholder",
+    "operations_lead": "aois-p-operations-lead-placeholder",
+    "communications_lead": "aois-p-communications-lead-placeholder",
+    "scribe": "aois-p-scribe-placeholder",
+    "subject_matter_expert": "aois-p-sme-placeholder",
+    "agent_operator": "aois-p-agent-operator-placeholder"
+  },
+  "lifecycle": [
+    "detect",
+    "triage",
+    "declare",
+    "stabilize",
+    "mitigate",
+    "resolve",
+    "review"
+  ],
+  "runbook_controls": {
+    "severity_assignment_required": true,
+    "single_incident_commander_required": true,
+    "timeline_required": true,
+    "communication_channel_required": true,
+    "rollback_path_required": true,
+    "mitigation_owner_required": true,
+    "safety_gate_required": true,
+    "customer_or_user_impact_required": true,
+    "post_incident_review_required": true,
+    "action_item_owner_required": true
+  },
+  "agent_incident_controls": {
+    "human_approval_for_destructive_action": true,
+    "low_confidence_route_to_human": true,
+    "evidence_required_before_recommendation": true,
+    "tool_call_audit_required": true,
+    "prompt_change_freeze_when_incident_active": true,
+    "provider_call_budget_required": true,
+    "unsafe_recommendation_escalates_severity": true
+  },
+  "communication_policy": {
+    "internal_status_required": true,
+    "external_status_review_required": true,
+    "update_cadence_required": true,
+    "plain_language_impact_required": true,
+    "no_root_cause_claim_before_evidence": true,
+    "resolution_criteria_required": true
+  },
+  "post_incident_review": {
+    "blameless_review_required": true,
+    "timeline_required": true,
+    "impact_summary_required": true,
+    "root_cause_or_contributing_factors_required": true,
+    "what_went_well_required": true,
+    "what_went_poorly_required": true,
+    "action_items_required": true,
+    "action_item_owners_required": true,
+    "due_dates_required": true,
+    "slo_impact_required": true,
+    "agent_behavior_review_required": true
+  },
+  "diagnosis_policy": {
+    "start_from_symptom_required": true,
+    "compare_recent_changes_required": true,
+    "check_resource_pressure_required": true,
+    "check_dependency_health_required": true,
+    "check_agent_output_quality_required": true,
+    "check_event_lag_required": true,
+    "evidence_before_root_cause_required": true
+  },
+  "limits": {
+    "max_pager_services_for_lesson": 0,
+    "max_ticketing_services_for_lesson": 0,
+    "max_chatops_services_for_lesson": 0,
+    "max_status_page_services_for_lesson": 0,
+    "max_agent_runs_for_lesson": 0,
+    "max_provider_calls_for_lesson": 0,
+    "max_persistent_storage_mb": 0,
+    "max_spend_usd": 0
+  },
+  "required_before_live_incident_response": [
+    "production_service_inventory",
+    "oncall_policy",
+    "severity_policy_review",
+    "communication_channel_approval",
+    "pager_routing_approval",
+    "ticketing_workflow_approval",
+    "status_page_policy",
+    "agent_action_safety_policy",
+    "rollback_plan",
+    "post_incident_review_template",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

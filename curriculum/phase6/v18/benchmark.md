@@ -1,11 +1,28 @@
 # v18 Benchmark
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Measurements
 
-TODO
+Record these values for the checkpoint:
+
+- Validator status: `pass`
+- Simulator status: `pass`
+- Runtime services started: `0`
+- Severity count: `3`
+- Role count: `6`
+- Lifecycle step count: `7`
+- Communication update count from simulator
+- Action item count from simulator
+- Repo size after checkpoint
+- Virtual environment size after checkpoint
+- Host memory available after checkpoint
 
 ## Interpretation
 
-TODO
+The benchmark proves that v18 teaches incident response structure without live
+paging, ticketing, chatops, or status page integrations.
+
+The important result is not alert delivery. The important result is that AOIS
+can explain who leads, how severity is assigned, how impact is communicated,
+how agent risk is controlled, and how follow-up work is captured.
