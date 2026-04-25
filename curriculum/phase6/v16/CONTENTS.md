@@ -1,15 +1,28 @@
 # v16 Contents
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Start Here
 
-TODO
+Start with [introduction.md](introduction.md), then work through [notes.md](notes.md).
+
+This version introduces unified telemetry without running telemetry infrastructure.
 
 ## Topic Jumps
 
-TODO
+- Main lesson: [notes.md](notes.md)
+- Build commands: [notes.md](notes.md#build)
+- Labs: [lab.md](lab.md)
+- Runbook: [runbook.md](runbook.md)
+- Benchmark: [benchmark.md](benchmark.md)
+- Failure story: [failure-story.md](failure-story.md)
+- Next bridge: [next-version-bridge.md](next-version-bridge.md)
 
 ## Self-Paced Path
 
-TODO
+1. Inspect `telemetry/aois-p/unified-telemetry.plan.json`.
+2. Run the validator.
+3. Run the telemetry simulator.
+4. Confirm trace, metric, and log outputs share correlation fields.
+5. Complete the break labs.
+6. Answer the mastery checkpoint.

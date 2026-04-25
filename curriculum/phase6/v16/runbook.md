@@ -1,15 +1,38 @@
 # v16 Runbook
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Purpose
 
-TODO
+This runbook restores the `v16` telemetry plan to safe no-runtime state.
 
 ## Primary Checks
 
-TODO
+Run:
+
+```bash
+python3 -m py_compile examples/validate_unified_telemetry_plan.py examples/simulate_unified_telemetry.py
+python3 examples/validate_unified_telemetry_plan.py
+python3 examples/simulate_unified_telemetry.py
+```
+
+Required:
+
+- validator `status=pass`
+- simulator `status=pass`
+- no telemetry runtime
+- no collector
+- no metrics/logs/traces backends
+- namespace is `aois-p`
 
 ## Recovery Steps
 
-TODO
+If validation fails:
+
+1. Read `missing`.
+2. Restore runtime/backend flags to `false`.
+3. Restore `aois-p` component names.
+4. Restore traces, metrics, logs, and correlation requirements.
+5. Restore sampling, cardinality, and retention controls.
+6. Restore live checks.
+7. Rerun validation.

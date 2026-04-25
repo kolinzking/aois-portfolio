@@ -1,11 +1,11 @@
 # v16 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+`v16` unlocks correlated telemetry for AOIS.
 
 ## Why The Next Version Exists
 
-TODO
+`v16.5` applies the same trace discipline to deeper incident and agent-style multi-step behavior.

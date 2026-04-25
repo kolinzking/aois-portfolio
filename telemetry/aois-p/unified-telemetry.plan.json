@@ -1,0 +1,88 @@
+{
+  "mode": "unified_telemetry_plan_no_runtime",
+  "namespace": "aois-p",
+  "telemetry_runtime_started": false,
+  "otel_sdk_installed": false,
+  "collector_started": false,
+  "prometheus_started": false,
+  "loki_started": false,
+  "tempo_started": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_telemetry": false,
+  "components": {
+    "instrumentation": "aois-p-instrumentation-placeholder",
+    "collector": "aois-p-otel-collector-placeholder",
+    "metrics_backend": "aois-p-prometheus-placeholder",
+    "logs_backend": "aois-p-loki-placeholder",
+    "traces_backend": "aois-p-tempo-placeholder",
+    "dashboard": "aois-p-observability-dashboard-placeholder"
+  },
+  "signals": {
+    "traces_required": true,
+    "metrics_required": true,
+    "logs_required": true,
+    "correlation_required": true
+  },
+  "correlation_fields": [
+    "trace_id",
+    "span_id",
+    "request_id",
+    "incident_id",
+    "route_id"
+  ],
+  "span_plan": {
+    "root_span": "aois.request",
+    "child_spans": [
+      "aois.security_inspect",
+      "aois.route_decision",
+      "aois.analysis",
+      "aois.response"
+    ],
+    "error_status_required": true,
+    "duration_ms_required": true
+  },
+  "metric_plan": {
+    "request_count_required": true,
+    "request_latency_required": true,
+    "error_count_required": true,
+    "route_selection_count_required": true,
+    "provider_call_count_required": true,
+    "cost_estimate_required": true
+  },
+  "log_plan": {
+    "structured_json_required": true,
+    "severity_required": true,
+    "trace_id_required": true,
+    "message_required": true,
+    "secret_redaction_required": true
+  },
+  "controls": {
+    "official_docs_review_required": true,
+    "sampling_policy_required": true,
+    "cardinality_budget_required": true,
+    "retention_policy_required": true,
+    "dashboard_required": true,
+    "alert_policy_required": true,
+    "resource_usage_record_required": true,
+    "primary_aois_separation_required": true
+  },
+  "limits": {
+    "max_collectors_for_lesson": 0,
+    "max_backends_for_lesson": 0,
+    "max_persistent_storage_mb": 0,
+    "max_spend_usd": 0
+  },
+  "required_before_live_telemetry": [
+    "official_opentelemetry_docs_review",
+    "instrumentation_design",
+    "sampling_policy",
+    "cardinality_budget",
+    "retention_policy",
+    "secret_redaction_test",
+    "dashboard_plan",
+    "alert_policy",
+    "storage_budget",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}

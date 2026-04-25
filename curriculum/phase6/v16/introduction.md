@@ -1,15 +1,23 @@
 # v16 Introduction
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Is About
 
-TODO
+`v16` is about unified telemetry.
+
+It plans how AOIS will connect traces, metrics, and logs using shared correlation fields.
+
+No telemetry service is installed or started.
 
 ## Why It Matters In AOIS
 
-TODO
+As AOIS grows, isolated logs are not enough.
+
+Operators need to connect request behavior, route decisions, analysis steps, latency, errors, and logs into one inspectable story.
 
 ## How To Use This Version
 
-TODO
+Run the validator and simulator.
+
+Focus on the shape of observability data, not on running observability infrastructure.
