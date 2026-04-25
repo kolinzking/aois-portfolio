@@ -89,7 +89,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v17.5 | authored |
 | v18 | authored |
 | v19 | authored |
-| v19.5 | scaffolded |
+| v19.5 | authored |
 
 ## Phase7
 
@@ -123,5 +123,6 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 
 ## Next Corpus Authoring Order
 
-1. Finish `Phase 0`
-2. Continue phase by phase in order
+1. Start `Phase 7`
+2. Author `v20` tool-using AOIS responder
+3. Continue phase by phase in order

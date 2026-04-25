@@ -1,11 +1,24 @@
 # v19.5 Looking Forward
 
-Authoring status: scaffolded
+Authoring status: authored
 
-## What You Should Carry Forward
+Phase 6 ends with AOIS able to see, measure, respond to, test, and govern
+failure.
 
-TODO
+The next phase moves from AI-assisted analysis toward agentic operation. That
+shift is not just a feature upgrade. It changes the risk model.
 
-## What The Next Version Will Build On
+Before an agent can use tools, AOIS needs the controls built here:
 
-TODO
+- evidence gates
+- confidence gates
+- policy boundaries
+- human review
+- deny-by-default tool access
+- audit trails
+- fallback routes
+- primary workload separation
+
+Phase 7 will reuse these controls while adding tool use, workflow state,
+per-step cost accounting, MCP-style tool governance, durable workflows, and
+agent memory.

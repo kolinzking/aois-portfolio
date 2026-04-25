@@ -1,6 +1,6 @@
 # Phase 6 Contents
 
-Authoring status: partial
+Authoring status: authored
 
 ## Phase Files
 
@@ -23,3 +23,10 @@ Authoring status: partial
 - runtime visibility
 - chaos engineering
 - AI failure engineering
+
+## Phase Completion
+
+Phase 6 is authored through `v19.5`.
+
+The phase adds visibility, reliability measurement, response discipline, failure
+testing, and AI governance boundaries before AOIS moves into agentic operation.
