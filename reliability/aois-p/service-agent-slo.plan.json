@@ -1,0 +1,126 @@
+{
+  "mode": "service_agent_slo_plan_no_runtime",
+  "namespace": "aois-p",
+  "slo_runtime_started": false,
+  "metrics_backend_started": false,
+  "alerting_runtime_started": false,
+  "dashboard_runtime_started": false,
+  "agent_runtime_started": false,
+  "provider_call_made": false,
+  "external_network_required_for_this_lesson": false,
+  "approved_for_live_slo_monitoring": false,
+  "slo_windows": {
+    "primary_window_days": 30,
+    "fast_burn_window_minutes": 5,
+    "slow_burn_window_hours": 6,
+    "reporting_window_days": 7
+  },
+  "service_slos": [
+    {
+      "name": "aois-p-api",
+      "type": "service",
+      "sli": "successful_request_ratio",
+      "objective_percent": 99.0,
+      "window_days": 30,
+      "good_event": "successful HTTP response or expected client rejection",
+      "total_event": "all non-healthcheck HTTP requests",
+      "latency_sli": "p95_latency_ms_below_500",
+      "error_budget_policy": "freeze_risky_changes_when_budget_exhausted",
+      "burn_rate_alerts_required": true
+    },
+    {
+      "name": "aois-p-incident-stream-consumer",
+      "type": "service",
+      "sli": "freshness_within_60s_ratio",
+      "objective_percent": 99.0,
+      "window_days": 30,
+      "good_event": "incident event processed within 60 seconds",
+      "total_event": "all incident events accepted by the stream",
+      "latency_sli": "p95_processing_lag_seconds_below_60",
+      "error_budget_policy": "pause_nonessential_consumers_when_budget_exhausted",
+      "burn_rate_alerts_required": true
+    }
+  ],
+  "agent_slos": [
+    {
+      "name": "aois-p-incident-agent",
+      "type": "agent",
+      "sli": "valid_recommendation_ratio",
+      "objective_percent": 95.0,
+      "window_days": 30,
+      "good_event": "recommendation passes schema, safety, and usefulness checks",
+      "total_event": "all incident recommendations produced",
+      "latency_sli": "p95_recommendation_latency_ms_below_3000",
+      "quality_gate_required": true,
+      "safety_gate_required": true,
+      "human_review_required_for_destructive_action": true,
+      "provider_error_budget_required": true,
+      "error_budget_policy": "route_to_human_review_when_budget_exhausted",
+      "burn_rate_alerts_required": true
+    }
+  ],
+  "required_slis": [
+    "availability",
+    "latency",
+    "freshness",
+    "agent_success",
+    "agent_quality",
+    "agent_safety"
+  ],
+  "alert_policy": {
+    "burn_rate_alerts_required": true,
+    "fast_burn_page_required": true,
+    "slow_burn_ticket_required": true,
+    "symptom_based_alerts_required": true,
+    "cause_based_alerts_disallowed_as_primary_page": true
+  },
+  "error_budget_policy": {
+    "budget_calculation_required": true,
+    "burn_rate_calculation_required": true,
+    "freeze_risky_changes_when_budget_exhausted": true,
+    "route_agent_actions_to_human_review_when_budget_exhausted": true,
+    "post_incident_review_required": true
+  },
+  "dashboard_policy": {
+    "service_slo_dashboard_required": true,
+    "agent_slo_dashboard_required": true,
+    "error_budget_dashboard_required": true,
+    "burn_rate_dashboard_required": true,
+    "user_impact_panel_required": true
+  },
+  "controls": {
+    "official_docs_review_required": true,
+    "sli_definitions_required": true,
+    "slo_objectives_required": true,
+    "error_budget_policy_required": true,
+    "burn_rate_alerts_required": true,
+    "dashboard_plan_required": true,
+    "agent_quality_gate_required": true,
+    "agent_safety_gate_required": true,
+    "primary_aois_separation_required": true,
+    "resource_usage_record_required": true
+  },
+  "limits": {
+    "max_metrics_backends_for_lesson": 0,
+    "max_alerting_services_for_lesson": 0,
+    "max_dashboard_services_for_lesson": 0,
+    "max_agent_runs_for_lesson": 0,
+    "max_provider_calls_for_lesson": 0,
+    "max_persistent_storage_mb": 0,
+    "max_spend_usd": 0
+  },
+  "required_before_live_slo_monitoring": [
+    "official_observability_docs_review",
+    "production_service_inventory",
+    "sli_event_definitions",
+    "slo_objective_review",
+    "agent_quality_evaluation_set",
+    "agent_safety_policy",
+    "error_budget_policy",
+    "burn_rate_alert_plan",
+    "dashboard_plan",
+    "storage_budget",
+    "rollback_plan",
+    "primary_aois_separation_review"
+  ]
+}
