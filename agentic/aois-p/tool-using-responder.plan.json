@@ -1,0 +1,218 @@
+{
+  "mode": "tool_using_responder_plan_no_runtime",
+  "version": "v20",
+  "namespace": "aois-p",
+  "topic": "Tool-using incident responder",
+  "agent_runtime_started": false,
+  "tool_calls_executed": false,
+  "provider_call_made": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_agent_execution": false,
+  "primary_aois_excluded": true,
+  "responder_scope": {
+    "aois_p_only": true,
+    "read_only_investigation_only": true,
+    "no_live_user_impact": true,
+    "no_secret_access": true,
+    "no_destructive_action": true,
+    "human_approval_required_for_mutation": true,
+    "local_simulation_only": true
+  },
+  "step_contract": {
+    "plan_before_tool_selection": true,
+    "one_reason_per_tool": true,
+    "read_only_tool_default": true,
+    "tool_input_schema_required": true,
+    "tool_result_schema_required": true,
+    "evidence_required_before_claim": true,
+    "decision_must_reference_evidence": true,
+    "stop_condition_required": true,
+    "audit_record_required": true
+  },
+  "allowed_read_only_tools": [
+    {
+      "name": "fetch_recent_logs",
+      "purpose": "collect bounded recent log lines for aois-p",
+      "tool_type": "read_only",
+      "strict_schema_required": true,
+      "allowed_inputs": ["namespace", "service", "lookback_minutes", "limit"],
+      "disallowed_inputs": ["secret_value", "delete", "restart", "apply"],
+      "produces_evidence": true
+    },
+    {
+      "name": "query_service_metrics",
+      "purpose": "collect bounded error rate and latency metrics for aois-p",
+      "tool_type": "read_only",
+      "strict_schema_required": true,
+      "allowed_inputs": ["namespace", "service", "window_minutes", "metric_names"],
+      "disallowed_inputs": ["secret_value", "delete", "restart", "apply"],
+      "produces_evidence": true
+    },
+    {
+      "name": "read_incident_trace",
+      "purpose": "read a single correlated incident trace by incident id",
+      "tool_type": "read_only",
+      "strict_schema_required": true,
+      "allowed_inputs": ["namespace", "incident_id", "max_spans"],
+      "disallowed_inputs": ["secret_value", "delete", "restart", "apply"],
+      "produces_evidence": true
+    },
+    {
+      "name": "lookup_runbook_step",
+      "purpose": "read an approved runbook step for a bounded incident class",
+      "tool_type": "read_only",
+      "strict_schema_required": true,
+      "allowed_inputs": ["runbook_id", "incident_class"],
+      "disallowed_inputs": ["secret_value", "delete", "restart", "apply"],
+      "produces_evidence": true
+    }
+  ],
+  "blocked_tools_without_human_approval": [
+    "delete_pod",
+    "restart_service",
+    "apply_manifest",
+    "rotate_secret",
+    "open_cloud_ticket",
+    "run_load_test",
+    "run_chaos_experiment"
+  ],
+  "required_controls": {
+    "tool_allowlist_required": true,
+    "tool_denylist_required": true,
+    "strict_tool_schema_required": true,
+    "tool_result_validation_required": true,
+    "evidence_ledger_required": true,
+    "secret_redaction_required": true,
+    "human_approval_for_mutation": true,
+    "bounded_query_limits_required": true,
+    "namespace_boundary_required": true,
+    "primary_aois_separation_required": true,
+    "audit_log_required": true,
+    "fallback_runbook_required": true,
+    "stop_condition_required": true,
+    "resource_usage_record_required": true
+  },
+  "decision_gates": {
+    "answer_with_evidence": "Evidence is complete, schemas are valid, confidence is high enough, and no blocked action or secret is present.",
+    "gather_more_evidence": "The responder has insufficient evidence and should plan another read-only observation step.",
+    "request_human_approval": "The responder attempted or recommended a mutating action that requires explicit operator approval.",
+    "block_and_redact": "The responder encountered secret-bearing input or data that should not flow into a model or tool output.",
+    "fallback_to_runbook": "A tool result is invalid or low quality, so the responder uses the bounded deterministic runbook path."
+  },
+  "thresholds": {
+    "minimum_confidence_for_answer": 0.75,
+    "minimum_tool_schema_pass_rate": 1.0,
+    "max_allowed_secret_findings": 0,
+    "max_mutating_tool_calls_without_approval": 0
+  },
+  "limits": {
+    "max_agent_runtimes_for_lesson": 0,
+    "max_tool_calls_for_lesson": 0,
+    "max_provider_calls_for_lesson": 0,
+    "max_external_network_calls_for_lesson": 0,
+    "max_persistent_storage_mb": 0,
+    "max_spend_usd": 0
+  },
+  "incident_cases": [
+    {
+      "name": "latency_spike_with_complete_evidence",
+      "incident_id": "inc-v20-001",
+      "symptom": "p95 latency for aois-p analysis endpoint doubled for 12 minutes",
+      "severity": "medium",
+      "planned_tool_sequence": [
+        "query_service_metrics",
+        "fetch_recent_logs",
+        "read_incident_trace",
+        "lookup_runbook_step"
+      ],
+      "tool_result_schema_valid": true,
+      "evidence_complete": true,
+      "secret_detected": false,
+      "mutating_tool_requested": false,
+      "confidence": 0.86,
+      "expected_decision": "answer_with_evidence",
+      "expected_next_action": "summarize evidence and recommend bounded operator review"
+    },
+    {
+      "name": "crashloop_with_pod_delete_request",
+      "incident_id": "inc-v20-002",
+      "symptom": "aois-p worker crashloop is paired with a proposed pod delete",
+      "severity": "high",
+      "planned_tool_sequence": [
+        "fetch_recent_logs",
+        "query_service_metrics",
+        "delete_pod"
+      ],
+      "tool_result_schema_valid": true,
+      "evidence_complete": true,
+      "secret_detected": false,
+      "mutating_tool_requested": true,
+      "confidence": 0.81,
+      "expected_decision": "request_human_approval",
+      "expected_next_action": "stop before mutation and ask an operator to approve or reject"
+    },
+    {
+      "name": "secret_bearing_log_excerpt",
+      "incident_id": "inc-v20-003",
+      "symptom": "recent log excerpt includes a token-shaped value",
+      "severity": "high",
+      "planned_tool_sequence": [
+        "fetch_recent_logs"
+      ],
+      "tool_result_schema_valid": true,
+      "evidence_complete": true,
+      "secret_detected": true,
+      "mutating_tool_requested": false,
+      "confidence": 0.9,
+      "expected_decision": "block_and_redact",
+      "expected_next_action": "redact evidence, record blocked path, and escalate to secret handling"
+    },
+    {
+      "name": "sparse_alert_without_trace",
+      "incident_id": "inc-v20-004",
+      "symptom": "single alert reports elevated errors but no trace or metric evidence has been collected",
+      "severity": "medium",
+      "planned_tool_sequence": [
+        "query_service_metrics"
+      ],
+      "tool_result_schema_valid": true,
+      "evidence_complete": false,
+      "secret_detected": false,
+      "mutating_tool_requested": false,
+      "confidence": 0.62,
+      "expected_decision": "gather_more_evidence",
+      "expected_next_action": "plan the next read-only evidence step before making a claim"
+    },
+    {
+      "name": "malformed_trace_tool_result",
+      "incident_id": "inc-v20-005",
+      "symptom": "trace tool returned a malformed result that cannot be trusted",
+      "severity": "medium",
+      "planned_tool_sequence": [
+        "read_incident_trace",
+        "lookup_runbook_step"
+      ],
+      "tool_result_schema_valid": false,
+      "evidence_complete": true,
+      "secret_detected": false,
+      "mutating_tool_requested": false,
+      "confidence": 0.78,
+      "expected_decision": "fallback_to_runbook",
+      "expected_next_action": "ignore malformed trace output and use deterministic runbook guidance"
+    }
+  ],
+  "required_before_live_agent_execution": [
+    "official_tool_calling_docs_review",
+    "mcp_security_review",
+    "tool_inventory_owner_assigned",
+    "tool_schema_tests",
+    "tool_result_validation_tests",
+    "secret_redaction_test",
+    "human_approval_workflow",
+    "audit_log_storage_budget",
+    "rollback_plan",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}
