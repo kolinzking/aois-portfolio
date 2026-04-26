@@ -1,11 +1,25 @@
 # v20.2 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+v20.2 gives AOIS route choice before spend:
+
+```text
+incident -> evidence -> confidence -> budget -> route
+```
+
+AOIS can now decide whether to skip a tool, use a bounded read-only route, pause
+for review, stop, or spend more on a high-severity investigation.
 
 ## Why The Next Version Exists
 
-TODO
+v21 introduces MCP and governed tool registries.
+
+Budget-aware routing answers whether a route should be taken. It does not answer
+which tools are registered, who owns them, what schemas they expose, what scopes
+they require, or how they are audited.
+
+v21 will turn the tool list into a governed registry so route policy has a safe
+tool catalog to choose from.
