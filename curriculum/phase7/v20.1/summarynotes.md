@@ -1,15 +1,36 @@
 # v20.1 Summary Notes
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What Was Built
 
-TODO
+- A provider-neutral cost accounting plan.
+- Per-step usage records.
+- Per-incident cost totals.
+- Deterministic unit costs.
+- Validation for cost controls and usage dimensions.
+- Simulation for five cost decisions.
+- Disabled runtime, tool, provider, billing, and persistence paths.
 
 ## What Was Learned
 
-TODO
+Cost accounting is an agent safety control.
+
+If AOIS cannot explain what an agentic incident response consumed, it cannot
+decide whether the response should continue, route differently, or stop.
+
+Decision gates:
+
+- `within_budget`
+- `step_waste_flagged`
+- `incident_budget_exceeded`
+- `accounting_incomplete`
+- `approval_cost_review`
 
 ## Core Limitation Or Tradeoff
 
-TODO
+`cost_units` are training units, not dollars.
+
+The accounting model is useful because it is deterministic, auditable, and
+testable. Real enforcement needs live pricing review, reconciliation, budget
+ownership, and operator dashboards before it is safe.

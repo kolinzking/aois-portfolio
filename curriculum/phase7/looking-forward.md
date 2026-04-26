@@ -11,10 +11,11 @@ What AOIS has gained so far:
 - mutating tool approval boundaries
 - responder decision gates
 - evidence-led step simulation
+- per-incident and per-step cost accounting
+- deterministic budget and waste decision gates
 
 Remaining Phase 7 work:
 
-- per-incident and per-step cost accounting
 - budget-aware routing
 - MCP and tool registry governance
 - durable workflow recovery
@@ -24,5 +25,6 @@ Remaining Phase 7 work:
 - multi-agent coordination
 - safe execution boundaries
 
-The current bridge is from v20 to v20.1. AOIS now has planned agent steps; the
-next job is making those steps economically visible.
+The current bridge is from v20.1 to v20.2. AOIS now has planned agent steps and
+cost visibility; the next job is routing those steps by budget and expected
+value.

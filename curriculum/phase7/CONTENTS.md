@@ -32,9 +32,10 @@ Authoring status: partial
 
 ## Phase Progress
 
-Phase 7 is authored through `v20`.
+Phase 7 is authored through `v20.1`.
 
 The phase now has the first agentic AOIS shape: incident symptoms become
-planned, bounded, auditable tool steps. Later versions will add cost, routing,
-tool registry governance, durable workflows, orchestration, evaluation,
-operations, multi-agent collaboration, and execution boundaries.
+planned, bounded, auditable tool steps, and those steps now carry deterministic
+cost accounting. Later versions will add routing, tool registry governance,
+durable workflows, orchestration, evaluation, operations, multi-agent
+collaboration, and execution boundaries.

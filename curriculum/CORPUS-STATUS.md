@@ -96,7 +96,7 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | Version | Status |
 |---|---|
 | v20 | authored |
-| v20.1 | scaffolded |
+| v20.1 | authored |
 | v20.2 | scaffolded |
 | v21 | scaffolded |
 | v22 | scaffolded |
@@ -124,5 +124,5 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 ## Next Corpus Authoring Order
 
 1. Continue `Phase 7`
-2. Author `v20.1` per-incident and per-step cost accounting
+2. Author `v20.2` budget-aware routing
 3. Continue phase by phase in order
