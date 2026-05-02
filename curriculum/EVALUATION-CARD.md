@@ -2,7 +2,7 @@
 
 Authoring status: authored
 
-Evaluation status: local corpus review passed; release approval pending commit
+Evaluation status: release-approved
 
 This card records the current review posture for the AOIS curriculum corpus.
 
@@ -23,6 +23,8 @@ Current review evidence:
 - all example scripts compile
 - repo shell scripts pass `bash -n`
 - `git diff --check` passes
+- reviewed corpus committed as `5fa7b5b`
+- post-commit release gate rerun passed
 
 ## Review Gates
 
@@ -34,13 +36,10 @@ Completed review gates:
 - source currency review
 - safety-boundary review
 - dirty worktree review
-
-Before live teaching, the corpus still needs:
-
-- dirty worktree committed
-- final release approval after commit
+- reviewed corpus commit
+- final release approval
 
 ## Evaluation Position
 
-The curriculum is locally review-clean but not yet release-approved because the
-reviewed corpus is still uncommitted.
+The curriculum corpus is release-approved for live teaching from commit
+`5fa7b5b`.
