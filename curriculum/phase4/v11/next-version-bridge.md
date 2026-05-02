@@ -29,5 +29,5 @@ Event-driven systems can fail silently if queues grow, retries loop, DLQs fill, 
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v11 Looking Forward](looking-forward.md)
-- Next: [v12 Contents](../v12/CONTENTS.md)
+- Next: [v12 Start Here](../v12/00-start-here.md)
 <!-- AOIS-NAV-END -->

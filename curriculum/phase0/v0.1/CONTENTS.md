@@ -45,6 +45,6 @@ Authoring status: authored
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [Phase 0 - Foundations That Carry The Whole System](../00-introduction.md)
+- Previous: [v0.1 Start Here](00-start-here.md)
 - Next: [v0.1 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

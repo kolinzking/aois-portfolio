@@ -34,5 +34,5 @@ should go next.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v20.1 Looking Forward](looking-forward.md)
-- Next: [v20.2 Contents](../v20.2/CONTENTS.md)
+- Next: [v20.2 Start Here](../v20.2/00-start-here.md)
 <!-- AOIS-NAV-END -->

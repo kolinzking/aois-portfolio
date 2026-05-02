@@ -39,5 +39,5 @@ coordinate agent roles -> bound what any role may execute
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v24 Looking Forward](looking-forward.md)
-- Next: [v25 Contents](../v25/CONTENTS.md)
+- Next: [v25 Start Here](../v25/00-start-here.md)
 <!-- AOIS-NAV-END -->

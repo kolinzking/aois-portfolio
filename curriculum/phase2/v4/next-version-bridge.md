@@ -18,5 +18,5 @@ Before containers become runtime infrastructure, AOIS needs API security, LLM se
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v4 Looking Forward](looking-forward.md)
-- Next: [v5 Contents](../v5/CONTENTS.md)
+- Next: [v5 Start Here](../v5/00-start-here.md)
 <!-- AOIS-NAV-END -->

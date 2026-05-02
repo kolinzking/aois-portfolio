@@ -34,6 +34,6 @@ Do not continue if you cannot explain cache keys, TTL, invalidation, privacy bou
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v14 Next Version Bridge](../v14/next-version-bridge.md)
+- Previous: [v14.5 Start Here](00-start-here.md)
 - Next: [v14.5 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

@@ -18,5 +18,5 @@ The next question is whether agent orchestration belongs inside AOIS or inside a
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v10 Looking Forward](looking-forward.md)
-- Next: [v10.5 Contents](../v10.5/CONTENTS.md)
+- Next: [v10.5 Start Here](../v10.5/00-start-here.md)
 <!-- AOIS-NAV-END -->

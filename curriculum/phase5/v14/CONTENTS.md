@@ -34,6 +34,6 @@ Do not continue if you cannot explain batching, concurrency, queueing, backpress
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v13.5 Next Version Bridge](../v13.5/next-version-bridge.md)
+- Previous: [v14 Start Here](00-start-here.md)
 - Next: [v14 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

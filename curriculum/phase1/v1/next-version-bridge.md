@@ -30,5 +30,5 @@ Once provider calls are approved, AOIS must decide:
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v1 Looking Forward](looking-forward.md)
-- Next: [v2 Contents](../v2/CONTENTS.md)
+- Next: [v2 Start Here](../v2/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -33,6 +33,6 @@ Authoring status: authored
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v23 Next Version Bridge](../v23/next-version-bridge.md)
+- Previous: [v23.5 Start Here](00-start-here.md)
 - Next: [v23.5 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

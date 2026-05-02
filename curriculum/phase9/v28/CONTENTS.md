@@ -39,6 +39,6 @@ Read in this order:
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [Phase 9 Introduction](../00-introduction.md)
+- Previous: [v28 Start Here](00-start-here.md)
 - Next: [v28 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

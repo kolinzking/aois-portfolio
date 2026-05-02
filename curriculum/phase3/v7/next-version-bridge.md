@@ -16,5 +16,5 @@ Authoring status: authored
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v7 Looking Forward](looking-forward.md)
-- Next: [v8 Contents](../v8/CONTENTS.md)
+- Next: [v8 Start Here](../v8/00-start-here.md)
 <!-- AOIS-NAV-END -->

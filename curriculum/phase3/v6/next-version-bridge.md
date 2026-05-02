@@ -18,5 +18,5 @@ Pods should not only run; they should have clear identity and controlled permiss
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v6 Looking Forward](looking-forward.md)
-- Next: [v6.5 Contents](../v6.5/CONTENTS.md)
+- Next: [v6.5 Start Here](../v6.5/00-start-here.md)
 <!-- AOIS-NAV-END -->

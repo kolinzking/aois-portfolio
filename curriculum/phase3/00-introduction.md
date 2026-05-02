@@ -35,5 +35,5 @@ The Phase 3 spine is:
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 3 Contents](CONTENTS.md)
-- Next: [v6 Contents](v6/CONTENTS.md)
+- Next: [v6 Start Here](v6/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -45,6 +45,6 @@ Do not continue if you cannot explain least privilege, workload identity, observ
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v11 Next Version Bridge](../v11/next-version-bridge.md)
+- Previous: [v12 Start Here](00-start-here.md)
 - Next: [v12 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

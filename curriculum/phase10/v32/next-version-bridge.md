@@ -30,5 +30,5 @@ red-team scenarios that try to break the controls before live use.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v32 Looking Forward](looking-forward.md)
-- Next: [v33 Contents](../v33/CONTENTS.md)
+- Next: [v33 Start Here](../v33/00-start-here.md)
 <!-- AOIS-NAV-END -->

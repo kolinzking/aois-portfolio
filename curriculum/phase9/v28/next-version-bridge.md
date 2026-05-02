@@ -33,5 +33,5 @@ inspection of model delivery decisions.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v28 Looking Forward](looking-forward.md)
-- Next: [v29 Contents](../v29/CONTENTS.md)
+- Next: [v29 Start Here](../v29/00-start-here.md)
 <!-- AOIS-NAV-END -->

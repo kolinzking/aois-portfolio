@@ -50,5 +50,5 @@ controls.
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 8 Contents](CONTENTS.md)
-- Next: [v26 Contents](v26/CONTENTS.md)
+- Next: [v26 Start Here](v26/00-start-here.md)
 <!-- AOIS-NAV-END -->

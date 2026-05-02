@@ -32,6 +32,6 @@ This version teaches incident and agent-style step tracing without running an ag
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v16 Next Version Bridge](../v16/next-version-bridge.md)
+- Previous: [v16.5 Start Here](00-start-here.md)
 - Next: [v16.5 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

@@ -17,5 +17,5 @@ Shell scripts are useful, but AOIS needs maintainable application logic.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v0.4 Looking Forward](looking-forward.md)
-- Next: [v0.5 Contents](../v0.5/CONTENTS.md)
+- Next: [v0.5 Start Here](../v0.5/00-start-here.md)
 <!-- AOIS-NAV-END -->

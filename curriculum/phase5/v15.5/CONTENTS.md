@@ -32,6 +32,6 @@ This version closes Phase 5 with quantization and memory economics.
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v15 Next Version Bridge](../v15/next-version-bridge.md)
+- Previous: [v15.5 Start Here](00-start-here.md)
 - Next: [v15.5 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

@@ -20,5 +20,5 @@ Once AOIS understands GPU scheduling, it can reason about serving efficiency, co
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v13.5 Looking Forward](looking-forward.md)
-- Next: [v14 Contents](../v14/CONTENTS.md)
+- Next: [v14 Start Here](../v14/00-start-here.md)
 <!-- AOIS-NAV-END -->

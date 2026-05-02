@@ -27,5 +27,5 @@ measured, bounded, and connected to an operator action.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v17 Looking Forward](looking-forward.md)
-- Next: [v17.5 Contents](../v17.5/CONTENTS.md)
+- Next: [v17.5 Start Here](../v17.5/00-start-here.md)
 <!-- AOIS-NAV-END -->

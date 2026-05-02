@@ -35,5 +35,5 @@ agent workflow remember, wait, resume, and recover?"
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v21 Looking Forward](looking-forward.md)
-- Next: [v22 Contents](../v22/CONTENTS.md)
+- Next: [v22 Start Here](../v22/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -39,6 +39,6 @@ Do not continue if you cannot explain idempotency, DLQ, trace propagation, and w
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v10.5 Next Version Bridge](../v10.5/next-version-bridge.md)
+- Previous: [v11 Start Here](00-start-here.md)
 - Next: [v11 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

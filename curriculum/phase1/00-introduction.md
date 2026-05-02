@@ -39,5 +39,5 @@ The goal is to make AI behavior inspectable, bounded, and explainable.
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 1 Contents](CONTENTS.md)
-- Next: [v1 Contents](v1/CONTENTS.md)
+- Next: [v1 Start Here](v1/00-start-here.md)
 <!-- AOIS-NAV-END -->

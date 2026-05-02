@@ -18,5 +18,5 @@ Once AOIS can trace incident steps, it needs to move incident and telemetry even
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v16.5 Looking Forward](looking-forward.md)
-- Next: [v17 Contents](../v17/CONTENTS.md)
+- Next: [v17 Start Here](../v17/00-start-here.md)
 <!-- AOIS-NAV-END -->

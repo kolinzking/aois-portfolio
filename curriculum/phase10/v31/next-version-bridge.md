@@ -35,5 +35,5 @@ dominate edge deployments.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v31 Looking Forward](looking-forward.md)
-- Next: [v32 Contents](../v32/CONTENTS.md)
+- Next: [v32 Start Here](../v32/00-start-here.md)
 <!-- AOIS-NAV-END -->

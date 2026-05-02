@@ -35,6 +35,6 @@ Do not continue if you cannot explain operator, device plugin, scheduling, MIG a
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v13 Next Version Bridge](../v13/next-version-bridge.md)
+- Previous: [v13.5 Start Here](00-start-here.md)
 - Next: [v13.5 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

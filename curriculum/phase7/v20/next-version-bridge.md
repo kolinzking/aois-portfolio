@@ -36,5 +36,5 @@ v20.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v20 Looking Forward](looking-forward.md)
-- Next: [v20.1 Contents](../v20.1/CONTENTS.md)
+- Next: [v20.1 Start Here](../v20.1/00-start-here.md)
 <!-- AOIS-NAV-END -->

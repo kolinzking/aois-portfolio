@@ -52,6 +52,6 @@ remain false.
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v18 Next Version Bridge](../v18/next-version-bridge.md)
+- Previous: [v19 Start Here](00-start-here.md)
 - Next: [v19 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

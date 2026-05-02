@@ -17,5 +17,5 @@ Because application logic becomes more useful when exposed through a service bou
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v0.5 Looking Forward](looking-forward.md)
-- Next: [v0.6 Contents](../v0.6/CONTENTS.md)
+- Next: [v0.6 Start Here](../v0.6/00-start-here.md)
 <!-- AOIS-NAV-END -->

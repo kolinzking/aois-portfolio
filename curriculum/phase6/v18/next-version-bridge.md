@@ -24,5 +24,5 @@ system.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v18 Looking Forward](looking-forward.md)
-- Next: [v19 Contents](../v19/CONTENTS.md)
+- Next: [v19 Start Here](../v19/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -85,5 +85,5 @@ Phase 0 creates that floor.
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 0 Contents](CONTENTS.md)
-- Next: [v0.1 Contents](v0.1/CONTENTS.md)
+- Next: [v0.1 Start Here](v0.1/00-start-here.md)
 <!-- AOIS-NAV-END -->

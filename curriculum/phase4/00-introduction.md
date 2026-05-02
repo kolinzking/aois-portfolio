@@ -34,5 +34,5 @@ The Phase 4 spine is:
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 4 Contents](CONTENTS.md)
-- Next: [v10 Contents](v10/CONTENTS.md)
+- Next: [v10 Start Here](v10/00-start-here.md)
 <!-- AOIS-NAV-END -->

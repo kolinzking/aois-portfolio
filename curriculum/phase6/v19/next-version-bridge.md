@@ -24,5 +24,5 @@ operational limits.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v19 Looking Forward](looking-forward.md)
-- Next: [v19.5 Contents](../v19.5/CONTENTS.md)
+- Next: [v19.5 Start Here](../v19.5/00-start-here.md)
 <!-- AOIS-NAV-END -->

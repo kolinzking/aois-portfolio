@@ -30,5 +30,5 @@ tool catalog to choose from.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v20.2 Looking Forward](looking-forward.md)
-- Next: [v21 Contents](../v21/CONTENTS.md)
+- Next: [v21 Start Here](../v21/00-start-here.md)
 <!-- AOIS-NAV-END -->

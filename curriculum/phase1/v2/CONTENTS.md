@@ -47,6 +47,6 @@ Authoring status: authored
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v1 Next Version Bridge](../v1/next-version-bridge.md)
+- Previous: [v2 Start Here](00-start-here.md)
 - Next: [v2 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

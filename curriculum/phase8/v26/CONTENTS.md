@@ -34,6 +34,6 @@ Authoring status: authored
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [Phase 8 Introduction](../00-introduction.md)
+- Previous: [v26 Start Here](00-start-here.md)
 - Next: [v26 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

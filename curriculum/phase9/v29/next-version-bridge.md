@@ -34,5 +34,5 @@ abstraction.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v29 Looking Forward](looking-forward.md)
-- Next: [v30 Contents](../v30/CONTENTS.md)
+- Next: [v30 Start Here](../v30/00-start-here.md)
 <!-- AOIS-NAV-END -->

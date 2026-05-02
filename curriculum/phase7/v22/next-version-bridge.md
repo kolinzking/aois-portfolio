@@ -28,5 +28,5 @@ the current state, what is the next bounded action?"
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v22 Looking Forward](looking-forward.md)
-- Next: [v23 Contents](../v23/CONTENTS.md)
+- Next: [v23 Start Here](../v23/00-start-here.md)
 <!-- AOIS-NAV-END -->

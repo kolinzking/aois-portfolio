@@ -32,6 +32,6 @@ This version teaches fine-tuning and adaptation decision-making without training
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v14.5 Next Version Bridge](../v14.5/next-version-bridge.md)
+- Previous: [v15 Start Here](00-start-here.md)
 - Next: [v15 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

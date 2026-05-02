@@ -20,5 +20,5 @@ Once structured endpoints and routing exist, AOIS needs validation, traces, prom
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v2 Looking Forward](looking-forward.md)
-- Next: [v3 Contents](../v3/CONTENTS.md)
+- Next: [v3 Start Here](../v3/00-start-here.md)
 <!-- AOIS-NAV-END -->

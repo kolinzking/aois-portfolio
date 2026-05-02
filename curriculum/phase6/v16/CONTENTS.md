@@ -32,6 +32,6 @@ This version introduces unified telemetry without running telemetry infrastructu
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [Phase 6 Introduction](../00-introduction.md)
+- Previous: [v16 Start Here](00-start-here.md)
 - Next: [v16 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

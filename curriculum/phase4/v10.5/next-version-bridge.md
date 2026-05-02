@@ -32,5 +32,5 @@ Once AOIS understands who owns the agent loop, it can compare how work is trigge
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v10.5 Looking Forward](looking-forward.md)
-- Next: [v11 Contents](../v11/CONTENTS.md)
+- Next: [v11 Start Here](../v11/00-start-here.md)
 <!-- AOIS-NAV-END -->

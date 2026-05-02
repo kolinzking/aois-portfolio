@@ -49,5 +49,5 @@ model into a product surface for human operators.
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 7 Contents](CONTENTS.md)
-- Next: [v20 Contents](v20/CONTENTS.md)
+- Next: [v20 Start Here](v20/00-start-here.md)
 <!-- AOIS-NAV-END -->

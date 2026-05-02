@@ -36,6 +36,6 @@ Do not continue if you cannot explain latency, throughput, token accounting, mod
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [Phase 5 Introduction](../00-introduction.md)
+- Previous: [v13 Start Here](00-start-here.md)
 - Next: [v13 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

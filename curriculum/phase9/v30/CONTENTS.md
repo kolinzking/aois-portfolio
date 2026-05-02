@@ -39,6 +39,6 @@ Read in this order:
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v29 Next Version Bridge](../v29/next-version-bridge.md)
+- Previous: [v30 Start Here](00-start-here.md)
 - Next: [v30 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

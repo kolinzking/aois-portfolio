@@ -17,5 +17,5 @@ Because AOIS will soon cross process and service boundaries.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v0.3 Looking Forward](looking-forward.md)
-- Next: [v0.4 Contents](../v0.4/CONTENTS.md)
+- Next: [v0.4 Start Here](../v0.4/00-start-here.md)
 <!-- AOIS-NAV-END -->

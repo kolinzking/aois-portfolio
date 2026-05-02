@@ -62,5 +62,5 @@ The next phase is Phase 10, starting with `v31` multimodal AOIS.
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 9 Contents](CONTENTS.md)
-- Next: [v28 Contents](v28/CONTENTS.md)
+- Next: [v28 Start Here](v28/00-start-here.md)
 <!-- AOIS-NAV-END -->

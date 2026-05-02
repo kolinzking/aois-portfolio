@@ -28,5 +28,5 @@ v23.8 answers "how do we operate that behavior safely when a runtime exists?"
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v23.5 Looking Forward](looking-forward.md)
-- Next: [v23.8 Contents](../v23.8/CONTENTS.md)
+- Next: [v23.8 Start Here](../v23.8/00-start-here.md)
 <!-- AOIS-NAV-END -->

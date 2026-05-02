@@ -51,5 +51,5 @@ policy gates before agentic action.
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 6 Contents](CONTENTS.md)
-- Next: [v16 Contents](v16/CONTENTS.md)
+- Next: [v16 Start Here](v16/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -32,5 +32,5 @@ This phase may author plans, validators, and simulations, but it must not instal
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 5 Contents](CONTENTS.md)
-- Next: [v13 Contents](v13/CONTENTS.md)
+- Next: [v13 Start Here](v13/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -28,5 +28,5 @@ do multiple agents coordinate without violating those controls?"
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v23.8 Looking Forward](looking-forward.md)
-- Next: [v24 Contents](../v24/CONTENTS.md)
+- Next: [v24 Start Here](../v24/00-start-here.md)
 <!-- AOIS-NAV-END -->

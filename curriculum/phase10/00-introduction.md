@@ -55,5 +55,5 @@ phase before live teaching.
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 10 Contents](CONTENTS.md)
-- Next: [v31 Contents](v31/CONTENTS.md)
+- Next: [v31 Start Here](v31/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -51,6 +51,6 @@ Expected result: both scripts pass while all runtime flags remain false.
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v17.5 Next Version Bridge](../v17.5/next-version-bridge.md)
+- Previous: [v18 Start Here](00-start-here.md)
 - Next: [v18 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

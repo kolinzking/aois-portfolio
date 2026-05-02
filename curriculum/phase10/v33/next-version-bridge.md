@@ -37,5 +37,5 @@ frontier lesson.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v33 Looking Forward](looking-forward.md)
-- Next: [v34 Contents](../v34/CONTENTS.md)
+- Next: [v34 Start Here](../v34/00-start-here.md)
 <!-- AOIS-NAV-END -->

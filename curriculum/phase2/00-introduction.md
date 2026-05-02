@@ -35,5 +35,5 @@ The Phase 2 spine is:
 
 - Reading order: [AOIS Reading Order](../READING-ORDER.md)
 - Previous: [Phase 2 Contents](CONTENTS.md)
-- Next: [v4 Contents](v4/CONTENTS.md)
+- Next: [v4 Start Here](v4/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -18,5 +18,5 @@ Because once work is real, it needs history.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v0.2 Looking Forward](looking-forward.md)
-- Next: [v0.3 Contents](../v0.3/CONTENTS.md)
+- Next: [v0.3 Start Here](../v0.3/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -6,22 +6,23 @@ Start here when you want to read the portfolio instead of browsing folders.
 
 Inside each version, use this order:
 
-1. `CONTENTS.md` - quick map for the version
-2. `introduction.md` - what the version is about
-3. `notes.md` - the main lesson
-4. `lab.md` - the hands-on work
-5. `runbook.md` - how to recover when stuck
-6. `failure-story.md` - what breaks in the real world
-7. `benchmark.md` - what to measure
-8. `summarynotes.md` - what to retain
-9. `looking-forward.md` - what carries forward
-10. `next-version-bridge.md` - how to enter the next version
+1. `00-start-here.md` - chapter entry point
+2. `CONTENTS.md` - quick map for the version
+3. `introduction.md` - what the version is about
+4. `notes.md` - the main lesson
+5. `lab.md` - the hands-on work
+6. `runbook.md` - how to recover when stuck
+7. `failure-story.md` - what breaks in the real world
+8. `benchmark.md` - what to measure
+9. `summarynotes.md` - what to retain
+10. `looking-forward.md` - what carries forward
+11. `next-version-bridge.md` - how to enter the next version
 
 Every curriculum Markdown file ends with a navigation block linking back to this file plus the previous and next document in the reading path.
 
 ## Start Here
 
-Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link at the bottom of each page.
+Begin at [Phase 0 Contents](phase0/CONTENTS.md), then use each chapter's `00-start-here.md` file and the `Next` link at the bottom of each page.
 
 ## Full Learner Path
 
@@ -30,6 +31,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 0 Contents](phase0/CONTENTS.md)
 - [Phase 0 - Foundations That Carry The Whole System](phase0/00-introduction.md)
 - v0.1
+  - [v0.1 Start Here](phase0/v0.1/00-start-here.md)
   - [v0.1 Contents](phase0/v0.1/CONTENTS.md)
   - [v0.1 Introduction](phase0/v0.1/introduction.md)
   - [v0.1 - Linux Essentials](phase0/v0.1/notes.md)
@@ -41,6 +43,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v0.1 Looking Forward](phase0/v0.1/looking-forward.md)
   - [v0.1 Next Version Bridge](phase0/v0.1/next-version-bridge.md)
 - v0.2
+  - [v0.2 Start Here](phase0/v0.2/00-start-here.md)
   - [v0.2 Contents](phase0/v0.2/CONTENTS.md)
   - [v0.2 Introduction](phase0/v0.2/introduction.md)
   - [v0.2 - Bash Scripting And First Automation](phase0/v0.2/notes.md)
@@ -52,6 +55,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v0.2 Looking Forward](phase0/v0.2/looking-forward.md)
   - [v0.2 Next Version Bridge](phase0/v0.2/next-version-bridge.md)
 - v0.3
+  - [v0.3 Start Here](phase0/v0.3/00-start-here.md)
   - [v0.3 Contents](phase0/v0.3/CONTENTS.md)
   - [v0.3 Introduction](phase0/v0.3/introduction.md)
   - [v0.3 - Git As Engineering Memory](phase0/v0.3/notes.md)
@@ -63,6 +67,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v0.3 Looking Forward](phase0/v0.3/looking-forward.md)
   - [v0.3 Next Version Bridge](phase0/v0.3/next-version-bridge.md)
 - v0.4
+  - [v0.4 Start Here](phase0/v0.4/00-start-here.md)
   - [v0.4 Contents](phase0/v0.4/CONTENTS.md)
   - [v0.4 Introduction](phase0/v0.4/introduction.md)
   - [v0.4 - Networking And HTTP Inspection](phase0/v0.4/notes.md)
@@ -74,6 +79,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v0.4 Looking Forward](phase0/v0.4/looking-forward.md)
   - [v0.4 Next Version Bridge](phase0/v0.4/next-version-bridge.md)
 - v0.5
+  - [v0.5 Start Here](phase0/v0.5/00-start-here.md)
   - [v0.5 Contents](phase0/v0.5/CONTENTS.md)
   - [v0.5 Introduction](phase0/v0.5/introduction.md)
   - [v0.5 - Python Core For AOIS Logic](phase0/v0.5/notes.md)
@@ -85,6 +91,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v0.5 Looking Forward](phase0/v0.5/looking-forward.md)
   - [v0.5 Next Version Bridge](phase0/v0.5/next-version-bridge.md)
 - v0.6
+  - [v0.6 Start Here](phase0/v0.6/00-start-here.md)
   - [v0.6 Contents](phase0/v0.6/CONTENTS.md)
   - [v0.6 Introduction](phase0/v0.6/introduction.md)
   - [v0.6 - FastAPI Without AI](phase0/v0.6/notes.md)
@@ -96,6 +103,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v0.6 Looking Forward](phase0/v0.6/looking-forward.md)
   - [v0.6 Next Version Bridge](phase0/v0.6/next-version-bridge.md)
 - v0.7
+  - [v0.7 Start Here](phase0/v0.7/00-start-here.md)
   - [v0.7 Contents](phase0/v0.7/CONTENTS.md)
   - [v0.7 Introduction](phase0/v0.7/introduction.md)
   - [v0.7 - LLM Fundamentals Without Provider Dependence](phase0/v0.7/notes.md)
@@ -107,6 +115,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v0.7 Looking Forward](phase0/v0.7/looking-forward.md)
   - [v0.7 Next Version Bridge](phase0/v0.7/next-version-bridge.md)
 - v0.8
+  - [v0.8 Start Here](phase0/v0.8/00-start-here.md)
   - [v0.8 Contents](phase0/v0.8/CONTENTS.md)
   - [v0.8 Introduction](phase0/v0.8/introduction.md)
   - [v0.8 - Postgres Foundations Without Running A Database](phase0/v0.8/notes.md)
@@ -125,6 +134,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 1 Contents](phase1/CONTENTS.md)
 - [Phase 1 Introduction](phase1/00-introduction.md)
 - v1
+  - [v1 Start Here](phase1/v1/00-start-here.md)
   - [v1 Contents](phase1/v1/CONTENTS.md)
   - [v1 Introduction](phase1/v1/introduction.md)
   - [v1 - Structured AI Endpoint Without Provider Calls](phase1/v1/notes.md)
@@ -136,6 +146,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v1 Looking Forward](phase1/v1/looking-forward.md)
   - [v1 Next Version Bridge](phase1/v1/next-version-bridge.md)
 - v2
+  - [v2 Start Here](phase1/v2/00-start-here.md)
   - [v2 Contents](phase1/v2/CONTENTS.md)
   - [v2 Introduction](phase1/v2/introduction.md)
   - [v2 - Model Routing Without Provider Execution](phase1/v2/notes.md)
@@ -147,6 +158,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v2 Looking Forward](phase1/v2/looking-forward.md)
   - [v2 Next Version Bridge](phase1/v2/next-version-bridge.md)
 - v3
+  - [v3 Start Here](phase1/v3/00-start-here.md)
   - [v3 Contents](phase1/v3/CONTENTS.md)
   - [v3 Introduction](phase1/v3/introduction.md)
   - [v3 - Reliability Baseline Without Provider Calls](phase1/v3/notes.md)
@@ -164,6 +176,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 2 Contents](phase2/CONTENTS.md)
 - [Phase 2 Introduction](phase2/00-introduction.md)
 - v4
+  - [v4 Start Here](phase2/v4/00-start-here.md)
   - [v4 Contents](phase2/v4/CONTENTS.md)
   - [v4 Introduction](phase2/v4/introduction.md)
   - [v4 - Containerization Plan Without Building Images](phase2/v4/notes.md)
@@ -175,6 +188,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v4 Looking Forward](phase2/v4/looking-forward.md)
   - [v4 Next Version Bridge](phase2/v4/next-version-bridge.md)
 - v5
+  - [v5 Start Here](phase2/v5/00-start-here.md)
   - [v5 Contents](phase2/v5/CONTENTS.md)
   - [v5 Introduction](phase2/v5/introduction.md)
   - [v5 - API And LLM Security Foundations](phase2/v5/notes.md)
@@ -192,6 +206,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 3 Contents](phase3/CONTENTS.md)
 - [Phase 3 Introduction](phase3/00-introduction.md)
 - v6
+  - [v6 Start Here](phase3/v6/00-start-here.md)
   - [v6 Contents](phase3/v6/CONTENTS.md)
   - [v6 Introduction](phase3/v6/introduction.md)
   - [v6 - Kubernetes Plan Without Applying Resources](phase3/v6/notes.md)
@@ -203,6 +218,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v6 Looking Forward](phase3/v6/looking-forward.md)
   - [v6 Next Version Bridge](phase3/v6/next-version-bridge.md)
 - v6.5
+  - [v6.5 Start Here](phase3/v6.5/00-start-here.md)
   - [v6.5 Contents](phase3/v6.5/CONTENTS.md)
   - [v6.5 Introduction](phase3/v6.5/introduction.md)
   - [v6.5 - Workload Identity And Trust Boundaries Without Applying Resources](phase3/v6.5/notes.md)
@@ -214,6 +230,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v6.5 Looking Forward](phase3/v6.5/looking-forward.md)
   - [v6.5 Next Version Bridge](phase3/v6.5/next-version-bridge.md)
 - v7
+  - [v7 Start Here](phase3/v7/00-start-here.md)
   - [v7 Contents](phase3/v7/CONTENTS.md)
   - [v7 Introduction](phase3/v7/introduction.md)
   - [v7 - Helm Packaging Without Installing A Release](phase3/v7/notes.md)
@@ -225,6 +242,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v7 Looking Forward](phase3/v7/looking-forward.md)
   - [v7 Next Version Bridge](phase3/v7/next-version-bridge.md)
 - v8
+  - [v8 Start Here](phase3/v8/00-start-here.md)
   - [v8 Contents](phase3/v8/CONTENTS.md)
   - [v8 Introduction](phase3/v8/introduction.md)
   - [v8 - GitOps And ArgoCD Flow Without Cluster Sync](phase3/v8/notes.md)
@@ -236,6 +254,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v8 Looking Forward](phase3/v8/looking-forward.md)
   - [v8 Next Version Bridge](phase3/v8/next-version-bridge.md)
 - v9
+  - [v9 Start Here](phase3/v9/00-start-here.md)
   - [v9 Contents](phase3/v9/CONTENTS.md)
   - [v9 Introduction](phase3/v9/introduction.md)
   - [v9 - Autoscaling And Event-Driven Planning Without Scaling Resources](phase3/v9/notes.md)
@@ -253,6 +272,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 4 Contents](phase4/CONTENTS.md)
 - [Phase 4 Introduction](phase4/00-introduction.md)
 - v10
+  - [v10 Start Here](phase4/v10/00-start-here.md)
   - [v10 Contents](phase4/v10/CONTENTS.md)
   - [v10 Introduction](phase4/v10/introduction.md)
   - [v10 - Managed Model Layer Without Cloud Calls](phase4/v10/notes.md)
@@ -264,6 +284,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v10 Looking Forward](phase4/v10/looking-forward.md)
   - [v10 Next Version Bridge](phase4/v10/next-version-bridge.md)
 - v10.5
+  - [v10.5 Start Here](phase4/v10.5/00-start-here.md)
   - [v10.5 Contents](phase4/v10.5/CONTENTS.md)
   - [v10.5 Introduction](phase4/v10.5/introduction.md)
   - [v10.5 - Managed Agent Tradeoffs Without Creating Agents](phase4/v10.5/notes.md)
@@ -275,6 +296,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v10.5 Looking Forward](phase4/v10.5/looking-forward.md)
   - [v10.5 Next Version Bridge](phase4/v10.5/next-version-bridge.md)
 - v11
+  - [v11 Start Here](phase4/v11/00-start-here.md)
   - [v11 Contents](phase4/v11/CONTENTS.md)
   - [v11 Introduction](phase4/v11/introduction.md)
   - [v11 - Event-Driven Workflow Planning Without Cloud Calls](phase4/v11/notes.md)
@@ -286,6 +308,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v11 Looking Forward](phase4/v11/looking-forward.md)
   - [v11 Next Version Bridge](phase4/v11/next-version-bridge.md)
 - v12
+  - [v12 Start Here](phase4/v12/00-start-here.md)
   - [v12 Contents](phase4/v12/CONTENTS.md)
   - [v12 Introduction](phase4/v12/introduction.md)
   - [v12 - Managed Runtime Governance Without Cloud Calls](phase4/v12/notes.md)
@@ -303,6 +326,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 5 Contents](phase5/CONTENTS.md)
 - [Phase 5 Introduction](phase5/00-introduction.md)
 - v13
+  - [v13 Start Here](phase5/v13/00-start-here.md)
   - [v13 Contents](phase5/v13/CONTENTS.md)
   - [v13 Introduction](phase5/v13/introduction.md)
   - [v13 - GPU-Backed Inference Services Without GPU Runtime](phase5/v13/notes.md)
@@ -314,6 +338,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v13 Looking Forward](phase5/v13/looking-forward.md)
   - [v13 Next Version Bridge](phase5/v13/next-version-bridge.md)
 - v13.5
+  - [v13.5 Start Here](phase5/v13.5/00-start-here.md)
   - [v13.5 Contents](phase5/v13.5/CONTENTS.md)
   - [v13.5 Introduction](phase5/v13.5/introduction.md)
   - [v13.5 - GPU Infrastructure Operations Without Applying Resources](phase5/v13.5/notes.md)
@@ -325,6 +350,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v13.5 Looking Forward](phase5/v13.5/looking-forward.md)
   - [v13.5 Next Version Bridge](phase5/v13.5/next-version-bridge.md)
 - v14
+  - [v14 Start Here](phase5/v14/00-start-here.md)
   - [v14 Contents](phase5/v14/CONTENTS.md)
   - [v14 Introduction](phase5/v14/introduction.md)
   - [v14 - High-Throughput Inference Serving Without Runtime](phase5/v14/notes.md)
@@ -336,6 +362,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v14 Looking Forward](phase5/v14/looking-forward.md)
   - [v14 Next Version Bridge](phase5/v14/next-version-bridge.md)
 - v14.5
+  - [v14.5 Start Here](phase5/v14.5/00-start-here.md)
   - [v14.5 Contents](phase5/v14.5/CONTENTS.md)
   - [v14.5 Introduction](phase5/v14.5/introduction.md)
   - [v14.5 - Performance Engineering And Caching Without Runtime](phase5/v14.5/notes.md)
@@ -347,6 +374,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v14.5 Looking Forward](phase5/v14.5/looking-forward.md)
   - [v14.5 Next Version Bridge](phase5/v14.5/next-version-bridge.md)
 - v15
+  - [v15 Start Here](phase5/v15/00-start-here.md)
   - [v15 Contents](phase5/v15/CONTENTS.md)
   - [v15 Introduction](phase5/v15/introduction.md)
   - [v15 - Fine-Tuning And Adaptation Without Training](phase5/v15/notes.md)
@@ -358,6 +386,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v15 Looking Forward](phase5/v15/looking-forward.md)
   - [v15 Next Version Bridge](phase5/v15/next-version-bridge.md)
 - v15.5
+  - [v15.5 Start Here](phase5/v15.5/00-start-here.md)
   - [v15.5 Contents](phase5/v15.5/CONTENTS.md)
   - [v15.5 Introduction](phase5/v15.5/introduction.md)
   - [v15.5 - Quantization And Memory Economics Without Runtime](phase5/v15.5/notes.md)
@@ -375,6 +404,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 6 Contents](phase6/CONTENTS.md)
 - [Phase 6 Introduction](phase6/00-introduction.md)
 - v16
+  - [v16 Start Here](phase6/v16/00-start-here.md)
   - [v16 Contents](phase6/v16/CONTENTS.md)
   - [v16 Introduction](phase6/v16/introduction.md)
   - [v16 - Unified Telemetry Without Runtime](phase6/v16/notes.md)
@@ -386,6 +416,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v16 Looking Forward](phase6/v16/looking-forward.md)
   - [v16 Next Version Bridge](phase6/v16/next-version-bridge.md)
 - v16.5
+  - [v16.5 Start Here](phase6/v16.5/00-start-here.md)
   - [v16.5 Contents](phase6/v16.5/CONTENTS.md)
   - [v16.5 Introduction](phase6/v16.5/introduction.md)
   - [v16.5 - Agent And Incident Tracing Without Runtime](phase6/v16.5/notes.md)
@@ -397,6 +428,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v16.5 Looking Forward](phase6/v16.5/looking-forward.md)
   - [v16.5 Next Version Bridge](phase6/v16.5/next-version-bridge.md)
 - v17
+  - [v17 Start Here](phase6/v17/00-start-here.md)
   - [v17 Contents](phase6/v17/CONTENTS.md)
   - [v17 Introduction](phase6/v17/introduction.md)
   - [v17 - Event Streaming Without Broker Runtime](phase6/v17/notes.md)
@@ -408,6 +440,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v17 Looking Forward](phase6/v17/looking-forward.md)
   - [v17 Next Version Bridge](phase6/v17/next-version-bridge.md)
 - v17.5
+  - [v17.5 Start Here](phase6/v17.5/00-start-here.md)
   - [v17.5 Contents](phase6/v17.5/CONTENTS.md)
   - [v17.5 Introduction](phase6/v17.5/introduction.md)
   - [v17.5 - Service And Agent SLOs Without Runtime](phase6/v17.5/notes.md)
@@ -419,6 +452,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v17.5 Looking Forward](phase6/v17.5/looking-forward.md)
   - [v17.5 Next Version Bridge](phase6/v17.5/next-version-bridge.md)
 - v18
+  - [v18 Start Here](phase6/v18/00-start-here.md)
   - [v18 Contents](phase6/v18/CONTENTS.md)
   - [v18 Introduction](phase6/v18/introduction.md)
   - [v18 - Incident Response Maturity Without Runtime](phase6/v18/notes.md)
@@ -430,6 +464,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v18 Looking Forward](phase6/v18/looking-forward.md)
   - [v18 Next Version Bridge](phase6/v18/next-version-bridge.md)
 - v19
+  - [v19 Start Here](phase6/v19/00-start-here.md)
   - [v19 Contents](phase6/v19/CONTENTS.md)
   - [v19 Introduction](phase6/v19/introduction.md)
   - [v19 - Chaos Engineering Without Fault Injection](phase6/v19/notes.md)
@@ -441,6 +476,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v19 Looking Forward](phase6/v19/looking-forward.md)
   - [v19 Next Version Bridge](phase6/v19/next-version-bridge.md)
 - v19.5
+  - [v19.5 Start Here](phase6/v19.5/00-start-here.md)
   - [v19.5 Contents](phase6/v19.5/CONTENTS.md)
   - [v19.5 Introduction](phase6/v19.5/introduction.md)
   - [v19.5 - AI Failure Engineering And Governance Enforcement](phase6/v19.5/notes.md)
@@ -458,6 +494,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 7 Contents](phase7/CONTENTS.md)
 - [Phase 7 Introduction](phase7/00-introduction.md)
 - v20
+  - [v20 Start Here](phase7/v20/00-start-here.md)
   - [v20 Contents](phase7/v20/CONTENTS.md)
   - [v20 Introduction](phase7/v20/introduction.md)
   - [v20 - Tool-Using Incident Responder](phase7/v20/notes.md)
@@ -469,6 +506,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v20 Looking Forward](phase7/v20/looking-forward.md)
   - [v20 Next Version Bridge](phase7/v20/next-version-bridge.md)
 - v20.1
+  - [v20.1 Start Here](phase7/v20.1/00-start-here.md)
   - [v20.1 Contents](phase7/v20.1/CONTENTS.md)
   - [v20.1 Introduction](phase7/v20.1/introduction.md)
   - [v20.1 - Per-Incident and Per-Step Cost Accounting](phase7/v20.1/notes.md)
@@ -480,6 +518,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v20.1 Looking Forward](phase7/v20.1/looking-forward.md)
   - [v20.1 Next Version Bridge](phase7/v20.1/next-version-bridge.md)
 - v20.2
+  - [v20.2 Start Here](phase7/v20.2/00-start-here.md)
   - [v20.2 Contents](phase7/v20.2/CONTENTS.md)
   - [v20.2 Introduction](phase7/v20.2/introduction.md)
   - [v20.2 - Budget-Aware Routing](phase7/v20.2/notes.md)
@@ -491,6 +530,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v20.2 Looking Forward](phase7/v20.2/looking-forward.md)
   - [v20.2 Next Version Bridge](phase7/v20.2/next-version-bridge.md)
 - v21
+  - [v21 Start Here](phase7/v21/00-start-here.md)
   - [v21 Contents](phase7/v21/CONTENTS.md)
   - [v21 Introduction](phase7/v21/introduction.md)
   - [v21 - MCP and Governed Tool Registries](phase7/v21/notes.md)
@@ -502,6 +542,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v21 Looking Forward](phase7/v21/looking-forward.md)
   - [v21 Next Version Bridge](phase7/v21/next-version-bridge.md)
 - v22
+  - [v22 Start Here](phase7/v22/00-start-here.md)
   - [v22 Contents](phase7/v22/CONTENTS.md)
   - [v22 Introduction](phase7/v22/introduction.md)
   - [v22 - Durable Agent Workflows](phase7/v22/notes.md)
@@ -513,6 +554,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v22 Looking Forward](phase7/v22/looking-forward.md)
   - [v22 Next Version Bridge](phase7/v22/next-version-bridge.md)
 - v23
+  - [v23 Start Here](phase7/v23/00-start-here.md)
   - [v23 Contents](phase7/v23/CONTENTS.md)
   - [v23 Introduction](phase7/v23/introduction.md)
   - [v23 - Stateful Orchestration Loops](phase7/v23/notes.md)
@@ -524,6 +566,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v23 Looking Forward](phase7/v23/looking-forward.md)
   - [v23 Next Version Bridge](phase7/v23/next-version-bridge.md)
 - v23.5
+  - [v23.5 Start Here](phase7/v23.5/00-start-here.md)
   - [v23.5 Contents](phase7/v23.5/CONTENTS.md)
   - [v23.5 Introduction](phase7/v23.5/introduction.md)
   - [v23.5 - Agent Evaluation](phase7/v23.5/notes.md)
@@ -535,6 +578,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v23.5 Looking Forward](phase7/v23.5/looking-forward.md)
   - [v23.5 Next Version Bridge](phase7/v23.5/next-version-bridge.md)
 - v23.8
+  - [v23.8 Start Here](phase7/v23.8/00-start-here.md)
   - [v23.8 Contents](phase7/v23.8/CONTENTS.md)
   - [v23.8 Introduction](phase7/v23.8/introduction.md)
   - [v23.8 - Runtime Operations And Autonomy Control](phase7/v23.8/notes.md)
@@ -546,6 +590,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v23.8 Looking Forward](phase7/v23.8/looking-forward.md)
   - [v23.8 Next Version Bridge](phase7/v23.8/next-version-bridge.md)
 - v24
+  - [v24 Start Here](phase7/v24/00-start-here.md)
   - [v24 Contents](phase7/v24/CONTENTS.md)
   - [v24 Introduction](phase7/v24/introduction.md)
   - [v24 - Multi-Agent Collaboration](phase7/v24/notes.md)
@@ -557,6 +602,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v24 Looking Forward](phase7/v24/looking-forward.md)
   - [v24 Next Version Bridge](phase7/v24/next-version-bridge.md)
 - v25
+  - [v25 Start Here](phase7/v25/00-start-here.md)
   - [v25 Contents](phase7/v25/CONTENTS.md)
   - [v25 Introduction](phase7/v25/introduction.md)
   - [v25 - Safe Execution Boundaries](phase7/v25/notes.md)
@@ -574,6 +620,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 8 Contents](phase8/CONTENTS.md)
 - [Phase 8 Introduction](phase8/00-introduction.md)
 - v26
+  - [v26 Start Here](phase8/v26/00-start-here.md)
   - [v26 Contents](phase8/v26/CONTENTS.md)
   - [v26 Introduction](phase8/v26/introduction.md)
   - [v26 - Dashboard And Real-Time Visibility](phase8/v26/notes.md)
@@ -585,6 +632,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v26 Looking Forward](phase8/v26/looking-forward.md)
   - [v26 Next Version Bridge](phase8/v26/next-version-bridge.md)
 - v27
+  - [v27 Start Here](phase8/v27/00-start-here.md)
   - [v27 Contents](phase8/v27/CONTENTS.md)
   - [v27 Introduction](phase8/v27/introduction.md)
   - [v27 - Auth, Tenancy, And Policy-Aware Access](phase8/v27/notes.md)
@@ -602,6 +650,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 9 Contents](phase9/CONTENTS.md)
 - [Phase 9 Introduction](phase9/00-introduction.md)
 - v28
+  - [v28 Start Here](phase9/v28/00-start-here.md)
   - [v28 Contents](phase9/v28/CONTENTS.md)
   - [v28 Introduction](phase9/v28/introduction.md)
   - [v28 - Delivery Pipeline And Release Controls](phase9/v28/notes.md)
@@ -613,6 +662,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v28 Looking Forward](phase9/v28/looking-forward.md)
   - [v28 Next Version Bridge](phase9/v28/next-version-bridge.md)
 - v29
+  - [v29 Start Here](phase9/v29/00-start-here.md)
   - [v29 Contents](phase9/v29/CONTENTS.md)
   - [v29 Introduction](phase9/v29/introduction.md)
   - [v29 - Experiment And Model Delivery Tracking](phase9/v29/notes.md)
@@ -624,6 +674,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v29 Looking Forward](phase9/v29/looking-forward.md)
   - [v29 Next Version Bridge](phase9/v29/next-version-bridge.md)
 - v30
+  - [v30 Start Here](phase9/v30/00-start-here.md)
   - [v30 Contents](phase9/v30/CONTENTS.md)
   - [v30 Introduction](phase9/v30/introduction.md)
   - [v30 - Internal Platform Patterns](phase9/v30/notes.md)
@@ -641,6 +692,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
 - [Phase 10 Contents](phase10/CONTENTS.md)
 - [Phase 10 Introduction](phase10/00-introduction.md)
 - v31
+  - [v31 Start Here](phase10/v31/00-start-here.md)
   - [v31 Contents](phase10/v31/CONTENTS.md)
   - [v31 Introduction](phase10/v31/introduction.md)
   - [v31 - Multimodal AOIS](phase10/v31/notes.md)
@@ -652,6 +704,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v31 Looking Forward](phase10/v31/looking-forward.md)
   - [v31 Next Version Bridge](phase10/v31/next-version-bridge.md)
 - v32
+  - [v32 Start Here](phase10/v32/00-start-here.md)
   - [v32 Contents](phase10/v32/CONTENTS.md)
   - [v32 Introduction](phase10/v32/introduction.md)
   - [v32 - Edge And Offline Inference](phase10/v32/notes.md)
@@ -663,6 +716,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v32 Looking Forward](phase10/v32/looking-forward.md)
   - [v32 Next Version Bridge](phase10/v32/next-version-bridge.md)
 - v33
+  - [v33 Start Here](phase10/v33/00-start-here.md)
   - [v33 Contents](phase10/v33/CONTENTS.md)
   - [v33 Introduction](phase10/v33/introduction.md)
   - [v33 - Adversarial Testing And Red Teaming](phase10/v33/notes.md)
@@ -674,6 +728,7 @@ Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link
   - [v33 Looking Forward](phase10/v33/looking-forward.md)
   - [v33 Next Version Bridge](phase10/v33/next-version-bridge.md)
 - v34
+  - [v34 Start Here](phase10/v34/00-start-here.md)
   - [v34 Contents](phase10/v34/CONTENTS.md)
   - [v34 Introduction](phase10/v34/introduction.md)
   - [v34 - Governance Verification And Computer Use](phase10/v34/notes.md)

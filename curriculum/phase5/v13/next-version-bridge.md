@@ -20,5 +20,5 @@ The next version goes below the service contract into GPU infrastructure operati
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v13 Looking Forward](looking-forward.md)
-- Next: [v13.5 Contents](../v13.5/CONTENTS.md)
+- Next: [v13.5 Start Here](../v13.5/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -28,5 +28,5 @@ Carry forward:
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v0.7 Looking Forward](looking-forward.md)
-- Next: [v0.8 Contents](../v0.8/CONTENTS.md)
+- Next: [v0.8 Start Here](../v0.8/00-start-here.md)
 <!-- AOIS-NAV-END -->

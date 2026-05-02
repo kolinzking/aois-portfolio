@@ -49,6 +49,6 @@ Authoring status: authored
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [Phase 1 Introduction](../00-introduction.md)
+- Previous: [v1 Start Here](00-start-here.md)
 - Next: [v1 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

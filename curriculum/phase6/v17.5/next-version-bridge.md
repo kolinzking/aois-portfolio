@@ -25,5 +25,5 @@ operator action.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v17.5 Looking Forward](looking-forward.md)
-- Next: [v18 Contents](../v18/CONTENTS.md)
+- Next: [v18 Start Here](../v18/00-start-here.md)
 <!-- AOIS-NAV-END -->

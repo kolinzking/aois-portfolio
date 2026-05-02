@@ -52,6 +52,6 @@ flags remain false.
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v19 Next Version Bridge](../v19/next-version-bridge.md)
+- Previous: [v19.5 Start Here](00-start-here.md)
 - Next: [v19.5 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

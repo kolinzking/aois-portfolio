@@ -17,5 +17,5 @@ Because visibility alone is not enough.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v0.1 Looking Forward](looking-forward.md)
-- Next: [v0.2 Contents](../v0.2/CONTENTS.md)
+- Next: [v0.2 Start Here](../v0.2/00-start-here.md)
 <!-- AOIS-NAV-END -->

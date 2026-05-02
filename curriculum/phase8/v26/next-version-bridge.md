@@ -36,5 +36,5 @@ show operators what AOIS is doing -> control who may see and act on each state
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v26 Looking Forward](looking-forward.md)
-- Next: [v27 Contents](../v27/CONTENTS.md)
+- Next: [v27 Start Here](../v27/00-start-here.md)
 <!-- AOIS-NAV-END -->

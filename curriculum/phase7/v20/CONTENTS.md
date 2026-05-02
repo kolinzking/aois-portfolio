@@ -52,6 +52,6 @@ Expected result: validation and simulation pass while `agent_runtime_started`,
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [Phase 7 Introduction](../00-introduction.md)
+- Previous: [v20 Start Here](00-start-here.md)
 - Next: [v20 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->

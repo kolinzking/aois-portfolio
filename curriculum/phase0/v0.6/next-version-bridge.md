@@ -17,5 +17,5 @@ Because the current analysis is still deterministic.
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
 - Previous: [v0.6 Looking Forward](looking-forward.md)
-- Next: [v0.7 Contents](../v0.7/CONTENTS.md)
+- Next: [v0.7 Start Here](../v0.7/00-start-here.md)
 <!-- AOIS-NAV-END -->

@@ -40,6 +40,6 @@ Do not move on if you cannot explain why managed agent creation is gated.
 ## Navigation
 
 - Reading order: [AOIS Reading Order](../../READING-ORDER.md)
-- Previous: [v10 Next Version Bridge](../v10/next-version-bridge.md)
+- Previous: [v10.5 Start Here](00-start-here.md)
 - Next: [v10.5 Introduction](introduction.md)
 <!-- AOIS-NAV-END -->
