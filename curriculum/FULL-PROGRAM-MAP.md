@@ -1321,3 +1321,12 @@ They must never be brushed past in delivery.
 - security and identity
 - cost engineering
 - agent runtime control
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Syllabus](SYLLABUS.md)
+- Next: [AOIS Master Curriculum](MASTER-CURRICULUM.md)
+<!-- AOIS-NAV-END -->

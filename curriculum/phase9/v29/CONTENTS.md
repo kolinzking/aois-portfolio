@@ -33,3 +33,12 @@ Read in this order:
 4. Explain each promote, block, and hold decision.
 5. Break and restore one experiment design gate, one metric gate, one rollout evidence gate, one registry gate, and one risk-review gate.
 6. Read the bridge into v30 internal platform patterns.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Next Version Bridge](../v28/next-version-bridge.md)
+- Next: [v29 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

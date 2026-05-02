@@ -39,3 +39,12 @@ Authoring status: authored
 4. use [runbook.md](runbook.md) if the script fails
 5. read [summarynotes.md](summarynotes.md)
 6. use [next-version-bridge.md](next-version-bridge.md) to move into `v0.3`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 Next Version Bridge](../v0.1/next-version-bridge.md)
+- Next: [v0.2 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

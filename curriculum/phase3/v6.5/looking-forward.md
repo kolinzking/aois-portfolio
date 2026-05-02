@@ -15,3 +15,12 @@ Authoring status: authored
 `v7` will build on the manifest set by turning it into a Helm chart.
 
 The chart must preserve namespace, limits, provider gates, identity, and network policy controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Summary Notes](summarynotes.md)
+- Next: [v6.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

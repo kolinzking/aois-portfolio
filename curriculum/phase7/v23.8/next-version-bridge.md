@@ -21,3 +21,12 @@ handoff boundaries, and evaluation of collaborative behavior.
 
 v23.8 answers "how much autonomy is allowed for this agent?" v24 answers "how
 do multiple agents coordinate without violating those controls?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Looking Forward](looking-forward.md)
+- Next: [v24 Contents](../v24/CONTENTS.md)
+<!-- AOIS-NAV-END -->

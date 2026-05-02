@@ -2,7 +2,8 @@
 
 AOIS is a self-paced curriculum and live Codex-taught portfolio for AI infrastructure mastery.
 
-The repository is being rebuilt phase by phase.
+Start with [curriculum/READING-ORDER.md](curriculum/READING-ORDER.md).
+It gives the click-by-click path through every phase and version.
 
 Important operating constraint:
 

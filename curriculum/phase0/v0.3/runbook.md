@@ -62,3 +62,12 @@ git reset --hard
 ```
 
 unless a live teacher explicitly approves the exact recovery.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.3 Lab](lab.md)
+- Next: [v0.3 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

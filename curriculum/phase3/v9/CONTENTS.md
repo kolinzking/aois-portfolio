@@ -40,3 +40,12 @@ Authoring status: authored
 4. run `examples/validate_autoscaling_plan.py`
 5. explain why max replicas is capped at `1`
 6. complete the mastery checkpoint
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Next Version Bridge](../v8/next-version-bridge.md)
+- Next: [v9 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

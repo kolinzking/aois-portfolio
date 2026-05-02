@@ -134,3 +134,12 @@ Score yourself from `1` to `5`:
 - `1`: I am still blind in the terminal.
 
 Minimum pass: `4`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 - Linux Essentials](notes.md)
+- Next: [v0.1 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

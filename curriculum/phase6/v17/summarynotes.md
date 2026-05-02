@@ -30,3 +30,12 @@ v17 does not prove real broker throughput, real durability, or real operational
 latency. That is intentional. The tradeoff is lower realism in exchange for
 zero runtime footprint on a shared server. A live broker should only be added
 after resource budgets and primary-project isolation are explicit.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Benchmark](benchmark.md)
+- Next: [v17 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -27,3 +27,12 @@ fault injection or resource pressure.
 The important result is not how much failure AOIS can survive today. The
 important result is that AOIS can define safe experiments, block unsafe ones,
 protect the primary workload, and connect learning back to incident response.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Failure Story](failure-story.md)
+- Next: [v19 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

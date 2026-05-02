@@ -25,3 +25,12 @@ Once AOIS understands who owns the agent loop, it can compare how work is trigge
 - scheduled workflow
 
 `v11` keeps the same discipline: plan first, validate locally, do not create cloud resources without approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Looking Forward](looking-forward.md)
+- Next: [v11 Contents](../v11/CONTENTS.md)
+<!-- AOIS-NAV-END -->

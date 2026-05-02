@@ -44,3 +44,12 @@ Expected simulator result:
   "total_cases": 17
 }
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Contents](CONTENTS.md)
+- Next: [v31 - Multimodal AOIS](notes.md)
+<!-- AOIS-NAV-END -->

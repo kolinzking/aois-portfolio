@@ -74,3 +74,12 @@ If you are about to add a real provider call:
 - confirm key storage
 - get explicit approval
 - update resource and source-currency notes
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Lab](lab.md)
+- Next: [v0.7 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

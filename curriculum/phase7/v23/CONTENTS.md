@@ -27,3 +27,12 @@ Authoring status: authored
 4. Explain the ordered decision precedence.
 5. Break one stop guard and predict the validation or simulation failure.
 6. Restore the plan and read the bridge into v23.5.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Next Version Bridge](../v22/next-version-bridge.md)
+- Next: [v23 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

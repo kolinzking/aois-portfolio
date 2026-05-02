@@ -313,3 +313,12 @@ Claims supported:
 - Durable workflow systems preserve progress across interruptions.
 - Checkpointed graph execution can support pause, resume, and human-in-the-loop behavior.
 - Workflow tool steps must preserve MCP host, server, and tool boundaries from v21.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Introduction](introduction.md)
+- Next: [v22 Lab](lab.md)
+<!-- AOIS-NAV-END -->

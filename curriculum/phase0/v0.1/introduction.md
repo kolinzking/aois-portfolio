@@ -49,3 +49,12 @@ Boundary rule:
 
 - `v0.1` = Linux
 - `v0.2` = Bash
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 Contents](CONTENTS.md)
+- Next: [v0.1 - Linux Essentials](notes.md)
+<!-- AOIS-NAV-END -->

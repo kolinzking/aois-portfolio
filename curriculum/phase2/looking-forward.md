@@ -35,3 +35,12 @@ Phase 3 can begin infrastructure and GitOps only if these remain true:
 - provider calls remain gated
 - secrets stay out of repo files
 - resource usage is measured after every runtime step
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v5 Next Version Bridge](v5/next-version-bridge.md)
+- Next: [Phase 3 Contents](../phase3/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -23,3 +23,12 @@ resource failure, or treating stale/offline state as current.
 
 v33 will turn the v31 multimodal contract and v32 edge/offline contract into
 red-team scenarios that try to break the controls before live use.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Looking Forward](looking-forward.md)
+- Next: [v33 Contents](../v33/CONTENTS.md)
+<!-- AOIS-NAV-END -->

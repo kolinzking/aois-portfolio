@@ -443,3 +443,12 @@ That means:
 - no “see docs” escapes unless the exact external reference is narrowly scoped
 - no theory dumping without operational proof
 - no basic concept skipped just because it feels obvious to the writer
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Study Pacing](STUDY-PACING.md)
+- Next: [AOIS Quality Gates](QUALITY-GATES.md)
+<!-- AOIS-NAV-END -->

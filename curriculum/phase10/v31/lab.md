@@ -81,3 +81,12 @@ Defend why v31 models multimodal behavior locally before processing real media.
 The system should prove intake, consent, privacy, accessibility, consistency,
 evidence, fallback, and policy gates before any live media or model runtime can
 affect users.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 - Multimodal AOIS](notes.md)
+- Next: [v31 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

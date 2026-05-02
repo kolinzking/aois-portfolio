@@ -35,3 +35,12 @@ At `v9`, good means:
 - KEDA is plan-only
 - no cluster mutation happened
 - scaling risk is understood
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v9 Failure Story](failure-story.md)
+- Next: [v9 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

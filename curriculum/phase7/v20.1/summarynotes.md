@@ -34,3 +34,12 @@ Decision gates:
 The accounting model is useful because it is deterministic, auditable, and
 testable. Real enforcement needs live pricing review, reconciliation, budget
 ownership, and operator dashboards before it is safe.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Benchmark](benchmark.md)
+- Next: [v20.1 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

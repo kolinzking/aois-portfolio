@@ -11,3 +11,12 @@ Authoring status: authored
 `v6.5` adds workload identity and trust boundaries.
 
 Pods should not only run; they should have clear identity and controlled permissions.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Looking Forward](looking-forward.md)
+- Next: [v6.5 Contents](../v6.5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

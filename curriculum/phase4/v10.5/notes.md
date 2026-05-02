@@ -369,3 +369,12 @@ Official docs review, credential plan, budget approval, data-boundary review, to
 `v10.5` defines agent ownership tradeoffs.
 
 `v11` moves to event-driven cloud workflow planning, where AOIS compares serverless orchestration to its local/API workflow.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Introduction](introduction.md)
+- Next: [v10.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

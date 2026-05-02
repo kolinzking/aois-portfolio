@@ -33,3 +33,12 @@ Read in this order:
 4. Explain each promote, block, and hold decision.
 5. Break and restore one source gate, one test gate, one artifact gate, one rollout gate, and one AI behavior gate.
 6. Read the bridge into v29 experiment and model delivery tracking.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 9 Introduction](../00-introduction.md)
+- Next: [v28 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

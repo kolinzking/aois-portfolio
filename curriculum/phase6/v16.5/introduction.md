@@ -21,3 +21,12 @@ Run the validator and simulator locally.
 Focus on following the incident timeline from ingest to response.
 
 Do not start an agent runtime, execute tools, call providers, or run telemetry backends.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 Contents](CONTENTS.md)
+- Next: [v16.5 - Agent And Incident Tracing Without Runtime](notes.md)
+<!-- AOIS-NAV-END -->

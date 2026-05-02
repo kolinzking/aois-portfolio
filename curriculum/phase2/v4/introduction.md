@@ -22,3 +22,12 @@ This version teaches the packaging design while protecting the shared server.
 4. run the local validator
 5. explain why build/run is gated
 6. do not start containers without approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Contents](CONTENTS.md)
+- Next: [v4 - Containerization Plan Without Building Images](notes.md)
+<!-- AOIS-NAV-END -->

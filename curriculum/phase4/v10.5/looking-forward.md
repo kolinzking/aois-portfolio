@@ -19,3 +19,12 @@ Do not evaluate a managed agent only by how easy it is to create.
 The same question remains active:
 
 What does AOIS own, what does a provider own, and how can the decision be validated before anything live is created?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Summary Notes](summarynotes.md)
+- Next: [v10.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

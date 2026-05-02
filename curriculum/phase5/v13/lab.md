@@ -61,3 +61,12 @@ Explain:
 Defend this decision:
 
 AOIS should not run GPU inference until hardware/cloud approval, driver plan, image plan, model license review, model download approval, memory budget, cost budget, observability, fallback route, rollback, and primary AOIS separation exist.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 - GPU-Backed Inference Services Without GPU Runtime](notes.md)
+- Next: [v13 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

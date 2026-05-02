@@ -431,3 +431,12 @@ By the end of this program you should be able to do all of the following without
 - discuss agentic systems with runtime, policy, and cost realism
 
 That is the bar for the curriculum.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Full Program Map](FULL-PROGRAM-MAP.md)
+- Next: [AOIS Learning Operating Model](LEARNING-OPERATING-MODEL.md)
+<!-- AOIS-NAV-END -->

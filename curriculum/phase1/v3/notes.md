@@ -447,3 +447,12 @@ All local evaluation cases passed.
 `structured endpoint -> model routing -> reliability baseline`
 
 Phase 2 can now focus on containerization and security without losing the provider-gated intelligence contract.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 Introduction](introduction.md)
+- Next: [v3 Lab](lab.md)
+<!-- AOIS-NAV-END -->

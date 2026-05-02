@@ -42,3 +42,12 @@ If install is approved, update `RESOURCE-USAGE.md` with:
 - `.venv` disk footprint
 - repo disk footprint
 - whether any process is still running
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Failure Story](failure-story.md)
+- Next: [v0.6 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

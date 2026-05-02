@@ -35,3 +35,12 @@ v33 does not run a red team, call a live model, generate attack payloads,
 execute exploits, call tools, use the network, call providers, access secrets,
 exfiltrate data, or approve live testing. It models the governance and evidence
 path before any live adversarial work begins.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Benchmark](benchmark.md)
+- Next: [v33 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

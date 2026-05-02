@@ -45,3 +45,12 @@ Expected simulator result:
   "total_cases": 16
 }
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Contents](CONTENTS.md)
+- Next: [v29 - Experiment And Model Delivery Tracking](notes.md)
+<!-- AOIS-NAV-END -->

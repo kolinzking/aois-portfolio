@@ -37,3 +37,12 @@ If install is requested:
 - confirm resource budget
 - get explicit approval
 - record resource usage after install
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 Lab](lab.md)
+- Next: [v7 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

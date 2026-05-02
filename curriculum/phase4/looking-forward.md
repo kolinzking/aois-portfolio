@@ -37,3 +37,12 @@ Phase 5 moves from runtime/cloud planning into inference and GPU engineering.
 The same rule continues:
 
 Design the boundary, validate locally, then gate live resources behind approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v12 Next Version Bridge](v12/next-version-bridge.md)
+- Next: [Phase 5 Contents](../phase5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

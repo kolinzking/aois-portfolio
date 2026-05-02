@@ -37,3 +37,12 @@ At `v8`, good means:
 - destination namespace is `aois-p`
 - automated sync is disabled
 - no live ArgoCD action occurred
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Failure Story](failure-story.md)
+- Next: [v8 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

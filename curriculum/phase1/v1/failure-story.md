@@ -38,3 +38,12 @@ Make provider execution visible and gated:
 External inference is an operational boundary.
 
 It involves secrets, money, latency, data exposure, and reliability.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Runbook](runbook.md)
+- Next: [v1 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

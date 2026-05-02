@@ -28,3 +28,12 @@ Authoring status: authored
 4. Explain every execution-boundary decision gate.
 5. Break one approval, sandbox, credential, network, rollback, or dry-run control.
 6. Restore the plan and read the bridge into Phase 8.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Next Version Bridge](../v24/next-version-bridge.md)
+- Next: [v25 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

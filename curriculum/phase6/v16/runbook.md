@@ -36,3 +36,12 @@ If validation fails:
 5. Restore sampling, cardinality, and retention controls.
 6. Restore live checks.
 7. Rerun validation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 Lab](lab.md)
+- Next: [v16 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

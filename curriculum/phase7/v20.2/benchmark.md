@@ -38,3 +38,12 @@ The benchmark covers:
 - `block_incomplete_accounting`
 
 It tests routing policy only. It does not execute the selected route.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Failure Story](failure-story.md)
+- Next: [v20.2 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

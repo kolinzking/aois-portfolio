@@ -36,3 +36,12 @@ Run the `v12` validator before live runtime work.
 Do not approve live cloud execution until governance exists and the portfolio cannot be confused with primary AOIS.
 
 Lesson learned: managed runtime without governance is still unmanaged risk.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v12 Runbook](runbook.md)
+- Next: [v12 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

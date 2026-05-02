@@ -23,3 +23,12 @@ Once provider calls are approved, AOIS must decide:
 - retry or fallback
 - when to stop spending
 - how latency budget affects route choice
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Looking Forward](looking-forward.md)
+- Next: [v2 Contents](../v2/CONTENTS.md)
+<!-- AOIS-NAV-END -->

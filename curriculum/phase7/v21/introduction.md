@@ -47,3 +47,12 @@ Expected outcome:
 - no MCP server starts
 - no tool executes
 - no provider call is made
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Contents](CONTENTS.md)
+- Next: [v21 - MCP and Governed Tool Registries](notes.md)
+<!-- AOIS-NAV-END -->

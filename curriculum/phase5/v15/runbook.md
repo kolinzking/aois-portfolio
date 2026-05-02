@@ -36,3 +36,12 @@ If validation fails:
 5. Restore eval controls.
 6. Restore limits to zero.
 7. Restore required live checks.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Lab](lab.md)
+- Next: [v15 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

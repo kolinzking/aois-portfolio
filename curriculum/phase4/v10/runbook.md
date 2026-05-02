@@ -37,3 +37,12 @@ If live provider use is requested:
 - define credential storage
 - define logging/redaction rules
 - get explicit approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Lab](lab.md)
+- Next: [v10 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

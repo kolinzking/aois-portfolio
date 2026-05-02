@@ -24,3 +24,12 @@ Network reach and service account tokens are security boundaries.
 These controls are not applied in this version.
 
 That protects the shared server, but live cluster behavior is not proven yet.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Benchmark](benchmark.md)
+- Next: [v6.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

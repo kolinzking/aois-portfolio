@@ -20,3 +20,12 @@ Carry forward these rules:
 The next question is:
 
 How does AOIS know where a GPU workload can run and whether the runtime is observable?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Summary Notes](summarynotes.md)
+- Next: [v13 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

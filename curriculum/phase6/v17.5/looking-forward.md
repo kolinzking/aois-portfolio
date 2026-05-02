@@ -23,3 +23,12 @@ do now?"
 
 The answer requires severity, ownership, runbooks, escalation, diagnosis, and
 post-incident learning.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Summary Notes](summarynotes.md)
+- Next: [v17.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

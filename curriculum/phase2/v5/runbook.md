@@ -42,3 +42,12 @@ If real secrets were committed:
 - rotate the secret outside this repo
 - remove it from files
 - treat history cleanup as a separate explicit security task
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 Lab](lab.md)
+- Next: [v5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

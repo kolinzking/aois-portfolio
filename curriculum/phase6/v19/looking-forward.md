@@ -21,3 +21,12 @@ v19.5 builds on chaos engineering by focusing on AI failure engineering and
 governance enforcement. The next question is not just "can AOIS survive a
 failure?" It is "can AOIS prevent autonomous agents from crossing policy,
 safety, tool, cost, or operational boundaries?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Summary Notes](summarynotes.md)
+- Next: [v19 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

@@ -56,3 +56,12 @@ Escalate to a product or security owner if:
 - sensitive state renders without redaction
 - approval separation fails
 - break-glass lacks a limited field list or audit event
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Lab](lab.md)
+- Next: [v27 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

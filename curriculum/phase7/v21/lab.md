@@ -71,3 +71,12 @@ Explain why each case chooses its decision:
 Defend why v21 does not start MCP. The registry is a governance artifact. It
 must prove ownership, naming, schema, routing, approval, and audit controls
 before a protocol runtime is allowed to expose tools to a model.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 - MCP and Governed Tool Registries](notes.md)
+- Next: [v21 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

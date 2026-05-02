@@ -410,3 +410,12 @@ Redact it, mark high risk, block provider use, and remove the secret from the so
 
 The system now has container packaging design and basic security controls.
 Phase 3 can begin infrastructure and GitOps only after these controls remain intact.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 Introduction](introduction.md)
+- Next: [v5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

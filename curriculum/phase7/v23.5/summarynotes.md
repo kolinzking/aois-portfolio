@@ -33,3 +33,12 @@ v23.5 intentionally does not call a live eval service or model provider. It
 proves the local corpus, metric weights, critical gates, and scoring logic
 first. Live evaluation would require data retention review, trace export review,
 cost controls, privacy review, dashboards, and human feedback workflow.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 Benchmark](benchmark.md)
+- Next: [v23.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

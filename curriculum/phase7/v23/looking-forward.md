@@ -23,3 +23,12 @@ v23.5 will evaluate the connected agent behavior.
 The next step is measuring whether route decisions, registry decisions,
 workflow states, and orchestration actions line up with expected outcomes across
 representative incidents and failure cases.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Summary Notes](summarynotes.md)
+- Next: [v23 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

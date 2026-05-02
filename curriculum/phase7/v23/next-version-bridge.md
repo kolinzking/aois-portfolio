@@ -22,3 +22,12 @@ validators.
 
 v23 answers "what should the loop do next?" v23.5 answers "how do we know the
 loop is good enough to trust?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Looking Forward](looking-forward.md)
+- Next: [v23.5 Contents](../v23.5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

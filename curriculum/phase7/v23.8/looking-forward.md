@@ -24,3 +24,12 @@ v24 will add multi-agent collaboration on top of this operating envelope.
 The next step is not just "more agents." It is coordination that preserves
 autonomy limits, tool boundaries, workflow state, evaluation gates, and operator
 control across multiple agent roles.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Summary Notes](summarynotes.md)
+- Next: [v23.8 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

@@ -21,3 +21,12 @@ AOIS must record what happened, where it happened, how long it took, and why eac
 This version does not run an agent or telemetry backend.
 
 That is intentional. It teaches trace design before runtime complexity.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 Benchmark](benchmark.md)
+- Next: [v16.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

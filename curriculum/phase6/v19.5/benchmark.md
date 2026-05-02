@@ -49,3 +49,12 @@ correctly separates:
 For live use, this benchmark would need broader cases, adversarial prompts,
 tool-permission tests, audit-log retention checks, and incident-response
 integration.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Failure Story](failure-story.md)
+- Next: [v19.5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

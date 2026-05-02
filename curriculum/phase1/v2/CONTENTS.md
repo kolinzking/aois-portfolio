@@ -41,3 +41,12 @@ Authoring status: authored
 5. compare default, fast, strong, and fallback route decisions
 6. stop the server
 7. complete the mastery checkpoint before `v3`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Next Version Bridge](../v1/next-version-bridge.md)
+- Next: [v2 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

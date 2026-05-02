@@ -4,8 +4,11 @@ This is the top-level navigation file for the entire curriculum.
 
 Use this file when you want to move across phases and versions quickly.
 
+For click-by-click reading, start with [AOIS Reading Order](READING-ORDER.md).
+
 ## Core Institution
 
+- [AOIS Reading Order](READING-ORDER.md)
 - [Institution Index](INSTITUTION-INDEX.md)
 - [Master Curriculum](MASTER-CURRICULUM.md)
 - [Syllabus](SYLLABUS.md)
@@ -138,3 +141,12 @@ Use this file when you want to move across phases and versions quickly.
 - [v33](phase10/v33/notes.md)
 - [v34](phase10/v34/notes.md)
 - [Phase 10 Looking Forward](phase10/looking-forward.md)
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [Phase 10 Looking Forward](phase10/looking-forward.md)
+- Next: [AOIS Institution Index](INSTITUTION-INDEX.md)
+<!-- AOIS-NAV-END -->

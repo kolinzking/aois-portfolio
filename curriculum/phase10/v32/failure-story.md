@@ -42,3 +42,12 @@ Do not approve live edge or offline inference until the placement decision can
 explain which model is running, why it fits the device, how stale state is
 detected, where telemetry is buffered, how updates arrive, how rollback works,
 and whether fallback is allowed.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Runbook](runbook.md)
+- Next: [v32 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

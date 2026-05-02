@@ -28,3 +28,12 @@ The product surface should not hide the controls built in Phase 7. It should
 make them inspectable: incident state, traces, route decisions, registry
 decisions, workflow checkpoints, autonomy mode, agent roles, approvals, budget
 state, and execution-boundary decisions.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Summary Notes](summarynotes.md)
+- Next: [v25 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

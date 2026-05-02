@@ -57,3 +57,12 @@ If a learner wants to run live tools:
 
 Stop. v20 is not the live execution step. The required live checks are listed
 under `required_before_live_agent_execution`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Lab](lab.md)
+- Next: [v20 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

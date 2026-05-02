@@ -42,3 +42,12 @@ Authoring status: authored
 6. complete the break lab on a scratch copy only
 7. score yourself with [benchmark.md](benchmark.md)
 8. complete the mastery checkpoint before the Phase 0 capstone
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Next Version Bridge](../v0.7/next-version-bridge.md)
+- Next: [v0.8 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

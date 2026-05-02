@@ -59,3 +59,12 @@ Explain:
 Defend this decision:
 
 AOIS should not run live telemetry services until instrumentation design, sampling, cardinality budget, retention, redaction tests, dashboards, alerts, storage budget, rollback, and primary AOIS separation exist.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 - Unified Telemetry Without Runtime](notes.md)
+- Next: [v16 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

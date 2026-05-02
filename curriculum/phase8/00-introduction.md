@@ -43,3 +43,12 @@ Phase 8 includes:
 
 The next phase is Phase 9, starting with `v28` delivery pipeline and release
 controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 8 Contents](CONTENTS.md)
+- Next: [v26 Contents](v26/CONTENTS.md)
+<!-- AOIS-NAV-END -->

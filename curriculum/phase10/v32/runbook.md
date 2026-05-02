@@ -48,3 +48,12 @@ If an offline edge path produced an unexpected result:
 - inspect local telemetry buffer state
 - verify update channel and rollback readiness
 - verify whether central fallback was eligible at the time
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Lab](lab.md)
+- Next: [v32 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

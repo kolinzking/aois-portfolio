@@ -22,3 +22,12 @@ Authoring status: authored
 - batching and caching
 - fine-tuning and adaptation
 - quantization and memory economics
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 4 Looking Forward](../phase4/looking-forward.md)
+- Next: [Phase 5 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

@@ -19,3 +19,12 @@ Carry forward these rules:
 The next question is:
 
 How does AOIS serve more tokens with controlled latency, concurrency, and cost?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 Summary Notes](summarynotes.md)
+- Next: [v13.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

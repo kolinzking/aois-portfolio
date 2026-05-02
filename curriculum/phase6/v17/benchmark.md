@@ -31,3 +31,12 @@ explain event flow, offset progression, replay, lag, and dead-letter handling.
 This is not a throughput benchmark. Throughput only matters after a broker is
 approved, isolated from the primary project, and given explicit storage,
 retention, and monitoring budgets.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Failure Story](failure-story.md)
+- Next: [v17 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

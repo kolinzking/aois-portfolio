@@ -31,3 +31,12 @@ This version teaches:
 5. test with `curl`
 6. trigger validation failure
 7. stop the server immediately after the lab
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Contents](CONTENTS.md)
+- Next: [v0.6 - FastAPI Without AI](notes.md)
+<!-- AOIS-NAV-END -->

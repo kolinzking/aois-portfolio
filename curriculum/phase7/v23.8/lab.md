@@ -73,3 +73,12 @@ Explain why each case chooses its decision:
 Defend why v23.8 does not start a runtime. Runtime autonomy changes operational
 risk. AOIS-P first proves the mode catalog, promotion gates, demotion gates,
 kill switch, rollback path, and operator controls locally.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 - Runtime Operations And Autonomy Control](notes.md)
+- Next: [v23.8 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

@@ -27,3 +27,12 @@ Authoring status: authored
 4. Explain why each tool request is allowed, paused, or blocked.
 5. Break one registry field and predict the validation failure.
 6. Restore the plan and read the bridge into v22.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Next Version Bridge](../v20.2/next-version-bridge.md)
+- Next: [v21 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

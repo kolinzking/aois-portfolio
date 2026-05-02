@@ -28,3 +28,12 @@ A local AOIS-P experiment and model-delivery tracking contract:
 v29 does not start a tracking server, registry, training job, evaluation job,
 rollout controller, or feature-flag service. It intentionally proves the
 tracking and decision contract before any model promotion or live rollout.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Benchmark](benchmark.md)
+- Next: [v29 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

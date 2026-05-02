@@ -381,3 +381,12 @@ Checked 2026-05-02.
 - Sigstore documentation: used for artifact signing, identity-bound certificates, transparency log, and signature verification concepts.
 - OpenAI safety best-practices guidance: used for AI behavior release safety and adversarial testing context.
 - v28 is a local release-control simulation. It does not run CI/CD, sign artifacts, contact registries, deploy workloads, or call providers.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Introduction](introduction.md)
+- Next: [v28 Lab](lab.md)
+<!-- AOIS-NAV-END -->

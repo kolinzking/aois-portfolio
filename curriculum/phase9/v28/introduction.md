@@ -44,3 +44,12 @@ Expected simulator result:
   "total_cases": 16
 }
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Contents](CONTENTS.md)
+- Next: [v28 - Delivery Pipeline And Release Controls](notes.md)
+<!-- AOIS-NAV-END -->

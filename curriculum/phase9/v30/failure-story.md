@@ -46,3 +46,12 @@ Before live platform rollout:
 - review observability wiring
 - review release and model-delivery integrations
 - review support SLOs and deprecation policy
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 Runbook](runbook.md)
+- Next: [v30 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -35,3 +35,12 @@ A passing benchmark proves only this:
 It does not prove that a real managed-agent service is production-ready for AOIS.
 
 Production readiness would require provider-specific docs review, live-service cost analysis, IAM/security design, tool permission policy, observability review, eval baseline, and rollback rehearsal.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Failure Story](failure-story.md)
+- Next: [v10.5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

@@ -21,3 +21,12 @@ This version teaches the policy while preventing the portfolio workload from con
 3. explain HPA and KEDA
 4. explain why scaling is capped
 5. do not apply or install autoscaling components without approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v9 Contents](CONTENTS.md)
+- Next: [v9 - Autoscaling And Event-Driven Planning Without Scaling Resources](notes.md)
+<!-- AOIS-NAV-END -->

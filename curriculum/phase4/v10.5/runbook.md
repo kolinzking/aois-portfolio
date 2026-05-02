@@ -56,3 +56,12 @@ If someone asks to create a real managed agent:
 6. Define data boundaries.
 7. Define eval baseline and rollback.
 8. Get explicit approval before creating any cloud resource.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Lab](lab.md)
+- Next: [v10.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

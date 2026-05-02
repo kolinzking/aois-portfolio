@@ -15,3 +15,12 @@ The terminal can inspect requests and responses directly through `curl`.
 
 The local server is simple on purpose.
 It teaches HTTP mechanics, not production networking, TLS, DNS, authentication, or load balancing yet.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 Benchmark](benchmark.md)
+- Next: [v0.4 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

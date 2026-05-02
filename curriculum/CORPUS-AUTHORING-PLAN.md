@@ -51,3 +51,11 @@ At the end of each phase authoring pass, review for:
 - missing four-layer drills
 - missing four-level system explanation drills
 - broken continuity into the next phase
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Evaluation Card](EVALUATION-CARD.md)
+<!-- AOIS-NAV-END -->

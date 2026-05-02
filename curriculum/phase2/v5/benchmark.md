@@ -37,3 +37,12 @@ At `v5`, good means:
 - findings are structured
 - real secrets are not added
 - security is treated as pre-provider design
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 Failure Story](failure-story.md)
+- Next: [v5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

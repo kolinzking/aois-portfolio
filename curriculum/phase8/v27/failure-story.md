@@ -44,3 +44,12 @@ Before live access implementation:
 - review approval separation
 - rehearse the break-glass runbook
 - review access-audit retention
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Runbook](runbook.md)
+- Next: [v27 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

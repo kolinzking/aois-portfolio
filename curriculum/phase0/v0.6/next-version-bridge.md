@@ -10,3 +10,12 @@ AOIS now has a service contract for incident analysis.
 
 Because the current analysis is still deterministic.
 `v0.7` introduces LLM fundamentals so model behavior can be studied before adding AI to the API.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Looking Forward](looking-forward.md)
+- Next: [v0.7 Contents](../v0.7/CONTENTS.md)
+<!-- AOIS-NAV-END -->

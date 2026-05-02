@@ -36,3 +36,12 @@ Use this runbook when `scripts/sysinfo.sh` or `scripts/log_analyzer.sh` will not
 | `No such file or directory` | wrong path or current directory | run `pwd` and use the correct path |
 | `unbound variable` | `set -u` found an unset variable | define the variable or remove the bad reference |
 | analyzer returns `unknown` | no rule matched the message | preserve the message and add/adjust a rule only if the pattern is reliable |
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Lab](lab.md)
+- Next: [v0.2 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

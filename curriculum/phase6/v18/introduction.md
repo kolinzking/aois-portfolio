@@ -37,3 +37,12 @@ Use this lesson as a self-paced response lab:
 Do not connect live paging or chatops tooling for this lesson. Live incident
 response integration requires on-call policy, routing approval, communication
 channels, status page policy, and primary-project separation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Contents](CONTENTS.md)
+- Next: [v18 - Incident Response Maturity Without Runtime](notes.md)
+<!-- AOIS-NAV-END -->

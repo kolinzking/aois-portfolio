@@ -28,3 +28,12 @@ Authoring status: authored
 4. Explain every collaboration decision gate.
 5. Break one role, handoff, context, or loop control.
 6. Restore the plan and read the bridge into v25.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Next Version Bridge](../v23.8/next-version-bridge.md)
+- Next: [v24 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

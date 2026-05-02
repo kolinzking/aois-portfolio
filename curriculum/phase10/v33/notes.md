@@ -426,3 +426,12 @@ Checked 2026-05-02.
 - NIST AI Risk Management Framework page: used for AI risk-management, trustworthiness, and evaluation framing.
 - OWASP Application Security Verification Standard project page: used for security-control verification framing.
 - v33 is a local adversarial-testing contract. It uses sanitized cases only and does not run live red-team payloads, target external systems, store harmful content, or call providers.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Introduction](introduction.md)
+- Next: [v33 Lab](lab.md)
+<!-- AOIS-NAV-END -->

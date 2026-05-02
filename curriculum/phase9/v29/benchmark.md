@@ -34,3 +34,12 @@ Pass means:
 
 Fail means the model-delivery tracking contract is incomplete. Fix the plan or
 simulator before adding internal platform patterns in v30.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Failure Story](failure-story.md)
+- Next: [v29 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

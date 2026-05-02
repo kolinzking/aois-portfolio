@@ -53,3 +53,12 @@ Escalate to a human operator if:
 - runtime health degrades
 - budget reserve is exhausted
 - limited autonomy is requested
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Lab](lab.md)
+- Next: [v23.8 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

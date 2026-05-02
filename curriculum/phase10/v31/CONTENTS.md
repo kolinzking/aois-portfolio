@@ -33,3 +33,12 @@ Read in this order:
 4. Explain each allow, block, hold, and fallback decision.
 5. Break and restore one media validation gate, one privacy gate, one accessibility gate, one evidence gate, and one fallback gate.
 6. Read the bridge into v32 edge and offline inference.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 10 Introduction](../00-introduction.md)
+- Next: [v31 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

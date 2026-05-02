@@ -48,3 +48,12 @@ If any real stress, load, network, Kubernetes, or provider action was started
 outside this lesson, stop and confirm it is not part of the primary AOIS
 workload before changing it. This curriculum must not interfere with the
 primary project.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Lab](lab.md)
+- Next: [v19 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

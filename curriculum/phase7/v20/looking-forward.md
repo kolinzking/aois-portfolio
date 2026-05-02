@@ -26,3 +26,12 @@ step -> tokens/tool/runtime/cost -> incident total -> budget decision
 
 This matters because agentic workflows can look correct while quietly becoming
 too expensive or too repetitive to operate.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Summary Notes](summarynotes.md)
+- Next: [v20 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

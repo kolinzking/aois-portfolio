@@ -73,3 +73,12 @@ Explain why each case chooses its decision:
 Defend why v23 does not start an orchestration framework. Orchestration is where
 autonomy loops can bypass policy. AOIS-P first proves the ordered decision
 rules and loop guards locally before introducing a live runtime.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 - Stateful Orchestration Loops](notes.md)
+- Next: [v23 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

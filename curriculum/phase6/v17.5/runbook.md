@@ -45,3 +45,12 @@ The safe state is:
 If a live monitoring service was started outside this lesson, confirm it is not
 part of the primary AOIS workload before stopping it. This curriculum must not
 interfere with the primary project.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Lab](lab.md)
+- Next: [v17.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

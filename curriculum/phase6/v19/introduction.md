@@ -37,3 +37,12 @@ Use this lesson as a self-paced tabletop game-day lab:
 Do not run live chaos for this lesson. Live chaos requires blast-radius
 approval, SLO budget review, resource review, communication plan, abort
 conditions, rollback plan, and explicit protection for the primary AOIS project.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Contents](CONTENTS.md)
+- Next: [v19 - Chaos Engineering Without Fault Injection](notes.md)
+<!-- AOIS-NAV-END -->

@@ -26,3 +26,12 @@ and registry decisions, workflow and orchestration state, autonomy and agent
 state, approvals, budgets, and execution-boundary decisions. It also has
 identity-aware product controls for subjects, tenants, roles, resources,
 actions, redaction, approval separation, break-glass access, and audit events.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 7 Looking Forward](../phase7/looking-forward.md)
+- Next: [Phase 8 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

@@ -11,3 +11,12 @@ Authoring status: authored
 Phase 4 moves into enterprise cloud equivalents.
 
 The next phase should compare managed cloud services to the Kubernetes/GitOps concepts already built.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v9 Looking Forward](looking-forward.md)
+- Next: [Phase 3 Looking Forward](../looking-forward.md)
+<!-- AOIS-NAV-END -->

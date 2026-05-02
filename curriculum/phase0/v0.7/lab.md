@@ -134,3 +134,12 @@ Record:
 - one free-form output comparison
 - confirmation that no external provider was called
 - confirmation that no persistent process was started
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 - LLM Fundamentals Without Provider Dependence](notes.md)
+- Next: [v0.7 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

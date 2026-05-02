@@ -31,3 +31,12 @@ versions, metrics, guardrails, rollout evidence, registry state, release gates,
 feature flags, rollback, approvals, and risk review. It now packages repeated
 AOIS controls as internal platform capabilities with catalog, interface,
 self-service, API, template, boundary, lifecycle, and support controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 8 Looking Forward](../phase8/looking-forward.md)
+- Next: [Phase 9 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

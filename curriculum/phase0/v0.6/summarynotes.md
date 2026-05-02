@@ -14,3 +14,12 @@ FastAPI turns Python logic into an HTTP service boundary with request validation
 
 Runtime practice requires installing FastAPI and uvicorn.
 Because this is a shared server, the install and local server run are resource-gated.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Benchmark](benchmark.md)
+- Next: [v0.6 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

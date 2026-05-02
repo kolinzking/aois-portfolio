@@ -39,3 +39,12 @@ workflow state. It also has a bounded orchestration loop and connected agent
 evaluation. It now has a runtime autonomy operating envelope and a governed
 multi-agent collaboration policy. It now has safe execution boundaries. The
 next job is dashboard and real-time visibility.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v25 Next Version Bridge](v25/next-version-bridge.md)
+- Next: [Phase 8 Contents](../phase8/CONTENTS.md)
+<!-- AOIS-NAV-END -->

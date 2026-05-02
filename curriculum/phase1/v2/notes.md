@@ -440,3 +440,12 @@ High-severity incidents may need better analysis when budget and latency allow i
 `v2` makes routing decisions visible.
 
 `v3` will add reliability checks: validation, tracing, prompt iteration, and evaluation baseline.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Introduction](introduction.md)
+- Next: [v2 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -51,3 +51,12 @@ If the server was left running:
 
 - stop it with `Ctrl-C`
 - confirm no AOIS portfolio runtime should remain active
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Lab](lab.md)
+- Next: [v0.6 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

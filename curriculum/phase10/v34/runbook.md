@@ -47,3 +47,12 @@ If a case blocks or holds:
 - instrument audit trace
 - resolve v33 red-team findings
 - repair release or access policy gates
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 Lab](lab.md)
+- Next: [v34 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

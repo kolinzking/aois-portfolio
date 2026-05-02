@@ -80,3 +80,12 @@ Record:
 - whether sync ran
 - repo footprint
 - memory snapshot
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 - GitOps And ArgoCD Flow Without Cluster Sync](notes.md)
+- Next: [v8 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

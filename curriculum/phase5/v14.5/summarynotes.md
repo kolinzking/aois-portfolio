@@ -21,3 +21,12 @@ Cache keys, TTL, invalidation, privacy, tenant isolation, and measurement are pa
 This version does not start Redis or write cache entries.
 
 That is intentional. It teaches cache design before runtime state.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 Benchmark](benchmark.md)
+- Next: [v14.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

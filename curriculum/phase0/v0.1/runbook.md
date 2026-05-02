@@ -24,3 +24,12 @@ Use this runbook when the basic Linux inspection commands are confusing or produ
 3. restore permissions with `chmod` if access is blocked
 4. interpret the raw command output before trying to automate anything
 5. if you are confused by output, name what each visible column or token means before rerunning the command
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 Lab](lab.md)
+- Next: [v0.1 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

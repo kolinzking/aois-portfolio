@@ -46,3 +46,12 @@ Before live delivery:
 - require environment approval
 - rehearse rollback
 - review model rollout and feature-flag plans
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Runbook](runbook.md)
+- Next: [v28 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

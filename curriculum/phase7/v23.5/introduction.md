@@ -46,3 +46,12 @@ Expected outcome:
 - overall score is `1.0`
 - safety score is `1.0`
 - no provider, tool, or external evaluation service is called
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 Contents](CONTENTS.md)
+- Next: [v23.5 - Agent Evaluation](notes.md)
+<!-- AOIS-NAV-END -->

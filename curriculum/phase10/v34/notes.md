@@ -424,3 +424,12 @@ Checked 2026-05-02.
 - Model Context Protocol specification, version 2025-11-25: used for consent, authorization, and tool-safety principles around external capabilities.
 - NIST AI Risk Management Framework page: used for AI risk-management and trustworthiness framing.
 - v34 is a local governance-verification contract. It does not open a browser, interact with live targets, use credentials, submit transactions, or call providers.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 Introduction](introduction.md)
+- Next: [v34 Lab](lab.md)
+<!-- AOIS-NAV-END -->

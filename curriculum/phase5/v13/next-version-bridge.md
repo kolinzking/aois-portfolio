@@ -13,3 +13,12 @@ AOIS can now explain the request contract, response contract, serving options, p
 The next version goes below the service contract into GPU infrastructure operations.
 
 `v13.5` covers device plugins, GPU scheduling, observability, MIG awareness, and resource constraints.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Looking Forward](looking-forward.md)
+- Next: [v13.5 Contents](../v13.5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

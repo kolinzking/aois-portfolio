@@ -397,3 +397,12 @@ It mutates the live cluster and can consume CPU, memory, network, and namespace 
 `v6` creates the cluster workload plan.
 
 `v6.5` adds identity and trust boundaries so workloads can be understood as authenticated actors, not just pods.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Introduction](introduction.md)
+- Next: [v6 Lab](lab.md)
+<!-- AOIS-NAV-END -->

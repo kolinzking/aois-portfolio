@@ -17,3 +17,12 @@ After AOIS knows how to respond to incidents, it needs chaos engineering:
 steady-state checks, hypotheses, blast-radius limits, abort conditions, and
 tabletop game days that expose weak response paths without harming the primary
 system.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Looking Forward](looking-forward.md)
+- Next: [v19 Contents](../v19/CONTENTS.md)
+<!-- AOIS-NAV-END -->

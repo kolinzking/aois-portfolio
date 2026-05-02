@@ -40,3 +40,12 @@ Use this version as a self-paced design and simulation lab:
 Do not install or start a broker for this lesson. A real broker is only
 appropriate after storage budgets, retention, monitoring, backup, and rollback
 rules are explicit.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Contents](CONTENTS.md)
+- Next: [v17 - Event Streaming Without Broker Runtime](notes.md)
+<!-- AOIS-NAV-END -->

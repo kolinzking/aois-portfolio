@@ -40,3 +40,12 @@ In `v0.5`, the measurement shifts to Python:
 - can you express AOIS logic in typed code?
 - can you validate inputs?
 - can you handle errors without hiding them?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 Failure Story](failure-story.md)
+- Next: [v0.4 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

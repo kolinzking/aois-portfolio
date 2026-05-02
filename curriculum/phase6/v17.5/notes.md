@@ -554,3 +554,12 @@ Answer key:
 v17.5 turns observability into reliability policy.
 
 v18 moves from policy into incident response maturity: when SLOs burn, AOIS needs runbooks, severity levels, escalation, diagnosis, and post-incident review.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Introduction](introduction.md)
+- Next: [v17.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

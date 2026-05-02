@@ -31,3 +31,12 @@ Use this version as a dry-run design exercise.
 Do not create a real queue, function, event bus, scheduler, rule, topic, or bucket.
 
 Inspect the plan, run the validator, then explain why every control exists. You are ready for the next version only when you can defend the workflow under failure, not just under the happy path.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Contents](CONTENTS.md)
+- Next: [v11 - Event-Driven Workflow Planning Without Cloud Calls](notes.md)
+<!-- AOIS-NAV-END -->

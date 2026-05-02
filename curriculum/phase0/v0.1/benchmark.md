@@ -39,3 +39,12 @@ If you still feel blind in the terminal after this benchmark, the version is not
 ## Next Measurement
 
 In `v0.2`, measure whether Bash automation reduces repeated typing without hiding the Linux commands you learned here.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 Failure Story](failure-story.md)
+- Next: [v0.1 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

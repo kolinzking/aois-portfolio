@@ -39,3 +39,12 @@ Authoring status: authored
 4. use [runbook.md](runbook.md) if something fails
 5. read [summarynotes.md](summarynotes.md)
 6. use [next-version-bridge.md](next-version-bridge.md) to move into `v0.2`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 0 - Foundations That Carry The Whole System](../00-introduction.md)
+- Next: [v0.1 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

@@ -86,3 +86,12 @@ Defend these decisions:
    not just service outage.
 5. A blocked experiment is a valid success when guardrails detect unsafe
    conditions.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 - Chaos Engineering Without Fault Injection](notes.md)
+- Next: [v19 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

@@ -93,3 +93,12 @@ Record:
 - provider-call status
 - server stopped confirmation
 - resource footprint
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 - Reliability Baseline Without Provider Calls](notes.md)
+- Next: [v3 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

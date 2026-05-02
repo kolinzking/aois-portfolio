@@ -21,3 +21,12 @@ v34 adds governance verification and computer use.
 v33 tests whether controls can be tricked. v34 asks whether computer-use actions
 can be authorized, bounded, verified, observed, and stopped before they affect a
 real environment.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Summary Notes](summarynotes.md)
+- Next: [v33 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

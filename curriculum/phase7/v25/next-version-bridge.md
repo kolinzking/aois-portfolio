@@ -34,3 +34,12 @@ bound execution -> show operators what AOIS is doing and why
 ```
 
 v26 begins Phase 8 with dashboard and real-time visibility.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Looking Forward](looking-forward.md)
+- Next: [Phase 7 Looking Forward](../looking-forward.md)
+<!-- AOIS-NAV-END -->

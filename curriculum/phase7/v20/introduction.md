@@ -49,3 +49,12 @@ Work through the files in this order:
 The important proof is not that a tool was executed. The important proof is
 that AOIS can describe a tool step, limit it to read-only evidence collection,
 reject unsafe actions, and produce an auditable decision.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Contents](CONTENTS.md)
+- Next: [v20 - Tool-Using Incident Responder](notes.md)
+<!-- AOIS-NAV-END -->

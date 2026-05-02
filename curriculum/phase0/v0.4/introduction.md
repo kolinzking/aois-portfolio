@@ -30,3 +30,12 @@ Before using frameworks, you need to understand:
 5. stop the server and observe connection failure
 6. request a missing path and observe `404`
 7. do not move on until the difference is clear
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 Contents](CONTENTS.md)
+- Next: [v0.4 - Networking And HTTP Inspection](notes.md)
+<!-- AOIS-NAV-END -->

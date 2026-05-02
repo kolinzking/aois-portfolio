@@ -38,3 +38,12 @@ When possible, teach durable principles first:
 
 Then teach tool-specific commands or APIs.
 This keeps the curriculum useful even when specific tools change.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Codex Live Teacher Mode](CODEX-GUIDE-MODE.md)
+- Next: [AOIS Repository Blueprint](REPO-BLUEPRINT.md)
+<!-- AOIS-NAV-END -->

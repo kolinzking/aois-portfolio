@@ -31,3 +31,12 @@ Linux failures are often state failures:
 - wrong assumptions about output
 
 The command can be correct and still fail because the operating context is wrong.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 Runbook](runbook.md)
+- Next: [v0.1 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

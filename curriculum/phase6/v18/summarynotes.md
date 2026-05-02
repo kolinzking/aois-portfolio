@@ -37,3 +37,12 @@ the shared server.
 
 Live incident tooling should only be connected after routing, ownership,
 escalation, status policy, and primary-project separation are explicit.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Benchmark](benchmark.md)
+- Next: [v18 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

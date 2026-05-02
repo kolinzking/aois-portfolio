@@ -53,3 +53,12 @@ If dependencies are missing:
 - do not install globally
 - use `.venv`
 - request approval before reinstalling
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Lab](lab.md)
+- Next: [v2 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

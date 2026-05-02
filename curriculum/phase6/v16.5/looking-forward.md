@@ -15,3 +15,12 @@ Carry forward these rules:
 ## What The Next Version Will Build On
 
 `v17` builds on incident traceability by introducing event streaming.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 Summary Notes](summarynotes.md)
+- Next: [v16.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

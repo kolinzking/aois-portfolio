@@ -16,3 +16,12 @@ Authoring status: authored
 Phase 3 will build infrastructure and GitOps foundations.
 
 The security controls from `v5` must remain visible as AOIS moves toward clusters and deployment.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 Summary Notes](summarynotes.md)
+- Next: [v5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

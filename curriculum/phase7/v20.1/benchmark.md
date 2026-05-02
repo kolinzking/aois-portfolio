@@ -37,3 +37,12 @@ The benchmark covers:
 
 It does not estimate a real invoice, call a live model, call a billing API,
 execute tools, start an agent runtime, create a dashboard, or persist telemetry.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Failure Story](failure-story.md)
+- Next: [v20.1 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

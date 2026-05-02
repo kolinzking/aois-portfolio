@@ -44,3 +44,12 @@ model whether non-text signals may be analyzed, where constrained inference may
 run, how adversarial tests should be scoped, and whether computer-use action
 plans are governed before execution. The next job is proving the whole corpus is
 coherent, safe, runnable, and ready for live teaching review.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v34 Next Version Bridge](v34/next-version-bridge.md)
+- Next: [AOIS Table Of Contents](../TABLE-OF-CONTENTS.md)
+<!-- AOIS-NAV-END -->

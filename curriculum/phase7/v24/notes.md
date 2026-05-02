@@ -332,3 +332,12 @@ Checked 2026-05-02.
 - LangGraph overview documentation: used for stateful, long-running, human-in-the-loop agent orchestration concepts.
 - OpenAI API tools documentation: used for current tool, function-calling, and MCP integration vocabulary.
 - v24 remains a local AOIS-P collaboration contract. It does not start a framework runtime, MCP server, hosted tool, provider call, or external network path.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Introduction](introduction.md)
+- Next: [v24 Lab](lab.md)
+<!-- AOIS-NAV-END -->

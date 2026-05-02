@@ -41,3 +41,12 @@ Set an output budget that matches the task:
 Output limits are operational controls.
 
 A prompt can look harmless while still creating cost and latency risk if output budget is uncontrolled.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Runbook](runbook.md)
+- Next: [v0.7 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

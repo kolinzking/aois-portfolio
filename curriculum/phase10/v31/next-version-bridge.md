@@ -28,3 +28,12 @@ are limited.
 
 v32 will compare centralized and edge paths and explain which constraints
 dominate edge deployments.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Looking Forward](looking-forward.md)
+- Next: [v32 Contents](../v32/CONTENTS.md)
+<!-- AOIS-NAV-END -->

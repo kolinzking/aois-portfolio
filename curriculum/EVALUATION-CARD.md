@@ -43,3 +43,12 @@ Completed review gates:
 
 The curriculum corpus is release-approved for live teaching from commit
 `5fa7b5b`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Curriculum Corpus Status](CORPUS-STATUS.md)
+- Next: [AOIS Corpus Authoring Plan](CORPUS-AUTHORING-PLAN.md)
+<!-- AOIS-NAV-END -->

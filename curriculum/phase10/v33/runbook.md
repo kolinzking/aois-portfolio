@@ -49,3 +49,12 @@ For every escalated finding:
 
 Do not close a finding only because the test string was removed. Close it when
 the control is repaired and a regression case proves the repair.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Lab](lab.md)
+- Next: [v33 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

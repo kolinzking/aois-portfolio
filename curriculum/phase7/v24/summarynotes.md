@@ -37,3 +37,12 @@ execution.
 
 That limitation is intentional. Execution boundaries are a separate control
 surface and are handled next in v25.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Benchmark](benchmark.md)
+- Next: [v24 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

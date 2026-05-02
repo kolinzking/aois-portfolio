@@ -26,3 +26,12 @@ paging, ticketing, chatops, or status page integrations.
 The important result is not alert delivery. The important result is that AOIS
 can explain who leads, how severity is assigned, how impact is communicated,
 how agent risk is controlled, and how follow-up work is captured.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Failure Story](failure-story.md)
+- Next: [v18 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

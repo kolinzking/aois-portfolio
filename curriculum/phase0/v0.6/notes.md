@@ -486,3 +486,12 @@ Before runtime teaching, check official FastAPI documentation:
 - <https://fastapi.tiangolo.com/>
 
 This authoring pass did not install or run FastAPI because runtime practice is gated by the shared-server resource policy.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Introduction](introduction.md)
+- Next: [v0.6 Lab](lab.md)
+<!-- AOIS-NAV-END -->

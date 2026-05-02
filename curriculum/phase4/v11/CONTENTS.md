@@ -33,3 +33,12 @@ How can AOIS move work through ingress, queue, worker, DLQ, and result sink whil
 6. Check the answer key.
 
 Do not continue if you cannot explain idempotency, DLQ, trace propagation, and why live cloud limits are zero.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Next Version Bridge](../v10.5/next-version-bridge.md)
+- Next: [v11 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

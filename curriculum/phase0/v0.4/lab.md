@@ -101,3 +101,12 @@ Score yourself from `1` to `5`:
 - `1`: HTTP still feels like browser magic.
 
 Minimum pass: `4`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 - Networking And HTTP Inspection](notes.md)
+- Next: [v0.4 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

@@ -16,3 +16,12 @@ Before you commit, know:
 
 `v0.4` builds on Git discipline by adding HTTP and networking inspection.
 Once AOIS exposes services, you need to inspect behavior across boundaries, not only inside files.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.3 Summary Notes](summarynotes.md)
+- Next: [v0.3 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

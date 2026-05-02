@@ -22,3 +22,12 @@ v25 builds on v24 by defining safe execution boundaries for agent-planned work.
 
 The next question is not "which agent should act?" It is "what is any agent
 allowed to execute, under which approval and containment rules?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Summary Notes](summarynotes.md)
+- Next: [v24 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

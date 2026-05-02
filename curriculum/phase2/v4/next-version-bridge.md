@@ -11,3 +11,12 @@ Authoring status: authored
 `v5` adds security discipline.
 
 Before containers become runtime infrastructure, AOIS needs API security, LLM security, secrets discipline, and misuse checks.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Looking Forward](looking-forward.md)
+- Next: [v5 Contents](../v5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

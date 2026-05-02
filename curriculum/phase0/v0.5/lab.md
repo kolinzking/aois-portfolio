@@ -103,3 +103,12 @@ Score yourself from `1` to `5`:
 - `1`: Python still feels like copied text.
 
 Minimum pass: `4`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 - Python Core For AOIS Logic](notes.md)
+- Next: [v0.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

@@ -44,3 +44,12 @@ Expected outcome:
 - simulator passes 10 of 10 autonomy cases
 - no agent runtime starts
 - no provider call or tool execution happens
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Contents](CONTENTS.md)
+- Next: [v23.8 - Runtime Operations And Autonomy Control](notes.md)
+<!-- AOIS-NAV-END -->

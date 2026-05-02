@@ -389,3 +389,12 @@ This lesson is plan and simulation only; live artifact work needs approval.
 `v15.5` closes Phase 5.
 
 Phase 6 moves into observability, streaming, and reliability so AOIS can see and test the behavior of the systems it has planned.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15.5 Introduction](introduction.md)
+- Next: [v15.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

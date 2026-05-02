@@ -350,3 +350,12 @@ Checked 2026-05-02.
 - OpenAI computer-use guidance: used for isolation, allowlist, human-in-the-loop, and high-impact action boundaries.
 - OpenAI safety best-practices guidance: used for adversarial testing and safety-review framing.
 - v25 remains a local execution-boundary simulation. It does not run tools, open a browser, call a provider, or execute live computer-use actions.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Introduction](introduction.md)
+- Next: [v25 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -113,3 +113,12 @@ Record:
 - whether a database server was started
 - whether any dependency was installed
 - whether any persistent runtime remains active
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.8 - Postgres Foundations Without Running A Database](notes.md)
+- Next: [v0.8 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

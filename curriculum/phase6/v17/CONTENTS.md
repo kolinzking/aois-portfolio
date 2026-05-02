@@ -50,3 +50,12 @@ remains false.
 6. Break the plan intentionally in a copy or temporary edit, then use the
    validator output to explain what made the design unsafe.
 7. Answer the mastery questions in [notes.md](notes.md) before moving to v17.5.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 Next Version Bridge](../v16.5/next-version-bridge.md)
+- Next: [v17 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

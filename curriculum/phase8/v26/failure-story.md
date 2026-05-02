@@ -38,3 +38,12 @@ python3 examples/simulate_dashboard_visibility.py
 
 Then review every new backend event for panel mapping, badge, operator action,
 redaction, accessibility, and stale-state behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 Runbook](runbook.md)
+- Next: [v26 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

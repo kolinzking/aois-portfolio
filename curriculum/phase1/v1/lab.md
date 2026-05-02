@@ -110,3 +110,12 @@ Record:
 - invalid input validation error
 - server stopped confirmation
 - resource footprint after the checkpoint
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 - Structured AI Endpoint Without Provider Calls](notes.md)
+- Next: [v1 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

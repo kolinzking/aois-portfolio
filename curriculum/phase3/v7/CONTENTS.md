@@ -40,3 +40,12 @@ Authoring status: authored
 4. explain chart, values, templates, and release
 5. do not install the chart without approval
 6. complete the mastery checkpoint before `v8`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Next Version Bridge](../v6.5/next-version-bridge.md)
+- Next: [v7 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

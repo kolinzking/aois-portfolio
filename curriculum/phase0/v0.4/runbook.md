@@ -54,3 +54,12 @@ If the server terminal is busy:
 - that is normal
 - leave it running while probing from another terminal
 - stop it with `Ctrl-C` when finished
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 Lab](lab.md)
+- Next: [v0.4 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

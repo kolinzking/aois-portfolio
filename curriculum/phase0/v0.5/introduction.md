@@ -29,3 +29,12 @@ That work needs Python structures:
 4. run the CLI examples
 5. trigger invalid input on purpose
 6. do not move on until structured input and output are clear
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Contents](CONTENTS.md)
+- Next: [v0.5 - Python Core For AOIS Logic](notes.md)
+<!-- AOIS-NAV-END -->

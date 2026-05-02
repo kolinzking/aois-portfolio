@@ -40,3 +40,12 @@ It proves:
 It does not prove a provider event workflow is production-ready.
 
 Production readiness requires provider-specific docs review, IAM design, cost guardrails, observability, replay testing, rollback, and explicit approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Failure Story](failure-story.md)
+- Next: [v11 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

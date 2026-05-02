@@ -29,3 +29,12 @@ Use official provider docs only when preparing real calls.
 ## What This Taught Me
 
 Managed inference is still an operational boundary.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Runbook](runbook.md)
+- Next: [v10 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

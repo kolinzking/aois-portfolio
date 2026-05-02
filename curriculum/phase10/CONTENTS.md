@@ -35,3 +35,12 @@ mitigation, and regression gates. It completes the frontier layer with
 governance-verified computer-use controls for synthetic environments, human
 approval, manual handoff, step preview, budgets, stop controls, rollback, audit,
 redaction, operator watch, red-team clearance, release, and access gates.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 9 Looking Forward](../phase9/looking-forward.md)
+- Next: [Phase 10 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

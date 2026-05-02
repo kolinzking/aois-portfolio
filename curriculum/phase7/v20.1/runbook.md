@@ -49,3 +49,12 @@ Escalate to a human operator if:
 - the incident total exceeds the threshold
 - a mutation approval loop consumes cost without new evidence
 - a cost record is missing but the responder still recommends action
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Lab](lab.md)
+- Next: [v20.1 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

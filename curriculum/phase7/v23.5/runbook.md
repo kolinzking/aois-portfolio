@@ -46,3 +46,12 @@ Escalate to a human operator if:
 - metric weights change
 - dataset coverage changes
 - external eval service flags are enabled
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 Lab](lab.md)
+- Next: [v23.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

@@ -19,3 +19,12 @@ AOIS now has:
 Phase 2 exists because the service now needs safer packaging and security discipline.
 
 The next work should make AOIS portable, container-aware, and harder to misuse before any larger deployment path.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 Looking Forward](looking-forward.md)
+- Next: [Phase 1 Looking Forward](../looking-forward.md)
+<!-- AOIS-NAV-END -->

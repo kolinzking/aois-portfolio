@@ -37,3 +37,12 @@ If live scaling is requested:
 - confirm dependency capacity
 - get explicit approval
 - record resource usage after apply
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v9 Lab](lab.md)
+- Next: [v9 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

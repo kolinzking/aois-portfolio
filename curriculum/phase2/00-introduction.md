@@ -28,3 +28,12 @@ This server already hosts the primary AOIS project, so the portfolio project mus
 The Phase 2 spine is:
 
 `service -> container plan -> resource limits -> security checks -> safer deployment path`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 2 Contents](CONTENTS.md)
+- Next: [v4 Contents](v4/CONTENTS.md)
+<!-- AOIS-NAV-END -->

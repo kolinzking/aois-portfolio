@@ -39,3 +39,12 @@ The lesson stays local:
 6. Read the Phase 4 closeout in [../looking-forward.md](../looking-forward.md).
 
 Do not continue if you cannot explain least privilege, workload identity, observability, cost gates, rollback, and primary AOIS separation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Next Version Bridge](../v11/next-version-bridge.md)
+- Next: [v12 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

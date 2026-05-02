@@ -19,3 +19,12 @@ The Phase 0 capstone will build on the full chain:
 `Linux -> Bash -> Git -> HTTP -> Python -> API -> LLM dry-run -> schema`
 
 Do not move forward until you can explain how an incident travels from raw message to analysis result to future durable record.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.8 Summary Notes](summarynotes.md)
+- Next: [v0.8 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

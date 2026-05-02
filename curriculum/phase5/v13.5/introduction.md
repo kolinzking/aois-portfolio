@@ -21,3 +21,12 @@ This is why GPU infrastructure is its own discipline.
 Use this lesson as an operations readiness check.
 
 Run the validator and explain every control. You are ready for `v14` only when you can explain what would break if GPU scheduling or observability is missing.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 Contents](CONTENTS.md)
+- Next: [v13.5 - GPU Infrastructure Operations Without Applying Resources](notes.md)
+<!-- AOIS-NAV-END -->

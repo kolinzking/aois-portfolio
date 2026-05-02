@@ -395,3 +395,12 @@ To keep portfolio resources unambiguous and separate from primary AOIS.
 `v8` defines GitOps flow.
 
 `v9` adds autoscaling and event-driven behavior planning so AOIS can later scale with load while respecting strict limits.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Introduction](introduction.md)
+- Next: [v8 Lab](lab.md)
+<!-- AOIS-NAV-END -->

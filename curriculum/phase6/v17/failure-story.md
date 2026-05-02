@@ -35,3 +35,12 @@ Prevent the failure by requiring:
 - Backpressure rules when consumers cannot keep up.
 
 In v17, the validator enforces these controls before any broker is allowed.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Runbook](runbook.md)
+- Next: [v17 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -39,3 +39,12 @@ Use constraints to make invalid states hard to store.
 Persistence is not just saving text.
 
 Good persistence preserves relationships, validity, and later debugging value.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.8 Runbook](runbook.md)
+- Next: [v0.8 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

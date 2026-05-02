@@ -32,3 +32,12 @@ Prevent recurrence by requiring:
 - post-incident review when trust is lost
 
 An AI infrastructure system is not reliable just because its HTTP layer is up.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Runbook](runbook.md)
+- Next: [v17.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

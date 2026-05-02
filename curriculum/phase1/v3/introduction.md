@@ -23,3 +23,12 @@ Before real model integration, AOIS needs a repeatable way to answer: did the kn
 5. run the API endpoint briefly
 6. stop the server
 7. explain why reliability comes before provider scale
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 Contents](CONTENTS.md)
+- Next: [v3 - Reliability Baseline Without Provider Calls](notes.md)
+<!-- AOIS-NAV-END -->

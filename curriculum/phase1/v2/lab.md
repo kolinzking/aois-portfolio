@@ -115,3 +115,12 @@ Record:
 - low-budget fallback route
 - confirmation that provider calls were not made
 - server stopped confirmation
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 - Model Routing Without Provider Execution](notes.md)
+- Next: [v2 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

@@ -82,3 +82,12 @@ Record:
 - whether apply ran
 - repo footprint
 - memory snapshot
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v9 - Autoscaling And Event-Driven Planning Without Scaling Resources](notes.md)
+- Next: [v9 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

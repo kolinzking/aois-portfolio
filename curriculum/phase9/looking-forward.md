@@ -38,3 +38,12 @@ platform abstractions. The next job is extending AOIS into multimodal, edge,
 advanced agent, and frontier evaluation work without losing these controls.
 
 Phase 10 starts with `v31`: multimodal AOIS.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v30 Next Version Bridge](v30/next-version-bridge.md)
+- Next: [Phase 10 Contents](../phase10/CONTENTS.md)
+<!-- AOIS-NAV-END -->

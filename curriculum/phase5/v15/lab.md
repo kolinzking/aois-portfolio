@@ -61,3 +61,12 @@ Explain:
 Defend this decision:
 
 AOIS should not train until dataset card, privacy review, license review, data versioning, split strategy, baseline eval, quality gate, cost budget, training approval, rollback, and primary AOIS separation exist.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 - Fine-Tuning And Adaptation Without Training](notes.md)
+- Next: [v15 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

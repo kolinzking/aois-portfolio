@@ -23,3 +23,12 @@ Trace IDs and eval baselines make behavior easier to correlate, measure, and def
 The eval baseline is local and deterministic.
 
 It does not measure real model quality yet, but it creates the standard that real model behavior must be compared against later.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 Benchmark](benchmark.md)
+- Next: [v3 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

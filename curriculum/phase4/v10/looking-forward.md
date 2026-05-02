@@ -13,3 +13,12 @@ Authoring status: authored
 ## What The Next Version Will Build On
 
 `v10.5` will build on the managed model plan by comparing managed agent services with AOIS-owned agent orchestration.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Summary Notes](summarynotes.md)
+- Next: [v10 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

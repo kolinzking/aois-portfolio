@@ -25,3 +25,12 @@ Update the inference plan so model download remains gated.
 Do not download models until AOIS has model license review, model size review, memory budget, storage budget, cost budget, fallback route, and rollback approval.
 
 Lesson learned: inference operations begin before the first inference request.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Runbook](runbook.md)
+- Next: [v13 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

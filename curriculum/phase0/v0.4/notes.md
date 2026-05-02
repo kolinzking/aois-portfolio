@@ -540,3 +540,12 @@ This version uses stable HTTP and `curl` concepts.
 No fast-moving external source is required for the core local lab.
 
 If this version later adds TLS, DNS provider behavior, cloud load balancers, or browser security rules, add source notes for those specific systems.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 Introduction](introduction.md)
+- Next: [v0.4 Lab](lab.md)
+<!-- AOIS-NAV-END -->

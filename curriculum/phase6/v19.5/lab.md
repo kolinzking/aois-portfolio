@@ -92,3 +92,12 @@ Defend these decisions:
 4. Tool access defaults to deny because agent capability expands blast radius.
 5. Provider calls remain blocked because this version is about local control
    logic, not model behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 - AI Failure Engineering And Governance Enforcement](notes.md)
+- Next: [v19.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

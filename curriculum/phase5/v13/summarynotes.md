@@ -21,3 +21,12 @@ AOIS must account for runtime, model artifacts, GPU capacity, latency, throughpu
 This version does not run GPU inference.
 
 That is intentional. It teaches the service boundary and safety gates before heavy runtime work.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Benchmark](benchmark.md)
+- Next: [v13 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

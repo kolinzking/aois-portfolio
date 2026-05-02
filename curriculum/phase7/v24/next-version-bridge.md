@@ -32,3 +32,12 @@ The bridge from v24 to v25 is:
 ```text
 coordinate agent roles -> bound what any role may execute
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Looking Forward](looking-forward.md)
+- Next: [v25 Contents](../v25/CONTENTS.md)
+<!-- AOIS-NAV-END -->

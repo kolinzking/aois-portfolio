@@ -28,3 +28,12 @@ Authoring status: authored
 5. Explain why each case routes to its expected decision.
 6. Use the runbook to describe what should happen after an over-budget incident.
 7. Read the bridge into `v20.2`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Next Version Bridge](../v20/next-version-bridge.md)
+- Next: [v20.1 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

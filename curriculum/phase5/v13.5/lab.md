@@ -62,3 +62,12 @@ Explain:
 Defend this decision:
 
 AOIS should not apply GPU operator or device plugin resources until driver/CUDA planning, docs review, node pool budget, scheduling policy, MIG strategy, observability, rollback, and primary AOIS separation are complete.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 - GPU Infrastructure Operations Without Applying Resources](notes.md)
+- Next: [v13.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

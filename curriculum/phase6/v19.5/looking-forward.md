@@ -22,3 +22,12 @@ Before an agent can use tools, AOIS needs the controls built here:
 Phase 7 will reuse these controls while adding tool use, workflow state,
 per-step cost accounting, MCP-style tool governance, durable workflows, and
 agent memory.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Summary Notes](summarynotes.md)
+- Next: [v19.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

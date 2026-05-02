@@ -23,3 +23,12 @@ Verify resource advertisement, node placement rules, scheduling events, and pod-
 Validate the `v13.5` plan before any GPU operator, device plugin, or workload apply.
 
 Lesson learned: GPU failures often start in scheduling, not model code.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 Runbook](runbook.md)
+- Next: [v13.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -530,3 +530,12 @@ Answer key:
 v19 teaches safe failure experimentation.
 
 v19.5 moves from general chaos engineering into AI failure engineering and governance enforcement: policy boundaries, agent action gates, unsafe-output handling, and controls that stop autonomous systems from crossing operational limits.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Introduction](introduction.md)
+- Next: [v19 Lab](lab.md)
+<!-- AOIS-NAV-END -->

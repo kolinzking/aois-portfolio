@@ -15,3 +15,12 @@ Authoring status: authored
 Phase 2 will build on the intelligence core by adding containerization and security.
 
 The service should become easier to package without weakening the provider gates or resource discipline built in Phase 1.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 Summary Notes](summarynotes.md)
+- Next: [v3 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

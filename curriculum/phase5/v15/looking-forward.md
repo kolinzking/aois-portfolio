@@ -15,3 +15,12 @@ Carry forward these rules:
 ## What The Next Version Will Build On
 
 `v15.5` builds on this by evaluating model footprint, precision, and memory economics.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Summary Notes](summarynotes.md)
+- Next: [v15 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

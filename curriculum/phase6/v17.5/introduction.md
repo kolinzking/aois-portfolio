@@ -37,3 +37,12 @@ Use this lesson as a self-paced reliability lab:
 Do not deploy a live monitoring stack for this lesson. Live monitoring requires
 service inventory, retention, storage, dashboards, alert routing, and separation
 from the primary AOIS project.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Contents](CONTENTS.md)
+- Next: [v17.5 - Service And Agent SLOs Without Runtime](notes.md)
+<!-- AOIS-NAV-END -->

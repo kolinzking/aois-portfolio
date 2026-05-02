@@ -49,3 +49,12 @@ Expected impact:
 - RAM: short-lived uvicorn only during validation
 - external provider calls: none
 - persistent runtime: none
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Failure Story](failure-story.md)
+- Next: [v2 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

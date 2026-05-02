@@ -39,3 +39,12 @@ consistent:
 It does not prove production readiness. Live execution still needs real tool
 integration tests, approval UX, audit storage, rollback, and provider/cost
 controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Failure Story](failure-story.md)
+- Next: [v20 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

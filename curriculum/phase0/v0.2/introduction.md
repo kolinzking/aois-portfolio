@@ -35,3 +35,12 @@ This version shows both why rules are useful and why they are not enough.
 3. run the break lab on purpose
 4. compare known matches against unknown messages
 5. do not move on until Bash stops feeling magical and starts feeling mechanical
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Contents](CONTENTS.md)
+- Next: [v0.2 - Bash Scripting And First Automation](notes.md)
+<!-- AOIS-NAV-END -->

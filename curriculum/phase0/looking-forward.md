@@ -48,3 +48,12 @@ Every future upgrade must preserve this standard:
 - break labs included
 - resource usage recorded
 - no provider, database, Kubernetes, or cloud runtime without explicit approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 0 Capstone - Local AOIS Foundation](phase-capstone.md)
+- Next: [Phase 1 Contents](../phase1/CONTENTS.md)
+<!-- AOIS-NAV-END -->

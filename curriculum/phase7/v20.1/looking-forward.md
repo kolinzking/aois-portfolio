@@ -19,3 +19,12 @@ path:
 ## What The Next Version Will Build On
 
 v20.2 turns cost accounting into budget-aware routing policy.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Summary Notes](summarynotes.md)
+- Next: [v20.1 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

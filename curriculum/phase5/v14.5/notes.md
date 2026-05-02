@@ -406,3 +406,12 @@ The lesson is design and simulation only; live cache infrastructure needs approv
 `v14.5` completes the performance-engineering bridge.
 
 `v15` moves into fine-tuning and adaptation, where AOIS must decide when changing model behavior is better than routing, serving, or caching.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 Introduction](introduction.md)
+- Next: [v14.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

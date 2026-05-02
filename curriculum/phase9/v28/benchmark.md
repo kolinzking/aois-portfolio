@@ -33,3 +33,12 @@ Pass means:
 
 Fail means the release-control contract is incomplete. Fix the plan or
 simulator before adding experiment and model delivery tracking in v29.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Failure Story](failure-story.md)
+- Next: [v28 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

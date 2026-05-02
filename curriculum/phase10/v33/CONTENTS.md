@@ -28,3 +28,12 @@ Authoring status: authored
 7. Read the runbook and failure story.
 8. Review summary notes.
 9. Read the bridge into v34 governance verification and computer use.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Next Version Bridge](../v32/next-version-bridge.md)
+- Next: [v33 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

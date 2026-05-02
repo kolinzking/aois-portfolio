@@ -45,3 +45,12 @@ It proves:
 It does not prove provider-specific production readiness.
 
 Production readiness requires official provider docs review, account-specific IAM design, network review, cost review, observability buildout, rollback rehearsal, and explicit approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v12 Failure Story](failure-story.md)
+- Next: [v12 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

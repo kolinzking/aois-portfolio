@@ -432,3 +432,12 @@ To keep portfolio resources visibly separate from the primary AOIS project.
 `v11` plans event-driven workflow execution.
 
 `v12` moves to cloud observability and cost-control planning, because event-driven systems must be monitored before they are trusted.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Introduction](introduction.md)
+- Next: [v11 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -412,3 +412,12 @@ To distinguish portfolio-owned server-visible resources from primary AOIS.
 `v4` creates the packaging plan.
 
 `v5` adds security discipline so the packaged service is harder to misuse.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Introduction](introduction.md)
+- Next: [v4 Lab](lab.md)
+<!-- AOIS-NAV-END -->

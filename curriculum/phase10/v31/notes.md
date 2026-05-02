@@ -389,3 +389,12 @@ Checked 2026-05-02.
 - OpenAI file-inputs documentation: used for document and file-input handling concepts.
 - OpenAI safety best-practices guidance: used for safety-review, adversarial testing, and policy-boundary framing.
 - v31 is a local multimodal contract. It does not process media, call OCR/transcription, upload files, run a model, or call providers.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Introduction](introduction.md)
+- Next: [v31 Lab](lab.md)
+<!-- AOIS-NAV-END -->

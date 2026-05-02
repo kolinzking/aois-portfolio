@@ -84,3 +84,12 @@ Defend these decisions:
 4. Error budgets must affect change policy or they become vanity metrics.
 5. Human review is mandatory when an agent budget is exhausted or action is
    destructive.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 - Service And Agent SLOs Without Runtime](notes.md)
+- Next: [v17.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

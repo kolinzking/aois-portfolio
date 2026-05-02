@@ -48,3 +48,12 @@ Before live multimodal use:
 - review confidence thresholds
 - review model routes and fallback paths
 - review platform and release integration
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Runbook](runbook.md)
+- Next: [v31 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

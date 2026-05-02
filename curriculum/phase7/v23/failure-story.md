@@ -53,3 +53,12 @@ Keep stop and wait rules ahead of action rules:
 - missing approval waits before action
 - only granted approval resumes
 - no orchestration action executes tools in v23
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Runbook](runbook.md)
+- Next: [v23 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

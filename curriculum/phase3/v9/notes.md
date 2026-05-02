@@ -392,3 +392,12 @@ Because scaling changes resource behavior and should be auditable.
 `Kubernetes plan -> workload identity -> Helm -> GitOps -> autoscaling plan`
 
 Phase 4 can move into enterprise cloud equivalents only if these resource and review boundaries remain intact.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v9 Introduction](introduction.md)
+- Next: [v9 Lab](lab.md)
+<!-- AOIS-NAV-END -->

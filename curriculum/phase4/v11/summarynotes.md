@@ -24,3 +24,12 @@ The safe pattern is not "add a queue." The safe pattern is queue plus idempotenc
 This version does not create a real event bus, queue, function, or DLQ.
 
 That is intentional. The lesson teaches event architecture and safety gates before provider execution.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Benchmark](benchmark.md)
+- Next: [v11 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -482,3 +482,12 @@ This version uses Python standard-library behavior.
 No fast-moving external source is required for the core lesson.
 
 If this version later adds Pydantic, uv, ruff, mypy, pytest, or async libraries, add source notes for those tools and their current behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Introduction](introduction.md)
+- Next: [v0.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

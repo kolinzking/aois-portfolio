@@ -54,3 +54,12 @@ Keep critical safety cases in the evaluation corpus:
 - make registry and safety gate metrics critical
 - require full critical pass rate for local promotion
 - review metric weight changes before accepting them
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 Runbook](runbook.md)
+- Next: [v23.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

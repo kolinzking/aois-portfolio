@@ -420,3 +420,12 @@ Checked 2026-05-02.
 - OWASP Application Security Verification Standard project page: used for the security-control framing around authentication, authorization, access control, and verification.
 - OpenAI safety best-practices guidance: used for policy-review and safety-gate framing around AI product surfaces.
 - v27 is a local policy-aware access contract. It does not enable live auth, sessions, tokens, database policies, network calls, or provider calls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Introduction](introduction.md)
+- Next: [v27 Lab](lab.md)
+<!-- AOIS-NAV-END -->

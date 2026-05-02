@@ -37,3 +37,12 @@ v20.1 prevents this failure by making cost a first-class incident signal:
 
 The lesson is not that agents should always be cheap. The lesson is that agents
 should be economically legible.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Runbook](runbook.md)
+- Next: [v20.1 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

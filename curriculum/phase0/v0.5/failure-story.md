@@ -27,3 +27,12 @@ Validate inputs at system boundaries and fail clearly when the input is meaningl
 Clear validation failure is better than fake analysis.
 
 AOIS should not pretend an empty signal can produce useful intelligence.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Runbook](runbook.md)
+- Next: [v0.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -49,3 +49,12 @@ The safe state is:
 If a real broker was started outside this lesson, stop it only after confirming
 it is not part of the primary AOIS project. This curriculum must not interfere
 with the primary server workload.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Lab](lab.md)
+- Next: [v17 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

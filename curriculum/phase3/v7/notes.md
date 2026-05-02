@@ -378,3 +378,12 @@ So chart users cannot deploy unbounded workloads by default.
 `v7` packages the deployment plan.
 
 `v8` introduces GitOps flow so deployment intent can be driven by reviewed Git history instead of manual cluster commands.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 Introduction](introduction.md)
+- Next: [v7 Lab](lab.md)
+<!-- AOIS-NAV-END -->

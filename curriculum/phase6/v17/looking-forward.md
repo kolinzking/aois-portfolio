@@ -24,3 +24,12 @@ error-budget burn.
 
 If v17 answers "how does work move safely?", v17.5 answers "how good does that
 movement need to be before operators can trust it?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Summary Notes](summarynotes.md)
+- Next: [v17 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

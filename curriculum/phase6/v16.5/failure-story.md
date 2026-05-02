@@ -21,3 +21,12 @@ Add incident step traces with parent-child relationships, durations, summaries, 
 Validate the `v16.5` tracing plan before adding live agent behavior.
 
 Lesson learned: final answers are not enough for operations.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 Runbook](runbook.md)
+- Next: [v16.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

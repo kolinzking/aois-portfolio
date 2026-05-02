@@ -71,3 +71,12 @@ Explain why each case chooses its decision:
 Defend why v22 does not start a workflow engine. Durable workflows introduce
 state, persistence, approval waits, retries, and timeouts. AOIS-P first proves
 the workflow contract locally before adding a runtime and durable store.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 - Durable Agent Workflows](notes.md)
+- Next: [v22 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

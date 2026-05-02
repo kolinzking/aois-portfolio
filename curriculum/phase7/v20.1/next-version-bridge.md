@@ -27,3 +27,12 @@ choose a route before spend happens:
 
 v20.2 will use the accounting fields from v20.1 to decide where the responder
 should go next.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Looking Forward](looking-forward.md)
+- Next: [v20.2 Contents](../v20.2/CONTENTS.md)
+<!-- AOIS-NAV-END -->

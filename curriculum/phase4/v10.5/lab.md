@@ -85,3 +85,12 @@ Defend the architecture decision:
 AOIS should keep the agent loop owned locally until the project has provider docs review, credential storage design, budget approval, data-boundary review, tool-permission review, eval baseline, and rollback plan.
 
 If your defense is "managed agents are easier," it is incomplete. You must also explain what control is delegated and how AOIS would verify the delegated behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 - Managed Agent Tradeoffs Without Creating Agents](notes.md)
+- Next: [v10.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

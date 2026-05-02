@@ -46,3 +46,12 @@ flags remain false.
    missing control.
 6. Explain how policy gates protect tool-using agents before v20.
 7. Answer the mastery checkpoint in [notes.md](notes.md).
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Next Version Bridge](../v19/next-version-bridge.md)
+- Next: [v19.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

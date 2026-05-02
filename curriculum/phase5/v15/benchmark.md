@@ -21,3 +21,12 @@ Record:
 The simulated adapted candidate is not accepted because it introduces a regression.
 
 This is the point of the lesson: adaptation must improve target behavior without breaking existing behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Failure Story](failure-story.md)
+- Next: [v15 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

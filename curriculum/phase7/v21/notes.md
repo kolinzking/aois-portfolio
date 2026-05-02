@@ -337,3 +337,12 @@ Claims supported:
 - Tools expose names, descriptions, input schemas, and optional output schemas.
 - Tool invocation requires explicit safety and consent controls.
 - Tool metadata is not a sufficient security boundary.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Introduction](introduction.md)
+- Next: [v21 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -34,3 +34,12 @@ Connection failure and HTTP error status are different.
 
 A `404` means the server responded.
 A connection failure means the request did not reach a listening HTTP service.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 Runbook](runbook.md)
+- Next: [v0.4 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

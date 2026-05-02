@@ -571,3 +571,12 @@ risk framing:
   https://owasp.org/www-project-top-10-for-large-language-model-applications/
 - OpenAI prompt injection safety explainer:
   https://openai.com/safety/prompt-injections/
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Introduction](introduction.md)
+- Next: [v19.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

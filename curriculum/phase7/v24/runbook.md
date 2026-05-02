@@ -55,3 +55,12 @@ Escalate to a human operator if:
 - state freshness cannot be established
 - a target role is missing or unowned
 - safety or budget posture is disputed
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Lab](lab.md)
+- Next: [v24 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

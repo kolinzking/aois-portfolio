@@ -33,3 +33,12 @@ Read in this order:
 4. Explain each allow and deny case.
 5. Break and restore one tenant boundary, one role permission, one redaction gate, and one approval-separation case.
 6. Read the bridge into v28 delivery pipeline and release controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 Next Version Bridge](../v26/next-version-bridge.md)
+- Next: [v27 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

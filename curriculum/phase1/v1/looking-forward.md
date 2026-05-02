@@ -16,3 +16,12 @@ Authoring status: authored
 
 The next question is not "which model is coolest?"
 The next question is "which route fits this incident, budget, latency, and reliability requirement?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Summary Notes](summarynotes.md)
+- Next: [v1 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

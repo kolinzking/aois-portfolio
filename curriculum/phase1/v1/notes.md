@@ -452,3 +452,12 @@ AOIS needs parseable, auditable fields for automation and debugging.
 `v1` creates the structured intelligence boundary.
 
 `v2` will decide how model routing, fallback, latency, and cost choices should work once provider integration is approved.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Introduction](introduction.md)
+- Next: [v1 Lab](lab.md)
+<!-- AOIS-NAV-END -->

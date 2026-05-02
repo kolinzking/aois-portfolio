@@ -67,3 +67,12 @@ Escalate to a model, platform, or risk owner if:
 - rollout evidence is incomplete
 - registry state cannot identify the candidate
 - rollback or feature-flag controls are not reversible
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Lab](lab.md)
+- Next: [v29 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

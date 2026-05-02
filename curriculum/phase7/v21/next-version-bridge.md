@@ -28,3 +28,12 @@ losing state. A workflow may need to:
 
 The registry answers "which tools are allowed?" v22 answers "how does the
 agent workflow remember, wait, resume, and recover?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Looking Forward](looking-forward.md)
+- Next: [v22 Contents](../v22/CONTENTS.md)
+<!-- AOIS-NAV-END -->

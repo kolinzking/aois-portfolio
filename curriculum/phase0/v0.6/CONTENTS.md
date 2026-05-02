@@ -41,3 +41,12 @@ Authoring status: authored
 6. use [runbook.md](runbook.md) if runtime fails
 7. record benchmark and resource usage
 8. use [next-version-bridge.md](next-version-bridge.md) to move into `v0.7`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Next Version Bridge](../v0.5/next-version-bridge.md)
+- Next: [v0.6 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

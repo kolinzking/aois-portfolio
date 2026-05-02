@@ -25,3 +25,12 @@ This version forces the service to define its output fields, provider gate, and 
 6. prove `provider_call_made=false`
 7. prove forced provider use returns `403`
 8. stop the server
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Contents](CONTENTS.md)
+- Next: [v1 - Structured AI Endpoint Without Provider Calls](notes.md)
+<!-- AOIS-NAV-END -->

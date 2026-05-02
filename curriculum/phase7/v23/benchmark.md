@@ -45,3 +45,12 @@ The benchmark covers:
 
 It tests orchestration policy only. It does not run an orchestration framework
 or execute selected actions.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Failure Story](failure-story.md)
+- Next: [v23 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

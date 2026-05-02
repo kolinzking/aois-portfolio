@@ -46,3 +46,12 @@ remain false.
 6. Break the plan in a scratch edit and use validator output to explain the
    risk.
 7. Answer the mastery checkpoint in [notes.md](notes.md).
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Next Version Bridge](../v18/next-version-bridge.md)
+- Next: [v19 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

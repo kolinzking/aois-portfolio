@@ -26,3 +26,12 @@ This version teaches incident and agent-style step tracing without running an ag
 4. Follow parent-child step IDs across the trace.
 5. Confirm no runtime, tool call, or provider call happened.
 6. Answer the mastery checkpoint.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 Next Version Bridge](../v16/next-version-bridge.md)
+- Next: [v16.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

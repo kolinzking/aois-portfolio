@@ -45,3 +45,12 @@ Treat rules as explicit pattern matches, not understanding.
 
 Bash rules are useful when the signal is specific.
 They become dangerous when the wording changes and the script pretends silence means safety.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Runbook](runbook.md)
+- Next: [v0.2 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

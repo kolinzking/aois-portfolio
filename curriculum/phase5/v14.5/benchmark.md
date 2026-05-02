@@ -23,3 +23,12 @@ A passing benchmark proves the local cache simulation is consistent.
 It does not prove production cache safety.
 
 Production caching requires live workload data, cache key review, privacy review, invalidation testing, and approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 Failure Story](failure-story.md)
+- Next: [v14.5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

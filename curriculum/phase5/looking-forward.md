@@ -35,3 +35,12 @@ Before live inference work, AOIS still needs:
 Phase 6 adds observability, streaming, and reliability.
 
 The next step is to make AOIS behavior visible and failure-testable.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v15.5 Next Version Bridge](v15.5/next-version-bridge.md)
+- Next: [Phase 6 Contents](../phase6/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -36,3 +36,12 @@ At `v6.5`, good means:
 - RBAC grants no permissions yet
 - network policy exists
 - no live cluster mutation happened
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Failure Story](failure-story.md)
+- Next: [v6.5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

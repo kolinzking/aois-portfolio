@@ -21,3 +21,12 @@ That is powerful, but it also means Git changes can become cluster changes, so t
 3. run the validator
 4. explain why automated sync is disabled
 5. do not apply or sync without approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Contents](CONTENTS.md)
+- Next: [v8 - GitOps And ArgoCD Flow Without Cluster Sync](notes.md)
+<!-- AOIS-NAV-END -->

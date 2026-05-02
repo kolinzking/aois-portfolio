@@ -82,3 +82,12 @@ Record:
 - credentials status
 - budget status
 - repo footprint
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 - Managed Model Layer Without Cloud Calls](notes.md)
+- Next: [v10 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

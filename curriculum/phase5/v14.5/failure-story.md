@@ -19,3 +19,12 @@ Disable the response cache, purge stale entries, define TTL and invalidation rul
 Validate cache policy before live writes.
 
 Lesson learned: cache speed is useful only when cached data is still correct.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 Runbook](runbook.md)
+- Next: [v14.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

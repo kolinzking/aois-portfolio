@@ -42,3 +42,12 @@ Phase 7 is complete.
 
 The next corpus step is Phase 8, which turns the governed AOIS-P operating
 model into a product surface for human operators.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 7 Contents](CONTENTS.md)
+- Next: [v20 Contents](v20/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -313,3 +313,12 @@ Claims supported:
 - Agent workflows can be represented as stateful graphs with persistence and human-in-the-loop support.
 - Orchestration patterns include routing and state-based control.
 - Workflow implementations need deterministic durable state semantics across replays.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Introduction](introduction.md)
+- Next: [v23 Lab](lab.md)
+<!-- AOIS-NAV-END -->

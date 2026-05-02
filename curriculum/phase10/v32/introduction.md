@@ -27,3 +27,12 @@ Use the plan, validator, and simulator to compare:
 - block when policy, residency, privacy, update, rollback, size, memory, or latency fails
 - hold when more measurement or preparation is required
 - fallback when edge fails but central fallback is allowed
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Contents](CONTENTS.md)
+- Next: [v32 - Edge And Offline Inference](notes.md)
+<!-- AOIS-NAV-END -->

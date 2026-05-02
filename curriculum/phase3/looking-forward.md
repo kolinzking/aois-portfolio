@@ -37,3 +37,12 @@ The core rule remains:
 - no deployment
 
 without explicit approval and resource/cost tracking.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v9 Next Version Bridge](v9/next-version-bridge.md)
+- Next: [Phase 4 Contents](../phase4/CONTENTS.md)
+<!-- AOIS-NAV-END -->

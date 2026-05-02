@@ -29,3 +29,12 @@ v23.8 intentionally does not start any runtime or execute tools. It proves the
 operating policy first. Live autonomy would require runtime deployment review,
 operator runbooks, alert routes, rollback drills, observability dashboards,
 budget integration, and safety response workflows.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Benchmark](benchmark.md)
+- Next: [v23.8 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -415,3 +415,12 @@ This lesson designs trace shape only; live agent behavior needs separate governa
 `v16.5` makes multi-step behavior traceable.
 
 `v17` moves to event streaming, where incident and telemetry events can be produced, consumed, replayed, and inspected over time.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 Introduction](introduction.md)
+- Next: [v16.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

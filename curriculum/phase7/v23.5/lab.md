@@ -75,3 +75,12 @@ Defend why v23.5 does not call an external evaluation service. The lesson is
 proving the dataset shape, metrics, critical gates, and regression thresholds.
 Live eval services introduce data retention, trace export, cost, and privacy
 questions that need review first.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 - Agent Evaluation](notes.md)
+- Next: [v23.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

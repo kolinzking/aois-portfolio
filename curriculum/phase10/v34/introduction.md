@@ -25,3 +25,12 @@ forms, access credentials, call providers, or perform external actions.
 Every allowed path needs policy, target, approval, preview, budget, stop,
 rollback, audit, redaction, operator watch, red-team clearance, release, and
 access controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 Contents](CONTENTS.md)
+- Next: [v34 - Governance Verification And Computer Use](notes.md)
+<!-- AOIS-NAV-END -->

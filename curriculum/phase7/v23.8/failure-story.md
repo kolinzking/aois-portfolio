@@ -51,3 +51,12 @@ Make evaluation and safety signals operational gates:
 - budget exhaustion pauses autonomy
 - runtime degradation demotes autonomy
 - limited autonomy requires explicit operator approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Runbook](runbook.md)
+- Next: [v23.8 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

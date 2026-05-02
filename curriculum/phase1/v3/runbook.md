@@ -51,3 +51,12 @@ If uvicorn remains running:
 
 - stop it
 - confirm port `8006` is clear
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 Lab](lab.md)
+- Next: [v3 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

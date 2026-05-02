@@ -74,3 +74,12 @@ Use the simulator output to explain:
 Defend why this lesson uses deterministic `cost_units` instead of USD. The core
 answer: the lesson is testing the accounting contract, while real pricing and
 billing reconciliation are live integration concerns.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 - Per-Incident and Per-Step Cost Accounting](notes.md)
+- Next: [v20.1 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

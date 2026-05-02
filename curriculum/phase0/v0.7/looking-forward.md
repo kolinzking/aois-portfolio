@@ -18,3 +18,12 @@ Authoring status: authored
 The next step is to store incidents and analysis results in a database-friendly shape so AOIS can move from one-off terminal output toward durable infrastructure behavior.
 
 Do not move forward until you can explain why a planned model call and a real provider call are different operational events.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Summary Notes](summarynotes.md)
+- Next: [v0.7 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

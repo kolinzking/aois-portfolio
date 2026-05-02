@@ -21,3 +21,12 @@ Operators need to connect request behavior, route decisions, analysis steps, lat
 Run the validator and simulator.
 
 Focus on the shape of observability data, not on running observability infrastructure.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 Contents](CONTENTS.md)
+- Next: [v16 - Unified Telemetry Without Runtime](notes.md)
+<!-- AOIS-NAV-END -->

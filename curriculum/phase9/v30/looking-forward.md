@@ -27,3 +27,12 @@ The platform foundation matters because multimodal inputs add new data types,
 interfaces, safety checks, observability needs, access boundaries, and delivery
 risks. Phase 10 should extend AOIS without discarding the rigor built through
 Phase 9.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 Summary Notes](summarynotes.md)
+- Next: [v30 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

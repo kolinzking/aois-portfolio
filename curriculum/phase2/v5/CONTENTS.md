@@ -41,3 +41,12 @@ Authoring status: authored
 5. review the answer key in [notes.md](notes.md)
 6. do not add real secrets
 7. complete the mastery checkpoint before Phase 3
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Next Version Bridge](../v4/next-version-bridge.md)
+- Next: [v5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

@@ -43,3 +43,12 @@ Authoring status: authored
 7. trigger the provider gate with `allow_provider_call=true`
 8. stop the server
 9. complete the mastery checkpoint before `v2`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 1 Introduction](../00-introduction.md)
+- Next: [v1 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

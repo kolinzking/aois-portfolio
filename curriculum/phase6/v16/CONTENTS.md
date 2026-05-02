@@ -26,3 +26,12 @@ This version introduces unified telemetry without running telemetry infrastructu
 4. Confirm trace, metric, and log outputs share correlation fields.
 5. Complete the break labs.
 6. Answer the mastery checkpoint.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 6 Introduction](../00-introduction.md)
+- Next: [v16 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

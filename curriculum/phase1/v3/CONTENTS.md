@@ -41,3 +41,12 @@ Authoring status: authored
 5. run the API eval endpoint briefly
 6. stop the server
 7. complete the mastery checkpoint
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Next Version Bridge](../v2/next-version-bridge.md)
+- Next: [v3 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

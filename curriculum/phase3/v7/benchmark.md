@@ -36,3 +36,12 @@ At `v7`, good means:
 - provider calls remain disabled
 - limits remain configurable
 - no Helm release is installed
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 Failure Story](failure-story.md)
+- Next: [v7 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

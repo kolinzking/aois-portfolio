@@ -20,3 +20,12 @@ Operator and device-plugin awareness are part of inference operations, not optio
 This version does not install or apply GPU infrastructure.
 
 That is intentional. It teaches the scheduling and observability model before cluster mutation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 Benchmark](benchmark.md)
+- Next: [v13.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -222,3 +222,12 @@ The curriculum must track where AI systems are going:
 - inference operations
 
 If a lesson does not connect to that trajectory, it should not stay in the program.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Master Curriculum](MASTER-CURRICULUM.md)
+- Next: [AOIS Study Pacing](STUDY-PACING.md)
+<!-- AOIS-NAV-END -->

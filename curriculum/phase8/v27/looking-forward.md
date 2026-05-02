@@ -24,3 +24,12 @@ The next version builds on the Phase 8 product surface by asking how AOIS-P
 changes reach users safely. Access policy is not complete if unsafe releases
 can bypass tests, signatures, release gates, rollout controls, model rollout
 controls, or feature flags.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Summary Notes](summarynotes.md)
+- Next: [v27 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

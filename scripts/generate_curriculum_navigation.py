@@ -1,0 +1,253 @@
+#!/usr/bin/env python3
+"""Generate the AOIS curriculum reading order and next/previous footers."""
+
+from __future__ import annotations
+
+import os
+import re
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+CURRICULUM = ROOT / "curriculum"
+READING_ORDER = CURRICULUM / "READING-ORDER.md"
+
+NAV_START = "<!-- AOIS-NAV-START -->"
+NAV_END = "<!-- AOIS-NAV-END -->"
+
+PHASE_FILE_ORDER = [
+    "CONTENTS.md",
+    "00-introduction.md",
+]
+
+VERSION_FILE_ORDER = [
+    "CONTENTS.md",
+    "introduction.md",
+    "notes.md",
+    "lab.md",
+    "runbook.md",
+    "failure-story.md",
+    "benchmark.md",
+    "summarynotes.md",
+    "looking-forward.md",
+    "next-version-bridge.md",
+]
+
+PHASE_END_FILE_ORDER = [
+    "phase-capstone.md",
+    "looking-forward.md",
+]
+
+REFERENCE_DOCS = [
+    "TABLE-OF-CONTENTS.md",
+    "INSTITUTION-INDEX.md",
+    "SYLLABUS.md",
+    "FULL-PROGRAM-MAP.md",
+    "MASTER-CURRICULUM.md",
+    "LEARNING-OPERATING-MODEL.md",
+    "STUDY-PACING.md",
+    "VERSION-STANDARD.md",
+    "QUALITY-GATES.md",
+    "CODEX-GUIDE-MODE.md",
+    "SOURCE-CURRENCY.md",
+    "REPO-BLUEPRINT.md",
+    "CONTINUITY.md",
+    "CORPUS-STATUS.md",
+    "EVALUATION-CARD.md",
+    "CORPUS-AUTHORING-PLAN.md",
+]
+
+
+def phase_key(path: Path) -> int:
+    match = re.fullmatch(r"phase(\d+)", path.name)
+    return int(match.group(1)) if match else 9999
+
+
+def version_key(path: Path) -> tuple[int, ...]:
+    if not path.name.startswith("v"):
+        return (9999,)
+    parts: list[int] = []
+    for part in path.name[1:].split("."):
+        parts.append(int(part) if part.isdigit() else 9999)
+    return tuple(parts)
+
+
+def rel(path: Path, start: Path = CURRICULUM) -> str:
+    return path.relative_to(start).as_posix()
+
+
+def title_for(path: Path) -> str:
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("# "):
+            return line[2:].strip()
+    return rel(path)
+
+
+def link_between(source: Path, target: Path, label: str) -> str:
+    href = os.path.relpath(target, start=source.parent)
+    return f"[{label}]({Path(href).as_posix()})"
+
+
+def add_existing(order: list[Path], path: Path) -> None:
+    if path.exists() and path not in order:
+        order.append(path)
+
+
+def build_reading_order() -> list[Path]:
+    order: list[Path] = []
+
+    if READING_ORDER.exists():
+        order.append(READING_ORDER)
+
+    for phase in sorted(CURRICULUM.glob("phase*"), key=phase_key):
+        if not phase.is_dir():
+            continue
+
+        for filename in PHASE_FILE_ORDER:
+            add_existing(order, phase / filename)
+
+        version_dirs = [
+            item for item in phase.iterdir() if item.is_dir() and item.name.startswith("v")
+        ]
+        for version in sorted(version_dirs, key=version_key):
+            for filename in VERSION_FILE_ORDER:
+                add_existing(order, version / filename)
+            for extra in sorted(version.glob("*.md")):
+                add_existing(order, extra)
+
+        for filename in PHASE_END_FILE_ORDER:
+            add_existing(order, phase / filename)
+        for extra in sorted(phase.glob("*.md")):
+            add_existing(order, extra)
+
+    for filename in REFERENCE_DOCS:
+        add_existing(order, CURRICULUM / filename)
+
+    for extra in sorted(CURRICULUM.rglob("*.md")):
+        add_existing(order, extra)
+
+    return order
+
+
+def write_reading_order() -> None:
+    phase_dirs = sorted(
+        [item for item in CURRICULUM.glob("phase*") if item.is_dir()],
+        key=phase_key,
+    )
+
+    lines: list[str] = [
+        "# AOIS Reading Order",
+        "",
+        "Start here when you want to read the portfolio instead of browsing folders.",
+        "",
+        "## How To Read A Version",
+        "",
+        "Inside each version, use this order:",
+        "",
+        "1. `CONTENTS.md` - quick map for the version",
+        "2. `introduction.md` - what the version is about",
+        "3. `notes.md` - the main lesson",
+        "4. `lab.md` - the hands-on work",
+        "5. `runbook.md` - how to recover when stuck",
+        "6. `failure-story.md` - what breaks in the real world",
+        "7. `benchmark.md` - what to measure",
+        "8. `summarynotes.md` - what to retain",
+        "9. `looking-forward.md` - what carries forward",
+        "10. `next-version-bridge.md` - how to enter the next version",
+        "",
+        "Every curriculum Markdown file ends with a navigation block linking back to this file plus the previous and next document in the reading path.",
+        "",
+        "## Start Here",
+        "",
+        "Begin at [Phase 0 Contents](phase0/CONTENTS.md), then keep using the `Next` link at the bottom of each page.",
+        "",
+        "## Full Learner Path",
+        "",
+    ]
+
+    for phase in phase_dirs:
+        phase_label = phase.name.replace("phase", "Phase ")
+        lines.extend([f"### {phase_label}", ""])
+
+        for filename in PHASE_FILE_ORDER:
+            path = phase / filename
+            if path.exists():
+                lines.append(f"- [{title_for(path)}]({rel(path)})")
+
+        version_dirs = [
+            item for item in phase.iterdir() if item.is_dir() and item.name.startswith("v")
+        ]
+        for version in sorted(version_dirs, key=version_key):
+            lines.append(f"- {version.name}")
+            for filename in VERSION_FILE_ORDER:
+                path = version / filename
+                if path.exists():
+                    lines.append(f"  - [{title_for(path)}]({rel(path)})")
+
+        for filename in PHASE_END_FILE_ORDER:
+            path = phase / filename
+            if path.exists():
+                lines.append(f"- [{title_for(path)}]({rel(path)})")
+        lines.append("")
+
+    lines.extend(
+        [
+            "## Reference Documents",
+            "",
+            "These are useful for orientation, review standards, pacing, and operating rules. They are linked after the learner path in the generated previous/next chain.",
+            "",
+        ]
+    )
+    for filename in REFERENCE_DOCS:
+        path = CURRICULUM / filename
+        if path.exists():
+            lines.append(f"- [{title_for(path)}]({rel(path)})")
+
+    READING_ORDER.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+
+def strip_nav(text: str) -> str:
+    pattern = re.compile(
+        rf"\n*{re.escape(NAV_START)}.*?{re.escape(NAV_END)}\s*\Z",
+        flags=re.DOTALL,
+    )
+    return pattern.sub("", text).rstrip()
+
+
+def write_footers(order: list[Path]) -> None:
+    titles = {path: title_for(path) for path in order}
+
+    for index, path in enumerate(order):
+        body = strip_nav(path.read_text(encoding="utf-8"))
+        previous_path = order[index - 1] if index > 0 else None
+        next_path = order[index + 1] if index + 1 < len(order) else None
+
+        nav = [
+            "",
+            NAV_START,
+            "---",
+            "",
+            "## Navigation",
+            "",
+            f"- Reading order: {link_between(path, READING_ORDER, 'AOIS Reading Order')}",
+        ]
+        if previous_path:
+            nav.append(
+                f"- Previous: {link_between(path, previous_path, titles[previous_path])}"
+            )
+        if next_path:
+            nav.append(f"- Next: {link_between(path, next_path, titles[next_path])}")
+        nav.append(NAV_END)
+
+        path.write_text(body + "\n".join(nav) + "\n", encoding="utf-8")
+
+
+def main() -> None:
+    write_reading_order()
+    order = build_reading_order()
+    write_footers(order)
+    print(f"generated_curriculum_navigation {len(order)} files")
+
+
+if __name__ == "__main__":
+    main()

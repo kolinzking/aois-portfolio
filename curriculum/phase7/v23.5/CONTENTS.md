@@ -27,3 +27,12 @@ Authoring status: authored
 4. Explain how route, registry, workflow, and orchestration metrics combine.
 5. Break one critical safety metric and predict the failure.
 6. Restore the plan and read the bridge into v23.8.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Next Version Bridge](../v23/next-version-bridge.md)
+- Next: [v23.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

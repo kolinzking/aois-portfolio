@@ -29,3 +29,12 @@ Keep Docker build/run approval-gated on the shared server.
 Container builds are resource events.
 
 They need the same discipline as database, Kubernetes, and provider runtime work.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Runbook](runbook.md)
+- Next: [v4 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

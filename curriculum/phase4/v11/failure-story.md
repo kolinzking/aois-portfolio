@@ -34,3 +34,12 @@ Do not approve live cloud execution until AOIS has:
 - rollback plan
 
 Lesson learned: retries improve reliability only when duplicate side effects are controlled.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Runbook](runbook.md)
+- Next: [v11 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

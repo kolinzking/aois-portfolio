@@ -96,3 +96,12 @@ Your defense must include:
 - observability
 - rollback
 - separation from primary AOIS resources
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 - Event-Driven Workflow Planning Without Cloud Calls](notes.md)
+- Next: [v11 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

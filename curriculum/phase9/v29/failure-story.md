@@ -47,3 +47,12 @@ Before live model delivery:
 - review release gate and feature flag links
 - rehearse rollback
 - record approval and risk review
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Runbook](runbook.md)
+- Next: [v29 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

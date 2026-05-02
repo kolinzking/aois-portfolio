@@ -33,3 +33,12 @@ v20.2 fixes this by routing before spend:
 Treat routing as part of the agent control plane. A route is not selected because
 it is possible; it is selected because severity, evidence, confidence, value,
 cost, and remaining budget agree.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Runbook](runbook.md)
+- Next: [v20.2 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -32,3 +32,12 @@ This keeps the curriculum self-paced while still preparing for serious AI infras
 5. change output budget, cost assumption, and response format
 6. explain the difference between a request plan and a real provider call
 7. complete the mastery checkpoint before moving to persistence in `v0.8`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Contents](CONTENTS.md)
+- Next: [v0.7 - LLM Fundamentals Without Provider Dependence](notes.md)
+<!-- AOIS-NAV-END -->

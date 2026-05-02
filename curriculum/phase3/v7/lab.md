@@ -81,3 +81,12 @@ Record:
 - chart name
 - repo footprint
 - memory snapshot
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 - Helm Packaging Without Installing A Release](notes.md)
+- Next: [v7 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

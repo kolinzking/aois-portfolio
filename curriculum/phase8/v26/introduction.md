@@ -28,3 +28,12 @@ Then use the break lab to change one dashboard-control field at a time.
 
 Do not start a frontend, API server, WebSocket stream, SSE stream, browser, or
 provider in this version. v26 proves the visibility contract locally.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 Contents](CONTENTS.md)
+- Next: [v26 - Dashboard And Real-Time Visibility](notes.md)
+<!-- AOIS-NAV-END -->

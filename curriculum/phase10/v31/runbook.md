@@ -65,3 +65,12 @@ Escalate to a security, accessibility, or platform owner if:
 - cross-modal evidence conflicts
 - fallback path is unavailable
 - policy boundaries fail
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Lab](lab.md)
+- Next: [v31 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

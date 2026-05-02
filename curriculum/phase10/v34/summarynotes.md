@@ -40,3 +40,12 @@ v34 does not start a computer-use runtime, browser, VM, screenshot capture,
 mouse, keyboard, clipboard, file transfer, network, provider, tool, command,
 shell, credential, payment, form submission, or external action. It models
 governance verification before live action is considered.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 Benchmark](benchmark.md)
+- Next: [v34 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -571,3 +571,12 @@ When the course is done, the repo should prove that you can:
 - explain them clearly at multiple levels
 
 That is the standard this syllabus is designed to enforce.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Institution Index](INSTITUTION-INDEX.md)
+- Next: [AOIS Full Program Map](FULL-PROGRAM-MAP.md)
+<!-- AOIS-NAV-END -->

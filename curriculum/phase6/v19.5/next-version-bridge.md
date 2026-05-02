@@ -33,3 +33,12 @@ The next lesson asks:
 How does AOIS let an agent investigate incidents while keeping every tool use
 visible, bounded, reviewable, and reversible?
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Looking Forward](looking-forward.md)
+- Next: [Phase 6 Looking Forward](../looking-forward.md)
+<!-- AOIS-NAV-END -->

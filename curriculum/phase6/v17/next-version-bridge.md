@@ -20,3 +20,12 @@ may fail, and when an error budget is being burned.
 
 Carry forward the v17 discipline: no reliability claim is real unless it is
 measured, bounded, and connected to an operator action.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Looking Forward](looking-forward.md)
+- Next: [v17.5 Contents](../v17.5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -17,3 +17,12 @@ Planning can be practiced without cloud calls.
 No real provider call is made.
 
 That protects cost and credentials, but live provider behavior is not proven.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Benchmark](benchmark.md)
+- Next: [v10 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

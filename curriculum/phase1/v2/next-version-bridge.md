@@ -13,3 +13,12 @@ AOIS can now explain why it would use local, fast, or strong analysis paths.
 `v3` adds reliability discipline.
 
 Once structured endpoints and routing exist, AOIS needs validation, traces, prompt iteration records, and evaluation baselines so changes can be measured instead of guessed.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Looking Forward](looking-forward.md)
+- Next: [v3 Contents](../v3/CONTENTS.md)
+<!-- AOIS-NAV-END -->

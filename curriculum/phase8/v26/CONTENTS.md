@@ -28,3 +28,12 @@ Authoring status: authored
 4. Explain every dashboard visibility decision.
 5. Break one panel, event, stale-state, redaction, or accessibility control.
 6. Restore the plan and read the bridge into v27.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 8 Introduction](../00-introduction.md)
+- Next: [v26 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

@@ -55,3 +55,12 @@ Escalate to a product or operations owner if:
 - sensitive data is unredacted
 - keyboard navigation or accessible labels fail
 - the dashboard hides an approval or execution-boundary decision
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 Lab](lab.md)
+- Next: [v26 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

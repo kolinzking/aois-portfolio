@@ -22,3 +22,12 @@ The safe path is not "create a cluster and fix controls later." The safe path is
 This version does not create a managed runtime.
 
 That is intentional. It teaches how to evaluate readiness before runtime creation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v12 Benchmark](benchmark.md)
+- Next: [v12 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -32,3 +32,12 @@ The Phase 1 spine is:
 
 The goal is not to make AI seem magical.
 The goal is to make AI behavior inspectable, bounded, and explainable.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 1 Contents](CONTENTS.md)
+- Next: [v1 Contents](v1/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -23,3 +23,12 @@ Inputs can contain instructions and secrets, so AOIS needs inspection before pro
 Pattern matching is not complete security.
 
 It is a first guardrail that prepares AOIS for stronger policy, red-teaming, and runtime controls later.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 Benchmark](benchmark.md)
+- Next: [v5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

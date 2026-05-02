@@ -21,3 +21,12 @@ Add queue timeout, backpressure, load shedding, and p95 latency measurement.
 Validate the serving plan before live tuning.
 
 Lesson learned: throughput without tail-latency control is not a reliable service.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14 Runbook](runbook.md)
+- Next: [v14 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -44,3 +44,12 @@ AOIS can now model:
 These controls prepare the curriculum for Phase 7 tool-using agents by requiring
 traceability, evidence, budgets, incident discipline, failure testing, and
 policy gates before agentic action.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 6 Contents](CONTENTS.md)
+- Next: [v16 Contents](v16/CONTENTS.md)
+<!-- AOIS-NAV-END -->

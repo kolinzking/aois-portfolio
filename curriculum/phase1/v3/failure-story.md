@@ -31,3 +31,12 @@ Keep eval cases small, explicit, and tied to AOIS behavior.
 Reliability is repeatable evidence.
 
 If the baseline is not run, regressions become surprises.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v3 Runbook](runbook.md)
+- Next: [v3 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

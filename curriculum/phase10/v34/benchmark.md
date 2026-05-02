@@ -46,3 +46,12 @@ rollback block, audit hold, red-team block, release block, and policy block.
 v34 passes only when validator status is `pass`, simulator status is `pass`, 21
 of 21 cases pass, score is `1.0`, runtime boundary flags remain false, and no
 placeholder marker remains in the v34 lesson pack.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 Failure Story](failure-story.md)
+- Next: [v34 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

@@ -39,3 +39,12 @@ execution.
 
 That tradeoff closes Phase 7 cleanly: AOIS-P now has the governance model
 needed before a product surface exposes the system to operators in Phase 8.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Benchmark](benchmark.md)
+- Next: [v25 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

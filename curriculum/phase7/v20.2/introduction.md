@@ -41,3 +41,12 @@ python3 examples/simulate_budget_aware_routing.py
 
 No runtime starts, no tool executes, no provider is called, and no billing API is
 called.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Contents](CONTENTS.md)
+- Next: [v20.2 - Budget-Aware Routing](notes.md)
+<!-- AOIS-NAV-END -->

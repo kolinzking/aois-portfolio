@@ -34,3 +34,12 @@ v21 intentionally does not start MCP or execute tools. It proves governance
 shape first. Live MCP would require transport, auth, consent UI, approval
 workflow, audit sink, tool-result sanitization, registry change control, and
 route integration testing before it should be used.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Benchmark](benchmark.md)
+- Next: [v21 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

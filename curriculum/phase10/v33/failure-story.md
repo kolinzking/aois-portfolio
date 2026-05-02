@@ -38,3 +38,12 @@ v33 fixes the failure by requiring:
 Do not call a frontier control ready until it has an adversarial case that can
 prove the expected control behavior, record safe evidence, assign mitigation
 when it fails, and keep a regression case so the failure does not return.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Runbook](runbook.md)
+- Next: [v33 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

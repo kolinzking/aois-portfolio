@@ -76,3 +76,12 @@ Explain why each case chooses its decision:
 Defend why v26 uses local event replay instead of a live UI. The dashboard
 should first prove which states must be visible, how events map to panels, and
 which safety gates block rendering before choosing a frontend implementation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 - Dashboard And Real-Time Visibility](notes.md)
+- Next: [v26 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

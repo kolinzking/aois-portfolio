@@ -21,3 +21,12 @@ change the state.
 
 The workflow answers "where are we and how do we resume?" v23 answers "given
 the current state, what is the next bounded action?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Looking Forward](looking-forward.md)
+- Next: [v23 Contents](../v23/CONTENTS.md)
+<!-- AOIS-NAV-END -->

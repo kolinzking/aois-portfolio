@@ -20,3 +20,12 @@ Phase 5 builds on this by moving into inference and GPU engineering.
 The next question is:
 
 How does AOIS own high-performance model execution with the same rigor it now applies to runtime infrastructure?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v12 Summary Notes](summarynotes.md)
+- Next: [v12 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

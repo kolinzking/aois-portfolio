@@ -52,3 +52,12 @@ Keep the registry in front of MCP exposure:
 - pause sensitive reads for approval
 - block write and privileged tools by default
 - keep live MCP disabled until all live-readiness checks pass
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Runbook](runbook.md)
+- Next: [v21 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

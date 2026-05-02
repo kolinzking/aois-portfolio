@@ -10,3 +10,12 @@ You can now inspect an HTTP service boundary directly from the terminal.
 
 Shell scripts are useful, but AOIS needs maintainable application logic.
 `v0.5` introduces Python for typed utilities, input validation, and structured error handling.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.4 Looking Forward](looking-forward.md)
+- Next: [v0.5 Contents](../v0.5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -15,3 +15,12 @@ Carry forward these rules:
 ## What The Next Version Will Build On
 
 Phase 6 builds on this by adding observability, streaming, and reliability.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15.5 Summary Notes](summarynotes.md)
+- Next: [v15.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

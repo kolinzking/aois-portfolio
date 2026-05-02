@@ -613,3 +613,12 @@ This version uses stable local Git behavior.
 No fast-moving external source is required for the core lesson.
 
 If this version later expands into GitHub, pull requests, branch protection, signed commits, or CI policy, add source notes for the specific remote platform and policy behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.3 Introduction](introduction.md)
+- Next: [v0.3 Lab](lab.md)
+<!-- AOIS-NAV-END -->

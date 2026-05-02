@@ -28,3 +28,12 @@ Authoring status: authored
 7. Read the runbook and failure story.
 8. Review summary notes.
 9. Read the bridge into v33 adversarial testing and red teaming.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Next Version Bridge](../v31/next-version-bridge.md)
+- Next: [v32 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

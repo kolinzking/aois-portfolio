@@ -18,3 +18,12 @@ post-incident review.
 
 Carry forward the v17.5 rule: an alert is useful only if it connects to a clear
 operator action.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Looking Forward](looking-forward.md)
+- Next: [v18 Contents](../v18/CONTENTS.md)
+<!-- AOIS-NAV-END -->

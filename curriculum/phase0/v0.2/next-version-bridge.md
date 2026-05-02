@@ -11,3 +11,12 @@ You can also see the first limit of deterministic interpretation: string rules h
 
 Because once work is real, it needs history.
 `v0.3` makes the repository itself part of the engineering system.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Looking Forward](looking-forward.md)
+- Next: [v0.3 Contents](../v0.3/CONTENTS.md)
+<!-- AOIS-NAV-END -->

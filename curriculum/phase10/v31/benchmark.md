@@ -33,3 +33,12 @@ Pass means:
 
 Fail means the multimodal AOIS contract is incomplete. Fix the plan or
 simulator before adding edge and offline inference in v32.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Failure Story](failure-story.md)
+- Next: [v31 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

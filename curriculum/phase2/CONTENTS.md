@@ -23,3 +23,12 @@ Authoring status: authored
 1. complete [v4](v4/notes.md)
 2. complete [v5](v5/notes.md)
 3. do not build or run containers without approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 1 Looking Forward](../phase1/looking-forward.md)
+- Next: [Phase 2 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

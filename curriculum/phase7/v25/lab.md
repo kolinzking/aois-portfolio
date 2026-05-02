@@ -82,3 +82,12 @@ Defend why v25 executes nothing. Safe execution boundaries are the last control
 plane before real-world side effects. AOIS-P first proves action categories,
 guardrail order, approval handling, sandbox requirements, network policy,
 credential scope, rollback, and dry-run behavior locally.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 - Safe Execution Boundaries](notes.md)
+- Next: [v25 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

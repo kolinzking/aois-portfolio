@@ -27,3 +27,12 @@ Authoring status: authored
 4. Explain how each case reaches its workflow state.
 5. Break one timeout, retry, approval, or idempotency field.
 6. Restore the plan and read the bridge into v23.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Next Version Bridge](../v21/next-version-bridge.md)
+- Next: [v22 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

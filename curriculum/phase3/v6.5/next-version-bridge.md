@@ -9,3 +9,12 @@ Authoring status: authored
 ## Why The Next Version Exists
 
 `v7` packages the Kubernetes resources with Helm so configuration can become reusable and reviewable.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Looking Forward](looking-forward.md)
+- Next: [v7 Contents](../v7/CONTENTS.md)
+<!-- AOIS-NAV-END -->

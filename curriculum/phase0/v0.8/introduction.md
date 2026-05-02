@@ -26,3 +26,12 @@ Because the primary AOIS project shares the same server, the portfolio database 
 5. run the validator
 6. break a scratch copy and observe validation failure
 7. do not start or install Postgres without explicit approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.8 Contents](CONTENTS.md)
+- Next: [v0.8 - Postgres Foundations Without Running A Database](notes.md)
+<!-- AOIS-NAV-END -->

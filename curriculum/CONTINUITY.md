@@ -118,3 +118,12 @@ The best practical protection is:
 4. keep an on-disk checkpoint snapshot through the installed toolchain
 
 If you want the strongest possible continuity, the next correct action is to commit the institution documents and the `v0.1` lesson pack to git.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Repository Blueprint](REPO-BLUEPRINT.md)
+- Next: [AOIS Curriculum Corpus Status](CORPUS-STATUS.md)
+<!-- AOIS-NAV-END -->

@@ -46,3 +46,12 @@ Expected outcome:
 - no workflow engine starts
 - no durable store is created
 - no MCP server, tool call, or provider call is used
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Contents](CONTENTS.md)
+- Next: [v22 - Durable Agent Workflows](notes.md)
+<!-- AOIS-NAV-END -->

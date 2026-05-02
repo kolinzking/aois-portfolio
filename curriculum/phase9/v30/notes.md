@@ -390,3 +390,12 @@ Checked 2026-05-02.
 - OpenTelemetry trace concepts documentation: used for platform observability and trace vocabulary.
 - OWASP Application Security Verification Standard project page: used for secure product-control and verification framing.
 - v30 is a local internal-platform contract. It does not provision infrastructure, run templates, publish APIs, sync GitOps, or call providers.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 Introduction](introduction.md)
+- Next: [v30 Lab](lab.md)
+<!-- AOIS-NAV-END -->

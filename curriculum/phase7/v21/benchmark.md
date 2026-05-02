@@ -40,3 +40,12 @@ The benchmark covers:
 
 It tests registry policy only. It does not start MCP and does not execute any
 selected tool.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Failure Story](failure-story.md)
+- Next: [v21 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

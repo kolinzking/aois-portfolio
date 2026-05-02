@@ -343,3 +343,12 @@ You are ready to move on when you can:
 v20.2 uses this accounting layer for budget-aware routing. Once AOIS can see the
 cost of a step, it can decide whether to use a smaller model, skip a tool, ask a
 human, or stop the workflow.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Introduction](introduction.md)
+- Next: [v20.1 Lab](lab.md)
+<!-- AOIS-NAV-END -->

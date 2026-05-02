@@ -42,3 +42,12 @@ In `v0.3`, the benchmark shifts from script behavior to repository discipline:
 - can you make small meaningful commits?
 - can you inspect history?
 - can the repo explain how AOIS changed over time?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Failure Story](failure-story.md)
+- Next: [v0.2 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

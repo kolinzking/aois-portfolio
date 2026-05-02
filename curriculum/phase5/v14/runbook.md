@@ -37,3 +37,12 @@ If validation fails:
 7. Restore performance controls.
 8. Restore required live checks.
 9. Rerun validation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14 Lab](lab.md)
+- Next: [v14 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

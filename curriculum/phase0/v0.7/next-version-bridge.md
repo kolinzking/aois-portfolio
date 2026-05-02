@@ -21,3 +21,12 @@ Carry forward:
 - structure before parsing
 - gate external dependencies
 - keep server resources controlled
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Looking Forward](looking-forward.md)
+- Next: [v0.8 Contents](../v0.8/CONTENTS.md)
+<!-- AOIS-NAV-END -->

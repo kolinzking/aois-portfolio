@@ -19,3 +19,12 @@ Authoring status: authored
 - serverless event workflows
 - managed runtime governance
 - cost and credential discipline
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 3 Looking Forward](../phase3/looking-forward.md)
+- Next: [Phase 4 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

@@ -19,3 +19,12 @@ AOIS needs eval discipline before it changes model behavior.
 Run the validator and simulator.
 
 Focus on why the simulator blocks training even when the adapted candidate improves one case.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Contents](CONTENTS.md)
+- Next: [v15 - Fine-Tuning And Adaptation Without Training](notes.md)
+<!-- AOIS-NAV-END -->

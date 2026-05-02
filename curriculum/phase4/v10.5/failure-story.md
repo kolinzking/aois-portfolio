@@ -32,3 +32,12 @@ Keep `v10.5` as a gate.
 Managed agents may be useful later, but they must not be created just because they are convenient. AOIS needs to prove which tools the agent may call, what data it may send, what it costs, how it is audited, and how it is rolled back.
 
 Lesson learned: agent orchestration is a control boundary, not just an API feature.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Runbook](runbook.md)
+- Next: [v10.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

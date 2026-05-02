@@ -64,3 +64,12 @@ Every completed version should leave behind:
 
 The curriculum is not complete when the learner has read it.
 It is complete when the learner can reproduce, explain, debug, defend, and extend the system.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Version Standard](VERSION-STANDARD.md)
+- Next: [AOIS Codex Live Teacher Mode](CODEX-GUIDE-MODE.md)
+<!-- AOIS-NAV-END -->

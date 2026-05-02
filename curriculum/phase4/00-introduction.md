@@ -27,3 +27,12 @@ This phase may author plans and validators, but it must not call AWS, create Bed
 The Phase 4 spine is:
 
 `managed model plan -> managed agent tradeoff -> event workflow -> managed runtime governance`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 4 Contents](CONTENTS.md)
+- Next: [v10 Contents](v10/CONTENTS.md)
+<!-- AOIS-NAV-END -->

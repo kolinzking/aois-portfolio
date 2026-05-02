@@ -30,3 +30,12 @@ and stoppable before anything touches a real environment
 v34 will connect policy verification, operator approval, UI/computer-use
 boundaries, audit evidence, stop controls, and rollback into the final Phase 10
 frontier lesson.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Looking Forward](looking-forward.md)
+- Next: [v34 Contents](../v34/CONTENTS.md)
+<!-- AOIS-NAV-END -->

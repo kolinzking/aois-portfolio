@@ -59,3 +59,12 @@ Institution status:
 Next authoring target:
 
 - `Phase 0`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Table Of Contents](TABLE-OF-CONTENTS.md)
+- Next: [AOIS Syllabus](SYLLABUS.md)
+<!-- AOIS-NAV-END -->

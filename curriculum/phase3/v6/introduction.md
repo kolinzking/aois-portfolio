@@ -21,3 +21,12 @@ On this shared server, Kubernetes practice must not create workloads unless reso
 3. explain each resource
 4. explain why `kubectl apply` is gated
 5. do not create cluster resources without approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Contents](CONTENTS.md)
+- Next: [v6 - Kubernetes Plan Without Applying Resources](notes.md)
+<!-- AOIS-NAV-END -->

@@ -439,3 +439,12 @@ Utilization, memory, temperature, power, pod-to-GPU mapping, scheduling events, 
 `v13.5` defines the GPU infrastructure layer.
 
 `v14` moves to high-throughput inference serving, where AOIS starts reasoning about throughput, concurrency, and serving efficiency.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 Introduction](introduction.md)
+- Next: [v13.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -51,3 +51,12 @@ Escalate to a human operator if:
 - a sensitive tool lacks approval policy
 - a write or privileged tool is requested
 - any live execution flag is enabled
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v21 Lab](lab.md)
+- Next: [v21 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

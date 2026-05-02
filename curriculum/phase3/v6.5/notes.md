@@ -388,3 +388,12 @@ Because RBAC and network policy can change live cluster behavior.
 `v6.5` adds identity and trust.
 
 `v7` packages the manifests into a Helm chart so deployment configuration can become reusable without losing these controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Introduction](introduction.md)
+- Next: [v6.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

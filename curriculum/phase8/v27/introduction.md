@@ -55,3 +55,12 @@ Expected simulator result:
   "total_cases": 12
 }
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Contents](CONTENTS.md)
+- Next: [v27 - Auth, Tenancy, And Policy-Aware Access](notes.md)
+<!-- AOIS-NAV-END -->

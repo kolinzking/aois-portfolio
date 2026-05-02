@@ -32,3 +32,12 @@ v22 intentionally does not run a workflow engine or create a durable store. It
 proves the state model first. Live execution would require resource review,
 persistence design, observability, audit sinks, approval UX, and integration
 tests with the v20.2 router and v21 registry.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Benchmark](benchmark.md)
+- Next: [v22 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

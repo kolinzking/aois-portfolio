@@ -559,3 +559,12 @@ Answer key:
 v18 gives AOIS a response model for reliability failures.
 
 v19 moves into chaos engineering: how to test AOIS reliability assumptions safely through tabletop experiments, guardrails, blast-radius control, and no live fault injection.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Introduction](introduction.md)
+- Next: [v18 Lab](lab.md)
+<!-- AOIS-NAV-END -->

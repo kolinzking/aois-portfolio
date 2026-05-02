@@ -36,3 +36,12 @@ Read the diff before staging or committing.
 Git mistakes are often judgment failures, not command failures.
 
 The command can be valid and the commit can still be bad if unrelated changes are mixed together.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.3 Runbook](runbook.md)
+- Next: [v0.3 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

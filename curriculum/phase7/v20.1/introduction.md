@@ -49,3 +49,12 @@ The new files are:
 This is still AOIS-P only. The primary AOIS system is excluded, no runtime is
 started, no tool is executed, no provider call is made, and no billing API is
 called.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.1 Contents](CONTENTS.md)
+- Next: [v20.1 - Per-Incident and Per-Step Cost Accounting](notes.md)
+<!-- AOIS-NAV-END -->

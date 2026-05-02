@@ -31,3 +31,12 @@ important outcome is that AOIS can explain:
 - when to alert
 - when to freeze risky changes
 - when to route agent actions to human review
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Failure Story](failure-story.md)
+- Next: [v17.5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

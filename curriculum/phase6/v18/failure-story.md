@@ -34,3 +34,12 @@ Prevent recurrence by requiring:
 - action item owners and due dates
 
 Availability alone does not prove an AI infrastructure system is safe to trust.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Runbook](runbook.md)
+- Next: [v18 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -77,3 +77,12 @@ Defend why v27 models access locally before implementing SSO or sessions. The
 system should first prove policy shape, deny order, tenant boundaries,
 redaction gates, approval separation, and audit events before wiring those
 decisions to live identity infrastructure.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 - Auth, Tenancy, And Policy-Aware Access](notes.md)
+- Next: [v27 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

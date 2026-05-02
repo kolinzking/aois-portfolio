@@ -49,3 +49,12 @@ Prevent repeat failure by keeping governance close to the action boundary:
 
 The lesson is simple: AI output is not an operational command until policy says
 it is allowed.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Runbook](runbook.md)
+- Next: [v19.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

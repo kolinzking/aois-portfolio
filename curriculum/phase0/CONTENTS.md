@@ -29,3 +29,12 @@ Authoring status: authored
 3. continue in order through `v0.8`
 4. complete [phase-capstone.md](phase-capstone.md)
 5. read [looking-forward.md](looking-forward.md)
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [AOIS Reading Order](../READING-ORDER.md)
+- Next: [Phase 0 - Foundations That Carry The Whole System](00-introduction.md)
+<!-- AOIS-NAV-END -->

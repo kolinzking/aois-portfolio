@@ -29,3 +29,12 @@ worth what it consumed.
 
 v20.1 will attach cost and usage records to the responder steps introduced in
 v20.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Looking Forward](looking-forward.md)
+- Next: [v20.1 Contents](../v20.1/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -23,3 +23,12 @@ The endpoint must define request shape, response shape, provider gating, and bas
 This is not a real model call.
 
 It is the service boundary and response contract that future model routing will use after provider integration is explicitly approved.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Benchmark](benchmark.md)
+- Next: [v1 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

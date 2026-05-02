@@ -25,3 +25,12 @@ Severity, latency, cost, and approval state should shape model path decisions.
 No provider call is made.
 
 This version plans routing behavior; it does not prove live provider latency, quality, rate limits, or failures.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Benchmark](benchmark.md)
+- Next: [v2 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -25,3 +25,12 @@ Artifacts:
 
 The version prepares AOIS for Phase 7 by making tool-using agents subject to
 policy before they gain real capabilities.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Benchmark](benchmark.md)
+- Next: [v19.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

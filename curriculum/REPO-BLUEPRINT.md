@@ -111,3 +111,12 @@ Examples:
 - `infra/` turns delivery into a normal engineering activity instead of a final topic
 
 That reuse is part of the learning design.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Source Currency](SOURCE-CURRENCY.md)
+- Next: [AOIS Continuity Protocol](CONTINUITY.md)
+<!-- AOIS-NAV-END -->

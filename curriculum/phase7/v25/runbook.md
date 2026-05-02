@@ -65,3 +65,12 @@ Escalate to a human operator if:
 - sandbox boundaries are unclear
 - rollback cannot be proven
 - dry-run output conflicts with expected state
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Lab](lab.md)
+- Next: [v25 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

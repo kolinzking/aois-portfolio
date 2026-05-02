@@ -33,3 +33,12 @@ Read in this order:
 4. Explain each publish, block, and hold decision.
 5. Break and restore one catalog gate, one API gate, one policy gate, one release integration gate, and one support gate.
 6. Read the bridge into Phase 10.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Next Version Bridge](../v29/next-version-bridge.md)
+- Next: [v30 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

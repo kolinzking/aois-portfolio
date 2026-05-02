@@ -61,3 +61,12 @@ If live GPU work is requested:
 8. Define fallback route and rollback.
 9. Define observability.
 10. Verify primary AOIS separation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Lab](lab.md)
+- Next: [v13 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

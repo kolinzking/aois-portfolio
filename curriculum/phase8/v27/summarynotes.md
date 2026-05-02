@@ -31,3 +31,12 @@ v27 does not implement live login, SSO, token validation, cookie sessions,
 database row-level security, or a real policy engine. It intentionally freezes
 the access contract first so the live implementation in a future product can
 be tested against known allow and deny behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Benchmark](benchmark.md)
+- Next: [v27 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

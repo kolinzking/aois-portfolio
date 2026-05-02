@@ -421,3 +421,12 @@ It isolates events that fail processing so the main stream can continue.
 `v17` defines the streaming path.
 
 `v17.5` defines SLOs and error budgets for services, agents, cost, and quality.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 Introduction](introduction.md)
+- Next: [v17 Lab](lab.md)
+<!-- AOIS-NAV-END -->

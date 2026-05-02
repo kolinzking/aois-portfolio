@@ -42,3 +42,12 @@ The benchmark covers:
 
 It tests workflow policy only. It does not start a workflow engine, create a
 durable store, start MCP, execute tools, or call a provider.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Failure Story](failure-story.md)
+- Next: [v22 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

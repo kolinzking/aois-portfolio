@@ -46,3 +46,12 @@ Expected result: validation and simulation pass while `agent_runtime_started`,
    missing control.
 6. Explain why a mutating tool routes to human approval.
 7. Answer the mastery checkpoint in [notes.md](notes.md).
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 7 Introduction](../00-introduction.md)
+- Next: [v20 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

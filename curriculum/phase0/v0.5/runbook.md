@@ -46,3 +46,12 @@ If the category is `unknown`:
 - inspect the message wording
 - inspect `app/analysis.py`
 - preserve the raw signal rather than pretending the message is safe
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Lab](lab.md)
+- Next: [v0.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

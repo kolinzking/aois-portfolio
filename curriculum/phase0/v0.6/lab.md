@@ -95,3 +95,12 @@ Record:
 - analyze response
 - validation failure
 - confirmation that server was stopped
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 - FastAPI Without AI](notes.md)
+- Next: [v0.6 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

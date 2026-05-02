@@ -26,3 +26,12 @@ behavior changes were tested, compared, rolled out, and accepted.
 
 v29 will focus on experiments, version comparison, rollout evidence, and
 inspection of model delivery decisions.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Looking Forward](looking-forward.md)
+- Next: [v29 Contents](../v29/CONTENTS.md)
+<!-- AOIS-NAV-END -->

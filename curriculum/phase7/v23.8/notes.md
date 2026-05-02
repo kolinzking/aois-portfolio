@@ -307,3 +307,12 @@ Claims supported:
 - Agent systems need guardrails, approval, and human review boundaries.
 - Agent operations require observability and traces.
 - Runtime safety signals can require blocking or intervention.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Introduction](introduction.md)
+- Next: [v23.8 Lab](lab.md)
+<!-- AOIS-NAV-END -->

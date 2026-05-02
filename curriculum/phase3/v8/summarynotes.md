@@ -21,3 +21,12 @@ Sync still mutates the cluster, so live ArgoCD actions remain gated.
 The Application is not applied.
 
 That protects the shared cluster, but no live reconciliation behavior is proven yet.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Benchmark](benchmark.md)
+- Next: [v8 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

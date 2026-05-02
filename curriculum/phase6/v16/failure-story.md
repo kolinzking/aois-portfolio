@@ -19,3 +19,12 @@ Add shared correlation fields and validate the telemetry plan before runtime ins
 Require trace, span, request, incident, and route identifiers before live telemetry deployment.
 
 Lesson learned: observability starts with correlation design.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 Runbook](runbook.md)
+- Next: [v16 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

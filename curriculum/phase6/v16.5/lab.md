@@ -61,3 +61,12 @@ Explain:
 Defend this decision:
 
 AOIS should not enable live agent tracing until it has step taxonomy, tool-call trace policy, redaction tests, cardinality budget, sampling policy, incident timeline dashboard, trace storage budget, rollback, and primary AOIS separation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 - Agent And Incident Tracing Without Runtime](notes.md)
+- Next: [v16.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

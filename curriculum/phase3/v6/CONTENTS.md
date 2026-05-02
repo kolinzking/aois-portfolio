@@ -40,3 +40,12 @@ Authoring status: authored
 4. explain quota, limits, deployment, and service
 5. do not apply manifests without approval
 6. complete the mastery checkpoint before `v6.5`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 3 Introduction](../00-introduction.md)
+- Next: [v6 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

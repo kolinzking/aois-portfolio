@@ -19,3 +19,12 @@ Quantization can reduce memory and improve deployment economics, but it must be 
 This version does not quantize a real model.
 
 That is intentional. It teaches precision tradeoff reasoning before artifact work.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15.5 Benchmark](benchmark.md)
+- Next: [v15.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

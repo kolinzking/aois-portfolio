@@ -23,3 +23,12 @@ Compare chart controls to the original manifests.
 ## What This Taught Me
 
 Packaging must preserve safety controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 Runbook](runbook.md)
+- Next: [v7 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

@@ -59,3 +59,12 @@ Explain:
 Defend this decision:
 
 AOIS should not run high-throughput serving until capacity, model download, runtime selection, batching policy, concurrency limits, latency SLO, throughput SLO, cache policy, fallback route, rollback, and primary AOIS separation are approved.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14 - High-Throughput Inference Serving Without Runtime](notes.md)
+- Next: [v14 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

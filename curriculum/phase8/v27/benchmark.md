@@ -39,3 +39,12 @@ Pass means:
 
 Fail means the access contract is incomplete. Fix the plan or simulator before
 moving into Phase 9 delivery and release controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Failure Story](failure-story.md)
+- Next: [v27 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

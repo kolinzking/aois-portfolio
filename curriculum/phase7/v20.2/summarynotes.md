@@ -23,3 +23,12 @@ value.
 The selected route is not executed. That is intentional. Execution requires
 governed tools, ownership, schemas, approval boundaries, observability, and live
 budget reconciliation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Benchmark](benchmark.md)
+- Next: [v20.2 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -29,3 +29,12 @@ The bridge from v26 to v27 is:
 ```text
 show operators what AOIS is doing -> control who may see and act on each state
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 Looking Forward](looking-forward.md)
+- Next: [v27 Contents](../v27/CONTENTS.md)
+<!-- AOIS-NAV-END -->

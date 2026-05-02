@@ -51,3 +51,12 @@ Escalate to a human operator if:
 - idempotency collision is ambiguous
 - workflow state and checkpoint state disagree
 - any live runtime flag is enabled
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Lab](lab.md)
+- Next: [v22 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

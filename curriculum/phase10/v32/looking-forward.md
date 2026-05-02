@@ -24,3 +24,12 @@ v32 asks whether AOIS-P can place inference safely. v33 asks whether an
 adversary can manipulate the inputs, prompts, tools, policies, media, edge
 state, or operator workflow so that the system makes a bad decision while
 appearing compliant.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Summary Notes](summarynotes.md)
+- Next: [v32 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

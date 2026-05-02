@@ -37,3 +37,12 @@ If live sync is requested:
 - confirm manual sync policy
 - get explicit approval
 - record resource usage after sync
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Lab](lab.md)
+- Next: [v8 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

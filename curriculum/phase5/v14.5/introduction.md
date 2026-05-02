@@ -19,3 +19,12 @@ AOIS needs caching discipline before cache infrastructure exists.
 Run the validator and simulator.
 
 Focus on what each cache layer saves and what correctness boundary it introduces.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 Contents](CONTENTS.md)
+- Next: [v14.5 - Performance Engineering And Caching Without Runtime](notes.md)
+<!-- AOIS-NAV-END -->

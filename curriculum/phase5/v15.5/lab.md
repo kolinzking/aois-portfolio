@@ -59,3 +59,12 @@ Explain:
 Defend this decision:
 
 AOIS should not quantize or serve a lower-precision artifact until model approval, method review, calibration review, quality eval, task regression eval, memory benchmark, latency benchmark, fallback precision, rollback, and primary AOIS separation exist.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15.5 - Quantization And Memory Economics Without Runtime](notes.md)
+- Next: [v15.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

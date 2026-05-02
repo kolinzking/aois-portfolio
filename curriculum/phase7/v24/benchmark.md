@@ -36,3 +36,12 @@ Pass means:
 
 Fail means AOIS-P is not ready to reason about multi-agent collaboration. Fix
 the plan or simulator before moving to v25.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Failure Story](failure-story.md)
+- Next: [v24 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

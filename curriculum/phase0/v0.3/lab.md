@@ -106,3 +106,12 @@ Score yourself from `1` to `5`:
 - `1`: Git still feels like magic or danger.
 
 Minimum pass: `4`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.3 - Git As Engineering Memory](notes.md)
+- Next: [v0.3 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

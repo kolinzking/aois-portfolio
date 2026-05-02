@@ -65,3 +65,12 @@ If the server is still running after the lab:
 
 - stop it with `Ctrl-C`
 - confirm no persistent portfolio runtime remains active
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v1 Lab](lab.md)
+- Next: [v1 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

@@ -27,3 +27,12 @@ Authoring status: authored
 4. Explain every autonomy decision gate.
 5. Break one kill switch, evaluation, safety, budget, or observability gate.
 6. Restore the plan and read the bridge into v24.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 Next Version Bridge](../v23.5/next-version-bridge.md)
+- Next: [v23.8 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

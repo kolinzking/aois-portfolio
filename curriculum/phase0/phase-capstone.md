@@ -95,3 +95,12 @@ The learner passes if they can:
 - describe the Phase 1 capability gap clearly
 - defend the order of Phase 0 without saying "because the curriculum says so"
 - confirm no external provider call, database server, or persistent runtime is used without approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v0.8 Next Version Bridge](v0.8/next-version-bridge.md)
+- Next: [Phase 0 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -474,3 +474,12 @@ The system should not infer that a provider call is allowed.
 `Linux -> Bash -> Git -> HTTP -> Python -> API -> LLM planning -> persistence design`
 
 The phase capstone combines the pieces into a self-paced AOIS portfolio foundation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.8 Introduction](introduction.md)
+- Next: [v0.8 Lab](lab.md)
+<!-- AOIS-NAV-END -->

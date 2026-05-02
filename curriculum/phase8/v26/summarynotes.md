@@ -34,3 +34,12 @@ contract first.
 That tradeoff keeps Phase 8 aligned with the existing curriculum style: define
 the operational contract, validate it locally, then introduce live product
 surface implementation after access policy is clear.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 Benchmark](benchmark.md)
+- Next: [v26 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

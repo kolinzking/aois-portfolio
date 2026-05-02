@@ -27,3 +27,12 @@ discipline.
 
 v31 will focus on multimodal prompting, cross-modal analysis, and interface
 changes for non-text signals.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 Looking Forward](looking-forward.md)
+- Next: [Phase 9 Looking Forward](../looking-forward.md)
+<!-- AOIS-NAV-END -->

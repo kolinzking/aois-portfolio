@@ -28,3 +28,12 @@ The schema is validated as text in this version.
 
 That protects the shared server, but it does not prove runtime database behavior.
 Live Postgres execution is a later, approval-gated step.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.8 Benchmark](benchmark.md)
+- Next: [v0.8 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

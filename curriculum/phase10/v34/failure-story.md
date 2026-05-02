@@ -44,3 +44,12 @@ v34 fixes the failure by requiring:
 Do not let a computer-use plan touch a real environment until governance proves
 that the action is allowed, bounded, observable, reversible, stoppable, and
 approved by the right operator.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 Runbook](runbook.md)
+- Next: [v34 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

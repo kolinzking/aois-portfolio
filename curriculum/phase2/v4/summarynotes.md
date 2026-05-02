@@ -25,3 +25,12 @@ This version completes the first stage only.
 The container is not built or run by default.
 
 That protects the shared server, but it means runtime image behavior is not proven yet.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Benchmark](benchmark.md)
+- Next: [v4 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

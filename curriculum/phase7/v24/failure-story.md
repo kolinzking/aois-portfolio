@@ -40,3 +40,12 @@ python3 examples/simulate_multi_agent_collaboration.py
 
 Then review any new specialist role for owner, allowed targets, context scope,
 audit behavior, and no direct tool/provider capability.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Runbook](runbook.md)
+- Next: [v24 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

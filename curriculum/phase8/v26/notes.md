@@ -332,3 +332,12 @@ Checked 2026-05-02.
 - OpenTelemetry trace concepts documentation: used for trace, span, event, and observability vocabulary.
 - OpenAI API tools and evals documentation: used for current agent/tool/evaluation terminology that appears in dashboard state.
 - v26 is a local product-surface state contract. It does not start a frontend, SSE stream, WebSocket, collector, provider call, or dashboard runtime.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v26 Introduction](introduction.md)
+- Next: [v26 Lab](lab.md)
+<!-- AOIS-NAV-END -->

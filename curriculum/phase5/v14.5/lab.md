@@ -59,3 +59,12 @@ Explain:
 Defend this decision:
 
 AOIS should not run live caching until backend approval, cache key review, TTL/invalidation review, privacy boundary, tenant isolation, hit-rate baseline, cost baseline, fallback route, rollback, and primary AOIS separation exist.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 - Performance Engineering And Caching Without Runtime](notes.md)
+- Next: [v14.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

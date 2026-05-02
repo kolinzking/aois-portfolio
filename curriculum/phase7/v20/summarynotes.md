@@ -33,3 +33,12 @@ v20 does not prove live agent behavior. That is intentional.
 It proves the local decision model first: allowed read-only steps, blocked
 secret paths, approval for mutation, evidence gathering, and fallback for
 malformed tool output.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Benchmark](benchmark.md)
+- Next: [v20 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

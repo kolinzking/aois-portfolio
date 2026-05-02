@@ -41,3 +41,12 @@ In `v0.6`, the measurement shifts from local CLI behavior to HTTP API behavior:
 - can the Python logic be exposed through FastAPI?
 - can request validation fail cleanly?
 - can the endpoint be inspected with `curl`?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Failure Story](failure-story.md)
+- Next: [v0.5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

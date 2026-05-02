@@ -15,3 +15,12 @@ It gives AOIS models, functions, validation, exceptions, and reusable modules.
 
 The analyzer is still deterministic.
 It is more structured than Bash, but it does not understand incidents like a reliable AI analysis layer.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Benchmark](benchmark.md)
+- Next: [v0.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

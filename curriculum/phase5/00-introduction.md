@@ -25,3 +25,12 @@ Understand what changes when AOIS owns model execution instead of only calling e
 GPU actions are gated.
 
 This phase may author plans, validators, and simulations, but it must not install drivers, download models, build images, run GPU containers, or consume paid GPU resources without explicit approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 5 Contents](CONTENTS.md)
+- Next: [v13 Contents](v13/CONTENTS.md)
+<!-- AOIS-NAV-END -->

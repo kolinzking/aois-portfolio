@@ -28,3 +28,12 @@ Manifests may be authored and validated locally, but `kubectl apply`, Helm insta
 The Phase 3 spine is:
 
 `container plan -> Kubernetes manifests -> identity -> Helm -> GitOps -> autoscaling`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 3 Contents](CONTENTS.md)
+- Next: [v6 Contents](v6/CONTENTS.md)
+<!-- AOIS-NAV-END -->

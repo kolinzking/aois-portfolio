@@ -50,3 +50,12 @@ Expected impact:
 - memory: no persistent runtime
 - network: none
 - external API/cloud usage: none
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Failure Story](failure-story.md)
+- Next: [v0.7 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

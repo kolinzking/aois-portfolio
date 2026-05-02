@@ -27,3 +27,12 @@ v30 does not start a portal, catalog, platform API, template engine,
 provisioner, Kubernetes apply, GitOps sync, or provider call. It intentionally
 proves the platform contract before any self-service path can mutate live
 infrastructure.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 Benchmark](benchmark.md)
+- Next: [v30 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

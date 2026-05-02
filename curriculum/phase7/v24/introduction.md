@@ -37,3 +37,12 @@ validator or simulator catches it.
 
 Do not add a live runtime in this version. The point is to prove the role and
 handoff policy before execution boundaries are introduced in v25.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 Contents](CONTENTS.md)
+- Next: [v24 - Multi-Agent Collaboration](notes.md)
+<!-- AOIS-NAV-END -->

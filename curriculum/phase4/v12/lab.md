@@ -103,3 +103,12 @@ Your defense must include:
 - budget and quota limits
 - rollback and incident response
 - primary AOIS separation
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v12 - Managed Runtime Governance Without Cloud Calls](notes.md)
+- Next: [v12 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

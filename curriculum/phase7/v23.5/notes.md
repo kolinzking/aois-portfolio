@@ -316,3 +316,12 @@ Claims supported:
 - Agent quality should be measured with reproducible evaluation workflows.
 - Evaluation systems use datasets, grading criteria, output items, and run metadata.
 - LLM application quality work benefits from traces, datasets, metrics, dashboards, and human feedback.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 Introduction](introduction.md)
+- Next: [v23.5 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -48,3 +48,12 @@ AOIS-P can now model:
 
 Phase 10 is authored. The next corpus task is end-to-end review across every
 phase before live teaching.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 10 Contents](CONTENTS.md)
+- Next: [v31 Contents](v31/CONTENTS.md)
+<!-- AOIS-NAV-END -->

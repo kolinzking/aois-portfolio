@@ -63,3 +63,12 @@ Escalate to a platform owner if:
 - cost or tenant controls are missing
 - release or model-delivery integrations are absent
 - support ownership is unclear
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 Lab](lab.md)
+- Next: [v30 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

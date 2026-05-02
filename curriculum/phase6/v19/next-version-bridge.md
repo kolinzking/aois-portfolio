@@ -17,3 +17,12 @@ The next lesson focuses on AI failure engineering and governance enforcement:
 unsafe outputs, policy boundaries, agent action gates, tool permissions,
 evidence requirements, and controls that stop autonomous systems from crossing
 operational limits.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Looking Forward](looking-forward.md)
+- Next: [v19.5 Contents](../v19.5/CONTENTS.md)
+<!-- AOIS-NAV-END -->

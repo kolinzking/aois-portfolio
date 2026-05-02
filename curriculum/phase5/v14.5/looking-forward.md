@@ -15,3 +15,12 @@ Carry forward these rules:
 ## What The Next Version Will Build On
 
 `v15` builds on performance engineering by introducing fine-tuning and adaptation decisions.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 Summary Notes](summarynotes.md)
+- Next: [v14.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

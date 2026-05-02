@@ -35,3 +35,12 @@ v23 intentionally does not run an orchestration framework. It proves loop
 semantics first. Live orchestration would require framework review, state schema
 review, observability, audit logs, integration tests with v20.2-v22, and clear
 resource limits before it should run.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Benchmark](benchmark.md)
+- Next: [v23 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

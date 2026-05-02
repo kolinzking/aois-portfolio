@@ -384,3 +384,12 @@ Checked 2026-05-02.
 - OpenAI safety best-practices guidance: used for guardrail, adversarial testing, and safety-review framing.
 - SLSA specification v1.2: used for release evidence, provenance, and verification language that connects model delivery to release controls.
 - v29 is a local experiment and model-delivery simulation. It does not call eval services, train models, upload datasets, use a model registry, or call providers.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Introduction](introduction.md)
+- Next: [v29 Lab](lab.md)
+<!-- AOIS-NAV-END -->

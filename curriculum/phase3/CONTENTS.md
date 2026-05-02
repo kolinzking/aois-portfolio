@@ -26,3 +26,12 @@ Authoring status: authored
 1. complete [v6](v6/notes.md)
 2. do not apply manifests without approval
 3. continue through `v9` only after resource-gated infrastructure discipline is clear
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 2 Looking Forward](../phase2/looking-forward.md)
+- Next: [Phase 3 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

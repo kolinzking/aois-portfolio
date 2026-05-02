@@ -45,3 +45,12 @@ observability hold, update block, rollback block, and policy block.
 v32 passes only when validator status is `pass`, simulator status is `pass`, 18
 of 18 cases pass, score is `1.0`, runtime boundary flags remain false, and no
 placeholder marker remains in the v32 lesson pack.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Failure Story](failure-story.md)
+- Next: [v32 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

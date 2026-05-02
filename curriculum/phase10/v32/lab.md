@@ -65,3 +65,12 @@ Defend these choices:
 - offline execution requires cache, sync, freshness, and telemetry buffers
 - update channel and rollback are mandatory before live edge deployment
 - v32 models placement without loading a model or touching hardware
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 - Edge And Offline Inference](notes.md)
+- Next: [v32 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

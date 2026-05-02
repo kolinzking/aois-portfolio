@@ -544,3 +544,12 @@ references for durable tool-use and tool-safety concepts:
   https://developers.openai.com/api/docs/guides/tools
 - Model Context Protocol specification:
   https://modelcontextprotocol.io/specification/2025-11-25
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Introduction](introduction.md)
+- Next: [v20 Lab](lab.md)
+<!-- AOIS-NAV-END -->

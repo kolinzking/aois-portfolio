@@ -72,3 +72,12 @@ Defend these choices:
 - v33 red-team clearance gates v34 release
 - live targets, credentials, transactions, and high-impact actions are hard blocks
 - governance verification precedes computer use
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 - Governance Verification And Computer Use](notes.md)
+- Next: [v34 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

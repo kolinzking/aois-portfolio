@@ -26,3 +26,12 @@ shipping changes without enough release safety.
 
 v28 will focus on CI/CD, tests in delivery, image signing, release gates,
 rollout controls, model rollout control, and feature-flagged AI releases.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v27 Looking Forward](looking-forward.md)
+- Next: [Phase 8 Looking Forward](../looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -64,3 +64,12 @@ If you need live database practice later:
 - prefer an already-approved isolated database target
 - keep objects under `aois_p`
 - record disk and memory impact in `RESOURCE-USAGE.md`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.8 Lab](lab.md)
+- Next: [v0.8 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

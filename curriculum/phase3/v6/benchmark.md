@@ -38,3 +38,12 @@ At `v6`, good means:
 - service is `ClusterIP`
 - provider calls are disabled
 - no live cluster mutation happened
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Failure Story](failure-story.md)
+- Next: [v6 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

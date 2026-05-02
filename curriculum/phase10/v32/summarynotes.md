@@ -36,3 +36,12 @@ v32 does not start edge runtimes, load offline models, download models,
 quantize models, access devices, use GPUs or NPUs, read media, call providers,
 call the network, or approve live edge deployment. It models the decision
 surface before any live deployment work begins.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Benchmark](benchmark.md)
+- Next: [v32 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

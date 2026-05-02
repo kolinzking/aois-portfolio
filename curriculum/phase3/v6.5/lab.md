@@ -81,3 +81,12 @@ Record:
 - whether RBAC grants permissions
 - whether token automount is disabled
 - repo footprint
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 - Workload Identity And Trust Boundaries Without Applying Resources](notes.md)
+- Next: [v6.5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

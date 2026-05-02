@@ -15,3 +15,12 @@ Authoring status: authored
 `v6.5` will build on the manifest plan by adding identity and trust boundaries.
 
 The next question is not only "can the pod run?" but "what identity and permissions should the workload have?"
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Summary Notes](summarynotes.md)
+- Next: [v6 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

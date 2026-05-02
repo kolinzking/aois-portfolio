@@ -24,3 +24,12 @@ v23 will turn durable workflow state into orchestration decisions.
 The next step is a bounded loop that reads the current state, selects the next
 allowed action, records the outcome, and stops when the workflow is complete,
 blocked, timed out, or waiting for approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Summary Notes](summarynotes.md)
+- Next: [v22 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

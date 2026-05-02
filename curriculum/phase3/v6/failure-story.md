@@ -30,3 +30,12 @@ Record resource usage after any approved apply.
 ## What This Taught Me
 
 Kubernetes safety starts before live cluster mutation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Runbook](runbook.md)
+- Next: [v6 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

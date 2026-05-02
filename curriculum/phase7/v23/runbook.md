@@ -53,3 +53,12 @@ Escalate to a human operator if:
 - a registry block appears after an allowed route
 - approval state is ambiguous
 - any live runtime flag is enabled
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Lab](lab.md)
+- Next: [v23 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

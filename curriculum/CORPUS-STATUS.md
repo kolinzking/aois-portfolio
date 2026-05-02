@@ -126,3 +126,12 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 1. Run end-to-end corpus review
 2. Verify source currency and safety boundaries
 3. Run all validators and simulators
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Continuity Protocol](CONTINUITY.md)
+- Next: [AOIS Evaluation Card](EVALUATION-CARD.md)
+<!-- AOIS-NAV-END -->

@@ -599,3 +599,12 @@ This version uses stable Bash behavior and local command-line operation.
 No fast-moving external source is required for the core lesson.
 
 If this script is later adapted for production shell entrypoints, CI runners, or container init behavior, add source notes for that runtime because shell behavior, working directories, and available commands may differ.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Introduction](introduction.md)
+- Next: [v0.2 Lab](lab.md)
+<!-- AOIS-NAV-END -->

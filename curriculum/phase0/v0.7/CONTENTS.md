@@ -42,3 +42,12 @@ Authoring status: authored
 6. complete the break lab before reading the answer key
 7. use [benchmark.md](benchmark.md) to score readiness
 8. do not move to `v0.8` until the mastery checkpoint can be answered
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Next Version Bridge](../v0.6/next-version-bridge.md)
+- Next: [v0.7 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

@@ -18,3 +18,12 @@ It can also classify simple text patterns, but that classification is brittle.
 
 The scripts improve reuse and first-pass interpretation, but they are still deterministic and shallow.
 They report and match signals; they do not truly understand incidents.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Benchmark](benchmark.md)
+- Next: [v0.2 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

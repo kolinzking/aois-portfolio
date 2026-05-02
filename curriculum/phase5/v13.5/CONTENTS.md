@@ -29,3 +29,12 @@ The goal is to understand the infrastructure layer that must exist before GPU in
 5. Answer the mastery checkpoint in [notes.md](notes.md#mastery-checkpoint).
 
 Do not continue if you cannot explain operator, device plugin, scheduling, MIG awareness, and GPU observability.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Next Version Bridge](../v13/next-version-bridge.md)
+- Next: [v13.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

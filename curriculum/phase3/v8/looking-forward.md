@@ -15,3 +15,12 @@ Authoring status: authored
 `v9` will build autoscaling and event-driven planning on top of the GitOps flow.
 
 The next question is how AOIS should scale safely under changing load.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Summary Notes](summarynotes.md)
+- Next: [v8 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

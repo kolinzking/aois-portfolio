@@ -17,3 +17,12 @@ Reject the adapted candidate, expand eval coverage, and resolve regressions befo
 ## Prevention
 
 Require baseline, adapted, holdout, and regression evals before live training.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Runbook](runbook.md)
+- Next: [v15 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

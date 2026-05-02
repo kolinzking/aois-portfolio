@@ -41,3 +41,12 @@ Authoring status: authored
 5. compile and run the validator
 6. do not build or run Docker without approval
 7. complete the mastery checkpoint before `v5`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 2 Introduction](../00-introduction.md)
+- Next: [v4 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

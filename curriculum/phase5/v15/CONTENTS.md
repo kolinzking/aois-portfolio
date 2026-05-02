@@ -26,3 +26,12 @@ This version teaches fine-tuning and adaptation decision-making without training
 4. Compare base and adapted-candidate scores.
 5. Explain the regression.
 6. Complete the mastery checkpoint.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14.5 Next Version Bridge](../v14.5/next-version-bridge.md)
+- Next: [v15 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

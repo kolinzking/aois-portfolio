@@ -115,3 +115,12 @@ The other wrong model is:
 The AOIS model is:
 
 `Codex teaches, the learner operates, the repo records proof`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Quality Gates](QUALITY-GATES.md)
+- Next: [AOIS Source Currency](SOURCE-CURRENCY.md)
+<!-- AOIS-NAV-END -->

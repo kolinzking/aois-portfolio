@@ -19,3 +19,12 @@ High-throughput serving is a tradeoff between throughput, latency, queueing, con
 This version does not run a real serving runtime.
 
 That is intentional. It teaches performance reasoning before runtime cost.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14 Benchmark](benchmark.md)
+- Next: [v14 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

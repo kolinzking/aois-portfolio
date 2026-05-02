@@ -28,3 +28,12 @@ The next corpus step is end-to-end review rather than a new Phase 10 version:
 - verify safety boundaries
 - verify phase-to-phase continuity
 - prepare the corpus for live teaching review
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v34 Summary Notes](summarynotes.md)
+- Next: [v34 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

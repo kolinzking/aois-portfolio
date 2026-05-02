@@ -428,3 +428,12 @@ Checked 2026-05-02.
 - vLLM documentation: used for inference-serving and resource-budget vocabulary at a conceptual level.
 - OpenAI safety best-practices guidance: used for safety-review and constrained deployment framing.
 - v32 is a local edge/offline placement contract. It does not run a model, start device software, deploy Kubernetes workloads, sync updates, or call providers.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v32 Introduction](introduction.md)
+- Next: [v32 Lab](lab.md)
+<!-- AOIS-NAV-END -->

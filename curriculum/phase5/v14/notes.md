@@ -418,3 +418,12 @@ It changes serving behavior and model/runtime assumptions, so it needs design re
 `v14` introduces high-throughput serving tradeoffs.
 
 `v14.5` goes deeper into performance engineering and caching, including prefix reuse, cache correctness, and latency/throughput tradeoffs.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14 Introduction](introduction.md)
+- Next: [v14 Lab](lab.md)
+<!-- AOIS-NAV-END -->

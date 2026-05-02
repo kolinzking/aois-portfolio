@@ -44,3 +44,12 @@ Escalate to a human operator if:
 - a non-high-severity route crosses the expensive threshold
 - remaining budget cannot preserve reserve
 - any live execution flag is enabled
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Lab](lab.md)
+- Next: [v20.2 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

@@ -25,3 +25,12 @@ This version teaches those tradeoffs without starting any runtime.
 Run the validator and simulator, then compare throughput gain versus p95 latency.
 
 Focus on why more throughput can be worse if it creates tail-latency or overload problems.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14 Contents](CONTENTS.md)
+- Next: [v14 - High-Throughput Inference Serving Without Runtime](notes.md)
+<!-- AOIS-NAV-END -->

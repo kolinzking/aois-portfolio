@@ -29,3 +29,12 @@ Keep sync gated until resource and deployment impact is approved.
 GitOps is deployment power through Git.
 
 That power needs review and approval boundaries.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Runbook](runbook.md)
+- Next: [v8 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

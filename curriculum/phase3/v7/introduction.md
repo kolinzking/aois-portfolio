@@ -21,3 +21,12 @@ Helm gives structure, but installing a chart still changes the live cluster, so 
 3. inspect templates
 4. run the validator
 5. explain why `helm install` is gated
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 Contents](CONTENTS.md)
+- Next: [v7 - Helm Packaging Without Installing A Release](notes.md)
+<!-- AOIS-NAV-END -->

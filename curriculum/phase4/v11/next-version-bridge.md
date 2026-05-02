@@ -22,3 +22,12 @@ The next version focuses on observability and cost controls.
 Event-driven systems can fail silently if queues grow, retries loop, DLQs fill, or cost increases in the background.
 
 `v12` will plan how AOIS watches event workflows before trusting them in live infrastructure.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Looking Forward](looking-forward.md)
+- Next: [v12 Contents](../v12/CONTENTS.md)
+<!-- AOIS-NAV-END -->

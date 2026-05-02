@@ -864,3 +864,12 @@ This version uses stable Linux command behavior and local terminal observation.
 No fast-moving external source is required for the core lesson.
 
 If this version is later adapted to containers, remote VMs, or Kubernetes nodes, add source notes for that runtime because process, filesystem, and permission visibility can change under isolation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 Introduction](introduction.md)
+- Next: [v0.1 Lab](lab.md)
+<!-- AOIS-NAV-END -->

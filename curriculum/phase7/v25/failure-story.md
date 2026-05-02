@@ -44,3 +44,12 @@ python3 examples/simulate_safe_execution_boundaries.py
 
 Then review every new action category for approval, sandbox, filesystem,
 network, credential, rollback, dry-run, and output validation requirements.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Runbook](runbook.md)
+- Next: [v25 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

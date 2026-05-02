@@ -22,3 +22,12 @@ AOIS needs security checks before model calls, logs, containers, and deployment.
 4. run secret-like input
 5. explain redaction and provider gating
 6. keep real secrets out of the repo
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 Contents](CONTENTS.md)
+- Next: [v5 - API And LLM Security Foundations](notes.md)
+<!-- AOIS-NAV-END -->

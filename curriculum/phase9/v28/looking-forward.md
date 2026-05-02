@@ -26,3 +26,12 @@ v28 can decide whether a release candidate should promote, block, or hold. v29
 adds evidence over time: which model or behavior changed, what experiment
 compared it, what rollout evidence was collected, and why the change was
 accepted or rejected.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Summary Notes](summarynotes.md)
+- Next: [v28 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

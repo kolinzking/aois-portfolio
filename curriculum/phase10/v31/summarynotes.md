@@ -27,3 +27,12 @@ A local AOIS-P multimodal contract:
 v31 does not process real images, audio, video, or documents. It intentionally
 proves the multimodal control contract before any live media intake, model
 runtime, OCR, transcription, upload, provider call, or network path exists.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Benchmark](benchmark.md)
+- Next: [v31 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

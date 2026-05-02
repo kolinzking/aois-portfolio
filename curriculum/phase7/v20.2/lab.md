@@ -66,3 +66,12 @@ Explain why each case chooses its route:
 Defend why v20.2 does not execute the selected route. The selected route is a
 policy outcome; tool execution and live provider calls remain future controlled
 integration work.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 - Budget-Aware Routing](notes.md)
+- Next: [v20.2 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

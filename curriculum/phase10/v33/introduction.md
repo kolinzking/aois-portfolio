@@ -29,3 +29,12 @@ Use the v33 plan to review sanitized red-team cases only. Every case must have:
 - policy, tool, and data-boundary checks
 - telemetry and sanitized evidence
 - severity, mitigation owner, and regression status
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Contents](CONTENTS.md)
+- Next: [v33 - Adversarial Testing And Red Teaming](notes.md)
+<!-- AOIS-NAV-END -->

@@ -30,3 +30,12 @@ Focus on the contract:
 - what must be approved before live GPU work
 
 Do not install drivers, download models, build images, or start GPU services during this lesson.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Contents](CONTENTS.md)
+- Next: [v13 - GPU-Backed Inference Services Without GPU Runtime](notes.md)
+<!-- AOIS-NAV-END -->

@@ -426,3 +426,12 @@ This lesson is plan and simulation only; live telemetry needs docs review and re
 `v16` defines unified telemetry.
 
 `v16.5` builds deeper incident and agent tracing on top of these correlation rules.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 Introduction](introduction.md)
+- Next: [v16 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -78,3 +78,12 @@ To build a useful AI analysis service later, you first need:
 - a data shape for incidents and responses
 
 Phase 0 creates that floor.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 0 Contents](CONTENTS.md)
+- Next: [v0.1 Contents](v0.1/CONTENTS.md)
+<!-- AOIS-NAV-END -->

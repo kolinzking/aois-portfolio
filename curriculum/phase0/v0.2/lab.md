@@ -91,3 +91,12 @@ Score yourself from `1` to `5`:
 - `1`: script execution still feels random.
 
 Minimum pass: `4`.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 - Bash Scripting And First Automation](notes.md)
+- Next: [v0.2 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

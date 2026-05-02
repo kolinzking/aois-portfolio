@@ -48,3 +48,12 @@ fallback abuse, and policy confusion.
 v33 passes only when validator status is `pass`, simulator status is `pass`, 25
 of 25 cases pass, score is `1.0`, runtime boundary flags remain false, and no
 placeholder marker remains in the v33 lesson pack.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Failure Story](failure-story.md)
+- Next: [v33 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

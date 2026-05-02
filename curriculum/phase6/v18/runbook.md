@@ -48,3 +48,12 @@ The safe state is:
 If a real pager, ticketing, or chatops integration was started outside this
 lesson, confirm it is not part of the primary AOIS workload before changing it.
 This curriculum must not interfere with the primary project.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Lab](lab.md)
+- Next: [v18 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

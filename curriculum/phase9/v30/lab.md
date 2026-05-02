@@ -81,3 +81,12 @@ Defend why v30 models internal platform patterns locally before running a
 portal, catalog, platform API, or template engine. The system should prove
 capability contracts and safety gates before self-service can provision or
 mutate real infrastructure.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 - Internal Platform Patterns](notes.md)
+- Next: [v30 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

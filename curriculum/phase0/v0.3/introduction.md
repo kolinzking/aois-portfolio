@@ -37,3 +37,12 @@ Git is how the repo proves its own evolution.
 4. commit only coherent work
 5. do the break lab on purpose
 6. do not move on until Git status and diff feel readable
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.3 Contents](CONTENTS.md)
+- Next: [v0.3 - Git As Engineering Memory](notes.md)
+<!-- AOIS-NAV-END -->

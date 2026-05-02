@@ -27,3 +27,12 @@ v31 expands AOIS-P to non-text signals. v32 asks what changes when multimodal
 or model inference must run under edge constraints: limited compute, limited
 memory, intermittent connectivity, data locality, update constraints, and
 fallback requirements.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v31 Summary Notes](summarynotes.md)
+- Next: [v31 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

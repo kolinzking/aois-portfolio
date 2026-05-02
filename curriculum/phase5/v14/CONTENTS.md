@@ -28,3 +28,12 @@ This version compares high-throughput inference serving modes without running a 
 6. Answer the mastery checkpoint.
 
 Do not continue if you cannot explain batching, concurrency, queueing, backpressure, and p95 latency.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 Next Version Bridge](../v13.5/next-version-bridge.md)
+- Next: [v14 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

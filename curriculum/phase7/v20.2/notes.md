@@ -297,3 +297,12 @@ You are ready to move on when you can:
 v21 introduces MCP and governed tool registries. Budget-aware routing decides
 whether a route should be taken; governed tool registries decide which tools are
 available, owned, described, and safe to expose to that route.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Introduction](introduction.md)
+- Next: [v20.2 Lab](lab.md)
+<!-- AOIS-NAV-END -->

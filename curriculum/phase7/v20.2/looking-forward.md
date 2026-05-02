@@ -20,3 +20,12 @@ Carry forward these controls:
 v21 builds on this by governing the tool catalog itself. Once routes can select
 tools, AOIS needs registry ownership, schemas, scopes, lifecycle, and audit rules
 for those tools.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Summary Notes](summarynotes.md)
+- Next: [v20.2 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

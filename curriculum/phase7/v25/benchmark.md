@@ -36,3 +36,12 @@ Pass means:
 
 Fail means AOIS-P is not ready to bridge into a product surface. Fix the policy
 or simulator before moving to Phase 8.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Failure Story](failure-story.md)
+- Next: [v25 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

@@ -74,3 +74,12 @@ Defend why v24 stays local. Multi-agent collaboration changes ownership,
 context, and failure modes. AOIS-P first proves role ownership, handoff
 contract, shared state, loop limits, and escalation policy before introducing
 safe execution boundaries.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v24 - Multi-Agent Collaboration](notes.md)
+- Next: [v24 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

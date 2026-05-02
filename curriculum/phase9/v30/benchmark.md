@@ -35,3 +35,12 @@ Pass means:
 
 Fail means the platform abstraction contract is incomplete. Fix the plan or
 simulator before beginning Phase 10.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v30 Failure Story](failure-story.md)
+- Next: [v30 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

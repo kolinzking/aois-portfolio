@@ -40,3 +40,12 @@ Authoring status: authored
 4. explain source, destination, and sync policy
 5. do not apply or sync without approval
 6. complete the mastery checkpoint before `v9`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 Next Version Bridge](../v7/next-version-bridge.md)
+- Next: [v8 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

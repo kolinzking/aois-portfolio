@@ -26,3 +26,12 @@ This version closes Phase 5 with quantization and memory economics.
 4. Compare memory reduction and quality delta.
 5. Complete the break labs.
 6. Read the Phase 5 closeout in [../looking-forward.md](../looking-forward.md).
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Next Version Bridge](../v15/next-version-bridge.md)
+- Next: [v15.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

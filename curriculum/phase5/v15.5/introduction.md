@@ -19,3 +19,12 @@ Quantization can help, but lower precision can harm quality. AOIS needs measurem
 Run the validator and simulator.
 
 Focus on what each precision option gains in memory and what it risks in quality.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15.5 Contents](CONTENTS.md)
+- Next: [v15.5 - Quantization And Memory Economics Without Runtime](notes.md)
+<!-- AOIS-NAV-END -->

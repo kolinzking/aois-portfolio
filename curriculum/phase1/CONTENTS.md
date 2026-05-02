@@ -23,3 +23,12 @@ Authoring status: authored
 1. complete [v1](v1/notes.md)
 2. continue to `v2` only after the provider gate can be explained
 3. continue to `v3` only after route/fallback tradeoffs are clear
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 0 Looking Forward](../phase0/looking-forward.md)
+- Next: [Phase 1 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

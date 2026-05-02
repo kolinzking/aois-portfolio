@@ -403,3 +403,12 @@ Check official docs, define model/request format, set budget/request limit, secu
 `v10` plans managed model inference.
 
 `v10.5` examines managed cloud agent services and their tradeoffs versus building the agent runtime inside AOIS.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Introduction](introduction.md)
+- Next: [v10 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -15,3 +15,12 @@ The shell is not just a place to run commands; it is how you see the machine.
 
 Linux gives visibility, not interpretation.
 That is exactly why Bash scripting comes next.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.1 Benchmark](benchmark.md)
+- Next: [v0.1 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

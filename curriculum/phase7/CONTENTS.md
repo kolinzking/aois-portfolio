@@ -43,3 +43,12 @@ orchestration loop with stop-first policy, connected agent evaluation, runtime
 autonomy control, governed multi-agent collaboration, and safe execution
 boundaries. Phase 7 is complete and now bridges into Phase 8 product surface
 work.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 6 Looking Forward](../phase6/looking-forward.md)
+- Next: [Phase 7 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

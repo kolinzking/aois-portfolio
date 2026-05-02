@@ -29,3 +29,12 @@ Keep request models explicit and test invalid input on purpose.
 API boundaries should reject malformed input before business logic runs.
 
 Validation failure is a useful safety behavior, not just an error.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Runbook](runbook.md)
+- Next: [v0.6 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

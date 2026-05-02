@@ -28,3 +28,12 @@ v28 does not create a live CI/CD workflow, build an image, push an artifact,
 sign anything, deploy to Kubernetes, shift traffic, change feature flags, or
 change model endpoints. It intentionally proves the release-control contract
 before any automation can affect live systems.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Benchmark](benchmark.md)
+- Next: [v28 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

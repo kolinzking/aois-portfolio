@@ -81,3 +81,12 @@ Defend why v28 models release controls locally before creating a real CI/CD
 workflow. The system should prove gate logic, expected release evidence, and
 AI behavior rollout controls before any automation can deploy or mutate live
 state.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 - Delivery Pipeline And Release Controls](notes.md)
+- Next: [v28 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

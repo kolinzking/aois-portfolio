@@ -35,3 +35,12 @@ persistent resource impact on the shared server.
 
 Live SLO monitoring should only be deployed after retention, storage, alert
 routing, dashboards, and primary-project separation are explicit.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Benchmark](benchmark.md)
+- Next: [v17.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

@@ -18,3 +18,12 @@ Before trusting a model behind an endpoint, AOIS needs:
 
 `v0.7` studies LLM fundamentals directly: prompts, tokens, latency, cost, structured output, and provider boundaries.
 Only after that should model calls be placed behind the API.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.6 Summary Notes](summarynotes.md)
+- Next: [v0.6 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

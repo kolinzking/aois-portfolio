@@ -81,3 +81,12 @@ Record:
 - whether `kubectl apply` ran
 - whether any namespace/resource was created
 - memory snapshot
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 - Kubernetes Plan Without Applying Resources](notes.md)
+- Next: [v6 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

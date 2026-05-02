@@ -40,3 +40,12 @@ Authoring status: authored
 5. record your benchmark score
 6. read [summarynotes.md](summarynotes.md)
 7. use [next-version-bridge.md](next-version-bridge.md) to move into `v0.4`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.2 Next Version Bridge](../v0.2/next-version-bridge.md)
+- Next: [v0.3 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

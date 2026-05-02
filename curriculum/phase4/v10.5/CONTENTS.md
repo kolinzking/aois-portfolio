@@ -34,3 +34,12 @@ The lesson does not create a cloud agent. It builds a tradeoff plan and validate
 6. Check your answers against the answer key before moving to `v11`.
 
 Do not move on if you cannot explain why managed agent creation is gated.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Next Version Bridge](../v10/next-version-bridge.md)
+- Next: [v10.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

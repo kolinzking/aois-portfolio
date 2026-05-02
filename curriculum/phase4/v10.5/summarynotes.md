@@ -24,3 +24,12 @@ That makes the managed-agent decision a control decision, not just a convenience
 This version does not test a real managed cloud agent.
 
 That is intentional. The curriculum first teaches how to evaluate the tradeoff safely, then gates live managed-agent work behind docs review, credentials, budget, data boundaries, tool permissions, evals, and rollback.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Benchmark](benchmark.md)
+- Next: [v10.5 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

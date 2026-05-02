@@ -21,3 +21,12 @@ AOIS must understand those boundaries before live inference.
 3. explain why credentials are absent
 4. explain why budget is zero
 5. explain what must happen before live provider use
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Contents](CONTENTS.md)
+- Next: [v10 - Managed Model Layer Without Cloud Calls](notes.md)
+<!-- AOIS-NAV-END -->

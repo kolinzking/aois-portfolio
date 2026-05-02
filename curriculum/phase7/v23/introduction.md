@@ -47,3 +47,12 @@ Expected outcome:
 - the simulator passes 10 of 10 orchestration cases
 - no orchestration runtime starts
 - no workflow runtime, MCP server, tool call, durable store, or provider call is used
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23 Contents](CONTENTS.md)
+- Next: [v23 - Stateful Orchestration Loops](notes.md)
+<!-- AOIS-NAV-END -->

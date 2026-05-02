@@ -35,3 +35,12 @@ Prevent recurrence by requiring:
 - post-game-day review
 
 Chaos without controls is just avoidable failure.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Runbook](runbook.md)
+- Next: [v19 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

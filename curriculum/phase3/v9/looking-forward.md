@@ -15,3 +15,12 @@ Authoring status: authored
 Phase 4 will map these infrastructure ideas to enterprise cloud services.
 
 The resource discipline from Phase 3 must remain active when cloud-managed services are introduced.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v9 Summary Notes](summarynotes.md)
+- Next: [v9 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

@@ -72,3 +72,12 @@ Correct conclusion:
 ```text
 Investigation and mutation are separate authority levels.
 ```
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 Runbook](runbook.md)
+- Next: [v20 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

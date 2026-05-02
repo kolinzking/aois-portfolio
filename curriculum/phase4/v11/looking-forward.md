@@ -20,3 +20,12 @@ Carry forward these rules:
 The next question is:
 
 How does AOIS know an event workflow is healthy, affordable, and safe before live operation?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Summary Notes](summarynotes.md)
+- Next: [v11 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

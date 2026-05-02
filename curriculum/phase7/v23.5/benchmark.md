@@ -45,3 +45,12 @@ The benchmark covers:
 
 It evaluates connected control behavior only. It does not judge model text
 quality or call live evaluation infrastructure.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.5 Failure Story](failure-story.md)
+- Next: [v23.5 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

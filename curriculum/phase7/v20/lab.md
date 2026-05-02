@@ -102,3 +102,12 @@ Defend these choices:
 - Strict schemas for tool inputs and outputs.
 - Human approval for destructive action.
 - Fallback when tool output is malformed.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20 - Tool-Using Incident Responder](notes.md)
+- Next: [v20 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

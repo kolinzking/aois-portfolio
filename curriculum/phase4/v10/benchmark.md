@@ -25,3 +25,12 @@ At `v10`, good means:
 - no spend is approved
 - security/eval/trace controls remain required
 - source-currency review is required before live use
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Failure Story](failure-story.md)
+- Next: [v10 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

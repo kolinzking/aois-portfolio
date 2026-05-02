@@ -44,3 +44,12 @@ If resources appear unexpectedly:
 - identify whether they are portfolio-owned
 - do not delete primary AOIS resources
 - ask before changing live cluster state
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Lab](lab.md)
+- Next: [v6 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

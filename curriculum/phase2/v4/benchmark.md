@@ -36,3 +36,12 @@ At `v4`, good means:
 - memory and CPU limits are declared
 - service binds to localhost
 - no Docker resources are created without approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Failure Story](failure-story.md)
+- Next: [v4 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

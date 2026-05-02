@@ -20,3 +20,12 @@ Authoring status: authored
 - prompt iteration records
 - evaluation baseline
 - regression awareness
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Summary Notes](summarynotes.md)
+- Next: [v2 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

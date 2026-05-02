@@ -41,3 +41,12 @@ In `v0.4`, the measurement shifts from repository history to HTTP and network in
 - can you inspect requests?
 - can you explain service boundaries?
 - can you distinguish local command failure from network failure?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.3 Failure Story](failure-story.md)
+- Next: [v0.3 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

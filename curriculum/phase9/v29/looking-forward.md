@@ -26,3 +26,12 @@ v30 completes Phase 9 with internal platform patterns.
 v29 tracks evidence for AI behavior delivery. v30 turns repeated AOIS patterns
 into reusable platform abstractions so teams can consume governed capabilities
 without rebuilding every control by hand.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Summary Notes](summarynotes.md)
+- Next: [v29 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

@@ -28,3 +28,12 @@ This version teaches caching and performance measurement without running a cache
 6. Answer the mastery checkpoint.
 
 Do not continue if you cannot explain cache keys, TTL, invalidation, privacy boundary, and tenant isolation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v14 Next Version Bridge](../v14/next-version-bridge.md)
+- Next: [v14.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

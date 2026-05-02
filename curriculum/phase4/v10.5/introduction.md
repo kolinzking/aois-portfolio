@@ -39,3 +39,12 @@ Run the validator first, then explain every field in `cloud/aws/managed-agent-tr
 You are ready to continue only when you can defend this sentence:
 
 AOIS can evaluate managed agents now, but should not create one until permission, data, budget, eval, credential, and rollback controls exist.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10.5 Contents](CONTENTS.md)
+- Next: [v10.5 - Managed Agent Tradeoffs Without Creating Agents](notes.md)
+<!-- AOIS-NAV-END -->

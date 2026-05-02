@@ -40,3 +40,12 @@ Authoring status: authored
 4. explain least privilege
 5. do not apply manifests without approval
 6. complete the mastery checkpoint before `v7`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Next Version Bridge](../v6/next-version-bridge.md)
+- Next: [v6.5 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

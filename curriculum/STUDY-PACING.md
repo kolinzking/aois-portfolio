@@ -73,3 +73,12 @@ The correct unit of progress is not:
 It is:
 
 - versions genuinely mastered
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](READING-ORDER.md)
+- Previous: [AOIS Learning Operating Model](LEARNING-OPERATING-MODEL.md)
+- Next: [AOIS Version Standard](VERSION-STANDARD.md)
+<!-- AOIS-NAV-END -->

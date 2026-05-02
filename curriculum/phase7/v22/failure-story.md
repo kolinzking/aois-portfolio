@@ -54,3 +54,12 @@ Keep workflow state durable before live execution:
 - keep registry denials terminal
 - never resume sensitive tool work without recorded approval
 - keep live workflow engines disabled until durable storage and observability are reviewed
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v22 Runbook](runbook.md)
+- Next: [v22 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

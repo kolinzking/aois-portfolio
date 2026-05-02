@@ -40,3 +40,12 @@ Authoring status: authored
 4. explain credentials, budget, and provider gates
 5. do not use cloud credentials or provider calls
 6. complete the mastery checkpoint before `v10.5`
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [Phase 4 Introduction](../00-introduction.md)
+- Next: [v10 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

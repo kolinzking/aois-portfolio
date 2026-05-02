@@ -59,3 +59,12 @@ If live GPU infrastructure work is requested:
 8. Define rollback.
 9. Verify primary AOIS separation.
 10. Get explicit approval before applying anything.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13.5 Lab](lab.md)
+- Next: [v13.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

@@ -25,3 +25,12 @@ They should be inspected and validated before they mutate a live cluster.
 No manifest is applied in this version.
 
 That protects the shared server, but runtime cluster behavior is not proven yet.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6 Benchmark](benchmark.md)
+- Next: [v6 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

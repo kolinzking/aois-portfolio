@@ -65,3 +65,12 @@ Escalate to a platform or release owner if:
 - rollout health is degraded
 - rollback is missing
 - model rollout or feature flags cannot be reversed
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v28 Lab](lab.md)
+- Next: [v28 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

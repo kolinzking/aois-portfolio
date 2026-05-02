@@ -28,3 +28,12 @@ Authoring status: authored
 7. Read the runbook and failure story.
 8. Review summary notes.
 9. Read the bridge into end-to-end corpus review.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 Next Version Bridge](../v33/next-version-bridge.md)
+- Next: [v34 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

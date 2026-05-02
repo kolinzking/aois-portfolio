@@ -80,3 +80,12 @@ Defend why v29 models experiment tracking locally before starting a real
 tracking server or registry. The system should prove evidence requirements and
 decision behavior before any model promotion, rollout, or feature-flag mutation
 can affect users.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 - Experiment And Model Delivery Tracking](notes.md)
+- Next: [v29 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

@@ -87,3 +87,12 @@ Defend these decisions:
    the whole incident pipeline.
 5. A live deployment is not approved until retention, lag dashboards, storage
    budget, rollback, and primary-project separation are all documented.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17 - Event Streaming Without Broker Runtime](notes.md)
+- Next: [v17 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

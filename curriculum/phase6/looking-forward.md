@@ -31,3 +31,12 @@ Phase 7 builds on this foundation by adding tool-using agents. The guardrails
 from Phase 6 become non-negotiable: trace every step, measure cost and quality,
 default tools to deny, require evidence, route uncertainty to review, and block
 destructive action without explicit approval.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v19.5 Next Version Bridge](v19.5/next-version-bridge.md)
+- Next: [Phase 7 Contents](../phase7/CONTENTS.md)
+<!-- AOIS-NAV-END -->

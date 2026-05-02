@@ -9,3 +9,12 @@ Authoring status: authored
 ## Why The Next Version Exists
 
 `v8` adds GitOps flow so deployment intent is managed through reviewed Git history rather than manual commands.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v7 Looking Forward](looking-forward.md)
+- Next: [v8 Contents](../v8/CONTENTS.md)
+<!-- AOIS-NAV-END -->

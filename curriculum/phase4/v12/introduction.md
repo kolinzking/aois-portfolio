@@ -35,3 +35,12 @@ Use this version as a governance checklist and break lab.
 Run the local validator, inspect every required control, and practice explaining why the plan rejects live cloud approval.
 
 Do not create cloud runtime resources during this lesson.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v12 Contents](CONTENTS.md)
+- Next: [v12 - Managed Runtime Governance Without Cloud Calls](notes.md)
+<!-- AOIS-NAV-END -->

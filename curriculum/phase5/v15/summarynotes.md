@@ -21,3 +21,12 @@ Eval and regression control decide whether adaptation is safe.
 This version does not train.
 
 That is intentional. It teaches adaptation decision discipline before training cost and risk.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Benchmark](benchmark.md)
+- Next: [v15 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

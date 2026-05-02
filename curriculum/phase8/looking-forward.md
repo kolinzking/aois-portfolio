@@ -30,3 +30,12 @@ state. The next job is deciding how AOIS changes are built, signed, tested,
 gated, rolled out, and controlled after release.
 
 Phase 9 starts with `v28`: delivery pipeline and release controls.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v27 Next Version Bridge](v27/next-version-bridge.md)
+- Next: [Phase 9 Contents](../phase9/CONTENTS.md)
+<!-- AOIS-NAV-END -->

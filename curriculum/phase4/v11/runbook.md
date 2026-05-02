@@ -62,3 +62,12 @@ If live event workflow work is requested:
 6. Define event schema and payload limits.
 7. Define DLQ replay and rollback.
 8. Get explicit approval before creating cloud resources.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v11 Lab](lab.md)
+- Next: [v11 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

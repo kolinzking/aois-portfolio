@@ -28,3 +28,12 @@ Do not grant permissions before a workload proves it needs them.
 ## What This Taught Me
 
 Identity and permissions are part of the workload, not an afterthought.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Runbook](runbook.md)
+- Next: [v6.5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

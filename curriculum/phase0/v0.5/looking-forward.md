@@ -17,3 +17,12 @@ Before adding frameworks or AI, AOIS needs:
 
 `v0.6` exposes this Python logic through FastAPI.
 The HTTP inspection habits from `v0.4` will be used to test the API.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.5 Summary Notes](summarynotes.md)
+- Next: [v0.5 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

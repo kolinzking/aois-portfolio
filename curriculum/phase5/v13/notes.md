@@ -472,3 +472,12 @@ No GPU hardware, model download, driver plan, image plan, memory budget, cost bu
 `v13` defines the GPU inference service boundary.
 
 `v13.5` moves deeper into GPU infrastructure operations: device plugins, scheduling, observability, MIG awareness, and resource constraints.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v13 Introduction](introduction.md)
+- Next: [v13 Lab](lab.md)
+<!-- AOIS-NAV-END -->

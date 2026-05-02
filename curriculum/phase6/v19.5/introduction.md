@@ -25,3 +25,12 @@ live runtime. It teaches the control model first:
 The practical outcome is simple: AOIS stops treating AI output as automatically
 actionable. An AI recommendation becomes one input into a controlled operational
 decision.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Contents](CONTENTS.md)
+- Next: [v19.5 - AI Failure Engineering And Governance Enforcement](notes.md)
+<!-- AOIS-NAV-END -->

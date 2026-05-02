@@ -38,3 +38,12 @@ If someone wants to apply:
 - confirm token automount behavior
 - confirm NetworkPolicy impact
 - get explicit approval
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v6.5 Lab](lab.md)
+- Next: [v6.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

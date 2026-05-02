@@ -91,3 +91,12 @@ Record:
 - secret-like input output
 - provider-call status
 - repo footprint
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 - API And LLM Security Foundations](notes.md)
+- Next: [v5 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

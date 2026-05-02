@@ -62,3 +62,12 @@ The safe end state is:
 - no provider call was made
 - no tool call was executed
 - working tree changes are intentional and reviewable
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19.5 Lab](lab.md)
+- Next: [v19.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

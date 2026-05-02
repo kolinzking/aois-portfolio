@@ -37,3 +37,12 @@ Test:
 Model routing is cost and reliability policy.
 
 It should be inspectable before any provider call can happen.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Runbook](runbook.md)
+- Next: [v2 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

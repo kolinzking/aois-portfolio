@@ -44,3 +44,12 @@ If a container is running unexpectedly:
 - confirm whether it is portfolio-owned
 - do not stop primary AOIS containers
 - stop only approved portfolio-owned runtime
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 Lab](lab.md)
+- Next: [v4 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

@@ -23,3 +23,12 @@ This version makes route selection explainable before any real provider call exi
 4. compare route decisions under different budgets
 5. prove `provider_call_made=false`
 6. stop the server after validation
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v2 Contents](CONTENTS.md)
+- Next: [v2 - Model Routing Without Provider Execution](notes.md)
+<!-- AOIS-NAV-END -->

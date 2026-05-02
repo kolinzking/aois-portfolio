@@ -30,3 +30,12 @@ Token counting is intentionally rough and provider-neutral.
 
 This is a planning lesson, not a billing-accurate tokenizer or a real model integration.
 Provider-specific behavior must be checked against official documentation before real calls are added.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Benchmark](benchmark.md)
+- Next: [v0.7 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

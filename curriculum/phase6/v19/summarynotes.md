@@ -39,3 +39,12 @@ to the shared server.
 Live chaos should only happen after explicit approval, blast-radius review,
 resource headroom review, SLO budget review, communication plan, abort
 conditions, rollback plan, and primary-project protection.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v19 Benchmark](benchmark.md)
+- Next: [v19 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

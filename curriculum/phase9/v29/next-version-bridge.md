@@ -27,3 +27,12 @@ next risk is every team rebuilding those controls differently.
 
 v30 will focus on self-service abstractions, platform APIs, and infrastructure
 abstraction.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v29 Looking Forward](looking-forward.md)
+- Next: [v30 Contents](../v30/CONTENTS.md)
+<!-- AOIS-NAV-END -->

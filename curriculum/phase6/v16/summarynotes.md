@@ -21,3 +21,12 @@ Sampling, cardinality, retention, and redaction are operational controls, not op
 This version does not run telemetry services.
 
 That is intentional. It teaches signal design before adding memory and storage load.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 Benchmark](benchmark.md)
+- Next: [v16 Looking Forward](looking-forward.md)
+<!-- AOIS-NAV-END -->

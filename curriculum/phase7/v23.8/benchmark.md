@@ -42,3 +42,12 @@ The benchmark covers:
 
 It tests autonomy policy only. It does not start a runtime or grant real
 autonomy.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v23.8 Failure Story](failure-story.md)
+- Next: [v23.8 Summary Notes](summarynotes.md)
+<!-- AOIS-NAV-END -->

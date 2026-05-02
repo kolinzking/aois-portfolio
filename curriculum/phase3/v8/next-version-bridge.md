@@ -11,3 +11,12 @@ Authoring status: authored
 `v9` adds autoscaling and event-driven behavior planning.
 
 After desired state is reviewable, AOIS needs to reason about controlled scale.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v8 Looking Forward](looking-forward.md)
+- Next: [v9 Contents](../v9/CONTENTS.md)
+<!-- AOIS-NAV-END -->

@@ -69,3 +69,12 @@ If live managed-runtime work is requested:
 8. Define capacity, backup/restore, rollback, and incident response.
 9. Verify primary AOIS separation.
 10. Get explicit approval before creating resources.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v12 Lab](lab.md)
+- Next: [v12 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

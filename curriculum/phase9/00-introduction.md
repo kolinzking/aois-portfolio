@@ -55,3 +55,12 @@ Phase 9 includes:
 - `v30`: internal platform patterns
 
 The next phase is Phase 10, starting with `v31` multimodal AOIS.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 9 Contents](CONTENTS.md)
+- Next: [v28 Contents](v28/CONTENTS.md)
+<!-- AOIS-NAV-END -->

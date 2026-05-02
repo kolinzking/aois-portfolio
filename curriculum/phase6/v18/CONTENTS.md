@@ -45,3 +45,12 @@ Expected result: both scripts pass while all runtime flags remain false.
 6. Break the plan in a scratch edit and use validator output to explain the
    risk.
 7. Answer the mastery checkpoint in [notes.md](notes.md).
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v17.5 Next Version Bridge](../v17.5/next-version-bridge.md)
+- Next: [v18 Introduction](introduction.md)
+<!-- AOIS-NAV-END -->

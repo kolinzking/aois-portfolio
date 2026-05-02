@@ -35,3 +35,12 @@ Then use the break lab to change one boundary control at a time.
 Do not add live execution to this version. The point is to finish Phase 7 with
 a defensible execution policy before Phase 8 builds the human-facing product
 surface.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v25 Contents](CONTENTS.md)
+- Next: [v25 - Safe Execution Boundaries](notes.md)
+<!-- AOIS-NAV-END -->

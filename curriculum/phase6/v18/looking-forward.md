@@ -21,3 +21,12 @@ v19 will build on incident response by adding chaos engineering. The next focus
 is testing reliability assumptions safely through tabletop experiments,
 guardrails, blast-radius control, abort conditions, and primary-project
 protection.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 Summary Notes](summarynotes.md)
+- Next: [v18 Next Version Bridge](next-version-bridge.md)
+<!-- AOIS-NAV-END -->

@@ -39,3 +39,12 @@ If validation fails:
 7. Restore observability controls.
 8. Restore limits to zero.
 9. Restore live checks.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16.5 Lab](lab.md)
+- Next: [v16.5 Failure Story](failure-story.md)
+<!-- AOIS-NAV-END -->

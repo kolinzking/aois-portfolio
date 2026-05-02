@@ -23,3 +23,12 @@ they require, or how they are audited.
 
 v21 will turn the tool list into a governed registry so route policy has a safe
 tool catalog to choose from.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v20.2 Looking Forward](looking-forward.md)
+- Next: [v21 Contents](../v21/CONTENTS.md)
+<!-- AOIS-NAV-END -->

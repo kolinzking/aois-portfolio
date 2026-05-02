@@ -488,3 +488,12 @@ Before adding OpenAI, Groq, or another provider, check the official provider doc
 - pricing
 - rate limits
 - safety and data-use terms
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v0.7 Introduction](introduction.md)
+- Next: [v0.7 Lab](lab.md)
+<!-- AOIS-NAV-END -->

@@ -72,3 +72,12 @@ Defend these choices:
 - unsafe payloads block even in a security curriculum
 - evidence is sanitized
 - confirmed failures escalate only after mitigation and regression state is known
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v33 - Adversarial Testing And Red Teaming](notes.md)
+- Next: [v33 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

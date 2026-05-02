@@ -44,3 +44,12 @@ Do not scale an AI service that cannot answer:
 - was a provider called?
 - what trace ID identifies the result?
 - what eval baseline protects this behavior?
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [v3 Next Version Bridge](v3/next-version-bridge.md)
+- Next: [Phase 2 Contents](../phase2/CONTENTS.md)
+<!-- AOIS-NAV-END -->

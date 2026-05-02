@@ -397,3 +397,12 @@ The adapted candidate introduces a regression.
 `v15` defines adaptation decision discipline.
 
 `v15.5` moves to quantization and memory economics, where AOIS learns what is gained and lost when reducing model footprint.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v15 Introduction](introduction.md)
+- Next: [v15 Lab](lab.md)
+<!-- AOIS-NAV-END -->

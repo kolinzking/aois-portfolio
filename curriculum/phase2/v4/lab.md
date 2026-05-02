@@ -82,3 +82,12 @@ Record:
 - whether Docker build ran
 - whether container ran
 - whether any Docker resource was created
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v4 - Containerization Plan Without Building Images](notes.md)
+- Next: [v4 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->

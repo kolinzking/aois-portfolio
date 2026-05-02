@@ -29,3 +29,12 @@ Keep provider calls gated.
 ## What This Taught Me
 
 Security must happen before data crosses important boundaries.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v5 Runbook](runbook.md)
+- Next: [v5 Benchmark](benchmark.md)
+<!-- AOIS-NAV-END -->

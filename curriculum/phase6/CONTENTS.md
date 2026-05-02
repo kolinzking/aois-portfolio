@@ -30,3 +30,12 @@ Phase 6 is authored through `v19.5`.
 
 The phase adds visibility, reliability measurement, response discipline, failure
 testing, and AI governance boundaries before AOIS moves into agentic operation.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../READING-ORDER.md)
+- Previous: [Phase 5 Looking Forward](../phase5/looking-forward.md)
+- Next: [Phase 6 Introduction](00-introduction.md)
+<!-- AOIS-NAV-END -->

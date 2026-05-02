@@ -87,3 +87,12 @@ Defend these decisions:
    mitigations.
 5. Post-incident review is required because repeated failures are a process
    defect, not just a technical defect.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v18 - Incident Response Maturity Without Runtime](notes.md)
+- Next: [v18 Runbook](runbook.md)
+<!-- AOIS-NAV-END -->
