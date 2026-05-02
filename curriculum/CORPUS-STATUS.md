@@ -33,15 +33,6 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v2 | authored |
 | v3 | authored |
 
-## Phase10
-
-| Version | Status |
-|---|---|
-| v31 | scaffolded |
-| v32 | scaffolded |
-| v33 | scaffolded |
-| v34 | scaffolded |
-
 ## Phase2
 
 | Version | Status |
@@ -98,31 +89,40 @@ Live teaching begins only after the corpus is fully authored and reviewed end to
 | v20 | authored |
 | v20.1 | authored |
 | v20.2 | authored |
-| v21 | scaffolded |
-| v22 | scaffolded |
-| v23 | scaffolded |
-| v23.5 | scaffolded |
-| v23.8 | scaffolded |
-| v24 | scaffolded |
-| v25 | scaffolded |
+| v21 | authored |
+| v22 | authored |
+| v23 | authored |
+| v23.5 | authored |
+| v23.8 | authored |
+| v24 | authored |
+| v25 | authored |
 
 ## Phase8
 
 | Version | Status |
 |---|---|
-| v26 | scaffolded |
-| v27 | scaffolded |
+| v26 | authored |
+| v27 | authored |
 
 ## Phase9
 
 | Version | Status |
 |---|---|
-| v28 | scaffolded |
-| v29 | scaffolded |
-| v30 | scaffolded |
+| v28 | authored |
+| v29 | authored |
+| v30 | authored |
 
-## Next Corpus Authoring Order
+## Phase10
 
-1. Continue `Phase 7`
-2. Author `v21` MCP and governed tool registries
-3. Continue phase by phase in order
+| Version | Status |
+|---|---|
+| v31 | authored |
+| v32 | authored |
+| v33 | authored |
+| v34 | authored |
+
+## Next Corpus Work
+
+1. Run end-to-end corpus review
+2. Verify source currency and safety boundaries
+3. Run all validators and simulators

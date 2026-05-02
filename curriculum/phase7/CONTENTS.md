@@ -1,6 +1,6 @@
 # Phase 7 Contents
 
-Authoring status: partial
+Authoring status: authored
 
 ## Phase Files
 
@@ -32,10 +32,14 @@ Authoring status: partial
 
 ## Phase Progress
 
-Phase 7 is authored through `v20.2`.
+Phase 7 is authored through `v25`.
 
 The phase now has the first agentic AOIS shape: incident symptoms become
 planned, bounded, auditable tool steps, and those steps now carry deterministic
-cost accounting and budget-aware route selection. Later versions will add tool
-registry governance, durable workflows, orchestration, evaluation, operations,
-multi-agent collaboration, and execution boundaries.
+cost accounting, budget-aware route selection, and governed MCP tool exposure.
+The phase now also has durable workflow state for checkpoints, approval waits,
+idempotency, retries, timeouts, terminal states, recovery actions, a stateful
+orchestration loop with stop-first policy, connected agent evaluation, runtime
+autonomy control, governed multi-agent collaboration, and safe execution
+boundaries. Phase 7 is complete and now bridges into Phase 8 product surface
+work.

@@ -1,5 +1,7 @@
 # v0.1 Summary Notes
 
+Authoring status: authored
+
 ## What Was Built
 
 The first AOIS operating layer: direct Linux inspection habits.

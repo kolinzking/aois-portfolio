@@ -1,6 +1,6 @@
 # Phase 6 Introduction
 
-Authoring status: partial
+Authoring status: authored
 
 Phase 6 is Observability, Streaming, and Reliability.
 
@@ -26,3 +26,21 @@ Build the ability to see what AOIS does, connect behavior across components, mov
 Observability tools can consume memory and disk.
 
 This phase may author plans, validators, and simulations first. Live collectors, metrics backends, log stores, trace stores, streaming systems, or chaos tooling require explicit approval.
+
+## Phase Completion
+
+Phase 6 is authored through `v19.5`.
+
+AOIS can now model:
+
+- unified telemetry
+- agent and incident tracing
+- event streaming
+- service and agent SLOs
+- runtime visibility
+- chaos engineering
+- AI failure governance
+
+These controls prepare the curriculum for Phase 7 tool-using agents by requiring
+traceability, evidence, budgets, incident discipline, failure testing, and
+policy gates before agentic action.

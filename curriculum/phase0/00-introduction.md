@@ -1,5 +1,7 @@
 # Phase 0 - Foundations That Carry The Whole System
 
+Authoring status: authored
+
 Phase 0 is where AOIS stops being an idea and becomes an engineering program.
 
 Nothing in this phase is filler.

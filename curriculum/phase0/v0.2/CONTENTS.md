@@ -1,5 +1,7 @@
 # v0.2 Contents
 
+Authoring status: authored
+
 ## Start Here
 
 - [introduction.md](introduction.md)

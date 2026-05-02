@@ -1,0 +1,465 @@
+{
+  "mode": "edge_offline_inference_plan_no_runtime",
+  "version": "v32",
+  "namespace": "aois-p",
+  "topic": "Edge and offline inference deployment patterns for constrained AOIS-P execution",
+  "edge_runtime_started": false,
+  "offline_model_loaded": false,
+  "model_runtime_started": false,
+  "model_downloaded": false,
+  "model_quantized": false,
+  "device_accessed": false,
+  "gpu_runtime_started": false,
+  "npu_runtime_started": false,
+  "camera_started": false,
+  "microphone_started": false,
+  "media_file_read": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "tool_calls_executed": false,
+  "command_executed": false,
+  "file_write_performed": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_edge": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "ONNX Runtime Documentation",
+      "url": "https://onnxruntime.ai/docs/",
+      "date_checked": "2026-05-01",
+      "supports": "Edge inference planning should treat runtime choice, hardware execution providers, model validation, performance, and memory behavior as explicit deployment concerns"
+    },
+    {
+      "source": "Google LiteRT Overview",
+      "url": "https://ai.google.dev/edge/litert/",
+      "date_checked": "2026-05-01",
+      "supports": "On-device inference changes latency, privacy, connectivity, model size, and power tradeoffs"
+    },
+    {
+      "source": "KubeEdge",
+      "url": "https://kubeedge.io/",
+      "date_checked": "2026-05-01",
+      "supports": "Edge deployments need cloud-edge coordination, metadata persistence, autonomy during disconnection, low-resource operation, and heterogeneous device support"
+    },
+    {
+      "source": "Kubernetes Resource Management for Pods and Containers",
+      "url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+      "date_checked": "2026-05-01",
+      "supports": "CPU, memory, and extended resource requests and limits are core controls for resource-constrained execution"
+    },
+    {
+      "source": "OpenTelemetry Collector Resiliency",
+      "url": "https://opentelemetry.io/docs/collector/resiliency/",
+      "date_checked": "2026-05-01",
+      "supports": "Offline and edge telemetry paths need sending queues, retry policy, persistent storage or WAL where appropriate, and queue monitoring"
+    },
+    {
+      "source": "NIST AI RMF Playbook",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook",
+      "date_checked": "2026-05-01",
+      "supports": "AI deployment changes should preserve govern, map, measure, and manage controls across new operating contexts"
+    }
+  ],
+  "edge_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_v31_multimodal_contract": true,
+    "uses_phase9_release_controls": true,
+    "local_simulation_only": true,
+    "deployment_contract_only": true,
+    "no_live_device": true,
+    "no_live_model_load": true,
+    "no_hardware_access": true,
+    "no_gpu_access": true,
+    "no_npu_access": true,
+    "no_media_capture": true,
+    "no_network_call": true,
+    "no_provider_call": true
+  },
+  "required_controls": {
+    "deployment_target_required": true,
+    "device_profile_required": true,
+    "connectivity_profile_required": true,
+    "model_format_required": true,
+    "model_size_budget_required": true,
+    "quantization_review_required": true,
+    "memory_budget_required": true,
+    "compute_budget_required": true,
+    "power_budget_required": true,
+    "latency_budget_required": true,
+    "offline_cache_required": true,
+    "sync_policy_required": true,
+    "stale_model_indicator_required": true,
+    "data_residency_required": true,
+    "privacy_redaction_required": true,
+    "fallback_required": true,
+    "observability_buffer_required": true,
+    "update_channel_required": true,
+    "rollback_required": true,
+    "access_policy_required": true,
+    "release_gate_required": true,
+    "primary_aois_separation_required": true,
+    "resource_usage_record_required": true,
+    "source_currency_recorded": true
+  },
+  "edge_dimensions": [
+    "case_id",
+    "incident_id",
+    "trace_id",
+    "deployment_target",
+    "connectivity_status",
+    "device_class",
+    "device_profile_status",
+    "model_format",
+    "model_size_mb",
+    "model_size_budget_mb",
+    "quantization_status",
+    "memory_mb",
+    "memory_budget_mb",
+    "compute_budget_status",
+    "power_budget_status",
+    "latency_ms",
+    "latency_budget_ms",
+    "cache_status",
+    "sync_status",
+    "model_freshness_status",
+    "data_residency_status",
+    "privacy_status",
+    "fallback_status",
+    "observability_status",
+    "update_channel_status",
+    "rollback_ready",
+    "access_policy_status",
+    "release_gate_status",
+    "edge_decision",
+    "operator_action"
+  ],
+  "deployment_targets": [
+    {
+      "target": "central_cloud",
+      "allowed_connectivity": ["online"],
+      "primary_constraints": ["network_dependency", "data_residency", "provider_availability"],
+      "default_operator_action": "route_to_central_inference"
+    },
+    {
+      "target": "edge_online",
+      "allowed_connectivity": ["online", "degraded"],
+      "primary_constraints": ["memory", "compute", "power", "latency", "update_channel"],
+      "default_operator_action": "allow_edge_inference"
+    },
+    {
+      "target": "offline_edge",
+      "allowed_connectivity": ["offline", "degraded"],
+      "primary_constraints": ["cache", "model_freshness", "sync_backlog", "observability_buffer"],
+      "default_operator_action": "allow_offline_cached_inference"
+    }
+  ],
+  "device_profiles": [
+    {
+      "device_class": "workstation_edge",
+      "max_model_size_mb": 2048,
+      "memory_budget_mb": 8192,
+      "latency_budget_ms": 650,
+      "requires_quantization": false,
+      "power_sensitive": false
+    },
+    {
+      "device_class": "gateway_edge",
+      "max_model_size_mb": 512,
+      "memory_budget_mb": 2048,
+      "latency_budget_ms": 900,
+      "requires_quantization": true,
+      "power_sensitive": true
+    },
+    {
+      "device_class": "mobile_edge",
+      "max_model_size_mb": 256,
+      "memory_budget_mb": 1024,
+      "latency_budget_ms": 1200,
+      "requires_quantization": true,
+      "power_sensitive": true
+    },
+    {
+      "device_class": "micro_edge",
+      "max_model_size_mb": 64,
+      "memory_budget_mb": 256,
+      "latency_budget_ms": 1500,
+      "requires_quantization": true,
+      "power_sensitive": true
+    }
+  ],
+  "decision_gates": {
+    "allow_central_cloud_inference": "Allow central cloud inference when connectivity, residency, privacy, access, release, fallback, observability, update, and rollback controls pass.",
+    "allow_edge_online_inference": "Allow edge online inference when a known device profile fits model size, memory, compute, power, latency, privacy, policy, release, observability, update, and rollback constraints.",
+    "allow_offline_cached_inference": "Allow offline cached inference only when cache, freshness, sync, observability buffer, privacy, policy, update, and rollback controls are ready.",
+    "block_unknown_device_profile": "Block when the edge target has no approved device profile.",
+    "block_model_size_budget_exceeded": "Block when the model package exceeds the target device size budget.",
+    "block_memory_budget_exceeded": "Block when projected memory use exceeds the device budget.",
+    "hold_compute_budget_review": "Hold when CPU, GPU, NPU, or accelerator budget is unknown or unapproved.",
+    "hold_power_budget_review": "Hold when the target is power-sensitive and the power budget is unknown or failed.",
+    "block_latency_budget_exceeded": "Block when projected latency exceeds the target budget.",
+    "hold_missing_offline_cache": "Hold offline execution when cache readiness is missing or incomplete.",
+    "hold_stale_model": "Hold when the offline model freshness indicator is stale or unknown.",
+    "block_data_residency_violation": "Block when inference placement would violate data residency constraints.",
+    "block_privacy_unredacted": "Block when local or synced payloads are not redacted before inference.",
+    "route_to_central_fallback": "Route to central cloud fallback when edge constraints fail but connectivity and central policy allow fallback.",
+    "hold_observability_buffer_missing": "Hold when offline or degraded edge telemetry cannot be buffered safely.",
+    "block_update_channel_missing": "Block when the deployment cannot receive approved model or policy updates.",
+    "block_no_rollback": "Block when the edge deployment cannot roll back a bad model, policy, or runtime configuration.",
+    "block_policy_boundary": "Block when access or release policy fails."
+  },
+  "case_defaults": {
+    "incident_id": "inc-v32-default",
+    "trace_id": "trace-v32-default",
+    "deployment_target": "edge_online",
+    "connectivity_status": "online",
+    "device_class": "gateway_edge",
+    "device_profile_status": "known",
+    "model_format": "onnx",
+    "model_size_mb": 192,
+    "model_size_budget_mb": 512,
+    "quantization_status": "reviewed",
+    "memory_mb": 768,
+    "memory_budget_mb": 2048,
+    "compute_budget_status": "pass",
+    "power_budget_status": "pass",
+    "latency_ms": 420,
+    "latency_budget_ms": 900,
+    "cache_status": "ready",
+    "sync_status": "ready",
+    "model_freshness_status": "fresh",
+    "data_residency_status": "pass",
+    "privacy_status": "redacted",
+    "fallback_status": "central_available",
+    "observability_status": "buffered",
+    "update_channel_status": "approved",
+    "rollback_ready": true,
+    "access_policy_status": "pass",
+    "release_gate_status": "pass"
+  },
+  "edge_cases": [
+    {
+      "case_id": "edge-v32-001",
+      "name": "central_cloud_inference_allowed",
+      "overrides": {
+        "deployment_target": "central_cloud",
+        "device_class": "central_cluster",
+        "device_profile_status": "managed",
+        "connectivity_status": "online",
+        "model_size_budget_mb": 8192,
+        "memory_budget_mb": 32768,
+        "latency_budget_ms": 2000,
+        "cache_status": "not_required",
+        "sync_status": "not_required",
+        "observability_status": "streaming"
+      },
+      "expected_decision": "allow_central_cloud_inference",
+      "expected_operator_action": "route_to_central_inference",
+      "expected_edge_state": "central"
+    },
+    {
+      "case_id": "edge-v32-002",
+      "name": "edge_online_inference_allowed",
+      "expected_decision": "allow_edge_online_inference",
+      "expected_operator_action": "allow_edge_inference",
+      "expected_edge_state": "edge_online"
+    },
+    {
+      "case_id": "edge-v32-003",
+      "name": "offline_cached_inference_allowed",
+      "overrides": {
+        "deployment_target": "offline_edge",
+        "connectivity_status": "offline",
+        "observability_status": "buffered"
+      },
+      "expected_decision": "allow_offline_cached_inference",
+      "expected_operator_action": "allow_offline_cached_inference",
+      "expected_edge_state": "offline"
+    },
+    {
+      "case_id": "edge-v32-004",
+      "name": "unknown_device_profile_blocked",
+      "overrides": {
+        "device_class": "prototype_board",
+        "device_profile_status": "unknown"
+      },
+      "expected_decision": "block_unknown_device_profile",
+      "expected_operator_action": "register_and_review_device_profile",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-005",
+      "name": "model_size_budget_exceeded_blocked",
+      "overrides": {
+        "model_size_mb": 900
+      },
+      "expected_decision": "block_model_size_budget_exceeded",
+      "expected_operator_action": "choose_smaller_or_quantized_model",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-006",
+      "name": "memory_budget_exceeded_blocked",
+      "overrides": {
+        "memory_mb": 3072
+      },
+      "expected_decision": "block_memory_budget_exceeded",
+      "expected_operator_action": "resize_model_or_move_target",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-007",
+      "name": "compute_budget_review_held",
+      "overrides": {
+        "compute_budget_status": "unknown",
+        "fallback_status": "unavailable"
+      },
+      "expected_decision": "hold_compute_budget_review",
+      "expected_operator_action": "measure_compute_budget",
+      "expected_edge_state": "held"
+    },
+    {
+      "case_id": "edge-v32-008",
+      "name": "power_budget_review_held",
+      "overrides": {
+        "power_budget_status": "unknown"
+      },
+      "expected_decision": "hold_power_budget_review",
+      "expected_operator_action": "measure_power_draw",
+      "expected_edge_state": "held"
+    },
+    {
+      "case_id": "edge-v32-009",
+      "name": "latency_budget_exceeded_blocked",
+      "overrides": {
+        "latency_ms": 1600
+      },
+      "expected_decision": "block_latency_budget_exceeded",
+      "expected_operator_action": "reduce_latency_or_route_elsewhere",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-010",
+      "name": "missing_offline_cache_held",
+      "overrides": {
+        "deployment_target": "offline_edge",
+        "connectivity_status": "offline",
+        "cache_status": "missing"
+      },
+      "expected_decision": "hold_missing_offline_cache",
+      "expected_operator_action": "prepare_offline_cache",
+      "expected_edge_state": "held"
+    },
+    {
+      "case_id": "edge-v32-011",
+      "name": "stale_model_held",
+      "overrides": {
+        "deployment_target": "offline_edge",
+        "connectivity_status": "offline",
+        "model_freshness_status": "stale"
+      },
+      "expected_decision": "hold_stale_model",
+      "expected_operator_action": "refresh_or_attest_model_version",
+      "expected_edge_state": "held"
+    },
+    {
+      "case_id": "edge-v32-012",
+      "name": "data_residency_violation_blocked",
+      "overrides": {
+        "data_residency_status": "fail"
+      },
+      "expected_decision": "block_data_residency_violation",
+      "expected_operator_action": "choose_residency_compliant_target",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-013",
+      "name": "privacy_unredacted_blocked",
+      "overrides": {
+        "privacy_status": "raw"
+      },
+      "expected_decision": "block_privacy_unredacted",
+      "expected_operator_action": "redact_before_edge_inference",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-014",
+      "name": "edge_constraint_routes_to_central_fallback",
+      "overrides": {
+        "compute_budget_status": "fail",
+        "fallback_status": "central_available"
+      },
+      "expected_decision": "route_to_central_fallback",
+      "expected_operator_action": "route_to_central_fallback",
+      "expected_edge_state": "fallback"
+    },
+    {
+      "case_id": "edge-v32-015",
+      "name": "observability_buffer_missing_held",
+      "overrides": {
+        "deployment_target": "offline_edge",
+        "connectivity_status": "offline",
+        "observability_status": "missing"
+      },
+      "expected_decision": "hold_observability_buffer_missing",
+      "expected_operator_action": "configure_local_telemetry_buffer",
+      "expected_edge_state": "held"
+    },
+    {
+      "case_id": "edge-v32-016",
+      "name": "update_channel_missing_blocked",
+      "overrides": {
+        "update_channel_status": "missing"
+      },
+      "expected_decision": "block_update_channel_missing",
+      "expected_operator_action": "configure_signed_update_channel",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-017",
+      "name": "rollback_missing_blocked",
+      "overrides": {
+        "rollback_ready": false
+      },
+      "expected_decision": "block_no_rollback",
+      "expected_operator_action": "prepare_edge_rollback_plan",
+      "expected_edge_state": "blocked"
+    },
+    {
+      "case_id": "edge-v32-018",
+      "name": "policy_boundary_blocked",
+      "overrides": {
+        "access_policy_status": "fail"
+      },
+      "expected_decision": "block_policy_boundary",
+      "expected_operator_action": "repair_edge_policy_boundary",
+      "expected_edge_state": "blocked"
+    }
+  ],
+  "required_before_live_edge": [
+    "device_profile_review",
+    "deployment_target_review",
+    "connectivity_profile_review",
+    "runtime_and_model_format_review",
+    "model_size_budget_review",
+    "quantization_review",
+    "memory_budget_review",
+    "compute_budget_review",
+    "power_budget_review",
+    "latency_budget_review",
+    "offline_cache_review",
+    "sync_policy_review",
+    "model_freshness_review",
+    "data_residency_review",
+    "privacy_redaction_review",
+    "fallback_review",
+    "observability_buffer_review",
+    "update_channel_review",
+    "rollback_review",
+    "access_policy_review",
+    "release_gate_review",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

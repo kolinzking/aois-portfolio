@@ -1,5 +1,7 @@
 # v0.1 Runbook
 
+Authoring status: authored
+
 ## Purpose
 
 Use this runbook when the basic Linux inspection commands are confusing or produce unexpected output.

@@ -1,11 +1,29 @@
 # v29 Next Version Bridge
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What This Version Unlocks
 
-TODO
+v29 gives AOIS-P model-delivery evidence:
+
+- experiment tracking contract
+- model version comparison
+- metric and guardrail catalog
+- rollout evidence
+- registry and release-gate links
+- feature flag and rollback controls
+- approval and risk review
 
 ## Why The Next Version Exists
 
-TODO
+v30 completes Phase 9 by adding internal platform patterns.
+
+The bridge from v29 to v30 is:
+
+```text
+If AOIS-P can repeatedly govern, release, and track AI behavior changes, the
+next risk is every team rebuilding those controls differently.
+```
+
+v30 will focus on self-service abstractions, platform APIs, and infrastructure
+abstraction.

@@ -1,5 +1,7 @@
 # v0.1 Failure Story
 
+Authoring status: authored
+
 ## Symptom
 
 The file existed, but it could not be read.

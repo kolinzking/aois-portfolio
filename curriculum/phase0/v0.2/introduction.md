@@ -1,5 +1,7 @@
 # v0.2 Introduction
 
+Authoring status: authored
+
 ## What This Version Is About
 
 `v0.2` is Bash scripting proper.

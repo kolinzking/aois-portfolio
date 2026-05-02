@@ -1,0 +1,638 @@
+{
+  "mode": "adversarial_red_teaming_plan_no_runtime",
+  "version": "v33",
+  "namespace": "aois-p",
+  "topic": "Adversarial testing and red teaming for AOIS-P prompt, tool, multimodal, edge, and policy controls",
+  "red_team_run_started": false,
+  "live_model_called": false,
+  "adversarial_payload_executed": false,
+  "exploit_attempted": false,
+  "jailbreak_payload_generated": false,
+  "prompt_injection_payload_generated": false,
+  "tool_call_made": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "command_executed": false,
+  "file_write_performed": false,
+  "secret_accessed": false,
+  "data_exfiltrated": false,
+  "exploit_artifact_persisted": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_red_team": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "OWASP Top 10 for LLM Applications 2025",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+      "date_checked": "2026-05-01",
+      "supports": "LLM application red-team scenarios should include prompt injection, sensitive information disclosure, supply chain, data/model poisoning, improper output handling, excessive agency, system prompt leakage, vector/embedding weaknesses, misinformation, and unbounded consumption"
+    },
+    {
+      "source": "OWASP AI Red Teaming Initiative",
+      "url": "https://genai.owasp.org/ai-red-teaming-initiative/",
+      "date_checked": "2026-05-01",
+      "supports": "GenAI systems should be evaluated through structured adversarial red teaming methods, benchmarks, tools, and evaluation guidance"
+    },
+    {
+      "source": "MITRE ATLAS Fact Sheet",
+      "url": "https://atlas.mitre.org/pdf-files/MITRE_ATLAS_Fact_Sheet.pdf",
+      "date_checked": "2026-05-01",
+      "supports": "AI red teaming benefits from a living adversarial tactics and techniques knowledge base grounded in real-world attack observations and realistic demonstrations"
+    },
+    {
+      "source": "MITRE SAFE-AI",
+      "url": "https://atlas.mitre.org/pdf-files/SAFEAI_Full_Report.pdf",
+      "date_checked": "2026-05-01",
+      "supports": "AI-enabled systems need threat-informed security control assessment across environment, AI platform, AI model, and AI data elements"
+    },
+    {
+      "source": "NIST AI RMF Generative AI Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "date_checked": "2026-05-01",
+      "supports": "Generative AI risk evaluation should account for unique risks such as information security, data privacy, confabulation, value-chain integration, and harmful content risks"
+    },
+    {
+      "source": "NIST AI RMF Playbook",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook",
+      "date_checked": "2026-05-01",
+      "supports": "AI risk management should preserve govern, map, measure, and manage evidence as capabilities and deployments change"
+    },
+    {
+      "source": "OpenTelemetry Signals",
+      "url": "https://opentelemetry.io/docs/concepts/signals/",
+      "date_checked": "2026-05-01",
+      "supports": "Red-team findings need trace, metric, log, baggage, and profile evidence that can be inspected without storing unsafe payloads"
+    }
+  ],
+  "red_team_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_v31_multimodal_contract": true,
+    "uses_v32_edge_offline_contract": true,
+    "uses_phase9_release_controls": true,
+    "local_simulation_only": true,
+    "sanitized_test_catalog_only": true,
+    "no_live_target": true,
+    "no_production_system": true,
+    "no_exploit_execution": true,
+    "no_harmful_payload_storage": true,
+    "no_jailbreak_payload_generation": true,
+    "no_prompt_injection_payload_generation": true,
+    "no_tool_execution": true,
+    "no_network_call": true,
+    "no_provider_call": true
+  },
+  "required_controls": {
+    "authorization_required": true,
+    "rules_of_engagement_required": true,
+    "scope_boundary_required": true,
+    "sanitized_payload_required": true,
+    "live_target_prohibition_required": true,
+    "safety_review_required": true,
+    "prompt_injection_tests_required": true,
+    "indirect_injection_tests_required": true,
+    "system_prompt_leakage_tests_required": true,
+    "sensitive_information_tests_required": true,
+    "supply_chain_tests_required": true,
+    "poisoning_tests_required": true,
+    "output_handling_tests_required": true,
+    "excessive_agency_tests_required": true,
+    "vector_embedding_tests_required": true,
+    "misinformation_tests_required": true,
+    "unbounded_consumption_tests_required": true,
+    "edge_cache_tests_required": true,
+    "fallback_abuse_tests_required": true,
+    "policy_confusion_tests_required": true,
+    "telemetry_required": true,
+    "evidence_required": true,
+    "severity_required": true,
+    "mitigation_required": true,
+    "regression_required": true,
+    "primary_aois_separation_required": true,
+    "source_currency_recorded": true
+  },
+  "red_team_dimensions": [
+    "case_id",
+    "incident_id",
+    "trace_id",
+    "scenario_id",
+    "threat_category",
+    "attack_surface",
+    "modality",
+    "deployment_target",
+    "authorization_status",
+    "rules_of_engagement_status",
+    "scope_status",
+    "payload_safety_status",
+    "target_status",
+    "policy_status",
+    "tool_permission_status",
+    "data_boundary_status",
+    "telemetry_status",
+    "evidence_status",
+    "expected_control",
+    "observed_behavior_status",
+    "severity",
+    "mitigation_status",
+    "regression_status",
+    "red_team_decision",
+    "operator_action"
+  ],
+  "scenario_catalog": [
+    {
+      "scenario_id": "direct_prompt_injection",
+      "threat_category": "prompt_injection",
+      "attack_surface": "chat_input",
+      "owasp_mapping": "LLM01:2025 Prompt Injection",
+      "atlas_mapping": "AML.T0051 prompt injection",
+      "required_controls": ["instruction_hierarchy", "input_boundary", "policy_check"],
+      "sanitized_example": "sanitized direct instruction-conflict probe"
+    },
+    {
+      "scenario_id": "indirect_prompt_injection",
+      "threat_category": "indirect_prompt_injection",
+      "attack_surface": "retrieved_context",
+      "owasp_mapping": "LLM01:2025 Prompt Injection",
+      "atlas_mapping": "AML.T0051 indirect prompt injection",
+      "required_controls": ["source_trust", "retrieval_labeling", "tool_boundary"],
+      "sanitized_example": "sanitized external-context instruction-conflict probe"
+    },
+    {
+      "scenario_id": "system_prompt_leakage",
+      "threat_category": "system_prompt_leakage",
+      "attack_surface": "model_output",
+      "owasp_mapping": "LLM07:2025 System Prompt Leakage",
+      "atlas_mapping": "AI model information exposure",
+      "required_controls": ["secret_separation", "output_filter", "prompt_non_secret"],
+      "sanitized_example": "sanitized hidden-instruction disclosure probe"
+    },
+    {
+      "scenario_id": "sensitive_information_disclosure",
+      "threat_category": "sensitive_information_disclosure",
+      "attack_surface": "memory_or_context",
+      "owasp_mapping": "LLM02:2025 Sensitive Information Disclosure",
+      "atlas_mapping": "data exposure",
+      "required_controls": ["pii_redaction", "tenant_boundary", "output_filter"],
+      "sanitized_example": "sanitized sensitive-data extraction probe"
+    },
+    {
+      "scenario_id": "supply_chain_compromise",
+      "threat_category": "supply_chain",
+      "attack_surface": "model_or_dependency",
+      "owasp_mapping": "LLM03:2025 Supply Chain",
+      "atlas_mapping": "AI supply chain compromise",
+      "required_controls": ["provenance", "signature", "release_gate"],
+      "sanitized_example": "sanitized model provenance failure probe"
+    },
+    {
+      "scenario_id": "data_model_poisoning",
+      "threat_category": "poisoning",
+      "attack_surface": "training_or_retrieval_data",
+      "owasp_mapping": "LLM04:2025 Data and Model Poisoning",
+      "atlas_mapping": "poison training data",
+      "required_controls": ["data_provenance", "quarantine", "review_queue"],
+      "sanitized_example": "sanitized poisoned-source probe"
+    },
+    {
+      "scenario_id": "improper_output_handling",
+      "threat_category": "output_handling",
+      "attack_surface": "downstream_renderer",
+      "owasp_mapping": "LLM05:2025 Improper Output Handling",
+      "atlas_mapping": "unsafe model output use",
+      "required_controls": ["output_encoding", "command_boundary", "human_review"],
+      "sanitized_example": "sanitized downstream-output boundary probe"
+    },
+    {
+      "scenario_id": "excessive_agency",
+      "threat_category": "excessive_agency",
+      "attack_surface": "tool_registry",
+      "owasp_mapping": "LLM06:2025 Excessive Agency",
+      "atlas_mapping": "agentic misuse",
+      "required_controls": ["least_privilege", "approval_gate", "tool_allowlist"],
+      "sanitized_example": "sanitized unauthorized-tool-use probe"
+    },
+    {
+      "scenario_id": "vector_embedding_weakness",
+      "threat_category": "vector_embedding_weakness",
+      "attack_surface": "rag_index",
+      "owasp_mapping": "LLM08:2025 Vector and Embedding Weaknesses",
+      "atlas_mapping": "retrieval manipulation",
+      "required_controls": ["index_provenance", "source_citation", "retrieval_filter"],
+      "sanitized_example": "sanitized misleading-neighbor retrieval probe"
+    },
+    {
+      "scenario_id": "misinformation_confabulation",
+      "threat_category": "misinformation",
+      "attack_surface": "answer_generation",
+      "owasp_mapping": "LLM09:2025 Misinformation",
+      "atlas_mapping": "misleading output",
+      "required_controls": ["grounding", "citation_check", "confidence_gate"],
+      "sanitized_example": "sanitized false-citation probe"
+    },
+    {
+      "scenario_id": "unbounded_consumption",
+      "threat_category": "unbounded_consumption",
+      "attack_surface": "runtime_budget",
+      "owasp_mapping": "LLM10:2025 Unbounded Consumption",
+      "atlas_mapping": "resource exhaustion",
+      "required_controls": ["rate_limit", "budget_limit", "loop_guard"],
+      "sanitized_example": "sanitized resource-amplification probe"
+    },
+    {
+      "scenario_id": "edge_cache_poisoning",
+      "threat_category": "edge_cache_poisoning",
+      "attack_surface": "offline_cache",
+      "owasp_mapping": "LLM04 and LLM08 adapted for edge cache state",
+      "atlas_mapping": "poisoned AI data or context",
+      "required_controls": ["cache_integrity", "freshness_attestation", "sync_review"],
+      "sanitized_example": "sanitized stale-cache manipulation probe"
+    },
+    {
+      "scenario_id": "fallback_abuse",
+      "threat_category": "fallback_abuse",
+      "attack_surface": "central_fallback",
+      "owasp_mapping": "LLM06 and LLM10 adapted for fallback routing",
+      "atlas_mapping": "policy bypass through system behavior",
+      "required_controls": ["fallback_policy", "residency_check", "privacy_check"],
+      "sanitized_example": "sanitized fallback-policy confusion probe"
+    },
+    {
+      "scenario_id": "policy_confusion",
+      "threat_category": "policy_confusion",
+      "attack_surface": "authorization_layer",
+      "owasp_mapping": "LLM06 Excessive Agency and LLM02 Sensitive Information Disclosure",
+      "atlas_mapping": "privilege or policy manipulation",
+      "required_controls": ["policy_order", "tenant_boundary", "access_trace"],
+      "sanitized_example": "sanitized role-boundary confusion probe"
+    }
+  ],
+  "decision_gates": {
+    "allow_sanitized_red_team_case_recorded": "Allow the sanitized red-team case record when authorization, rules of engagement, scope, payload safety, policy, data boundaries, telemetry, evidence, mitigation, and regression checks pass.",
+    "block_missing_authorization": "Block when written authorization or rules of engagement are missing.",
+    "block_out_of_scope_target": "Block when the scenario is outside the approved AOIS-P scope.",
+    "block_live_target_requested": "Block when the case points at a live, production, or external target.",
+    "block_unsanitized_payload": "Block when the payload contains unsafe, executable, secret-bearing, or non-sanitized attack content.",
+    "block_policy_boundary": "Block when access, tenancy, release, or safety policy boundaries fail.",
+    "block_tool_permission_overreach": "Block when the scenario asks for tool privileges beyond the approved red-team harness.",
+    "block_data_boundary_violation": "Block when the scenario crosses tenant, privacy, residency, or secret boundaries.",
+    "hold_missing_telemetry": "Hold when traces, logs, metrics, or red-team evidence cannot be captured safely.",
+    "hold_missing_evidence": "Hold when the finding cannot cite sanitized observation evidence.",
+    "hold_missing_mitigation": "Hold a confirmed failure until mitigation ownership and action are recorded.",
+    "require_regression_test": "Require a regression case before closing a confirmed failure.",
+    "escalate_direct_prompt_injection": "Escalate a direct prompt injection control failure.",
+    "escalate_indirect_prompt_injection": "Escalate an indirect prompt injection or retrieved-context control failure.",
+    "escalate_system_prompt_leakage": "Escalate a system prompt leakage or hidden instruction disclosure failure.",
+    "escalate_sensitive_information_disclosure": "Escalate a sensitive information disclosure failure.",
+    "escalate_rag_or_data_poisoning": "Escalate a retrieval, vector, data, model, or supply-chain poisoning failure.",
+    "escalate_excessive_agency": "Escalate unauthorized tool use or excessive agency.",
+    "escalate_improper_output_handling": "Escalate unsafe downstream use of model output.",
+    "escalate_unbounded_consumption": "Escalate resource-amplification or loop-budget failure.",
+    "escalate_edge_cache_poisoning": "Escalate stale, poisoned, or unauthenticated edge cache state.",
+    "escalate_fallback_abuse": "Escalate central fallback, residency, privacy, or routing abuse.",
+    "escalate_policy_confusion": "Escalate access, tenancy, role, or policy-order confusion."
+  },
+  "case_defaults": {
+    "incident_id": "inc-v33-default",
+    "trace_id": "trace-v33-default",
+    "scenario_id": "direct_prompt_injection",
+    "threat_category": "prompt_injection",
+    "attack_surface": "chat_input",
+    "modality": "text",
+    "deployment_target": "edge_online",
+    "authorization_status": "approved",
+    "rules_of_engagement_status": "approved",
+    "scope_status": "in_scope",
+    "payload_safety_status": "sanitized",
+    "target_status": "local_synthetic",
+    "policy_status": "pass",
+    "tool_permission_status": "least_privilege",
+    "data_boundary_status": "pass",
+    "telemetry_status": "captured",
+    "evidence_status": "present",
+    "expected_control": "instruction_hierarchy",
+    "observed_behavior_status": "control_passed",
+    "severity": "none",
+    "mitigation_status": "ready",
+    "regression_status": "ready"
+  },
+  "red_team_cases": [
+    {
+      "case_id": "red-v33-001",
+      "name": "sanitized_case_recorded",
+      "expected_decision": "allow_sanitized_red_team_case_recorded",
+      "expected_operator_action": "record_sanitized_red_team_result",
+      "expected_red_team_state": "recorded"
+    },
+    {
+      "case_id": "red-v33-002",
+      "name": "missing_authorization_blocked",
+      "overrides": {"authorization_status": "missing"},
+      "expected_decision": "block_missing_authorization",
+      "expected_operator_action": "obtain_red_team_authorization",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-003",
+      "name": "missing_rules_of_engagement_blocked",
+      "overrides": {"rules_of_engagement_status": "missing"},
+      "expected_decision": "block_missing_authorization",
+      "expected_operator_action": "obtain_red_team_authorization",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-004",
+      "name": "out_of_scope_target_blocked",
+      "overrides": {"scope_status": "out_of_scope"},
+      "expected_decision": "block_out_of_scope_target",
+      "expected_operator_action": "reduce_to_approved_scope",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-005",
+      "name": "live_target_requested_blocked",
+      "overrides": {"target_status": "live_external"},
+      "expected_decision": "block_live_target_requested",
+      "expected_operator_action": "replace_with_local_synthetic_target",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-006",
+      "name": "unsanitized_payload_blocked",
+      "overrides": {"payload_safety_status": "unsafe"},
+      "expected_decision": "block_unsanitized_payload",
+      "expected_operator_action": "sanitize_or_remove_payload",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-007",
+      "name": "policy_boundary_blocked",
+      "overrides": {"policy_status": "fail"},
+      "expected_decision": "block_policy_boundary",
+      "expected_operator_action": "repair_red_team_policy_boundary",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-008",
+      "name": "tool_permission_overreach_blocked",
+      "overrides": {"tool_permission_status": "overprivileged"},
+      "expected_decision": "block_tool_permission_overreach",
+      "expected_operator_action": "reduce_tool_permissions",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-009",
+      "name": "data_boundary_violation_blocked",
+      "overrides": {"data_boundary_status": "fail"},
+      "expected_decision": "block_data_boundary_violation",
+      "expected_operator_action": "repair_data_boundary",
+      "expected_red_team_state": "blocked"
+    },
+    {
+      "case_id": "red-v33-010",
+      "name": "missing_telemetry_held",
+      "overrides": {"telemetry_status": "missing"},
+      "expected_decision": "hold_missing_telemetry",
+      "expected_operator_action": "instrument_red_team_evidence",
+      "expected_red_team_state": "held"
+    },
+    {
+      "case_id": "red-v33-011",
+      "name": "missing_evidence_held",
+      "overrides": {"evidence_status": "missing"},
+      "expected_decision": "hold_missing_evidence",
+      "expected_operator_action": "collect_sanitized_observation_evidence",
+      "expected_red_team_state": "held"
+    },
+    {
+      "case_id": "red-v33-012",
+      "name": "missing_mitigation_held",
+      "overrides": {
+        "observed_behavior_status": "control_failed",
+        "severity": "high",
+        "mitigation_status": "missing"
+      },
+      "expected_decision": "hold_missing_mitigation",
+      "expected_operator_action": "assign_mitigation_owner",
+      "expected_red_team_state": "held"
+    },
+    {
+      "case_id": "red-v33-013",
+      "name": "missing_regression_required",
+      "overrides": {
+        "observed_behavior_status": "control_failed",
+        "severity": "high",
+        "regression_status": "missing"
+      },
+      "expected_decision": "require_regression_test",
+      "expected_operator_action": "create_regression_case",
+      "expected_red_team_state": "held"
+    },
+    {
+      "case_id": "red-v33-014",
+      "name": "direct_prompt_injection_escalated",
+      "overrides": {
+        "observed_behavior_status": "control_failed",
+        "severity": "high"
+      },
+      "expected_decision": "escalate_direct_prompt_injection",
+      "expected_operator_action": "escalate_instruction_boundary_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-015",
+      "name": "indirect_prompt_injection_escalated",
+      "overrides": {
+        "scenario_id": "indirect_prompt_injection",
+        "threat_category": "indirect_prompt_injection",
+        "attack_surface": "retrieved_context",
+        "modality": "document",
+        "expected_control": "retrieval_labeling",
+        "observed_behavior_status": "control_failed",
+        "severity": "critical"
+      },
+      "expected_decision": "escalate_indirect_prompt_injection",
+      "expected_operator_action": "escalate_retrieved_context_boundary_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-016",
+      "name": "system_prompt_leakage_escalated",
+      "overrides": {
+        "scenario_id": "system_prompt_leakage",
+        "threat_category": "system_prompt_leakage",
+        "attack_surface": "model_output",
+        "expected_control": "secret_separation",
+        "observed_behavior_status": "control_failed",
+        "severity": "high"
+      },
+      "expected_decision": "escalate_system_prompt_leakage",
+      "expected_operator_action": "escalate_prompt_secret_boundary_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-017",
+      "name": "sensitive_information_disclosure_escalated",
+      "overrides": {
+        "scenario_id": "sensitive_information_disclosure",
+        "threat_category": "sensitive_information_disclosure",
+        "attack_surface": "memory_or_context",
+        "expected_control": "tenant_boundary",
+        "observed_behavior_status": "control_failed",
+        "severity": "critical"
+      },
+      "expected_decision": "escalate_sensitive_information_disclosure",
+      "expected_operator_action": "escalate_sensitive_data_boundary_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-018",
+      "name": "rag_or_data_poisoning_escalated",
+      "overrides": {
+        "scenario_id": "data_model_poisoning",
+        "threat_category": "poisoning",
+        "attack_surface": "training_or_retrieval_data",
+        "expected_control": "data_provenance",
+        "observed_behavior_status": "control_failed",
+        "severity": "high"
+      },
+      "expected_decision": "escalate_rag_or_data_poisoning",
+      "expected_operator_action": "escalate_poisoning_control_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-019",
+      "name": "vector_embedding_weakness_escalated",
+      "overrides": {
+        "scenario_id": "vector_embedding_weakness",
+        "threat_category": "vector_embedding_weakness",
+        "attack_surface": "rag_index",
+        "expected_control": "retrieval_filter",
+        "observed_behavior_status": "control_failed",
+        "severity": "medium"
+      },
+      "expected_decision": "escalate_rag_or_data_poisoning",
+      "expected_operator_action": "escalate_poisoning_control_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-020",
+      "name": "excessive_agency_escalated",
+      "overrides": {
+        "scenario_id": "excessive_agency",
+        "threat_category": "excessive_agency",
+        "attack_surface": "tool_registry",
+        "expected_control": "least_privilege",
+        "observed_behavior_status": "control_failed",
+        "severity": "critical"
+      },
+      "expected_decision": "escalate_excessive_agency",
+      "expected_operator_action": "escalate_agent_tool_boundary_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-021",
+      "name": "improper_output_handling_escalated",
+      "overrides": {
+        "scenario_id": "improper_output_handling",
+        "threat_category": "output_handling",
+        "attack_surface": "downstream_renderer",
+        "expected_control": "output_encoding",
+        "observed_behavior_status": "control_failed",
+        "severity": "high"
+      },
+      "expected_decision": "escalate_improper_output_handling",
+      "expected_operator_action": "escalate_output_boundary_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-022",
+      "name": "unbounded_consumption_escalated",
+      "overrides": {
+        "scenario_id": "unbounded_consumption",
+        "threat_category": "unbounded_consumption",
+        "attack_surface": "runtime_budget",
+        "expected_control": "budget_limit",
+        "observed_behavior_status": "control_failed",
+        "severity": "medium"
+      },
+      "expected_decision": "escalate_unbounded_consumption",
+      "expected_operator_action": "escalate_runtime_budget_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-023",
+      "name": "edge_cache_poisoning_escalated",
+      "overrides": {
+        "scenario_id": "edge_cache_poisoning",
+        "threat_category": "edge_cache_poisoning",
+        "attack_surface": "offline_cache",
+        "deployment_target": "offline_edge",
+        "expected_control": "cache_integrity",
+        "observed_behavior_status": "control_failed",
+        "severity": "high"
+      },
+      "expected_decision": "escalate_edge_cache_poisoning",
+      "expected_operator_action": "escalate_edge_cache_integrity_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-024",
+      "name": "fallback_abuse_escalated",
+      "overrides": {
+        "scenario_id": "fallback_abuse",
+        "threat_category": "fallback_abuse",
+        "attack_surface": "central_fallback",
+        "expected_control": "fallback_policy",
+        "observed_behavior_status": "control_failed",
+        "severity": "high"
+      },
+      "expected_decision": "escalate_fallback_abuse",
+      "expected_operator_action": "escalate_fallback_policy_failure",
+      "expected_red_team_state": "escalated"
+    },
+    {
+      "case_id": "red-v33-025",
+      "name": "policy_confusion_escalated",
+      "overrides": {
+        "scenario_id": "policy_confusion",
+        "threat_category": "policy_confusion",
+        "attack_surface": "authorization_layer",
+        "expected_control": "policy_order",
+        "observed_behavior_status": "control_failed",
+        "severity": "critical"
+      },
+      "expected_decision": "escalate_policy_confusion",
+      "expected_operator_action": "escalate_policy_order_failure",
+      "expected_red_team_state": "escalated"
+    }
+  ],
+  "required_before_live_red_team": [
+    "written_authorization",
+    "rules_of_engagement",
+    "scope_boundary_review",
+    "legal_and_safety_review",
+    "payload_sanitization_review",
+    "local_synthetic_target_review",
+    "prompt_injection_test_plan",
+    "indirect_injection_test_plan",
+    "system_prompt_leakage_test_plan",
+    "sensitive_information_test_plan",
+    "supply_chain_test_plan",
+    "poisoning_test_plan",
+    "output_handling_test_plan",
+    "excessive_agency_test_plan",
+    "vector_embedding_test_plan",
+    "misinformation_test_plan",
+    "unbounded_consumption_test_plan",
+    "edge_cache_test_plan",
+    "fallback_abuse_test_plan",
+    "policy_confusion_test_plan",
+    "telemetry_evidence_plan",
+    "severity_rubric",
+    "mitigation_owner_plan",
+    "regression_plan",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

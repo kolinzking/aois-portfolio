@@ -1,5 +1,7 @@
 # v0.1 - Linux Essentials
 
+Authoring status: authored
+
 Estimated time: 5-7 focused hours
 
 Quality Target: Elite

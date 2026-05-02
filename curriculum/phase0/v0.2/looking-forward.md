@@ -1,5 +1,7 @@
 # v0.2 Looking Forward
 
+Authoring status: authored
+
 ## What You Should Carry Forward
 
 Linux commands are now scriptable.

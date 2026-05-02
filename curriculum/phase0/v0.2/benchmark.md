@@ -1,5 +1,7 @@
 # v0.2 Benchmark
 
+Authoring status: authored
+
 ## Measurements
 
 Record:

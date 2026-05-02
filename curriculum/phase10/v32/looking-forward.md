@@ -1,11 +1,26 @@
 # v32 Looking Forward
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What You Should Carry Forward
 
-TODO
+Carry forward these v32 controls:
+
+- known device profiles
+- resource budgets
+- model size and quantization review
+- cache, sync, and freshness indicators
+- observability buffers for degraded connectivity
+- residency and privacy placement gates
+- fallback eligibility
+- update channel and rollback requirements
+- access and release gates
 
 ## What The Next Version Will Build On
 
-TODO
+v33 adds adversarial testing and red teaming.
+
+v32 asks whether AOIS-P can place inference safely. v33 asks whether an
+adversary can manipulate the inputs, prompts, tools, policies, media, edge
+state, or operator workflow so that the system makes a bad decision while
+appearing compliant.

@@ -1,0 +1,382 @@
+{
+  "mode": "experiment_model_delivery_tracking_plan_no_runtime",
+  "version": "v29",
+  "namespace": "aois-p",
+  "topic": "Experiment tracking, model version comparison, rollout evidence, and model delivery decisions",
+  "experiment_tracker_started": false,
+  "model_registry_started": false,
+  "training_job_started": false,
+  "eval_job_started": false,
+  "model_downloaded": false,
+  "model_uploaded": false,
+  "model_promoted": false,
+  "traffic_shifted": false,
+  "feature_flag_service_called": false,
+  "rollout_controller_started": false,
+  "database_started": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "tool_calls_executed": false,
+  "command_executed": false,
+  "file_write_performed": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_model_delivery": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "MLflow Tracking",
+      "url": "https://mlflow.org/docs/latest/ml/tracking/",
+      "date_checked": "2026-05-01",
+      "supports": "Experiment runs can record parameters, metrics, artifacts, code versions, datasets, and model checkpoints for later comparison"
+    },
+    {
+      "source": "MLflow Model Registry",
+      "url": "https://mlflow.org/docs/latest/ml/model-registry/",
+      "date_checked": "2026-05-01",
+      "supports": "Model registry records provide model lineage, versions, aliases, tags, annotations, and lifecycle metadata"
+    },
+    {
+      "source": "OpenFeature specification",
+      "url": "https://openfeature.dev/specification/",
+      "date_checked": "2026-05-01",
+      "supports": "Feature flag evaluation can control model or behavior rollout without changing deployed code"
+    },
+    {
+      "source": "Argo Rollouts Analysis",
+      "url": "https://argo-rollouts.readthedocs.io/en/stable/features/analysis/",
+      "date_checked": "2026-05-01",
+      "supports": "Progressive delivery can use analysis runs and metrics to decide whether a rollout should continue, pause, or abort"
+    },
+    {
+      "source": "NIST AI RMF Playbook",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook",
+      "date_checked": "2026-05-01",
+      "supports": "AI risk management should include governance, mapping, measurement, and management activities across deployment and use"
+    }
+  ],
+  "tracking_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_v28_release_controls": true,
+    "local_simulation_only": true,
+    "tracking_contract_only": true,
+    "no_live_tracking_server": true,
+    "no_live_model_registry": true,
+    "no_training_job": true,
+    "no_model_upload": true,
+    "no_model_download": true,
+    "no_live_rollout": true,
+    "no_live_feature_flag_change": true,
+    "no_network_call": true,
+    "no_provider_call": true
+  },
+  "required_controls": {
+    "experiment_id_required": true,
+    "hypothesis_required": true,
+    "baseline_version_required": true,
+    "candidate_version_required": true,
+    "dataset_version_required": true,
+    "metric_catalog_required": true,
+    "guardrail_metric_required": true,
+    "offline_eval_required": true,
+    "online_rollout_evidence_required": true,
+    "version_comparison_required": true,
+    "champion_challenger_required": true,
+    "model_registry_record_required": true,
+    "release_candidate_link_required": true,
+    "feature_flag_link_required": true,
+    "rollback_target_required": true,
+    "approval_record_required": true,
+    "audit_event_required": true,
+    "risk_review_required": true,
+    "primary_aois_separation_required": true,
+    "resource_usage_record_required": true,
+    "source_currency_recorded": true
+  },
+  "delivery_dimensions": [
+    "case_id",
+    "experiment_id",
+    "change_id",
+    "baseline_model_version",
+    "candidate_model_version",
+    "dataset_version",
+    "hypothesis_status",
+    "offline_eval_status",
+    "metric_delta",
+    "guardrail_status",
+    "sample_size_status",
+    "rollout_evidence_status",
+    "model_registry_status",
+    "release_gate_status",
+    "feature_flag_status",
+    "rollback_ready",
+    "approval_status",
+    "risk_status",
+    "delivery_decision",
+    "operator_action"
+  ],
+  "metric_catalog": [
+    {
+      "metric_id": "quality_score",
+      "direction": "higher_is_better",
+      "minimum_delta_for_candidate": 0.02,
+      "blocks_on_regression": true
+    },
+    {
+      "metric_id": "latency_p95_ms",
+      "direction": "lower_is_better",
+      "maximum_allowed_regression": 200,
+      "blocks_on_regression": true
+    },
+    {
+      "metric_id": "cost_per_1k_tokens",
+      "direction": "lower_is_better",
+      "maximum_allowed_regression": 0.05,
+      "blocks_on_regression": true
+    },
+    {
+      "metric_id": "safety_violation_rate",
+      "direction": "lower_is_better",
+      "maximum_allowed_value": 0,
+      "blocks_on_regression": true
+    },
+    {
+      "metric_id": "policy_regression_count",
+      "direction": "lower_is_better",
+      "maximum_allowed_value": 0,
+      "blocks_on_regression": true
+    },
+    {
+      "metric_id": "tenant_isolation_failures",
+      "direction": "lower_is_better",
+      "maximum_allowed_value": 0,
+      "blocks_on_regression": true
+    }
+  ],
+  "evidence_stages": [
+    {
+      "stage_id": "experiment_design",
+      "required_fields": ["experiment_id", "hypothesis_status", "dataset_version"],
+      "blocks_on_missing": true
+    },
+    {
+      "stage_id": "offline_evaluation",
+      "required_fields": ["offline_eval_status", "metric_delta", "guardrail_status"],
+      "blocks_on_missing": true
+    },
+    {
+      "stage_id": "version_comparison",
+      "required_fields": ["baseline_model_version", "candidate_model_version"],
+      "blocks_on_missing": true
+    },
+    {
+      "stage_id": "registry_link",
+      "required_fields": ["model_registry_status", "release_gate_status"],
+      "blocks_on_missing": true
+    },
+    {
+      "stage_id": "rollout_evidence",
+      "required_fields": ["sample_size_status", "rollout_evidence_status", "feature_flag_status"],
+      "blocks_on_missing": true
+    },
+    {
+      "stage_id": "delivery_decision",
+      "required_fields": ["rollback_ready", "approval_status", "risk_status"],
+      "blocks_on_missing": true
+    }
+  ],
+  "decision_gates": {
+    "allow_model_delivery_candidate": "Allow a model or behavior delivery candidate only when experiment design, versions, dataset, metrics, guardrails, rollout evidence, registry, release gate, flag, rollback, approval, and risk review pass.",
+    "block_missing_hypothesis": "Block when the experiment does not document the intended behavior change and expected outcome.",
+    "block_missing_baseline": "Block when the champion or baseline model version is missing.",
+    "block_missing_candidate_version": "Block when the challenger or candidate model version is missing.",
+    "block_missing_dataset_version": "Block when the evaluation dataset version is missing.",
+    "block_offline_eval_failed": "Block when offline evaluation fails.",
+    "block_metric_regression": "Block when quality, latency, or cost deltas violate the metric catalog.",
+    "block_guardrail_regression": "Block when safety, policy, or tenant-isolation guardrails regress.",
+    "hold_sample_size_insufficient": "Hold when rollout sample size is not sufficient for the decision.",
+    "hold_missing_rollout_evidence": "Hold when rollout evidence is missing or incomplete.",
+    "block_registry_incomplete": "Block when the model registry record is incomplete.",
+    "block_release_gate_failed": "Block when the v28 release gate fails.",
+    "hold_feature_flag_not_ready": "Hold when the feature flag is missing, unsafe, or not reversible.",
+    "block_no_rollback": "Block when model rollback target is missing.",
+    "block_missing_approval": "Block when model delivery approval is missing.",
+    "hold_risk_review": "Hold when AI risk review is pending."
+  },
+  "case_defaults": {
+    "experiment_id": "exp-v29-default",
+    "change_id": "change-v29-default",
+    "baseline_model_version": "aois-p-model@champion-v28",
+    "candidate_model_version": "aois-p-model@challenger-v29",
+    "dataset_version": "dataset-v29-eval-001",
+    "hypothesis_status": "documented",
+    "offline_eval_status": "pass",
+    "metric_delta": {
+      "quality_score": 0.04,
+      "latency_p95_ms": 50,
+      "cost_per_1k_tokens": 0.01,
+      "safety_violation_rate": 0,
+      "policy_regression_count": 0,
+      "tenant_isolation_failures": 0
+    },
+    "guardrail_status": "pass",
+    "sample_size_status": "sufficient",
+    "rollout_evidence_status": "complete",
+    "model_registry_status": "complete",
+    "release_gate_status": "pass",
+    "feature_flag_status": "guarded",
+    "rollback_ready": true,
+    "approval_status": "approved",
+    "risk_status": "accepted"
+  },
+  "delivery_cases": [
+    {
+      "case_id": "model-v29-001",
+      "name": "fully_evidenced_model_delivery_candidate",
+      "expected_decision": "allow_model_delivery_candidate",
+      "expected_operator_action": "promote_challenger_with_evidence",
+      "expected_delivery_state": "candidate_ready"
+    },
+    {
+      "case_id": "model-v29-002",
+      "name": "missing_hypothesis_blocked",
+      "overrides": {"hypothesis_status": "missing"},
+      "expected_decision": "block_missing_hypothesis",
+      "expected_operator_action": "document_experiment_hypothesis",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-003",
+      "name": "missing_baseline_blocked",
+      "overrides": {"baseline_model_version": ""},
+      "expected_decision": "block_missing_baseline",
+      "expected_operator_action": "set_baseline_model_version",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-004",
+      "name": "missing_candidate_version_blocked",
+      "overrides": {"candidate_model_version": ""},
+      "expected_decision": "block_missing_candidate_version",
+      "expected_operator_action": "set_candidate_model_version",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-005",
+      "name": "missing_dataset_version_blocked",
+      "overrides": {"dataset_version": ""},
+      "expected_decision": "block_missing_dataset_version",
+      "expected_operator_action": "pin_eval_dataset_version",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-006",
+      "name": "offline_eval_failed_blocked",
+      "overrides": {"offline_eval_status": "fail"},
+      "expected_decision": "block_offline_eval_failed",
+      "expected_operator_action": "fix_or_rerun_offline_eval",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-007",
+      "name": "metric_regression_blocked",
+      "overrides": {"metric_delta": {"quality_score": -0.01}},
+      "expected_decision": "block_metric_regression",
+      "expected_operator_action": "investigate_metric_regression",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-008",
+      "name": "guardrail_regression_blocked",
+      "overrides": {
+        "guardrail_status": "fail",
+        "metric_delta": {"policy_regression_count": 1}
+      },
+      "expected_decision": "block_guardrail_regression",
+      "expected_operator_action": "fix_guardrail_regression",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-009",
+      "name": "sample_size_insufficient_held",
+      "overrides": {"sample_size_status": "insufficient"},
+      "expected_decision": "hold_sample_size_insufficient",
+      "expected_operator_action": "collect_more_rollout_samples",
+      "expected_delivery_state": "held"
+    },
+    {
+      "case_id": "model-v29-010",
+      "name": "missing_rollout_evidence_held",
+      "overrides": {"rollout_evidence_status": "missing"},
+      "expected_decision": "hold_missing_rollout_evidence",
+      "expected_operator_action": "collect_rollout_evidence",
+      "expected_delivery_state": "held"
+    },
+    {
+      "case_id": "model-v29-011",
+      "name": "registry_incomplete_blocked",
+      "overrides": {"model_registry_status": "incomplete"},
+      "expected_decision": "block_registry_incomplete",
+      "expected_operator_action": "complete_model_registry_record",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-012",
+      "name": "release_gate_failed_blocked",
+      "overrides": {"release_gate_status": "fail"},
+      "expected_decision": "block_release_gate_failed",
+      "expected_operator_action": "return_to_release_gate",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-013",
+      "name": "feature_flag_not_ready_held",
+      "overrides": {"feature_flag_status": "unsafe"},
+      "expected_decision": "hold_feature_flag_not_ready",
+      "expected_operator_action": "repair_feature_flag_guard",
+      "expected_delivery_state": "held"
+    },
+    {
+      "case_id": "model-v29-014",
+      "name": "rollback_missing_blocked",
+      "overrides": {"rollback_ready": false},
+      "expected_decision": "block_no_rollback",
+      "expected_operator_action": "define_model_rollback_target",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-015",
+      "name": "approval_missing_blocked",
+      "overrides": {"approval_status": "missing"},
+      "expected_decision": "block_missing_approval",
+      "expected_operator_action": "request_model_delivery_approval",
+      "expected_delivery_state": "blocked"
+    },
+    {
+      "case_id": "model-v29-016",
+      "name": "risk_review_pending_held",
+      "overrides": {"risk_status": "pending"},
+      "expected_decision": "hold_risk_review",
+      "expected_operator_action": "complete_risk_review",
+      "expected_delivery_state": "held"
+    }
+  ],
+  "required_before_live_model_delivery": [
+    "experiment_tracking_review",
+    "model_registry_review",
+    "dataset_version_review",
+    "metric_catalog_review",
+    "offline_eval_review",
+    "guardrail_review",
+    "sample_size_review",
+    "rollout_evidence_review",
+    "release_gate_review",
+    "feature_flag_review",
+    "rollback_review",
+    "approval_record_review",
+    "risk_review",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

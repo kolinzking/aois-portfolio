@@ -1,5 +1,7 @@
 # v0.2 Summary Notes
 
+Authoring status: authored
+
 ## What Was Built
 
 The first AOIS automation artifacts:

@@ -1,5 +1,7 @@
 # v0.2 Lab
 
+Authoring status: authored
+
 ## Build Lab
 
 Create `scripts/sysinfo.sh` and `scripts/log_analyzer.sh` exactly as shown in `notes.md`, make them executable, and run them.

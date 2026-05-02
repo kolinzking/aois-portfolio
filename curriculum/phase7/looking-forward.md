@@ -1,8 +1,8 @@
 # Phase 7 Looking Forward
 
-Authoring status: partial
+Authoring status: authored
 
-Phase 7 is in progress.
+Phase 7 is complete.
 
 What AOIS has gained so far:
 
@@ -14,17 +14,28 @@ What AOIS has gained so far:
 - per-incident and per-step cost accounting
 - deterministic budget and waste decision gates
 - budget-aware route selection before spend
-
-Remaining Phase 7 work:
-
-- MCP and tool registry governance
-- durable workflow recovery
-- stateful orchestration
-- agent evaluation
-- live operations controls
-- multi-agent coordination
+- governed MCP tool registry decisions
+- route-based tool allowlists
+- sensitive-read approval gates
+- durable workflow checkpoints
+- approval wait and resume states
+- idempotency, retry, timeout, and recovery modeling
+- stateful orchestration stop-first policy
+- loop iteration, no-progress, budget, registry, and approval guards
+- connected agent evaluation with critical safety gates
+- runtime autonomy modes and operator controls
+- supervisor-led multi-agent collaboration
 - safe execution boundaries
 
-The current bridge is from v20.2 to v21. AOIS now has planned agent steps, cost
-visibility, and budget-aware route selection; the next job is governing the tool
-registry those routes can use.
+Remaining risk to carry forward:
+
+- the system is still mostly local policy and simulation
+- operators need a product surface to inspect state and decisions
+- approvals, budgets, traces, agent roles, and execution boundaries need to be visible together
+
+The current bridge is from Phase 7 to Phase 8. AOIS now has planned agent steps, cost
+visibility, budget-aware route selection, governed tool exposure, and durable
+workflow state. It also has a bounded orchestration loop and connected agent
+evaluation. It now has a runtime autonomy operating envelope and a governed
+multi-agent collaboration policy. It now has safe execution boundaries. The
+next job is dashboard and real-time visibility.

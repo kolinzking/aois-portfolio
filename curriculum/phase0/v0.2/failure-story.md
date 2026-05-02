@@ -1,5 +1,7 @@
 # v0.2 Failure Story
 
+Authoring status: authored
+
 ## Symptom
 
 The script existed, but it would not execute.

@@ -1,5 +1,7 @@
 # v0.1 Looking Forward
 
+Authoring status: authored
+
 ## What You Should Carry Forward
 
 The terminal is now the first AOIS operating surface.

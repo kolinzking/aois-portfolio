@@ -1,0 +1,371 @@
+{
+  "mode": "multimodal_aois_plan_no_runtime",
+  "version": "v31",
+  "namespace": "aois-p",
+  "topic": "Multimodal AOIS paths for non-text inputs, cross-modal analysis, and interface changes",
+  "multimodal_runtime_started": false,
+  "model_runtime_started": false,
+  "vision_model_called": false,
+  "audio_model_called": false,
+  "video_model_called": false,
+  "ocr_engine_started": false,
+  "transcription_engine_started": false,
+  "camera_started": false,
+  "microphone_started": false,
+  "media_file_read": false,
+  "file_uploaded": false,
+  "media_downloaded": false,
+  "media_processed": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "tool_calls_executed": false,
+  "command_executed": false,
+  "file_write_performed": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_multimodal": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "W3C WCAG 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "date_checked": "2026-05-01",
+      "supports": "Non-text content and time-based media require text alternatives, captions, descriptions, keyboard access, and non-interference controls"
+    },
+    {
+      "source": "W3C Media Accessibility User Requirements",
+      "url": "https://www.w3.org/TR/media-accessibility-reqs/",
+      "date_checked": "2026-05-01",
+      "supports": "Audio and video experiences should account for captions, transcripts, descriptions, synchronization, and assistive technology needs"
+    },
+    {
+      "source": "OWASP File Upload Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
+      "date_checked": "2026-05-01",
+      "supports": "Media intake should validate file extension, content type, file signature, filename safety, storage location, permissions, and upload limits"
+    },
+    {
+      "source": "OpenTelemetry Semantic Conventions",
+      "url": "https://opentelemetry.io/docs/concepts/semantic-conventions/",
+      "date_checked": "2026-05-01",
+      "supports": "Multimodal paths need consistent telemetry fields across traces, metrics, logs, resources, and errors"
+    },
+    {
+      "source": "NIST AI RMF Playbook",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook",
+      "date_checked": "2026-05-01",
+      "supports": "AI risk management should map, measure, manage, and govern risks across new capabilities and deployment contexts"
+    }
+  ],
+  "multimodal_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_phase9_platform_controls": true,
+    "local_simulation_only": true,
+    "multimodal_contract_only": true,
+    "no_live_media_ingest": true,
+    "no_live_camera": true,
+    "no_live_microphone": true,
+    "no_media_file_read": true,
+    "no_model_runtime": true,
+    "no_ocr_runtime": true,
+    "no_transcription_runtime": true,
+    "no_network_call": true,
+    "no_provider_call": true
+  },
+  "required_controls": {
+    "modality_declared_required": true,
+    "media_type_allowlist_required": true,
+    "file_signature_validation_required": true,
+    "file_size_limit_required": true,
+    "source_trust_required": true,
+    "consent_required": true,
+    "pii_review_required": true,
+    "redaction_required": true,
+    "accessibility_alternative_required": true,
+    "transcript_required_for_time_based_media": true,
+    "cross_modal_consistency_required": true,
+    "evidence_required": true,
+    "confidence_required": true,
+    "model_route_required": true,
+    "text_fallback_required": true,
+    "observability_trace_required": true,
+    "policy_access_required": true,
+    "release_integration_required": true,
+    "platform_integration_required": true,
+    "primary_aois_separation_required": true,
+    "resource_usage_record_required": true,
+    "source_currency_recorded": true
+  },
+  "multimodal_dimensions": [
+    "case_id",
+    "incident_id",
+    "trace_id",
+    "modality",
+    "media_type",
+    "source_trust",
+    "file_validation_status",
+    "size_status",
+    "consent_status",
+    "pii_status",
+    "accessibility_alternative_status",
+    "transcript_status",
+    "modality_alignment_status",
+    "evidence_status",
+    "confidence",
+    "model_route_status",
+    "provider_status",
+    "policy_status",
+    "fallback_available",
+    "multimodal_decision",
+    "operator_action"
+  ],
+  "modality_catalog": [
+    {
+      "modality": "image",
+      "allowed_media_types": ["image/png", "image/jpeg", "image/webp"],
+      "max_bytes": 5242880,
+      "requires_accessibility_alternative": true,
+      "requires_transcript": false,
+      "primary_risks": ["embedded_text", "faces", "screenshots", "metadata"]
+    },
+    {
+      "modality": "audio",
+      "allowed_media_types": ["audio/wav", "audio/mpeg", "audio/ogg"],
+      "max_bytes": 10485760,
+      "requires_accessibility_alternative": false,
+      "requires_transcript": true,
+      "primary_risks": ["voice_identity", "background_speech", "transcription_error"]
+    },
+    {
+      "modality": "video",
+      "allowed_media_types": ["video/mp4", "video/webm"],
+      "max_bytes": 52428800,
+      "requires_accessibility_alternative": true,
+      "requires_transcript": true,
+      "primary_risks": ["faces", "screen_content", "audio_track", "temporal_context"]
+    },
+    {
+      "modality": "document",
+      "allowed_media_types": ["application/pdf", "image/tiff"],
+      "max_bytes": 20971520,
+      "requires_accessibility_alternative": false,
+      "requires_transcript": true,
+      "primary_risks": ["embedded_text", "pii", "tables", "layout_loss"]
+    }
+  ],
+  "decision_gates": {
+    "allow_image_analysis": "Allow image analysis when media intake, consent, redaction, accessibility alternative, evidence, route, policy, and confidence checks pass.",
+    "allow_audio_analysis": "Allow audio analysis when validated media has consent, redaction, transcript, evidence, route, policy, and confidence checks.",
+    "allow_video_analysis": "Allow video analysis when validated media has consent, redaction, accessibility alternative, transcript, evidence, route, policy, and confidence checks.",
+    "allow_document_analysis": "Allow document analysis when validated media has consent, redaction, transcript or extracted text, evidence, route, policy, and confidence checks.",
+    "block_unknown_modality": "Block when the input modality is not in the approved AOIS-P modality catalog.",
+    "block_unsupported_media_type": "Block when media type is outside the modality allowlist.",
+    "block_file_validation_failed": "Block when signature, extension, filename, or content validation fails.",
+    "block_size_limit_exceeded": "Block when media exceeds the approved size limit.",
+    "block_missing_consent": "Block when consent or lawful intake basis is missing.",
+    "block_pii_unredacted": "Block when detected PII or sensitive media content is not redacted.",
+    "block_missing_accessibility_alternative": "Block visual media when required text alternative or description is missing.",
+    "block_missing_transcript": "Block time-based media or document extraction when transcript or text extraction is missing.",
+    "block_cross_modal_mismatch": "Block when text, audio, visual, or document signals contradict each other without explanation.",
+    "hold_missing_evidence": "Hold when the model answer cannot cite multimodal evidence.",
+    "hold_low_confidence": "Hold when confidence is below the multimodal action threshold.",
+    "route_to_text_fallback": "Route to text-only fallback when the multimodal provider is unavailable but an accessible fallback exists.",
+    "block_policy_boundary": "Block when access, tenancy, safety, or release policy boundaries fail."
+  },
+  "case_defaults": {
+    "incident_id": "inc-v31-default",
+    "trace_id": "trace-v31-default",
+    "modality": "image",
+    "media_type": "image/png",
+    "source_trust": "known_operator",
+    "file_validation_status": "pass",
+    "size_status": "pass",
+    "consent_status": "present",
+    "pii_status": "redacted",
+    "accessibility_alternative_status": "present",
+    "transcript_status": "not_required",
+    "modality_alignment_status": "pass",
+    "evidence_status": "present",
+    "confidence": 0.86,
+    "model_route_status": "approved",
+    "provider_status": "available",
+    "policy_status": "pass",
+    "fallback_available": true
+  },
+  "multimodal_cases": [
+    {
+      "case_id": "multi-v31-001",
+      "name": "image_incident_analysis_allowed",
+      "expected_decision": "allow_image_analysis",
+      "expected_operator_action": "render_image_evidence_summary",
+      "expected_multimodal_state": "allowed"
+    },
+    {
+      "case_id": "multi-v31-002",
+      "name": "audio_incident_analysis_allowed",
+      "overrides": {
+        "modality": "audio",
+        "media_type": "audio/wav",
+        "accessibility_alternative_status": "not_required",
+        "transcript_status": "present"
+      },
+      "expected_decision": "allow_audio_analysis",
+      "expected_operator_action": "render_audio_transcript_summary",
+      "expected_multimodal_state": "allowed"
+    },
+    {
+      "case_id": "multi-v31-003",
+      "name": "video_incident_analysis_allowed",
+      "overrides": {
+        "modality": "video",
+        "media_type": "video/mp4",
+        "transcript_status": "present"
+      },
+      "expected_decision": "allow_video_analysis",
+      "expected_operator_action": "render_video_scene_summary",
+      "expected_multimodal_state": "allowed"
+    },
+    {
+      "case_id": "multi-v31-004",
+      "name": "document_incident_analysis_allowed",
+      "overrides": {
+        "modality": "document",
+        "media_type": "application/pdf",
+        "accessibility_alternative_status": "not_required",
+        "transcript_status": "present"
+      },
+      "expected_decision": "allow_document_analysis",
+      "expected_operator_action": "render_document_evidence_summary",
+      "expected_multimodal_state": "allowed"
+    },
+    {
+      "case_id": "multi-v31-005",
+      "name": "unknown_modality_blocked",
+      "overrides": {"modality": "lidar", "media_type": "application/octet-stream"},
+      "expected_decision": "block_unknown_modality",
+      "expected_operator_action": "reject_unknown_modality",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-006",
+      "name": "unsupported_media_type_blocked",
+      "overrides": {"media_type": "image/svg+xml"},
+      "expected_decision": "block_unsupported_media_type",
+      "expected_operator_action": "reject_unsupported_media_type",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-007",
+      "name": "file_validation_failed_blocked",
+      "overrides": {"file_validation_status": "fail"},
+      "expected_decision": "block_file_validation_failed",
+      "expected_operator_action": "quarantine_media_before_analysis",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-008",
+      "name": "size_limit_exceeded_blocked",
+      "overrides": {"size_status": "exceeded"},
+      "expected_decision": "block_size_limit_exceeded",
+      "expected_operator_action": "request_smaller_or_sampled_media",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-009",
+      "name": "missing_consent_blocked",
+      "overrides": {"consent_status": "missing"},
+      "expected_decision": "block_missing_consent",
+      "expected_operator_action": "obtain_media_intake_consent",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-010",
+      "name": "pii_unredacted_blocked",
+      "overrides": {"pii_status": "raw"},
+      "expected_decision": "block_pii_unredacted",
+      "expected_operator_action": "redact_sensitive_media_content",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-011",
+      "name": "missing_accessibility_alternative_blocked",
+      "overrides": {"accessibility_alternative_status": "missing"},
+      "expected_decision": "block_missing_accessibility_alternative",
+      "expected_operator_action": "add_text_alternative_or_description",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-012",
+      "name": "missing_transcript_blocked",
+      "overrides": {
+        "modality": "audio",
+        "media_type": "audio/wav",
+        "accessibility_alternative_status": "not_required",
+        "transcript_status": "missing"
+      },
+      "expected_decision": "block_missing_transcript",
+      "expected_operator_action": "add_transcript_or_extracted_text",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-013",
+      "name": "cross_modal_mismatch_blocked",
+      "overrides": {"modality_alignment_status": "mismatch"},
+      "expected_decision": "block_cross_modal_mismatch",
+      "expected_operator_action": "investigate_cross_modal_conflict",
+      "expected_multimodal_state": "blocked"
+    },
+    {
+      "case_id": "multi-v31-014",
+      "name": "missing_evidence_held",
+      "overrides": {"evidence_status": "missing"},
+      "expected_decision": "hold_missing_evidence",
+      "expected_operator_action": "collect_multimodal_evidence",
+      "expected_multimodal_state": "held"
+    },
+    {
+      "case_id": "multi-v31-015",
+      "name": "low_confidence_held",
+      "overrides": {"confidence": 0.42},
+      "expected_decision": "hold_low_confidence",
+      "expected_operator_action": "route_to_human_review",
+      "expected_multimodal_state": "held"
+    },
+    {
+      "case_id": "multi-v31-016",
+      "name": "provider_unavailable_text_fallback",
+      "overrides": {"provider_status": "unavailable"},
+      "expected_decision": "route_to_text_fallback",
+      "expected_operator_action": "use_accessible_text_fallback",
+      "expected_multimodal_state": "fallback"
+    },
+    {
+      "case_id": "multi-v31-017",
+      "name": "policy_boundary_blocked",
+      "overrides": {"policy_status": "fail"},
+      "expected_decision": "block_policy_boundary",
+      "expected_operator_action": "repair_multimodal_policy_boundary",
+      "expected_multimodal_state": "blocked"
+    }
+  ],
+  "required_before_live_multimodal": [
+    "media_intake_review",
+    "file_upload_security_review",
+    "modality_catalog_review",
+    "consent_and_privacy_review",
+    "pii_redaction_review",
+    "accessibility_alternative_review",
+    "transcript_review",
+    "cross_modal_consistency_review",
+    "confidence_threshold_review",
+    "model_route_review",
+    "text_fallback_review",
+    "observability_review",
+    "policy_access_review",
+    "release_integration_review",
+    "platform_integration_review",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

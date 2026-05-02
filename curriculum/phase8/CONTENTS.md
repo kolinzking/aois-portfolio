@@ -1,11 +1,28 @@
 # Phase 8 Contents
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Phase Files
 
-TODO
+- [00-introduction.md](00-introduction.md)
+- [v26](v26/notes.md)
+- [v27](v27/notes.md)
+- [looking-forward.md](looking-forward.md)
 
 ## Phase Focus
 
-TODO
+- dashboard and real-time visibility
+- product-surface state contracts
+- operator workflows
+- auth and tenancy
+- policy-aware access
+
+## Phase Progress
+
+Phase 8 is authored through `v27` and is complete.
+
+The phase now has a dashboard visibility contract for incidents, traces, route
+and registry decisions, workflow and orchestration state, autonomy and agent
+state, approvals, budgets, and execution-boundary decisions. It also has
+identity-aware product controls for subjects, tenants, roles, resources,
+actions, redaction, approval separation, break-glass access, and audit events.

@@ -1,11 +1,29 @@
 # v31 Looking Forward
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## What You Should Carry Forward
 
-TODO
+Carry forward these v31 controls:
+
+- modality catalog
+- media type allowlist
+- file validation
+- media size limits
+- consent and privacy gates
+- PII redaction
+- accessibility alternatives
+- transcripts and extracted text
+- cross-modal consistency
+- evidence and confidence checks
+- text fallback
+- platform and release integration
 
 ## What The Next Version Will Build On
 
-TODO
+v32 adds edge and offline inference patterns.
+
+v31 expands AOIS-P to non-text signals. v32 asks what changes when multimodal
+or model inference must run under edge constraints: limited compute, limited
+memory, intermittent connectivity, data locality, update constraints, and
+fallback requirements.

@@ -1,0 +1,351 @@
+{
+  "mode": "delivery_release_controls_plan_no_runtime",
+  "version": "v28",
+  "namespace": "aois-p",
+  "topic": "Delivery pipeline, release gates, signatures, rollout controls, model rollout control, and feature-flagged AI releases",
+  "ci_runtime_started": false,
+  "workflow_started": false,
+  "build_started": false,
+  "test_runner_started": false,
+  "container_build_started": false,
+  "image_pushed": false,
+  "image_signed": false,
+  "signature_verified": false,
+  "deployment_started": false,
+  "kubernetes_applied": false,
+  "rollout_started": false,
+  "traffic_shifted": false,
+  "feature_flag_service_called": false,
+  "model_endpoint_changed": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "tool_calls_executed": false,
+  "command_executed": false,
+  "file_write_performed": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_release": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "GitHub Actions workflow syntax",
+      "url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
+      "date_checked": "2026-05-01",
+      "supports": "A delivery workflow can be modeled as jobs with dependencies, permissions, environments, conditions, and concurrency"
+    },
+    {
+      "source": "SLSA specification v1.2",
+      "url": "https://slsa.dev/spec/v1.2/",
+      "date_checked": "2026-05-01",
+      "supports": "Build integrity requires provenance, platform controls, dependency tracking, and verifiable release evidence"
+    },
+    {
+      "source": "Sigstore Cosign signing overview",
+      "url": "https://docs.sigstore.dev/cosign/signing/overview/",
+      "date_checked": "2026-05-01",
+      "supports": "Artifact signing and transparency logs provide auditable evidence that a release artifact was signed by an expected identity"
+    },
+    {
+      "source": "Kubernetes Deployment documentation",
+      "url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "date_checked": "2026-05-01",
+      "supports": "Deployment rollouts expose rollout state and support controlled updates and rollback of workload replicas"
+    },
+    {
+      "source": "OpenFeature specification",
+      "url": "https://openfeature.dev/specification/",
+      "date_checked": "2026-05-01",
+      "supports": "Feature flag evaluation can be standardized behind provider-agnostic APIs for controlled product and AI behavior release"
+    }
+  ],
+  "release_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_phase8_visibility_and_access_contracts": true,
+    "local_simulation_only": true,
+    "delivery_contract_only": true,
+    "no_live_ci_runtime": true,
+    "no_live_container_build": true,
+    "no_live_registry_push": true,
+    "no_live_signature_action": true,
+    "no_live_cluster_deploy": true,
+    "no_live_traffic_shift": true,
+    "no_live_feature_flag_change": true,
+    "no_live_model_change": true,
+    "no_network_call": true,
+    "no_provider_call": true
+  },
+  "required_controls": {
+    "source_revision_required": true,
+    "branch_policy_required": true,
+    "workflow_permissions_required": true,
+    "dependency_review_required": true,
+    "unit_tests_required": true,
+    "integration_tests_required": true,
+    "policy_tests_required": true,
+    "security_scan_required": true,
+    "artifact_digest_required": true,
+    "build_provenance_required": true,
+    "image_signature_required": true,
+    "signature_verification_required": true,
+    "release_gate_required": true,
+    "environment_approval_required": true,
+    "rollout_strategy_required": true,
+    "health_check_required": true,
+    "rollback_plan_required": true,
+    "model_rollout_control_required": true,
+    "feature_flag_control_required": true,
+    "access_policy_regression_required": true,
+    "dashboard_visibility_regression_required": true,
+    "release_evidence_required": true,
+    "primary_aois_separation_required": true,
+    "resource_usage_record_required": true,
+    "source_currency_recorded": true
+  },
+  "release_dimensions": [
+    "case_id",
+    "change_id",
+    "source_revision",
+    "branch_status",
+    "workflow_permissions",
+    "dependency_review",
+    "test_status",
+    "policy_test_status",
+    "security_scan_status",
+    "artifact_digest",
+    "provenance_status",
+    "signature_status",
+    "environment_approval",
+    "rollout_strategy",
+    "health_status",
+    "rollback_ready",
+    "model_rollout_status",
+    "feature_flag_status",
+    "release_decision",
+    "operator_action",
+    "release_evidence"
+  ],
+  "pipeline_stages": [
+    {
+      "stage_id": "source_control",
+      "description": "Confirm source revision, branch policy, and review state before building.",
+      "required_inputs": ["change_id", "source_revision", "branch_status"],
+      "blocks_on_failure": true
+    },
+    {
+      "stage_id": "build_test",
+      "description": "Run build, unit tests, integration tests, policy tests, and security checks.",
+      "required_inputs": ["test_status", "policy_test_status", "security_scan_status"],
+      "blocks_on_failure": true
+    },
+    {
+      "stage_id": "package_attest",
+      "description": "Produce artifact digest, provenance, signature, and verification evidence.",
+      "required_inputs": ["artifact_digest", "provenance_status", "signature_status"],
+      "blocks_on_failure": true
+    },
+    {
+      "stage_id": "release_gate",
+      "description": "Require environment approval and release evidence before rollout.",
+      "required_inputs": ["environment_approval", "release_evidence"],
+      "blocks_on_failure": true
+    },
+    {
+      "stage_id": "rollout_control",
+      "description": "Control rollout strategy, health checks, rollback readiness, model rollout, and feature flags.",
+      "required_inputs": [
+        "rollout_strategy",
+        "health_status",
+        "rollback_ready",
+        "model_rollout_status",
+        "feature_flag_status"
+      ],
+      "blocks_on_failure": true
+    }
+  ],
+  "decision_gates": {
+    "allow_release_candidate": "Allow a release candidate only when source, tests, policy checks, scans, provenance, signature, approval, rollout, model, and flag controls pass.",
+    "block_unreviewed_branch": "Block when branch policy or source review has not passed.",
+    "block_workflow_overprivileged": "Block when workflow permissions are broader than the release job requires.",
+    "block_dependency_review_failed": "Block when dependency review fails or unresolved dependency risk exists.",
+    "block_tests_failed": "Block when build, unit, integration, dashboard, or access-policy regression checks fail.",
+    "block_policy_tests_failed": "Block when AOIS policy, tenancy, redaction, approval, or execution-boundary tests fail.",
+    "block_security_scan_failed": "Block when release security checks fail.",
+    "block_missing_digest": "Block when the artifact digest is missing.",
+    "block_missing_provenance": "Block when build provenance is missing or incomplete.",
+    "block_unsigned_artifact": "Block when the artifact lacks expected signature evidence.",
+    "block_signature_unverified": "Block when signature verification fails.",
+    "block_missing_environment_approval": "Block when the release lacks required environment approval.",
+    "hold_rollout_health": "Hold rollout when health checks are degraded or unknown.",
+    "block_no_rollback": "Block when rollback plan or rollback target is missing.",
+    "hold_model_rollout": "Hold when model rollout control is not staged, measured, or reversible.",
+    "hold_feature_flag": "Hold when feature flag configuration is missing, unsafe, or not reversible."
+  },
+  "case_defaults": {
+    "branch_status": "reviewed",
+    "workflow_permissions": "least_privilege",
+    "dependency_review": "pass",
+    "test_status": "pass",
+    "policy_test_status": "pass",
+    "security_scan_status": "pass",
+    "artifact_digest": "sha256:releasev28default",
+    "provenance_status": "present",
+    "signature_status": "verified",
+    "environment_approval": "approved",
+    "rollout_strategy": "canary",
+    "health_status": "healthy",
+    "rollback_ready": true,
+    "model_rollout_status": "staged",
+    "feature_flag_status": "guarded",
+    "release_evidence": "complete"
+  },
+  "release_cases": [
+    {
+      "case_id": "release-v28-001",
+      "name": "fully_gated_release_candidate",
+      "expected_decision": "allow_release_candidate",
+      "expected_operator_action": "promote_canary",
+      "expected_release_state": "candidate_ready"
+    },
+    {
+      "case_id": "release-v28-002",
+      "name": "unreviewed_branch_blocked",
+      "overrides": {"branch_status": "unreviewed"},
+      "expected_decision": "block_unreviewed_branch",
+      "expected_operator_action": "return_to_code_review",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-003",
+      "name": "overprivileged_workflow_blocked",
+      "overrides": {"workflow_permissions": "write_all"},
+      "expected_decision": "block_workflow_overprivileged",
+      "expected_operator_action": "reduce_workflow_permissions",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-004",
+      "name": "dependency_review_failed_blocked",
+      "overrides": {"dependency_review": "fail"},
+      "expected_decision": "block_dependency_review_failed",
+      "expected_operator_action": "resolve_dependency_risk",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-005",
+      "name": "regression_tests_failed_blocked",
+      "overrides": {"test_status": "fail"},
+      "expected_decision": "block_tests_failed",
+      "expected_operator_action": "fix_regression_tests",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-006",
+      "name": "policy_tests_failed_blocked",
+      "overrides": {"policy_test_status": "fail"},
+      "expected_decision": "block_policy_tests_failed",
+      "expected_operator_action": "fix_aois_policy_regressions",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-007",
+      "name": "security_scan_failed_blocked",
+      "overrides": {"security_scan_status": "fail"},
+      "expected_decision": "block_security_scan_failed",
+      "expected_operator_action": "resolve_security_findings",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-008",
+      "name": "missing_digest_blocked",
+      "overrides": {"artifact_digest": ""},
+      "expected_decision": "block_missing_digest",
+      "expected_operator_action": "produce_artifact_digest",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-009",
+      "name": "missing_provenance_blocked",
+      "overrides": {"provenance_status": "missing"},
+      "expected_decision": "block_missing_provenance",
+      "expected_operator_action": "produce_build_provenance",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-010",
+      "name": "unsigned_artifact_blocked",
+      "overrides": {"signature_status": "missing"},
+      "expected_decision": "block_unsigned_artifact",
+      "expected_operator_action": "sign_release_artifact",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-011",
+      "name": "signature_unverified_blocked",
+      "overrides": {"signature_status": "unverified"},
+      "expected_decision": "block_signature_unverified",
+      "expected_operator_action": "verify_artifact_signature",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-012",
+      "name": "missing_environment_approval_blocked",
+      "overrides": {"environment_approval": "missing"},
+      "expected_decision": "block_missing_environment_approval",
+      "expected_operator_action": "request_environment_approval",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-013",
+      "name": "degraded_health_holds_rollout",
+      "overrides": {"health_status": "degraded"},
+      "expected_decision": "hold_rollout_health",
+      "expected_operator_action": "pause_rollout_and_investigate_health",
+      "expected_release_state": "held"
+    },
+    {
+      "case_id": "release-v28-014",
+      "name": "rollback_missing_blocked",
+      "overrides": {"rollback_ready": false},
+      "expected_decision": "block_no_rollback",
+      "expected_operator_action": "define_rollback_target",
+      "expected_release_state": "blocked"
+    },
+    {
+      "case_id": "release-v28-015",
+      "name": "model_rollout_unstaged_held",
+      "overrides": {"model_rollout_status": "unstaged"},
+      "expected_decision": "hold_model_rollout",
+      "expected_operator_action": "stage_model_rollout",
+      "expected_release_state": "held"
+    },
+    {
+      "case_id": "release-v28-016",
+      "name": "feature_flag_unsafe_held",
+      "overrides": {"feature_flag_status": "unsafe"},
+      "expected_decision": "hold_feature_flag",
+      "expected_operator_action": "repair_feature_flag_guard",
+      "expected_release_state": "held"
+    }
+  ],
+  "required_before_live_release": [
+    "workflow_yaml_review",
+    "workflow_permission_review",
+    "branch_protection_review",
+    "dependency_review_configuration",
+    "test_matrix_review",
+    "policy_regression_review",
+    "security_scan_review",
+    "provenance_attestation_review",
+    "signature_identity_review",
+    "signature_verification_review",
+    "environment_approval_review",
+    "rollout_strategy_review",
+    "health_gate_review",
+    "rollback_drill",
+    "model_rollout_review",
+    "feature_flag_review",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

@@ -1,11 +1,35 @@
 # v28 Benchmark
 
-Authoring status: scaffolded
+Authoring status: authored
 
 ## Measurements
 
-TODO
+Run:
+
+```bash
+python3 -m py_compile examples/validate_delivery_release_controls_plan.py examples/simulate_delivery_release_controls.py
+python3 examples/validate_delivery_release_controls_plan.py
+python3 examples/simulate_delivery_release_controls.py
+```
+
+Record:
+
+- validator status
+- simulator status
+- passed cases
+- total cases
+- score
+- CI, workflow, build, signing, deployment, rollout, traffic, feature flag, model, network, and provider flags
 
 ## Interpretation
 
-TODO
+Pass means:
+
+- release scope is local and AOIS-P only
+- pipeline stages are complete
+- source, workflow, test, policy, security, artifact, provenance, signature, approval, rollout, rollback, model, and flag controls are represented
+- every release decision has a case
+- no live delivery runtime is enabled
+
+Fail means the release-control contract is incomplete. Fix the plan or
+simulator before adding experiment and model delivery tracking in v29.

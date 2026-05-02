@@ -1,5 +1,7 @@
 # v0.1 Introduction
 
+Authoring status: authored
+
 ## What This Version Is About
 
 `v0.1` is Linux fundamentals for AOIS.

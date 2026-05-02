@@ -1,0 +1,484 @@
+{
+  "mode": "governance_computer_use_plan_no_runtime",
+  "version": "v34",
+  "namespace": "aois-p",
+  "topic": "Governance verification and computer-use controls for AOIS-P frontier actions",
+  "computer_use_started": false,
+  "live_browser_started": false,
+  "live_vm_started": false,
+  "screenshot_captured": false,
+  "mouse_clicked": false,
+  "keyboard_typed": false,
+  "clipboard_accessed": false,
+  "file_uploaded": false,
+  "file_downloaded": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "tool_call_made": false,
+  "command_executed": false,
+  "shell_started": false,
+  "credential_accessed": false,
+  "payment_submitted": false,
+  "form_submitted": false,
+  "external_action_performed": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_computer_use": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "OpenAI Computer Use",
+      "url": "https://developers.openai.com/api/docs/guides/tools-computer-use",
+      "date_checked": "2026-05-01",
+      "supports": "Computer-use systems need a loop that proposes actions, executes them in an environment, captures state, handles safety checks, and should be run in sandboxed environments with allowlists and oversight"
+    },
+    {
+      "source": "OpenAI Safety Checks",
+      "url": "https://developers.openai.com/api/docs/guides/safety-checks",
+      "date_checked": "2026-05-01",
+      "supports": "Computer-use and agent actions need safety-check handling, oversight, acknowledgement, and policy-aware blocking before risky actions proceed"
+    },
+    {
+      "source": "OpenAI Safety Best Practices",
+      "url": "https://developers.openai.com/api/docs/guides/safety-best-practices",
+      "date_checked": "2026-05-01",
+      "supports": "Production AI applications should layer safety controls, monitoring, escalation, and policy compliance around model outputs and tool actions"
+    },
+    {
+      "source": "OWASP Agentic Security Initiative",
+      "url": "https://genai.owasp.org/initiatives/agentic-security-initiative/",
+      "date_checked": "2026-05-01",
+      "supports": "Agentic systems introduce security concerns around planning, tool usage, memory, autonomy, and multi-step workflows"
+    },
+    {
+      "source": "NIST AI RMF Generative AI Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "date_checked": "2026-05-01",
+      "supports": "Generative AI systems need governance, measurement, risk treatment, and value-chain controls for information security, privacy, and human-AI configuration"
+    },
+    {
+      "source": "NIST AI RMF Playbook",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework/nist-ai-rmf-playbook",
+      "date_checked": "2026-05-01",
+      "supports": "AI risk management should preserve govern, map, measure, and manage evidence across deployment and use contexts"
+    },
+    {
+      "source": "OpenTelemetry Signals",
+      "url": "https://opentelemetry.io/docs/concepts/signals/",
+      "date_checked": "2026-05-01",
+      "supports": "Computer-use governance decisions need traces, logs, metrics, and contextual evidence to explain actions without exposing sensitive screen data"
+    }
+  ],
+  "computer_use_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_v31_multimodal_contract": true,
+    "uses_v32_edge_offline_contract": true,
+    "uses_v33_red_team_contract": true,
+    "uses_phase9_release_controls": true,
+    "local_simulation_only": true,
+    "governance_verification_only": true,
+    "no_live_computer": true,
+    "no_live_browser": true,
+    "no_live_vm": true,
+    "no_screenshot_capture": true,
+    "no_mouse_or_keyboard": true,
+    "no_clipboard": true,
+    "no_credentials": true,
+    "no_file_transfer": true,
+    "no_external_network": true,
+    "no_provider_call": true,
+    "no_tool_execution": true,
+    "no_transaction": true
+  },
+  "required_controls": {
+    "governance_policy_required": true,
+    "action_intent_required": true,
+    "action_classification_required": true,
+    "environment_allowlist_required": true,
+    "target_allowlist_required": true,
+    "human_approval_required": true,
+    "manual_handoff_required": true,
+    "high_impact_action_block_required": true,
+    "external_transaction_block_required": true,
+    "credential_boundary_required": true,
+    "data_classification_required": true,
+    "privacy_redaction_required": true,
+    "safety_check_required": true,
+    "pending_safety_ack_required": true,
+    "step_preview_required": true,
+    "action_budget_required": true,
+    "stop_control_required": true,
+    "rollback_plan_required": true,
+    "audit_trace_required": true,
+    "screen_evidence_redaction_required": true,
+    "operator_watch_required": true,
+    "rate_limit_required": true,
+    "red_team_clearance_required": true,
+    "release_gate_required": true,
+    "access_policy_required": true,
+    "primary_aois_separation_required": true,
+    "source_currency_recorded": true
+  },
+  "computer_use_dimensions": [
+    "case_id",
+    "incident_id",
+    "trace_id",
+    "action_id",
+    "action_type",
+    "action_risk",
+    "environment_type",
+    "target_status",
+    "user_intent_status",
+    "governance_status",
+    "approval_status",
+    "safety_check_status",
+    "data_classification",
+    "credential_status",
+    "privacy_status",
+    "step_preview_status",
+    "action_budget_status",
+    "stop_control_status",
+    "rollback_status",
+    "audit_trace_status",
+    "screen_evidence_status",
+    "operator_watch_status",
+    "rate_limit_status",
+    "red_team_status",
+    "release_gate_status",
+    "access_policy_status",
+    "computer_use_decision",
+    "operator_action"
+  ],
+  "action_catalog": [
+    {
+      "action_type": "observe_only",
+      "allowed_environment_types": ["local_synthetic"],
+      "requires_human_approval": false,
+      "requires_rollback": false,
+      "default_decision": "allow_observe_only_governed_record",
+      "primary_risks": ["screen_data_exposure", "misclassification"]
+    },
+    {
+      "action_type": "draft_action_plan",
+      "allowed_environment_types": ["local_synthetic"],
+      "requires_human_approval": false,
+      "requires_rollback": false,
+      "default_decision": "allow_draft_action_plan_only",
+      "primary_risks": ["overclaiming_authority", "missing_operator_review"]
+    },
+    {
+      "action_type": "navigate_synthetic",
+      "allowed_environment_types": ["local_synthetic"],
+      "requires_human_approval": true,
+      "requires_rollback": true,
+      "default_decision": "allow_synthetic_computer_use_plan_recorded",
+      "primary_risks": ["wrong_target", "unsafe_click_path"]
+    },
+    {
+      "action_type": "enter_synthetic_text",
+      "allowed_environment_types": ["local_synthetic"],
+      "requires_human_approval": true,
+      "requires_rollback": true,
+      "default_decision": "allow_synthetic_computer_use_plan_recorded",
+      "primary_risks": ["data_leakage", "unintended_form_entry"]
+    },
+    {
+      "action_type": "submit_synthetic_form",
+      "allowed_environment_types": ["local_synthetic"],
+      "requires_human_approval": true,
+      "requires_rollback": true,
+      "default_decision": "allow_synthetic_computer_use_plan_recorded",
+      "primary_risks": ["submission_side_effect", "state_change"]
+    },
+    {
+      "action_type": "external_transaction",
+      "allowed_environment_types": [],
+      "requires_human_approval": true,
+      "requires_rollback": true,
+      "default_decision": "block_external_transaction",
+      "primary_risks": ["payment", "legal_commitment", "external_side_effect"]
+    },
+    {
+      "action_type": "credential_handling",
+      "allowed_environment_types": [],
+      "requires_human_approval": true,
+      "requires_rollback": true,
+      "default_decision": "block_credential_request",
+      "primary_risks": ["secret_exposure", "account_takeover"]
+    },
+    {
+      "action_type": "high_impact_action",
+      "allowed_environment_types": [],
+      "requires_human_approval": true,
+      "requires_rollback": true,
+      "default_decision": "block_high_impact_action",
+      "primary_risks": ["safety_critical_change", "financial_or_legal_impact"]
+    }
+  ],
+  "decision_gates": {
+    "allow_observe_only_governed_record": "Allow an observe-only governed record when policy, target, data, privacy, telemetry, operator watch, red-team, release, and access checks pass.",
+    "allow_draft_action_plan_only": "Allow a draft action plan when no computer action is executed and governance, evidence, and operator review controls pass.",
+    "allow_synthetic_computer_use_plan_recorded": "Allow a synthetic computer-use plan record when the action is local, approved, previewed, budgeted, stoppable, rollback-ready, observable, red-team-cleared, release-approved, and access-approved.",
+    "route_to_manual_operator": "Route to a human operator when governance permits the intent but computer-use execution should not proceed automatically.",
+    "block_missing_governance_policy": "Block when governance policy, action intent, or action classification is missing.",
+    "block_out_of_scope_environment": "Block when the environment is not in the approved local synthetic allowlist.",
+    "block_live_target": "Block when the action targets a live, production, external, or authenticated environment.",
+    "hold_pending_human_approval": "Hold when required human approval is missing.",
+    "block_credential_request": "Block when credentials, secrets, tokens, password fields, or authenticated session handling would be required.",
+    "block_sensitive_data_unredacted": "Block when sensitive screen data or action data is not redacted.",
+    "block_high_impact_action": "Block high-impact actions such as safety-critical, legal, employment, health, financial, or irreversible decisions.",
+    "block_external_transaction": "Block external transactions, submissions, purchases, messages, or commitments.",
+    "hold_pending_safety_check": "Hold when a safety check is pending and needs human acknowledgement or review.",
+    "hold_missing_step_preview": "Hold when the operator cannot inspect the proposed step before action.",
+    "block_action_budget_exceeded": "Block when step, time, cost, loop, or rate budget is exceeded.",
+    "block_missing_stop_control": "Block when the operator cannot immediately stop execution.",
+    "block_missing_rollback": "Block when a state-changing action has no rollback plan.",
+    "hold_missing_audit_trace": "Hold when trace, log, metric, or screen-evidence record is missing.",
+    "block_unresolved_red_team_finding": "Block when v33 adversarial findings for the action surface are unresolved.",
+    "block_release_gate": "Block when release approval is missing for the computer-use path.",
+    "block_policy_boundary": "Block when access, tenancy, release, privacy, or safety policy boundaries fail."
+  },
+  "case_defaults": {
+    "incident_id": "inc-v34-default",
+    "trace_id": "trace-v34-default",
+    "action_id": "act-v34-default",
+    "action_type": "navigate_synthetic",
+    "action_risk": "low",
+    "environment_type": "local_synthetic",
+    "target_status": "synthetic_allowlisted",
+    "user_intent_status": "clear",
+    "governance_status": "pass",
+    "approval_status": "approved",
+    "safety_check_status": "clear",
+    "data_classification": "internal",
+    "credential_status": "none",
+    "privacy_status": "redacted",
+    "step_preview_status": "present",
+    "action_budget_status": "pass",
+    "stop_control_status": "ready",
+    "rollback_status": "ready",
+    "audit_trace_status": "captured",
+    "screen_evidence_status": "redacted",
+    "operator_watch_status": "active",
+    "rate_limit_status": "pass",
+    "red_team_status": "cleared",
+    "release_gate_status": "pass",
+    "access_policy_status": "pass"
+  },
+  "computer_use_cases": [
+    {
+      "case_id": "govcu-v34-001",
+      "name": "observe_only_governed_record_allowed",
+      "overrides": {
+        "action_type": "observe_only",
+        "approval_status": "not_required",
+        "rollback_status": "not_required"
+      },
+      "expected_decision": "allow_observe_only_governed_record",
+      "expected_operator_action": "record_observe_only_governance_evidence",
+      "expected_computer_use_state": "recorded"
+    },
+    {
+      "case_id": "govcu-v34-002",
+      "name": "draft_action_plan_only_allowed",
+      "overrides": {
+        "action_type": "draft_action_plan",
+        "approval_status": "not_required",
+        "rollback_status": "not_required"
+      },
+      "expected_decision": "allow_draft_action_plan_only",
+      "expected_operator_action": "record_draft_for_operator_review",
+      "expected_computer_use_state": "drafted"
+    },
+    {
+      "case_id": "govcu-v34-003",
+      "name": "synthetic_computer_use_plan_recorded",
+      "expected_decision": "allow_synthetic_computer_use_plan_recorded",
+      "expected_operator_action": "record_synthetic_computer_use_plan",
+      "expected_computer_use_state": "recorded"
+    },
+    {
+      "case_id": "govcu-v34-004",
+      "name": "manual_operator_route",
+      "overrides": {"approval_status": "manual_required"},
+      "expected_decision": "route_to_manual_operator",
+      "expected_operator_action": "handoff_to_manual_operator",
+      "expected_computer_use_state": "manual"
+    },
+    {
+      "case_id": "govcu-v34-005",
+      "name": "missing_governance_policy_blocked",
+      "overrides": {"governance_status": "missing"},
+      "expected_decision": "block_missing_governance_policy",
+      "expected_operator_action": "define_governance_policy",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-006",
+      "name": "out_of_scope_environment_blocked",
+      "overrides": {"environment_type": "developer_workstation"},
+      "expected_decision": "block_out_of_scope_environment",
+      "expected_operator_action": "move_to_local_synthetic_environment",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-007",
+      "name": "live_target_blocked",
+      "overrides": {"target_status": "live_production"},
+      "expected_decision": "block_live_target",
+      "expected_operator_action": "replace_with_synthetic_target",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-008",
+      "name": "missing_human_approval_held",
+      "overrides": {"approval_status": "missing"},
+      "expected_decision": "hold_pending_human_approval",
+      "expected_operator_action": "request_human_approval",
+      "expected_computer_use_state": "held"
+    },
+    {
+      "case_id": "govcu-v34-009",
+      "name": "credential_request_blocked",
+      "overrides": {
+        "action_type": "credential_handling",
+        "credential_status": "requested"
+      },
+      "expected_decision": "block_credential_request",
+      "expected_operator_action": "remove_credential_requirement",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-010",
+      "name": "sensitive_data_unredacted_blocked",
+      "overrides": {
+        "data_classification": "sensitive",
+        "privacy_status": "raw"
+      },
+      "expected_decision": "block_sensitive_data_unredacted",
+      "expected_operator_action": "redact_screen_and_action_data",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-011",
+      "name": "high_impact_action_blocked",
+      "overrides": {
+        "action_type": "high_impact_action",
+        "action_risk": "high"
+      },
+      "expected_decision": "block_high_impact_action",
+      "expected_operator_action": "prohibit_automated_high_impact_action",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-012",
+      "name": "external_transaction_blocked",
+      "overrides": {"action_type": "external_transaction"},
+      "expected_decision": "block_external_transaction",
+      "expected_operator_action": "remove_external_transaction",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-013",
+      "name": "pending_safety_check_held",
+      "overrides": {"safety_check_status": "pending"},
+      "expected_decision": "hold_pending_safety_check",
+      "expected_operator_action": "review_and_acknowledge_safety_check",
+      "expected_computer_use_state": "held"
+    },
+    {
+      "case_id": "govcu-v34-014",
+      "name": "missing_step_preview_held",
+      "overrides": {"step_preview_status": "missing"},
+      "expected_decision": "hold_missing_step_preview",
+      "expected_operator_action": "render_step_preview",
+      "expected_computer_use_state": "held"
+    },
+    {
+      "case_id": "govcu-v34-015",
+      "name": "action_budget_exceeded_blocked",
+      "overrides": {"action_budget_status": "exceeded"},
+      "expected_decision": "block_action_budget_exceeded",
+      "expected_operator_action": "reduce_action_budget_or_stop",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-016",
+      "name": "missing_stop_control_blocked",
+      "overrides": {"stop_control_status": "missing"},
+      "expected_decision": "block_missing_stop_control",
+      "expected_operator_action": "add_operator_stop_control",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-017",
+      "name": "missing_rollback_blocked",
+      "overrides": {"rollback_status": "missing"},
+      "expected_decision": "block_missing_rollback",
+      "expected_operator_action": "define_rollback_plan",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-018",
+      "name": "missing_audit_trace_held",
+      "overrides": {"audit_trace_status": "missing"},
+      "expected_decision": "hold_missing_audit_trace",
+      "expected_operator_action": "instrument_audit_trace",
+      "expected_computer_use_state": "held"
+    },
+    {
+      "case_id": "govcu-v34-019",
+      "name": "unresolved_red_team_finding_blocked",
+      "overrides": {"red_team_status": "unresolved"},
+      "expected_decision": "block_unresolved_red_team_finding",
+      "expected_operator_action": "resolve_v33_red_team_finding",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-020",
+      "name": "release_gate_blocked",
+      "overrides": {"release_gate_status": "fail"},
+      "expected_decision": "block_release_gate",
+      "expected_operator_action": "repair_computer_use_release_gate",
+      "expected_computer_use_state": "blocked"
+    },
+    {
+      "case_id": "govcu-v34-021",
+      "name": "policy_boundary_blocked",
+      "overrides": {"access_policy_status": "fail"},
+      "expected_decision": "block_policy_boundary",
+      "expected_operator_action": "repair_computer_use_policy_boundary",
+      "expected_computer_use_state": "blocked"
+    }
+  ],
+  "required_before_live_computer_use": [
+    "governance_policy_review",
+    "action_intent_review",
+    "action_classification_review",
+    "environment_allowlist_review",
+    "target_allowlist_review",
+    "human_approval_review",
+    "manual_handoff_review",
+    "high_impact_action_review",
+    "external_transaction_review",
+    "credential_boundary_review",
+    "data_classification_review",
+    "privacy_redaction_review",
+    "safety_check_review",
+    "pending_safety_ack_review",
+    "step_preview_review",
+    "action_budget_review",
+    "stop_control_review",
+    "rollback_plan_review",
+    "audit_trace_review",
+    "screen_evidence_redaction_review",
+    "operator_watch_review",
+    "rate_limit_review",
+    "red_team_clearance_review",
+    "release_gate_review",
+    "access_policy_review",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

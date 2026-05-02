@@ -1,5 +1,7 @@
 # v0.1 Lab
 
+Authoring status: authored
+
 ## Build Lab
 
 Run and interpret the Linux commands used in the lesson.

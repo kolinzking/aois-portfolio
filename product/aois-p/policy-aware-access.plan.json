@@ -1,0 +1,659 @@
+{
+  "mode": "policy_aware_access_plan_no_runtime",
+  "version": "v27",
+  "namespace": "aois-p",
+  "topic": "Auth, tenancy, permissions, and policy-aware dashboard access",
+  "auth_server_started": false,
+  "identity_provider_called": false,
+  "token_issued": false,
+  "session_created": false,
+  "api_server_started": false,
+  "frontend_runtime_started": false,
+  "browser_started": false,
+  "policy_engine_started": false,
+  "database_started": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "tool_calls_executed": false,
+  "command_executed": false,
+  "file_write_performed": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_access": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "OWASP Authorization Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "date_checked": "2026-04-30",
+      "supports": "Access design must enforce least privilege, deny by default, validate permissions on every request, and log authorization decisions"
+    },
+    {
+      "source": "OWASP Authentication Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html",
+      "date_checked": "2026-04-30",
+      "supports": "Authentication design must avoid identity enumeration and require stronger checks for sensitive actions"
+    },
+    {
+      "source": "OWASP Session Management Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+      "date_checked": "2026-04-30",
+      "supports": "Session identifiers should be high-entropy, meaningless to clients, renewed after privilege change, and protected from disclosure"
+    },
+    {
+      "source": "OWASP Multi-Tenant Application Security Cheat Sheet",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Multi_Tenant_Security_Cheat_Sheet.html",
+      "date_checked": "2026-04-30",
+      "supports": "Tenant context should be bound to authenticated identity and every resource lookup should validate tenant ownership"
+    },
+    {
+      "source": "NIST SP 800-63B",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "date_checked": "2026-04-30",
+      "supports": "Authentication assurance levels describe increasing confidence requirements for remote user authentication"
+    }
+  ],
+  "access_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_v26_dashboard_panels": true,
+    "identity_required": true,
+    "tenant_required": true,
+    "role_required": true,
+    "policy_decision_required": true,
+    "deny_by_default": true,
+    "least_privilege_required": true,
+    "approval_action_separation_required": true,
+    "budget_visibility_scoped": true,
+    "trace_visibility_scoped": true,
+    "execution_boundary_visibility_scoped": true,
+    "redaction_required": true,
+    "audit_event_required": true,
+    "local_simulation_only": true,
+    "no_live_identity_provider": true,
+    "no_live_session": true,
+    "no_policy_engine_runtime": true,
+    "no_frontend_runtime": true,
+    "no_network_call": true,
+    "no_provider_call": true
+  },
+  "required_controls": {
+    "subject_id_required": true,
+    "tenant_id_required": true,
+    "role_catalog_required": true,
+    "resource_catalog_required": true,
+    "permission_matrix_required": true,
+    "ownership_check_required": true,
+    "tenant_boundary_required": true,
+    "break_glass_policy_required": true,
+    "approval_separation_required": true,
+    "deny_unknown_role_required": true,
+    "deny_cross_tenant_required": true,
+    "deny_missing_permission_required": true,
+    "redaction_gate_required": true,
+    "audit_event_required": true,
+    "trace_id_required": true,
+    "primary_aois_separation_required": true,
+    "resource_usage_record_required": true,
+    "source_currency_recorded": true
+  },
+  "access_dimensions": [
+    "case_id",
+    "subject_id",
+    "tenant_id",
+    "role",
+    "resource_type",
+    "resource_id",
+    "resource_tenant_id",
+    "action",
+    "ownership_status",
+    "approval_relationship",
+    "break_glass",
+    "policy_context",
+    "redaction_status",
+    "decision",
+    "visible_fields",
+    "operator_action",
+    "audit_event"
+  ],
+  "role_catalog": [
+    {
+      "role": "viewer",
+      "description": "Read incident summaries in the subject tenant",
+      "permissions": [
+        "incident:view"
+      ],
+      "sensitive_fields_allowed": false,
+      "may_approve": false,
+      "cross_tenant_allowed": false
+    },
+    {
+      "role": "operator",
+      "description": "Inspect operational state needed to triage AOIS-P incidents",
+      "permissions": [
+        "incident:view",
+        "trace:view",
+        "route_registry:view",
+        "workflow:view",
+        "autonomy_agents:view",
+        "execution_boundaries:view"
+      ],
+      "sensitive_fields_allowed": false,
+      "may_approve": false,
+      "cross_tenant_allowed": false
+    },
+    {
+      "role": "approver",
+      "description": "Review and approve eligible high-risk AOIS-P requests",
+      "permissions": [
+        "incident:view",
+        "approvals:view",
+        "approvals:approve"
+      ],
+      "sensitive_fields_allowed": false,
+      "may_approve": true,
+      "cross_tenant_allowed": false
+    },
+    {
+      "role": "finops",
+      "description": "Inspect budget, reserve, and cost posture for the subject tenant",
+      "permissions": [
+        "incident:view",
+        "budget:view"
+      ],
+      "sensitive_fields_allowed": false,
+      "may_approve": false,
+      "cross_tenant_allowed": false
+    },
+    {
+      "role": "security",
+      "description": "Inspect redacted traces, execution boundaries, and audited access decisions",
+      "permissions": [
+        "incident:view",
+        "trace:view",
+        "execution_boundaries:view",
+        "access_audit:view",
+        "break_glass:view"
+      ],
+      "sensitive_fields_allowed": false,
+      "may_approve": false,
+      "cross_tenant_allowed": false
+    },
+    {
+      "role": "tenant_admin",
+      "description": "Manage tenant-scoped users and inspect tenant access posture",
+      "permissions": [
+        "incident:view",
+        "access_audit:view",
+        "tenant_users:manage"
+      ],
+      "sensitive_fields_allowed": false,
+      "may_approve": false,
+      "cross_tenant_allowed": false
+    },
+    {
+      "role": "auditor",
+      "description": "Read tenant-scoped audit and policy decisions without operational action rights",
+      "permissions": [
+        "incident:view",
+        "access_audit:view"
+      ],
+      "sensitive_fields_allowed": false,
+      "may_approve": false,
+      "cross_tenant_allowed": false
+    }
+  ],
+  "resource_catalog": [
+    {
+      "resource_type": "incident",
+      "panel_id": "incident_overview",
+      "tenant_scoped": true,
+      "sensitivity": "operational",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "incident_id",
+        "severity",
+        "summary",
+        "current_status"
+      ]
+    },
+    {
+      "resource_type": "trace",
+      "panel_id": "trace_timeline",
+      "tenant_scoped": true,
+      "sensitivity": "sensitive",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "trace_id",
+        "span_count",
+        "last_span",
+        "duration_ms"
+      ]
+    },
+    {
+      "resource_type": "route_registry",
+      "panel_id": "route_registry",
+      "tenant_scoped": true,
+      "sensitivity": "operational",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "route_decision",
+        "registry_decision",
+        "allowed_tools",
+        "blocked_tools"
+      ]
+    },
+    {
+      "resource_type": "workflow",
+      "panel_id": "workflow_orchestration",
+      "tenant_scoped": true,
+      "sensitivity": "operational",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "workflow_id",
+        "checkpoint",
+        "orchestration_decision",
+        "next_action"
+      ]
+    },
+    {
+      "resource_type": "autonomy_agents",
+      "panel_id": "autonomy_agents",
+      "tenant_scoped": true,
+      "sensitivity": "operational",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "autonomy_mode",
+        "current_agent",
+        "next_agent",
+        "handoff_count"
+      ]
+    },
+    {
+      "resource_type": "approvals",
+      "panel_id": "approvals",
+      "tenant_scoped": true,
+      "sensitivity": "high_risk",
+      "allowed_actions": [
+        "view",
+        "approve"
+      ],
+      "default_visible_fields": [
+        "approval_id",
+        "requested_by",
+        "risk_tier",
+        "expires_at"
+      ]
+    },
+    {
+      "resource_type": "budget",
+      "panel_id": "budget",
+      "tenant_scoped": true,
+      "sensitivity": "financial",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "budget_status",
+        "remaining_units",
+        "route_cost",
+        "waste_guard"
+      ]
+    },
+    {
+      "resource_type": "execution_boundaries",
+      "panel_id": "execution_boundaries",
+      "tenant_scoped": true,
+      "sensitivity": "security",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "action_category",
+        "boundary_decision",
+        "execution_mode",
+        "blocked_reason"
+      ]
+    },
+    {
+      "resource_type": "access_audit",
+      "panel_id": "access_audit",
+      "tenant_scoped": true,
+      "sensitivity": "security",
+      "allowed_actions": [
+        "view"
+      ],
+      "default_visible_fields": [
+        "audit_id",
+        "subject_id",
+        "decision",
+        "created_at"
+      ]
+    }
+  ],
+  "policy_order": [
+    "deny_unknown_role",
+    "deny_unredacted_sensitive",
+    "deny_self_approval",
+    "allow_break_glass_limited_view",
+    "deny_cross_tenant",
+    "deny_missing_permission",
+    "allow_explicit_permission",
+    "deny_default"
+  ],
+  "decision_gates": {
+    "allow_incident_overview": "Allow a tenant-scoped incident overview when the role has incident view permission.",
+    "allow_trace_view": "Allow redacted tenant-scoped trace inspection when the role has trace view permission.",
+    "allow_approval_review": "Allow approval review or approval action when the role has approval permission and is not approving its own request.",
+    "allow_budget_view": "Allow tenant-scoped budget inspection for finops role.",
+    "allow_execution_boundary_view": "Allow tenant-scoped execution-boundary inspection for security or operator roles.",
+    "allow_access_audit_view": "Allow tenant-scoped access audit inspection for security, tenant admin, or auditor roles.",
+    "deny_unknown_role": "Deny when the subject role is not in the approved AOIS-P role catalog.",
+    "deny_cross_tenant": "Deny when the resource tenant does not match the authenticated tenant and break-glass policy is not valid.",
+    "deny_missing_permission": "Deny when the role does not include the requested resource action.",
+    "deny_unredacted_sensitive": "Deny sensitive resource rendering when required redaction has not passed.",
+    "deny_self_approval": "Deny approval actions submitted by the same subject who requested the action.",
+    "allow_break_glass_limited_view": "Allow a tightly limited redacted incident view for an approved security break-glass context."
+  },
+  "access_cases": [
+    {
+      "case_id": "access-v27-001",
+      "name": "viewer_incident_same_tenant",
+      "subject_id": "user-viewer-001",
+      "tenant_id": "tenant-alpha",
+      "role": "viewer",
+      "resource_type": "incident",
+      "resource_id": "inc-v27-001",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "redacted",
+      "expected_decision": "allow_incident_overview",
+      "expected_visible_fields": [
+        "incident_id",
+        "severity",
+        "summary",
+        "current_status"
+      ],
+      "expected_operator_action": "render_incident_overview",
+      "expected_audit_event": "access_allowed"
+    },
+    {
+      "case_id": "access-v27-002",
+      "name": "operator_trace_same_tenant",
+      "subject_id": "user-operator-001",
+      "tenant_id": "tenant-alpha",
+      "role": "operator",
+      "resource_type": "trace",
+      "resource_id": "trace-v27-002",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "redacted",
+      "expected_decision": "allow_trace_view",
+      "expected_visible_fields": [
+        "trace_id",
+        "span_count",
+        "last_span",
+        "duration_ms"
+      ],
+      "expected_operator_action": "render_trace_timeline",
+      "expected_audit_event": "access_allowed"
+    },
+    {
+      "case_id": "access-v27-003",
+      "name": "approver_review_not_requester",
+      "subject_id": "user-approver-001",
+      "tenant_id": "tenant-alpha",
+      "role": "approver",
+      "resource_type": "approvals",
+      "resource_id": "approval-v27-003",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "approve",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "independent_approver",
+      "break_glass": false,
+      "policy_context": "high_risk_change",
+      "redaction_status": "redacted",
+      "expected_decision": "allow_approval_review",
+      "expected_visible_fields": [
+        "approval_id",
+        "requested_by",
+        "risk_tier",
+        "expires_at"
+      ],
+      "expected_operator_action": "render_approval_review",
+      "expected_audit_event": "approval_access_allowed"
+    },
+    {
+      "case_id": "access-v27-004",
+      "name": "finops_budget_same_tenant",
+      "subject_id": "user-finops-001",
+      "tenant_id": "tenant-alpha",
+      "role": "finops",
+      "resource_type": "budget",
+      "resource_id": "budget-v27-004",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "redacted",
+      "expected_decision": "allow_budget_view",
+      "expected_visible_fields": [
+        "budget_status",
+        "remaining_units",
+        "route_cost",
+        "waste_guard"
+      ],
+      "expected_operator_action": "render_budget_panel",
+      "expected_audit_event": "access_allowed"
+    },
+    {
+      "case_id": "access-v27-005",
+      "name": "security_execution_boundary_same_tenant",
+      "subject_id": "user-security-001",
+      "tenant_id": "tenant-alpha",
+      "role": "security",
+      "resource_type": "execution_boundaries",
+      "resource_id": "boundary-v27-005",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "redacted",
+      "expected_decision": "allow_execution_boundary_view",
+      "expected_visible_fields": [
+        "action_category",
+        "boundary_decision",
+        "execution_mode",
+        "blocked_reason"
+      ],
+      "expected_operator_action": "render_execution_boundary_panel",
+      "expected_audit_event": "access_allowed"
+    },
+    {
+      "case_id": "access-v27-006",
+      "name": "auditor_access_audit_same_tenant",
+      "subject_id": "user-auditor-001",
+      "tenant_id": "tenant-alpha",
+      "role": "auditor",
+      "resource_type": "access_audit",
+      "resource_id": "audit-v27-006",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "audit_review",
+      "redaction_status": "redacted",
+      "expected_decision": "allow_access_audit_view",
+      "expected_visible_fields": [
+        "audit_id",
+        "subject_id",
+        "decision",
+        "created_at"
+      ],
+      "expected_operator_action": "render_access_audit",
+      "expected_audit_event": "access_allowed"
+    },
+    {
+      "case_id": "access-v27-007",
+      "name": "unknown_role_denied",
+      "subject_id": "user-unknown-001",
+      "tenant_id": "tenant-alpha",
+      "role": "superuser",
+      "resource_type": "incident",
+      "resource_id": "inc-v27-007",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "redacted",
+      "expected_decision": "deny_unknown_role",
+      "expected_visible_fields": [],
+      "expected_operator_action": "show_access_denied",
+      "expected_audit_event": "access_denied_unknown_role"
+    },
+    {
+      "case_id": "access-v27-008",
+      "name": "cross_tenant_denied",
+      "subject_id": "user-operator-002",
+      "tenant_id": "tenant-alpha",
+      "role": "operator",
+      "resource_type": "incident",
+      "resource_id": "inc-v27-008",
+      "resource_tenant_id": "tenant-beta",
+      "action": "view",
+      "ownership_status": "cross_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "redacted",
+      "expected_decision": "deny_cross_tenant",
+      "expected_visible_fields": [],
+      "expected_operator_action": "show_access_denied",
+      "expected_audit_event": "access_denied_cross_tenant"
+    },
+    {
+      "case_id": "access-v27-009",
+      "name": "viewer_budget_denied",
+      "subject_id": "user-viewer-002",
+      "tenant_id": "tenant-alpha",
+      "role": "viewer",
+      "resource_type": "budget",
+      "resource_id": "budget-v27-009",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "redacted",
+      "expected_decision": "deny_missing_permission",
+      "expected_visible_fields": [],
+      "expected_operator_action": "show_access_denied",
+      "expected_audit_event": "access_denied_missing_permission"
+    },
+    {
+      "case_id": "access-v27-010",
+      "name": "operator_unredacted_trace_denied",
+      "subject_id": "user-operator-003",
+      "tenant_id": "tenant-alpha",
+      "role": "operator",
+      "resource_type": "trace",
+      "resource_id": "trace-v27-010",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "view",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "none",
+      "break_glass": false,
+      "policy_context": "normal",
+      "redaction_status": "raw",
+      "expected_decision": "deny_unredacted_sensitive",
+      "expected_visible_fields": [],
+      "expected_operator_action": "fix_redaction_before_render",
+      "expected_audit_event": "access_denied_redaction"
+    },
+    {
+      "case_id": "access-v27-011",
+      "name": "self_approval_denied",
+      "subject_id": "user-approver-002",
+      "tenant_id": "tenant-alpha",
+      "role": "approver",
+      "resource_type": "approvals",
+      "resource_id": "approval-v27-011",
+      "resource_tenant_id": "tenant-alpha",
+      "action": "approve",
+      "ownership_status": "same_tenant",
+      "approval_relationship": "requester",
+      "break_glass": false,
+      "policy_context": "high_risk_change",
+      "redaction_status": "redacted",
+      "expected_decision": "deny_self_approval",
+      "expected_visible_fields": [],
+      "expected_operator_action": "route_to_independent_approver",
+      "expected_audit_event": "access_denied_self_approval"
+    },
+    {
+      "case_id": "access-v27-012",
+      "name": "security_break_glass_limited_cross_tenant",
+      "subject_id": "user-security-002",
+      "tenant_id": "tenant-alpha",
+      "role": "security",
+      "resource_type": "incident",
+      "resource_id": "inc-v27-012",
+      "resource_tenant_id": "tenant-beta",
+      "action": "view",
+      "ownership_status": "cross_tenant",
+      "approval_relationship": "none",
+      "break_glass": true,
+      "policy_context": "active_safety_incident",
+      "redaction_status": "redacted",
+      "expected_decision": "allow_break_glass_limited_view",
+      "expected_visible_fields": [
+        "incident_id",
+        "severity",
+        "current_status",
+        "break_glass_reason"
+      ],
+      "expected_operator_action": "record_break_glass_review",
+      "expected_audit_event": "break_glass_access_allowed"
+    }
+  ],
+  "required_before_live_access": [
+    "identity_provider_selection_review",
+    "authentication_assurance_review",
+    "session_security_review",
+    "tenant_context_binding_review",
+    "permission_matrix_review",
+    "policy_engine_integration_review",
+    "redaction_policy_review",
+    "approval_separation_review",
+    "break_glass_runbook_review",
+    "access_audit_retention_review",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

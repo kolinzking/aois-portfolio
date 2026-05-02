@@ -1,5 +1,7 @@
 # v0.1 Next Version Bridge
 
+Authoring status: authored
+
 ## What This Version Unlocks
 
 You can now observe the machine directly with Linux commands.

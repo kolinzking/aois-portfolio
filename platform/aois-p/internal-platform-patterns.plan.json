@@ -1,0 +1,399 @@
+{
+  "mode": "internal_platform_patterns_plan_no_runtime",
+  "version": "v30",
+  "namespace": "aois-p",
+  "topic": "Internal platform patterns, self-service abstractions, platform APIs, and infrastructure abstraction",
+  "platform_runtime_started": false,
+  "developer_portal_started": false,
+  "service_catalog_started": false,
+  "platform_api_started": false,
+  "template_engine_started": false,
+  "cli_invoked": false,
+  "infrastructure_provisioned": false,
+  "kubernetes_applied": false,
+  "gitops_sync_started": false,
+  "workflow_started": false,
+  "database_started": false,
+  "network_call_made": false,
+  "provider_call_made": false,
+  "tool_calls_executed": false,
+  "command_executed": false,
+  "file_write_performed": false,
+  "external_network_required_for_this_lesson": false,
+  "persistent_storage_created": false,
+  "approved_for_live_platform": false,
+  "primary_aois_excluded": true,
+  "source_notes": [
+    {
+      "source": "CNCF Platforms White Paper",
+      "url": "https://tag-app-delivery.cncf.io/whitepapers/platforms/",
+      "date_checked": "2026-05-01",
+      "supports": "Internal platforms should provide self-service capabilities, consistent interfaces, templates, APIs, documentation, and governance to reduce cognitive load"
+    },
+    {
+      "source": "Backstage Software Catalog",
+      "url": "https://backstage.io/docs/features/software-catalog/",
+      "date_checked": "2026-05-01",
+      "supports": "A software catalog can organize platform entities, ownership, metadata, relationships, and service discovery"
+    },
+    {
+      "source": "Kubernetes Custom Resources",
+      "url": "https://kubernetes.io/docs/concepts/api-extension/custom-resources/",
+      "date_checked": "2026-05-01",
+      "supports": "Custom resources can extend platform APIs with declarative resource contracts and controller-managed desired state"
+    },
+    {
+      "source": "OpenAPI Specification v3.2.0",
+      "url": "https://spec.openapis.org/oas/latest.html",
+      "date_checked": "2026-05-01",
+      "supports": "Platform APIs should have structured contracts that describe operations, parameters, request bodies, responses, and reusable schemas"
+    },
+    {
+      "source": "OpenFeature specification",
+      "url": "https://openfeature.dev/specification/",
+      "date_checked": "2026-05-01",
+      "supports": "Feature flag APIs can provide consistent behavior-control abstractions across different backing providers"
+    }
+  ],
+  "platform_scope": {
+    "aois_p_only": true,
+    "primary_aois_excluded": true,
+    "uses_phase9_release_and_model_delivery_contracts": true,
+    "local_simulation_only": true,
+    "platform_contract_only": true,
+    "no_live_developer_portal": true,
+    "no_live_service_catalog": true,
+    "no_live_platform_api": true,
+    "no_live_template_render": true,
+    "no_live_infrastructure_provisioning": true,
+    "no_live_cluster_change": true,
+    "no_live_gitops_sync": true,
+    "no_network_call": true,
+    "no_provider_call": true
+  },
+  "required_controls": {
+    "capability_catalog_required": true,
+    "owner_required": true,
+    "documentation_required": true,
+    "golden_path_template_required": true,
+    "self_service_request_contract_required": true,
+    "platform_api_contract_required": true,
+    "versioning_required": true,
+    "deprecation_policy_required": true,
+    "policy_defaults_required": true,
+    "security_boundary_required": true,
+    "cost_boundary_required": true,
+    "tenant_boundary_required": true,
+    "permission_boundary_required": true,
+    "observability_contract_required": true,
+    "release_integration_required": true,
+    "model_delivery_integration_required": true,
+    "rollback_contract_required": true,
+    "approval_record_required": true,
+    "audit_event_required": true,
+    "support_slo_required": true,
+    "primary_aois_separation_required": true,
+    "resource_usage_record_required": true,
+    "source_currency_recorded": true
+  },
+  "platform_dimensions": [
+    "case_id",
+    "capability_id",
+    "user_persona",
+    "request_type",
+    "interface_type",
+    "owner",
+    "documentation_status",
+    "api_contract_status",
+    "template_status",
+    "policy_status",
+    "security_status",
+    "cost_status",
+    "observability_status",
+    "release_integration_status",
+    "model_delivery_status",
+    "tenant_boundary_status",
+    "approval_status",
+    "support_slo_status",
+    "lifecycle_status",
+    "platform_decision",
+    "operator_action"
+  ],
+  "capability_catalog": [
+    {
+      "capability_id": "aois_service_starter",
+      "description": "Golden path for a new AOIS-P service with policy, telemetry, delivery, and access defaults.",
+      "owner": "aois-p-platform",
+      "interfaces": ["portal", "api", "template"],
+      "requires_approval": false
+    },
+    {
+      "capability_id": "observability_bundle",
+      "description": "Reusable traces, metrics, logs, dashboards, and alert wiring for AOIS-P services.",
+      "owner": "aois-p-observability",
+      "interfaces": ["portal", "api", "template"],
+      "requires_approval": false
+    },
+    {
+      "capability_id": "delivery_pipeline_bundle",
+      "description": "Reusable v28 delivery pipeline controls for build, scan, provenance, signing, rollout, and rollback.",
+      "owner": "aois-p-platform",
+      "interfaces": ["api", "template"],
+      "requires_approval": false
+    },
+    {
+      "capability_id": "model_delivery_bundle",
+      "description": "Reusable v29 experiment, registry, metric, rollout evidence, and risk-review controls.",
+      "owner": "aois-p-ml-platform",
+      "interfaces": ["portal", "api", "template"],
+      "requires_approval": true
+    },
+    {
+      "capability_id": "policy_access_bundle",
+      "description": "Reusable tenancy, role, permission, redaction, approval, and audit controls from v27.",
+      "owner": "aois-p-security",
+      "interfaces": ["api", "template"],
+      "requires_approval": false
+    },
+    {
+      "capability_id": "cost_budget_bundle",
+      "description": "Reusable budget, reserve, route-cost, and usage-accounting controls.",
+      "owner": "aois-p-finops",
+      "interfaces": ["portal", "api"],
+      "requires_approval": true
+    },
+    {
+      "capability_id": "incident_response_bundle",
+      "description": "Reusable incident, runbook, escalation, and evidence capture patterns.",
+      "owner": "aois-p-ops",
+      "interfaces": ["portal", "template"],
+      "requires_approval": false
+    },
+    {
+      "capability_id": "environment_request",
+      "description": "Self-service environment request abstraction with tenancy, policy, quota, and rollback defaults.",
+      "owner": "aois-p-platform",
+      "interfaces": ["portal", "api"],
+      "requires_approval": true
+    }
+  ],
+  "interface_catalog": [
+    {
+      "interface_type": "portal",
+      "contract": "developer_portal_entry",
+      "requires_docs": true,
+      "requires_owner": true
+    },
+    {
+      "interface_type": "api",
+      "contract": "openapi_or_resource_schema",
+      "requires_docs": true,
+      "requires_owner": true
+    },
+    {
+      "interface_type": "template",
+      "contract": "golden_path_template",
+      "requires_docs": true,
+      "requires_owner": true
+    },
+    {
+      "interface_type": "cli",
+      "contract": "thin_client_over_platform_api",
+      "requires_docs": true,
+      "requires_owner": true
+    }
+  ],
+  "decision_gates": {
+    "allow_self_service_capability": "Allow the self-service platform capability when catalog, owner, docs, API, template, policy, security, cost, observability, release, model delivery, tenant, approval, support, and lifecycle checks pass.",
+    "block_unknown_capability": "Block when the requested capability is not in the platform catalog.",
+    "block_deprecated_capability": "Block when the capability lifecycle is deprecated or retired without an approved migration path.",
+    "block_missing_owner": "Block when a platform capability has no accountable owner.",
+    "block_missing_docs": "Block when documentation and onboarding guidance are missing.",
+    "block_missing_api_contract": "Block when the platform API or resource contract is missing.",
+    "block_missing_template": "Block when the golden path template is missing.",
+    "block_policy_boundary": "Block when policy defaults or policy boundaries are missing.",
+    "block_security_boundary": "Block when security boundaries are missing or unsafe.",
+    "hold_cost_review": "Hold when cost or quota review is pending.",
+    "block_observability_missing": "Block when observability wiring or dashboard contracts are missing.",
+    "block_release_integration_missing": "Block when the capability is not integrated with v28 release controls.",
+    "hold_model_delivery_integration": "Hold when a model-related capability lacks v29 model-delivery tracking.",
+    "block_tenant_boundary_missing": "Block when tenant or permission boundaries are missing.",
+    "block_approval_missing": "Block when a capability that requires approval lacks an approval record.",
+    "hold_support_slo_missing": "Hold when support ownership or support SLO is missing."
+  },
+  "case_defaults": {
+    "capability_id": "aois_service_starter",
+    "user_persona": "product_engineer",
+    "request_type": "create_service",
+    "interface_type": "portal",
+    "owner": "aois-p-platform",
+    "documentation_status": "complete",
+    "api_contract_status": "complete",
+    "template_status": "complete",
+    "policy_status": "pass",
+    "security_status": "pass",
+    "cost_status": "approved",
+    "observability_status": "complete",
+    "release_integration_status": "complete",
+    "model_delivery_status": "not_applicable",
+    "tenant_boundary_status": "complete",
+    "approval_status": "not_required",
+    "support_slo_status": "defined",
+    "lifecycle_status": "active"
+  },
+  "platform_cases": [
+    {
+      "case_id": "platform-v30-001",
+      "name": "self_service_service_starter_allowed",
+      "expected_decision": "allow_self_service_capability",
+      "expected_operator_action": "publish_self_service_capability",
+      "expected_platform_state": "available"
+    },
+    {
+      "case_id": "platform-v30-002",
+      "name": "unknown_capability_blocked",
+      "overrides": {"capability_id": "unregistered_gpu_cluster"},
+      "expected_decision": "block_unknown_capability",
+      "expected_operator_action": "register_capability_or_reject_request",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-003",
+      "name": "deprecated_capability_blocked",
+      "overrides": {"lifecycle_status": "deprecated"},
+      "expected_decision": "block_deprecated_capability",
+      "expected_operator_action": "route_to_supported_capability",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-004",
+      "name": "missing_owner_blocked",
+      "overrides": {"owner": ""},
+      "expected_decision": "block_missing_owner",
+      "expected_operator_action": "assign_platform_owner",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-005",
+      "name": "missing_docs_blocked",
+      "overrides": {"documentation_status": "missing"},
+      "expected_decision": "block_missing_docs",
+      "expected_operator_action": "write_onboarding_docs",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-006",
+      "name": "missing_api_contract_blocked",
+      "overrides": {"api_contract_status": "missing"},
+      "expected_decision": "block_missing_api_contract",
+      "expected_operator_action": "define_platform_api_contract",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-007",
+      "name": "missing_template_blocked",
+      "overrides": {"template_status": "missing"},
+      "expected_decision": "block_missing_template",
+      "expected_operator_action": "create_golden_path_template",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-008",
+      "name": "policy_boundary_blocked",
+      "overrides": {"policy_status": "fail"},
+      "expected_decision": "block_policy_boundary",
+      "expected_operator_action": "repair_policy_defaults",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-009",
+      "name": "security_boundary_blocked",
+      "overrides": {"security_status": "fail"},
+      "expected_decision": "block_security_boundary",
+      "expected_operator_action": "repair_security_boundary",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-010",
+      "name": "cost_review_pending_held",
+      "overrides": {"cost_status": "pending"},
+      "expected_decision": "hold_cost_review",
+      "expected_operator_action": "complete_cost_and_quota_review",
+      "expected_platform_state": "held"
+    },
+    {
+      "case_id": "platform-v30-011",
+      "name": "observability_missing_blocked",
+      "overrides": {"observability_status": "missing"},
+      "expected_decision": "block_observability_missing",
+      "expected_operator_action": "add_observability_contract",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-012",
+      "name": "release_integration_missing_blocked",
+      "overrides": {"release_integration_status": "missing"},
+      "expected_decision": "block_release_integration_missing",
+      "expected_operator_action": "connect_v28_release_controls",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-013",
+      "name": "model_delivery_integration_pending_held",
+      "overrides": {
+        "capability_id": "model_delivery_bundle",
+        "model_delivery_status": "missing",
+        "approval_status": "approved"
+      },
+      "expected_decision": "hold_model_delivery_integration",
+      "expected_operator_action": "connect_v29_model_delivery_tracking",
+      "expected_platform_state": "held"
+    },
+    {
+      "case_id": "platform-v30-014",
+      "name": "tenant_boundary_missing_blocked",
+      "overrides": {"tenant_boundary_status": "missing"},
+      "expected_decision": "block_tenant_boundary_missing",
+      "expected_operator_action": "define_tenant_and_permission_boundaries",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-015",
+      "name": "approval_missing_blocked",
+      "overrides": {
+        "capability_id": "environment_request",
+        "approval_status": "missing"
+      },
+      "expected_decision": "block_approval_missing",
+      "expected_operator_action": "request_platform_capability_approval",
+      "expected_platform_state": "blocked"
+    },
+    {
+      "case_id": "platform-v30-016",
+      "name": "support_slo_missing_held",
+      "overrides": {"support_slo_status": "missing"},
+      "expected_decision": "hold_support_slo_missing",
+      "expected_operator_action": "define_support_slo",
+      "expected_platform_state": "held"
+    }
+  ],
+  "required_before_live_platform": [
+    "platform_product_review",
+    "capability_catalog_review",
+    "developer_portal_review",
+    "platform_api_contract_review",
+    "golden_path_template_review",
+    "policy_default_review",
+    "security_boundary_review",
+    "cost_quota_review",
+    "tenant_boundary_review",
+    "observability_contract_review",
+    "release_integration_review",
+    "model_delivery_integration_review",
+    "approval_workflow_review",
+    "support_slo_review",
+    "deprecation_policy_review",
+    "primary_aois_separation_review",
+    "resource_usage_record"
+  ]
+}

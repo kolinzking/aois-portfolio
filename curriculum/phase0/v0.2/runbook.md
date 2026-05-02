@@ -1,5 +1,7 @@
 # v0.2 Runbook
 
+Authoring status: authored
+
 ## Purpose
 
 Use this runbook when `scripts/sysinfo.sh` or `scripts/log_analyzer.sh` will not run or their output looks wrong.

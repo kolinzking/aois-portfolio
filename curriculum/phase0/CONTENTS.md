@@ -1,5 +1,7 @@
 # Phase 0 Contents
 
+Authoring status: authored
+
 ## Phase Files
 
 - [00-introduction.md](00-introduction.md)

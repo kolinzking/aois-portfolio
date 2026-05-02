@@ -1,5 +1,7 @@
 # v0.2 Next Version Bridge
 
+Authoring status: authored
+
 ## What This Version Unlocks
 
 You can now automate a useful operational workflow instead of repeating commands manually.
