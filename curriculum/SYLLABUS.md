@@ -41,7 +41,7 @@ That order exists so later complexity sits on real operating skill rather than t
 
 Navigation:
 
-- [Phase 0 Contents](phase0/CONTENTS.md)
+- [Phase 0 Contents](00-phase0/00-phase-start/01-contents.md)
 
 Goal:
 Build the engineering substrate for the entire system.
@@ -93,7 +93,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 1 Contents](phase1/CONTENTS.md)
+- [Phase 1 Contents](01-phase1/00-phase-start/01-contents.md)
 
 Goal:
 Turn AOIS into a reliable AI analysis service.
@@ -140,7 +140,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 2 Contents](phase2/CONTENTS.md)
+- [Phase 2 Contents](02-phase2/00-phase-start/01-contents.md)
 
 Goal:
 Make AOIS portable and safer.
@@ -183,7 +183,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 3 Contents](phase3/CONTENTS.md)
+- [Phase 3 Contents](03-phase3/00-phase-start/01-contents.md)
 
 Goal:
 Operate AOIS on real infrastructure.
@@ -237,7 +237,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 4 Contents](phase4/CONTENTS.md)
+- [Phase 4 Contents](04-phase4/00-phase-start/01-contents.md)
 
 Goal:
 Learn managed-cloud AI infrastructure patterns.
@@ -282,7 +282,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 5 Contents](phase5/CONTENTS.md)
+- [Phase 5 Contents](05-phase5/00-phase-start/01-contents.md)
 
 Goal:
 Move from API consumption to inference engineering.
@@ -328,7 +328,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 6 Contents](phase6/CONTENTS.md)
+- [Phase 6 Contents](06-phase6/00-phase-start/01-contents.md)
 
 Goal:
 Make AOIS legible under load and failure.
@@ -376,7 +376,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 7 Contents](phase7/CONTENTS.md)
+- [Phase 7 Contents](07-phase7/00-phase-start/01-contents.md)
 
 Goal:
 Build AOIS in the real direction of modern AI systems: tools, workflows, agents, governance, and runtime control.
@@ -427,7 +427,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 8 Contents](phase8/CONTENTS.md)
+- [Phase 8 Contents](08-phase8/00-phase-start/01-contents.md)
 
 Goal:
 Make AOIS useful to humans in real time.
@@ -467,7 +467,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 9 Contents](phase9/CONTENTS.md)
+- [Phase 9 Contents](09-phase9/00-phase-start/01-contents.md)
 
 Goal:
 Make AOIS easy to ship and repeat.
@@ -509,7 +509,7 @@ Do not move on until:
 
 Navigation:
 
-- [Phase 10 Contents](phase10/CONTENTS.md)
+- [Phase 10 Contents](10-phase10/00-phase-start/01-contents.md)
 
 Goal:
 Push AOIS into frontier territory without losing rigor.

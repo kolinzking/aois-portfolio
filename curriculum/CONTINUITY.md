@@ -53,7 +53,7 @@ If the terminal closes or the session is interrupted, resume using this order:
 3. Check `git status`
 4. Run `scripts/aois_resume.sh`
 5. Open the latest version directory you were working in
-6. Read the `failure-story.md` and `benchmark.md` for that version
+6. Read `06-failure-story.md` and `07-benchmark.md` for that version
 7. Continue from the last unfinished lab or mastery checkpoint
 
 ## Session-End Checklist
@@ -100,7 +100,7 @@ Example:
 
 ```bash
 scripts/aois_checkpoint.sh \
-  --lesson "phase0/v0.1" \
+  --lesson "00-phase0/v0.1" \
   --next "Complete the v0.1 mastery checkpoint" \
   --note "Finished the ops lab, break lab next."
 ```

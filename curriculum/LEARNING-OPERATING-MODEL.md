@@ -165,15 +165,15 @@ It is how fluency becomes normal.
 
 Each version should eventually live under:
 
-`curriculum/phaseX/vY/`
+`curriculum/NN-phaseX/vY/`
 
 With these artifacts:
 
-- `notes.md`
-- `lab.md`
-- `runbook.md`
-- `benchmark.md`
-- `failure-story.md`
+- `03-notes.md`
+- `04-lab.md`
+- `05-runbook.md`
+- `06-failure-story.md`
+- `07-benchmark.md`
 
 This is how the repo becomes:
 

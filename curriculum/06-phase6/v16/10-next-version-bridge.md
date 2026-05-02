@@ -1,0 +1,20 @@
+# v16 Next Version Bridge
+
+Authoring status: authored
+
+## What This Version Unlocks
+
+`v16` unlocks correlated telemetry for AOIS.
+
+## Why The Next Version Exists
+
+`v16.5` applies the same trace discipline to deeper incident and agent-style multi-step behavior.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v16 Looking Forward](09-looking-forward.md)
+- Next: [v16.5 Start Here](../v16.5/00-start-here.md)
+<!-- AOIS-NAV-END -->

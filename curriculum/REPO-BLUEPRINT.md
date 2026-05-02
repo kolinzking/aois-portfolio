@@ -25,17 +25,17 @@ aois-portfolio/
 │   ├── integration/
 │   └── evals/
 ├── curriculum/
-│   ├── phase0/
-│   ├── phase1/
-│   ├── phase2/
-│   ├── phase3/
-│   ├── phase4/
-│   ├── phase5/
-│   ├── phase6/
-│   ├── phase7/
-│   ├── phase8/
-│   ├── phase9/
-│   ├── phase10/
+│   ├── 00-phase0/
+│   ├── 01-phase1/
+│   ├── 02-phase2/
+│   ├── 03-phase3/
+│   ├── 04-phase4/
+│   ├── 05-phase5/
+│   ├── 06-phase6/
+│   ├── 07-phase7/
+│   ├── 08-phase8/
+│   ├── 09-phase9/
+│   ├── 10-phase10/
 │   ├── MASTER-CURRICULUM.md
 │   ├── LEARNING-OPERATING-MODEL.md
 │   └── REPO-BLUEPRINT.md
@@ -62,12 +62,18 @@ aois-portfolio/
 Each version should use:
 
 ```text
-curriculum/phaseX/vY/
-├── notes.md
-├── lab.md
-├── runbook.md
-├── benchmark.md
-└── failure-story.md
+curriculum/NN-phaseX/vY/
+├── 00-start-here.md
+├── 01-contents.md
+├── 02-introduction.md
+├── 03-notes.md
+├── 04-lab.md
+├── 05-runbook.md
+├── 06-failure-story.md
+├── 07-benchmark.md
+├── 08-summary-notes.md
+├── 09-looking-forward.md
+└── 10-next-version-bridge.md
 ```
 
 ## Why This Blueprint Matters
@@ -85,7 +91,7 @@ It forces the repo to act as:
 Recommended order:
 
 1. `scripts/`
-2. `curriculum/phase0/`
+2. `curriculum/00-phase0/`
 3. `app/`
 4. `tests/`
 5. `runbooks/`

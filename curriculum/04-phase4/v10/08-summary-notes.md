@@ -1,0 +1,28 @@
+# v10 Summary Notes
+
+Authoring status: authored
+
+## What Was Built
+
+A Bedrock-style managed model layer plan and local validator.
+
+## What Was Learned
+
+Cloud model services shift operational risk to credentials, budget, provider contracts, latency, and data exposure.
+
+Planning can be practiced without cloud calls.
+
+## Core Limitation Or Tradeoff
+
+No real provider call is made.
+
+That protects cost and credentials, but live provider behavior is not proven.
+<!-- AOIS-NAV-START -->
+---
+
+## Navigation
+
+- Reading order: [AOIS Reading Order](../../READING-ORDER.md)
+- Previous: [v10 Benchmark](07-benchmark.md)
+- Next: [v10 Looking Forward](09-looking-forward.md)
+<!-- AOIS-NAV-END -->

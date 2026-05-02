@@ -380,11 +380,11 @@ Measure one relevant thing:
 
 Each version must leave behind:
 
-- `notes.md`
-- `lab.md`
-- `runbook.md`
-- `benchmark.md`
-- `failure-story.md`
+- `03-notes.md`
+- `04-lab.md`
+- `05-runbook.md`
+- `06-failure-story.md`
+- `07-benchmark.md`
 
 These documents make your understanding inspectable.
 

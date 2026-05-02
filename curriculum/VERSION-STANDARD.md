@@ -121,20 +121,21 @@ Do not freeze fast-moving claims in the curriculum without either a dated source
 Each version should eventually include:
 
 ```text
-curriculum/phaseX/vY/
-├── CONTENTS.md
-├── introduction.md
-├── notes.md
-├── lab.md
-├── runbook.md
-├── benchmark.md
-├── failure-story.md
-├── summarynotes.md
-├── next-version-bridge.md
-└── looking-forward.md
+curriculum/NN-phaseX/vY/
+├── 00-start-here.md
+├── 01-contents.md
+├── 02-introduction.md
+├── 03-notes.md
+├── 04-lab.md
+├── 05-runbook.md
+├── 06-failure-story.md
+├── 07-benchmark.md
+├── 08-summary-notes.md
+├── 09-looking-forward.md
+└── 10-next-version-bridge.md
 ```
 
-## Required Sections In `notes.md`
+## Required Sections In `03-notes.md`
 
 ```text
 # vX - Title

@@ -20,7 +20,7 @@ This file records the baseline source families to use. Individual lessons should
 
 ## Authoring Rule
 
-When a lesson depends on current behavior, add a `Source Notes` section to `notes.md` with:
+When a lesson depends on current behavior, add a `Source Notes` section to `03-notes.md` with:
 
 - source name
 - URL

@@ -16,29 +16,36 @@ NAV_START = "<!-- AOIS-NAV-START -->"
 NAV_END = "<!-- AOIS-NAV-END -->"
 START_HERE_FILE = "00-start-here.md"
 LEGACY_START_HERE_FILE = "_startHere.md"
-
-PHASE_FILE_ORDER = [
-    "CONTENTS.md",
-    "00-introduction.md",
+PHASE_START_DIR = "00-phase-start"
+PHASE_END_DIR = "zz-phase-end"
+PHASE_CONTENTS_FILE = "01-contents.md"
+PHASE_INTRODUCTION_FILE = "02-introduction.md"
+CHAPTER_FILE_STEPS = [
+    ("01-contents.md", "quick map for the chapter"),
+    ("02-introduction.md", "what the chapter is about"),
+    ("03-notes.md", "the main lesson"),
+    ("04-lab.md", "the hands-on work"),
+    ("05-runbook.md", "recovery steps when stuck"),
+    ("06-failure-story.md", "what breaks in the real world"),
+    ("07-benchmark.md", "what to measure"),
+    ("08-summary-notes.md", "what to retain"),
+    ("09-looking-forward.md", "what carries forward"),
+    ("10-next-version-bridge.md", "how to enter the next chapter"),
 ]
 
-VERSION_FILE_ORDER = [
-    START_HERE_FILE,
-    "CONTENTS.md",
-    "introduction.md",
-    "notes.md",
-    "lab.md",
-    "runbook.md",
-    "failure-story.md",
-    "benchmark.md",
-    "summarynotes.md",
-    "looking-forward.md",
-    "next-version-bridge.md",
+PHASE_FILE_ORDER = [
+    f"{PHASE_START_DIR}/{START_HERE_FILE}",
+    f"{PHASE_START_DIR}/{PHASE_CONTENTS_FILE}",
+    f"{PHASE_START_DIR}/{PHASE_INTRODUCTION_FILE}",
+]
+
+VERSION_FILE_ORDER = [START_HERE_FILE] + [
+    filename for filename, _description in CHAPTER_FILE_STEPS
 ]
 
 PHASE_END_FILE_ORDER = [
-    "phase-capstone.md",
-    "looking-forward.md",
+    f"{PHASE_END_DIR}/00-phase-capstone.md",
+    f"{PHASE_END_DIR}/01-looking-forward.md",
 ]
 
 REFERENCE_DOCS = [
@@ -62,8 +69,19 @@ REFERENCE_DOCS = [
 
 
 def phase_key(path: Path) -> int:
-    match = re.fullmatch(r"phase(\d+)", path.name)
-    return int(match.group(1)) if match else 9999
+    match = re.fullmatch(r"(?:(\d+)-)?phase(\d+)", path.name)
+    return int(match.group(2)) if match else 9999
+
+
+def phase_dirs() -> list[Path]:
+    return sorted(
+        [
+            item
+            for item in CURRICULUM.iterdir()
+            if item.is_dir() and phase_key(item) != 9999
+        ],
+        key=phase_key,
+    )
 
 
 def version_key(path: Path) -> tuple[int, ...]:
@@ -99,23 +117,10 @@ def add_existing(order: list[Path], path: Path) -> None:
 def write_start_here_files() -> None:
     """Write a generated entry file for every version/chapter directory."""
 
-    readable_steps = [
-        ("CONTENTS.md", "quick map for the chapter"),
-        ("introduction.md", "what the chapter is about"),
-        ("notes.md", "the main lesson"),
-        ("lab.md", "the hands-on work"),
-        ("runbook.md", "recovery steps when stuck"),
-        ("failure-story.md", "what breaks in the real world"),
-        ("benchmark.md", "what to measure"),
-        ("summarynotes.md", "what to retain"),
-        ("looking-forward.md", "what carries forward"),
-        ("next-version-bridge.md", "how to enter the next chapter"),
-    ]
-
     version_dirs = sorted(
         [
             item
-            for phase in CURRICULUM.glob("phase*")
+            for phase in phase_dirs()
             if phase.is_dir()
             for item in phase.iterdir()
             if item.is_dir() and item.name.startswith("v")
@@ -138,7 +143,7 @@ def write_start_here_files() -> None:
         ]
 
         step_number = 1
-        for filename, description in readable_steps:
+        for filename, description in CHAPTER_FILE_STEPS:
             path = version / filename
             if path.exists():
                 lines.append(f"{step_number}. [{filename}]({filename}) - {description}")
@@ -162,13 +167,59 @@ def write_start_here_files() -> None:
         )
 
 
+def write_phase_start_files() -> None:
+    """Write a generated entry file for every phase directory."""
+
+    for phase in phase_dirs():
+        phase_number = phase_key(phase)
+        start_dir = phase / PHASE_START_DIR
+        start_dir.mkdir(exist_ok=True)
+
+        lines = [
+            f"# Phase {phase_number} Start Here",
+            "",
+            "Use this file first when opening this phase.",
+            "",
+            "## Phase Reading Path",
+            "",
+        ]
+
+        steps = [
+            (PHASE_CONTENTS_FILE, "quick map for the phase"),
+            (PHASE_INTRODUCTION_FILE, "phase introduction before the versions"),
+        ]
+        step_number = 1
+        for filename, description in steps:
+            path = start_dir / filename
+            if path.exists():
+                lines.append(f"{step_number}. [{filename}]({filename}) - {description}")
+                step_number += 1
+
+        lines.extend(
+            [
+                "",
+                "## How To Move",
+                "",
+                "After this page, use the `Next` link at the bottom of each document.",
+                "The next documents introduce the phase before the first version folder.",
+                "",
+                "<!-- This file is generated by scripts/generate_curriculum_navigation.py. -->",
+            ]
+        )
+
+        (start_dir / START_HERE_FILE).write_text(
+            "\n".join(lines).rstrip() + "\n",
+            encoding="utf-8",
+        )
+
+
 def build_reading_order() -> list[Path]:
     order: list[Path] = []
 
     if READING_ORDER.exists():
         order.append(READING_ORDER)
 
-    for phase in sorted(CURRICULUM.glob("phase*"), key=phase_key):
+    for phase in phase_dirs():
         if not phase.is_dir():
             continue
 
@@ -199,10 +250,7 @@ def build_reading_order() -> list[Path]:
 
 
 def write_reading_order() -> None:
-    phase_dirs = sorted(
-        [item for item in CURRICULUM.glob("phase*") if item.is_dir()],
-        key=phase_key,
-    )
+    phases = phase_dirs()
 
     lines: list[str] = [
         "# AOIS Reading Order",
@@ -214,29 +262,29 @@ def write_reading_order() -> None:
         "Inside each version, use this order:",
         "",
         "1. `00-start-here.md` - chapter entry point",
-        "2. `CONTENTS.md` - quick map for the version",
-        "3. `introduction.md` - what the version is about",
-        "4. `notes.md` - the main lesson",
-        "5. `lab.md` - the hands-on work",
-        "6. `runbook.md` - how to recover when stuck",
-        "7. `failure-story.md` - what breaks in the real world",
-        "8. `benchmark.md` - what to measure",
-        "9. `summarynotes.md` - what to retain",
-        "10. `looking-forward.md` - what carries forward",
-        "11. `next-version-bridge.md` - how to enter the next version",
+        "2. `01-contents.md` - quick map for the version",
+        "3. `02-introduction.md` - what the version is about",
+        "4. `03-notes.md` - the main lesson",
+        "5. `04-lab.md` - the hands-on work",
+        "6. `05-runbook.md` - how to recover when stuck",
+        "7. `06-failure-story.md` - what breaks in the real world",
+        "8. `07-benchmark.md` - what to measure",
+        "9. `08-summary-notes.md` - what to retain",
+        "10. `09-looking-forward.md` - what carries forward",
+        "11. `10-next-version-bridge.md` - how to enter the next version",
         "",
         "Every curriculum Markdown file ends with a navigation block linking back to this file plus the previous and next document in the reading path.",
         "",
         "## Start Here",
         "",
-        "Begin at [Phase 0 Contents](phase0/CONTENTS.md), then use each chapter's `00-start-here.md` file and the `Next` link at the bottom of each page.",
+        "Begin at [Phase 0 Start Here](00-phase0/00-phase-start/00-start-here.md), then keep using the `Next` link at the bottom of each page.",
         "",
         "## Full Learner Path",
         "",
     ]
 
-    for phase in phase_dirs:
-        phase_label = phase.name.replace("phase", "Phase ")
+    for phase in phases:
+        phase_label = f"Phase {phase_key(phase)}"
         lines.extend([f"### {phase_label}", ""])
 
         for filename in PHASE_FILE_ORDER:
@@ -313,6 +361,7 @@ def write_footers(order: list[Path]) -> None:
 
 
 def main() -> None:
+    write_phase_start_files()
     write_start_here_files()
     write_reading_order()
     order = build_reading_order()
