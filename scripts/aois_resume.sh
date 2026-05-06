@@ -11,3 +11,9 @@ if [[ ! -f "$checkpoint_file" ]]; then
 fi
 
 cat "$checkpoint_file"
+
+events_file="$repo_root/.aois-state/reader-events.jsonl"
+if [[ -s "$events_file" ]]; then
+  printf '\n\n# Latest Reader Event\n\n'
+  tail -n 1 "$events_file"
+fi

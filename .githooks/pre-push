@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+"$repo_root/scripts/aois_checkpoint.sh" \
+  --source pre-push \
+  --next "Resume from latest pushed branch state or latest reader position." >/dev/null 2>&1 || true

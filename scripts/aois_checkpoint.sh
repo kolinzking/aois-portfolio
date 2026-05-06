@@ -36,6 +36,8 @@ repo_root="$(git rev-parse --show-toplevel)"
 state_dir="$repo_root/.aois-state"
 checkpoint_file="$state_dir/latest-checkpoint.md"
 history_file="$state_dir/history.log"
+latest_reading_file="$state_dir/latest-reading-position.md"
+latest_autosave_file="$state_dir/latest-autosave.md"
 
 mkdir -p "$state_dir"
 
@@ -72,6 +74,20 @@ $status_block
 
 $note
 EOF
+
+if [[ -f "$latest_reading_file" ]]; then
+  {
+    printf '\n## Latest Reading Position\n\n'
+    sed '1{/^# AOIS Reading Position$/d;}' "$latest_reading_file"
+  } >> "$checkpoint_file"
+fi
+
+if [[ -f "$latest_autosave_file" ]]; then
+  {
+    printf '\n## Latest Autosave Snapshot\n\n'
+    sed '1{/^# AOIS Autosave Snapshot$/d;}' "$latest_autosave_file"
+  } >> "$checkpoint_file"
+fi
 
 printf '%s | %s | %s | %s | %s\n' \
   "$timestamp" "$source_name" "$branch" "$head_sha" "$next_step" >> "$history_file"
