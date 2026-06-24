@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/REPLACE_WITH_OWNER/aois-portfolio.git
+    repoURL: https://github.com/kolinzking/aois-portfolio.git
     targetRevision: main
     path: charts/aois
     helm:
