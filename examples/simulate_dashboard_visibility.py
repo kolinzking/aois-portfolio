@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("product/aois-p/dashboard-visibility.plan.json")
+PLAN_PATH = Path("product/aois/dashboard-visibility.plan.json")
 
 EVENT_PANEL = {
     "incident_created": "incident_overview",

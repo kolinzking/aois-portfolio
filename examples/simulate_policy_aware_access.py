@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("product/aois-p/policy-aware-access.plan.json")
+PLAN_PATH = Path("product/aois/policy-aware-access.plan.json")
 
 SENSITIVE_RESOURCE_TYPES = {
     "trace",

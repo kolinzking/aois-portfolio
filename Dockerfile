@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    AOIS_APP_NAME=aois-p \
+    AOIS_APP_NAME=aois \
     AOIS_ENV=container
 
 WORKDIR /app

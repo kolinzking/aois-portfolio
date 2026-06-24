@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/governed-tool-registry.plan.json")
+PLAN_PATH = Path("agentic/aois/governed-tool-registry.plan.json")
 
 
 def _tool_index(plan: dict[str, object]) -> dict[tuple[str, str], dict[str, object]]:

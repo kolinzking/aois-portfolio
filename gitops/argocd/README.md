@@ -9,13 +9,13 @@ Resource posture:
 - no cluster sync
 - no namespace/resource creation
 
-The `aois-p` Application is a review artifact until a live GitOps step is explicitly approved.
+The `aois` Application is a review artifact until a live GitOps step is explicitly approved.
 
 Before live use:
 
 1. replace `repoURL` with the real repository URL
 2. confirm ArgoCD target cluster
-3. confirm namespace `aois-p`
+3. confirm namespace `aois`
 4. confirm resource budget
 5. record expected resource impact
 6. get explicit approval

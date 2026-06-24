@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("inference/aois-p/performance-caching.plan.json")
+PLAN_PATH = Path("inference/aois/performance-caching.plan.json")
 
 
 def simulate_caching() -> dict[str, object]:

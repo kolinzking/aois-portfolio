@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-PLAN_PATH = Path("frontier/aois-p/governance-computer-use.plan.json")
+PLAN_PATH = Path("frontier/aois/governance-computer-use.plan.json")
 
 SENSITIVE_CLASSES = {"sensitive", "secret", "regulated"}
 LIVE_TARGETS = {"live_production", "external", "authenticated", "real_user"}

@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/durable-workflow.plan.json")
+PLAN_PATH = Path("agentic/aois/durable-workflow.plan.json")
 
 BLOCKING_REGISTRY_DECISIONS = {
     "block_unregistered_tool",

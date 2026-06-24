@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: aois-p
+  name: aois
   namespace: argocd
   labels:
-    app.kubernetes.io/name: aois-p
+    app.kubernetes.io/name: aois
     app.kubernetes.io/part-of: aois-portfolio
     aois.dev/owner: portfolio
 spec:
@@ -12,13 +12,13 @@ spec:
   source:
     repoURL: https://github.com/REPLACE_WITH_OWNER/aois-portfolio.git
     targetRevision: main
-    path: charts/aois-p
+    path: charts/aois
     helm:
       valueFiles:
         - values.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: aois-p
+    namespace: aois
   syncPolicy:
     automated: null
     syncOptions:

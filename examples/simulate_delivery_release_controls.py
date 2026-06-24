@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("release-safety/aois-p/delivery-release-controls.plan.json")
+PLAN_PATH = Path("release-safety/aois/delivery-release-controls.plan.json")
 
 
 def _expand_case(defaults: dict[str, object], case: dict[str, object]) -> dict[str, object]:

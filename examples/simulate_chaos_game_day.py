@@ -7,12 +7,12 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("chaos/aois-p/chaos-engineering.plan.json")
+PLAN_PATH = Path("chaos/aois/chaos-engineering.plan.json")
 
 
 SIMULATED_GAME_DAY = [
     {
-        "experiment": "aois-p-api-latency-game-day",
+        "experiment": "aois-api-latency-game-day",
         "steady_state_confirmed": True,
         "slo_budget_available": True,
         "primary_aois_excluded": True,
@@ -20,7 +20,7 @@ SIMULATED_GAME_DAY = [
         "decision": "approved_for_tabletop_only",
     },
     {
-        "experiment": "aois-p-stream-lag-game-day",
+        "experiment": "aois-stream-lag-game-day",
         "steady_state_confirmed": True,
         "slo_budget_available": True,
         "primary_aois_excluded": True,
@@ -28,7 +28,7 @@ SIMULATED_GAME_DAY = [
         "decision": "approved_for_tabletop_only",
     },
     {
-        "experiment": "aois-p-agent-bad-recommendation-game-day",
+        "experiment": "aois-agent-bad-recommendation-game-day",
         "steady_state_confirmed": True,
         "slo_budget_available": False,
         "primary_aois_excluded": True,

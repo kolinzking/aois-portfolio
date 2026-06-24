@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-PLAN_PATH = Path("release-safety/aois-p/experiment-model-delivery.plan.json")
+PLAN_PATH = Path("release-safety/aois/experiment-model-delivery.plan.json")
 
 
 def _expand_case(defaults: dict[str, Any], case: dict[str, Any]) -> dict[str, Any]:

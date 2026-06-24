@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-PLAN_PATH = Path("frontier/aois-p/adversarial-red-teaming.plan.json")
+PLAN_PATH = Path("frontier/aois/adversarial-red-teaming.plan.json")
 
 POISONING_CATEGORIES = {
     "supply_chain",

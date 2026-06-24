@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("inference/aois-p/high-throughput-serving.plan.json")
+PLAN_PATH = Path("inference/aois/high-throughput-serving.plan.json")
 
 
 def compare_modes() -> dict[str, object]:

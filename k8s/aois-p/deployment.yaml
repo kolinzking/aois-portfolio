@@ -1,33 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aois-p-api
-  namespace: aois-p
+  name: aois-api
+  namespace: aois
   labels:
-    app.kubernetes.io/name: aois-p-api
+    app.kubernetes.io/name: aois-api
     app.kubernetes.io/part-of: aois-portfolio
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: aois-p-api
+      app.kubernetes.io/name: aois-api
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: aois-p-api
+        app.kubernetes.io/name: aois-api
         app.kubernetes.io/part-of: aois-portfolio
     spec:
-      serviceAccountName: aois-p-api
+      serviceAccountName: aois-api
       automountServiceAccountToken: false
       containers:
         - name: api
-          image: aois-p/api:local
+          image: aois/api:local
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8006
           env:
             - name: AOIS_APP_NAME
-              value: aois-p
+              value: aois
             - name: AOIS_ENV
               value: kubernetes
             - name: AOIS_PROVIDER_CALLS_ENABLED

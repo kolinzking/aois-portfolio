@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/multi-agent-collaboration.plan.json")
+PLAN_PATH = Path("agentic/aois/multi-agent-collaboration.plan.json")
 
 
 def _role_targets(plan: dict[str, object]) -> dict[str, set[str]]:

@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/stateful-orchestration.plan.json")
+PLAN_PATH = Path("agentic/aois/stateful-orchestration.plan.json")
 
 TERMINAL_STATES = {"completed", "blocked", "failed", "timed_out"}
 REGISTRY_BLOCKS = {

@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ResourceQuota
 metadata:
-  name: aois-p-quota
-  namespace: aois-p
+  name: aois-quota
+  namespace: aois
 spec:
   hard:
     requests.cpu: "250m"

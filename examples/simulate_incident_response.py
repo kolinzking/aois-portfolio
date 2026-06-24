@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("incident-response/aois-p/incident-response.plan.json")
+PLAN_PATH = Path("incident-response/aois/incident-response.plan.json")
 
 
 def simulate_incident_response() -> dict[str, object]:
@@ -19,7 +19,7 @@ def simulate_incident_response() -> dict[str, object]:
             "minute": 0,
             "step": "detect",
             "actor": roles["operations_lead"],
-            "evidence": "aois-p-incident-agent valid_recommendation_ratio budget exhausted",
+            "evidence": "aois-incident-agent valid_recommendation_ratio budget exhausted",
         },
         {
             "minute": 4,

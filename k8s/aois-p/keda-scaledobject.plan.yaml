@@ -1,11 +1,11 @@
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:
-  name: aois-p-api
-  namespace: aois-p
+  name: aois-api
+  namespace: aois
 spec:
   scaleTargetRef:
-    name: aois-p-api
+    name: aois-api
   minReplicaCount: 1
   maxReplicaCount: 1
   pollingInterval: 30

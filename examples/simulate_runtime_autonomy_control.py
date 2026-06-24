@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/runtime-autonomy-control.plan.json")
+PLAN_PATH = Path("agentic/aois/runtime-autonomy-control.plan.json")
 
 
 def _decide(case: dict[str, object], plan: dict[str, object]) -> dict[str, object]:

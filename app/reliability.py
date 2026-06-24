@@ -12,7 +12,7 @@ from app.models import IncidentInput
 def new_trace_id() -> str:
     """Create a short local trace id for correlating practice outputs."""
 
-    return f"aois-p-{uuid4().hex[:12]}"
+    return f"aois-{uuid4().hex[:12]}"
 
 
 @dataclass(frozen=True)

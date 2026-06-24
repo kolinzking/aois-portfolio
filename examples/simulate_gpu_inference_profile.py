@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("inference/aois-p/gpu-inference-service.plan.json")
+PLAN_PATH = Path("inference/aois/gpu-inference-service.plan.json")
 
 
 def estimate_tokens(text: str) -> int:
@@ -28,14 +28,14 @@ def build_profile() -> dict[str, object]:
         "model_downloaded": False,
         "request": {
             "trace_id": "trace-v13-local-sim",
-            "model_route": "aois-p-gpu-inference-placeholder",
+            "model_route": "aois-gpu-inference-placeholder",
             "prompt": prompt,
             "max_tokens": 64,
             "temperature": 0.2,
         },
         "response": {
             "trace_id": "trace-v13-local-sim",
-            "model_route": "aois-p-gpu-inference-placeholder",
+            "model_route": "aois-gpu-inference-placeholder",
             "output": "Simulated GPU inference response for contract practice.",
             "latency_ms": latency_ms,
             "tokens_in": tokens_in,

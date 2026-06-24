@@ -8,7 +8,7 @@ from collections import Counter
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/step-cost-accounting.plan.json")
+PLAN_PATH = Path("agentic/aois/step-cost-accounting.plan.json")
 
 
 def _step_cost(step: dict[str, object], unit_costs: dict[str, object]) -> dict[str, object]:

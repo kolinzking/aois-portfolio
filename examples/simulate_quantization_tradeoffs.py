@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("inference/aois-p/quantization-memory.plan.json")
+PLAN_PATH = Path("inference/aois/quantization-memory.plan.json")
 
 
 def simulate_quantization() -> dict[str, object]:

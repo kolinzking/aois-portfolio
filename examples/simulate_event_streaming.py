@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("streaming/aois-p/event-streaming.plan.json")
+PLAN_PATH = Path("streaming/aois/event-streaming.plan.json")
 
 
 def simulate_event_streaming() -> dict[str, object]:
@@ -22,7 +22,7 @@ def simulate_event_streaming() -> dict[str, object]:
             "schema_version": "v1",
             "trace_id": trace_id,
             "incident_id": incident_id,
-            "producer": "aois-p-incident-producer-placeholder",
+            "producer": "aois-incident-producer-placeholder",
             "created_at": "2026-04-25T00:00:00Z",
             "offset": 0,
             "payload": {"summary": "raw incident received"},
@@ -33,7 +33,7 @@ def simulate_event_streaming() -> dict[str, object]:
             "schema_version": "v1",
             "trace_id": trace_id,
             "incident_id": incident_id,
-            "producer": "aois-p-incident-producer-placeholder",
+            "producer": "aois-incident-producer-placeholder",
             "created_at": "2026-04-25T00:00:01Z",
             "offset": 1,
             "payload": {"category": "memory-pressure", "severity": "high"},
@@ -44,7 +44,7 @@ def simulate_event_streaming() -> dict[str, object]:
             "schema_version": "v1",
             "trace_id": trace_id,
             "incident_id": incident_id,
-            "producer": "aois-p-incident-producer-placeholder",
+            "producer": "aois-incident-producer-placeholder",
             "created_at": "2026-04-25T00:00:02Z",
             "offset": 2,
             "payload": {"route": "local-deterministic", "provider_call_made": False},
@@ -55,7 +55,7 @@ def simulate_event_streaming() -> dict[str, object]:
             "schema_version": "v1",
             "trace_id": trace_id,
             "incident_id": incident_id,
-            "producer": "aois-p-incident-producer-placeholder",
+            "producer": "aois-incident-producer-placeholder",
             "created_at": "2026-04-25T00:00:03Z",
             "offset": 3,
             "payload": {"action": "inspect memory usage and limits"},

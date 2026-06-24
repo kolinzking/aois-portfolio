@@ -7,21 +7,21 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("reliability/aois-p/service-agent-slo.plan.json")
+PLAN_PATH = Path("reliability/aois/service-agent-slo.plan.json")
 
 
 SAMPLE_WINDOWS = {
-    "aois-p-api": {
+    "aois-api": {
         "total_events": 10_000,
         "bad_events": 75,
         "burned_in_current_window": 75,
     },
-    "aois-p-incident-stream-consumer": {
+    "aois-incident-stream-consumer": {
         "total_events": 1_000,
         "bad_events": 8,
         "burned_in_current_window": 8,
     },
-    "aois-p-incident-agent": {
+    "aois-incident-agent": {
         "total_events": 200,
         "bad_events": 14,
         "burned_in_current_window": 14,

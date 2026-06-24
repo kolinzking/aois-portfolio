@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("telemetry/aois-p/unified-telemetry.plan.json")
+PLAN_PATH = Path("telemetry/aois/unified-telemetry.plan.json")
 
 
 def simulate_telemetry() -> dict[str, object]:

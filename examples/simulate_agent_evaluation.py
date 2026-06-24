@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/agent-evaluation.plan.json")
+PLAN_PATH = Path("agentic/aois/agent-evaluation.plan.json")
 
 
 def _score_case(

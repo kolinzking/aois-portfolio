@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/budget-aware-routing.plan.json")
+PLAN_PATH = Path("agentic/aois/budget-aware-routing.plan.json")
 
 
 def _route_score(route: dict[str, object]) -> float:

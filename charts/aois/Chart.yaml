@@ -1,5 +1,5 @@
 apiVersion: v2
-name: aois-p
+name: aois
 description: AOIS portfolio API chart for local infrastructure practice.
 type: application
 version: 0.1.0

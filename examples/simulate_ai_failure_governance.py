@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("release-safety/aois-p/ai-failure-governance.plan.json")
+PLAN_PATH = Path("release-safety/aois/ai-failure-governance.plan.json")
 
 
 def _decide(case: dict[str, object], minimum_confidence: float) -> dict[str, object]:

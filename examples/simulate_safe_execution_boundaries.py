@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-PLAN_PATH = Path("agentic/aois-p/safe-execution-boundaries.plan.json")
+PLAN_PATH = Path("agentic/aois/safe-execution-boundaries.plan.json")
 
 APPROVAL_REQUIRED_CATEGORIES = {
     "sensitive_read",

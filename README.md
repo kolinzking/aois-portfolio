@@ -13,7 +13,7 @@ Important operating constraint:
 
 See [RESOURCE-POLICY.md](RESOURCE-POLICY.md) before running services, installing dependencies, pulling images, or starting heavy workloads.
 
-This portfolio project uses the operational name `aois-p` so it is not confused with the primary AOIS workload on the same server.
+This portfolio project uses the operational name `aois` so it is not confused with the primary AOIS workload on the same server.
 
 Current footprint is tracked in [RESOURCE-USAGE.md](RESOURCE-USAGE.md).
 

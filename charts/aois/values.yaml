@@ -1,8 +1,8 @@
-namespace: aois-p
+namespace: aois
 
 app:
-  name: aois-p-api
-  image: aois-p/api:local
+  name: aois-api
+  image: aois/api:local
   replicas: 1
   providerCallsEnabled: "false"
 

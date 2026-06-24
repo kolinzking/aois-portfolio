@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 
-PLAN_PATH = Path("frontier/aois-p/multimodal-aois.plan.json")
+PLAN_PATH = Path("frontier/aois/multimodal-aois.plan.json")
 MIN_CONFIDENCE_FOR_ACTION = 0.75
 
 

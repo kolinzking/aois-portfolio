@@ -23,7 +23,7 @@ spec:
             - containerPort: {{ .Values.service.port }}
           env:
             - name: AOIS_APP_NAME
-              value: aois-p
+              value: aois
             - name: AOIS_ENV
               value: kubernetes
             - name: AOIS_PROVIDER_CALLS_ENABLED

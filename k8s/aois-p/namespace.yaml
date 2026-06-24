@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: aois-p
+  name: aois
   labels:
-    app.kubernetes.io/name: aois-p
+    app.kubernetes.io/name: aois
     app.kubernetes.io/part-of: aois-portfolio
     aois.dev/owner: portfolio
