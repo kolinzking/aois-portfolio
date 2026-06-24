@@ -4,3 +4,11 @@
 .venv/
 __pycache__/
 *.pyc
+
+# editor / venv / caches / internal
+.venv/
+.vscode/
+.aois-state/
+__pycache__/
+*.pyc
+*.code-workspace
