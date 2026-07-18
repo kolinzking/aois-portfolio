@@ -1,0 +1,77 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  IMAGE: ghcr.io/${{ github.repository_owner }}/aois
+
+permissions:
+  contents: write   # CD step commits the new image tag back to the repo
+  packages: write   # push images to GHCR
+  id-token: write   # cosign keyless signing (OIDC)
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: ruff — block on real errors (syntax, undefined names)
+        run: |
+          pip install ruff
+          ruff check --select E9,F63,F7,F82 app examples scripts
+
+  build:
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: build image
+        run: docker build -t "$IMAGE:${{ github.sha }}" .
+
+      - name: trivy — fail on fixable HIGH/CRITICAL CVEs
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: ghcr.io/${{ github.repository_owner }}/aois:${{ github.sha }}
+          severity: HIGH,CRITICAL
+          ignore-unfixed: true
+          exit-code: "1"
+
+      - name: push to GHCR (main only)
+        if: github.ref == 'refs/heads/main'
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+          docker push "$IMAGE:${{ github.sha }}"
+          docker tag "$IMAGE:${{ github.sha }}" "$IMAGE:latest"
+          docker push "$IMAGE:latest"
+
+      - name: cosign — keyless signature over the pushed digest (main only)
+        if: github.ref == 'refs/heads/main'
+        uses: sigstore/cosign-installer@v3
+      - name: sign image
+        if: github.ref == 'refs/heads/main'
+        run: |
+          DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' "$IMAGE:${{ github.sha }}")
+          cosign sign --yes "$DIGEST"
+
+  deploy:
+    # CD: write the freshly pushed tag into the Helm values — Argo CD picks it up from Git.
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: bump image tag in chart values
+        run: |
+          sed -i "s|image: .*|image: ghcr.io/${{ github.repository_owner }}/aois:${{ github.sha }}|" charts/aois/values.yaml
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add charts/aois/values.yaml
+          git commit -m "cd: deploy ${GITHUB_SHA::7} [skip ci]"
+          git push
