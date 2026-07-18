@@ -2,7 +2,7 @@ namespace: aois
 
 app:
   name: aois-api
-  image: aois/api:local
+  image: ghcr.io/kolinzking/aois:16ffbc923fcd41976c73ab07627920a27ddfc895
   replicas: 1
   providerCallsEnabled: "false"
 
