@@ -20,7 +20,9 @@ spec:
     server: https://kubernetes.default.svc
     namespace: aois
   syncPolicy:
-    automated: null
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=false
       - PruneLast=true
