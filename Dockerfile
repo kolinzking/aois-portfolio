@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-RUN addgroup --system aois && adduser --system --ingroup aois aois
+RUN addgroup --system --gid 10001 aois && adduser --system --uid 10001 --ingroup aois aois
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app ./app
 COPY examples ./examples
 
-USER aois
+USER 10001:10001
 
 EXPOSE 8006
 
